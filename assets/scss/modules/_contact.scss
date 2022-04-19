@@ -1,0 +1,136 @@
+@use "globals";
+// Untuk Title
+$font-raleway :'Raleway',
+sans-serif;
+$font-great:'Great Vibes',
+cursive;
+$font-poppins: 'Poppins',
+sans-serif;
+$font-halant: 'Halant',
+serif;
+// color
+$color-pink:#ee9e9e;
+$color-pink2:#fa8282;
+$bg-section:#fffdfdea;
+// Font Weight
+$light: 300;
+$reguler: 400;
+$medium: 500;
+$semibold:600;
+$bold: 700;
+$black: 900;
+.section-hero-image-banner {
+    .blocks-items {
+        .pict {
+            .background-banner-contact {
+                height: 550px;
+                background-position: center;
+                background-size: cover;
+                // opacity: 0.8;
+                .text-title h5 {
+                    font-family: $font-halant;
+                    font-weight: $medium;
+                    letter-spacing: 2px;
+                    font-size: 50px;
+                    padding-top: 250px;
+                }
+            }
+        }
+    }
+}
+
+.section-contact-sect-2 {
+    .blocks-items {
+        .col-md-7 {
+            .item-text {
+                padding-top: 90px;
+                .text {
+                    margin-bottom: 10px;
+                    p {
+                        font-size: 17px;
+                    }
+                }
+                .text-title {
+                    margin-bottom: 15px;
+                    h3 {
+                        font-family: $font-poppins;
+                        font-weight: $reguler;
+                        font-size: 25px;
+                    }
+                    h4 {
+                        font-family: $font-poppins;
+                        font-weight: $reguler;
+                        padding-top: 20px;
+                        font-size: 25px;
+                    }
+                }
+                .text-desc {
+                    margin-top: 30px;
+                    p:nth-child(1) {
+                        font-size: 17px;
+                        line-height: 1.5;
+                        padding-right: 65px;
+                    }
+                }
+            }
+            hr {
+                width: 70px;
+                height: 2px;
+                color: #fa8282;
+            }
+        }
+        .col-md-5 {
+            border: 1px solid rgb(230, 229, 229);
+            height: max-content;
+            margin-top: 90px;
+            .pict {
+                padding: 25px;
+                // transform: scale(1.1);
+                transition: 0.5s;
+                img {
+                    box-shadow: 0 5px 1px 0 rgb(0 0 0 / 20%), 0 10px 11px 0 rgb(0 0 0 / 19%);
+                    transition: 0.5s;
+                }
+                img:hover {
+                    box-shadow: 00 4px 8px 0 rgb(0 0 0 / 20%), 0 5px 10px 0 rgb(0 0 0 / 19%);
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}
+
+// Section contact 4
+.section-contact-sect-4 {
+    .blocks-items {
+        .text-title {
+            margin: 70px 0 25px;
+            h3 {
+                font-weight: $reguler;
+                font-family: $font-poppins;
+                font-size: 25px;
+            }
+        }
+        .col-md-8 {
+            .item-form-contact {
+                label {
+                    font-size: 17px;
+                    font-family: $font-raleway;
+                }
+                .btns-items {
+                    margin: 30px 0 50px;
+                    button {
+                        padding: 7px 20px;
+                        font-family: $font-poppins;
+                        letter-spacing: 0.5px;
+                        border: 0;
+                        background-color: #fa8282;
+                        color: #fff;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,167 @@
+@use "globals";
+// Untuk Title
+$font-raleway :'Raleway',
+sans-serif;
+$font-great:'Great Vibes',
+cursive;
+$font-poppins: 'Poppins',
+sans-serif;
+$font-halant: 'Halant',
+serif;
+// color
+$color-pink:#ee9e9e;
+$color-pink2:#fa8282;
+$bg-section:#fffdfdea;
+// Font Weight
+$light: 300;
+$reguler: 400;
+$medium: 500;
+$semibold:600;
+$bold: 700;
+$black: 900;
+// Footer
+.footer {
+    // Footer Atas
+    .footer-top {
+        background-color: #efefef;
+        .col-md-4 {
+            .item-text {
+                padding: 110px 0 70px;
+                .text-title-foot {
+                    margin-bottom: 15px;
+                    a {
+                        text-decoration: none;
+                        color: #333;
+                        h3 {
+                            font-family: $font-poppins;
+                            font-size: 30px;
+                            span {
+                                color: #fa8282;
+                            }
+                            span:hover {
+                                color: $color-pink;
+                            }
+                        }
+                    }
+                }
+                .text-desc-foot {
+                    width: 320px;
+                    margin-bottom: 15px;
+                    p {
+                        font-weight: $light;
+                        font-family: $font-raleway;
+                        font-size: 16px;
+                        line-height: 1.5;
+                    }
+                }
+                .item-sosmed {
+                    ul {
+                        list-style-type: none;
+                        padding: 0;
+                        .nav-item {
+                            display: inline-block;
+                            a {
+                                color: #635e5e;
+                                padding-left: 0;
+                                padding-right: 7px;
+                                // .iconify {
+                                //     color: #807e7e;
+                                // }
+                            }
+                            a:hover {
+                                color: $color-pink2 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .col-md-3 {
+            .item-text {
+                padding: 115px 0 70px;
+                .text-title-foot {
+                    padding-bottom: 15px;
+                    h3 {
+                        font-family: $font-poppins;
+                        font-weight: $medium;
+                        font-size: 18px;
+                    }
+                }
+                .item-text-layan {
+                    ul {
+                        list-style-type: none;
+                        padding: 0;
+                        .nav-item {
+                            a {
+                                font-family: $font-raleway;
+                                font-weight: $light;
+                                font-size: 14px;
+                                padding-left: 0;
+                                color: #333;
+                            }
+                            a:hover {
+                                color: $color-pink2;
+                            }
+                        }
+                    }
+                }
+            }
+            .item-text {
+                .text-title-infor {
+                    padding-bottom: 15px;
+                    h3 {
+                        font-weight: $medium;
+                        font-family: $font-poppins;
+                        font-size: 18px;
+                    }
+                }
+                .text-infor {
+                    ul {
+                        list-style-type: none;
+                        padding: 0;
+                        .nav-item {
+                            a {
+                                font-family: $font-raleway;
+                                font-weight: $light;
+                                font-size: 14px;
+                                color: #333;
+                                padding-left: 1px;
+                            }
+                            a:hover {
+                                color: $color-pink2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Footer Bawah
+    .footer-bottom {
+        background-color: #635e5e;
+        margin-bottom: 0;
+        color: #fff;
+        .blocks-items {
+            .text-desc-copyright {
+                // height: 50px;
+                // line-height: 50px;
+                padding: 25px 0;
+                p {
+                    font-size: 13px;
+                    // line-height: 50px;
+                    letter-spacing: 1px;
+                    span {
+                        color: $color-pink;
+                    }
+                }
+            }
+            // .text-desc-by {
+            //     p {
+            //         letter-spacing: 1px;
+            //         font-size: 13px;
+            //         line-height: 50px;
+            //     }
+            // }
+        }
+    }
+}

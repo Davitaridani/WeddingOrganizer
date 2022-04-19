@@ -1,0 +1,8 @@
+@use "globals";
+$color-pink:#ee9e9e;
+// Section header 
+.header {
+    .top_bar {
+        background-color: $color-pink;
+    }
+}

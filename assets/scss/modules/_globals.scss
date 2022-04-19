@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Halant:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700;800&display=swap');
+// 
+$font-playfair :'Raleway',
+sans-serif;
+$font-great:'Great Vibes',
+cursive;
+$font-montserrat: 'Poppins',
+sans-serif;
+$font-halant: 'Halant',
+serif;
+//
+// Font Weight
+$light:300;
+$reguler: 400;
+$medium: 500;
+$bold: 700;
+$black: 900;
+// Color 
+$pink:#FF98A1;
+// Clear text 
+.text-content {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    br,
+    a,
+    p {
+        line-height: 1;
+        display: block;
+        margin: 0;
+        letter-spacing: 0.2px;
+    }
+}
+
+.container {
+    max-width: 100% !important;
+    padding: 0 15px !important;
+    @media screen and (min-width: 1185px) {
+        max-width: 1185px !important;
+        padding: 0 0 !important;
+    }
+}
