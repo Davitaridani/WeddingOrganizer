@@ -59,11 +59,10 @@
 							Paket
 						</a>
 						<ul class="dropdown-menu border-0" aria-labelledby="navbarScrollingDropdown">
-							<li><a class="dropdown-item" href="<?= base_url(); ?>paket/paket_wedding">Wedding</a></li>
-							<li><a class="dropdown-item" href="<?= base_url(); ?>paket/paket_prewedding">Prewedding</a></li>
-							<li><a class="dropdown-item" href="<?= base_url(); ?>paket/paket_lamaran">Lamaran</a></li>
-							<li><a class="dropdown-item" href="#">Dekorasi</a></li>
-							<li><a class="dropdown-item" href="#">Make Up</a></li>
+							<li><a class="dropdown-item" href="<?= base_url(); ?>paket/paket_all_in">Paket All In</a></li>
+							<li><a class="dropdown-item" href="<?= base_url(); ?>paket/dekorasi">Dekorasi</a></li>
+							<li><a class="dropdown-item" href="<?= base_url(); ?>paket/makeUp">Make Up</a></li>
+							<li><a class="dropdown-item" href="<?= base_url(); ?>paket/gaun">Gaun</a></li>
 						</ul>
 					</li>
 

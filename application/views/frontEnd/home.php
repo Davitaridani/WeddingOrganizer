@@ -47,7 +47,7 @@
 </section>
 
 <!--  Section home 2  -->
-<section class="section-home-sect-2" id="">
+<!-- <section class="section-home-sect-2" id="">
 	<div class="container">
 		<div class="inner text-content">
 			<div class="blocks-items">
@@ -118,10 +118,10 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 
 <!--  Section Home sect 3  -->
-<section class="section-home-sect-3">
+<!-- <section class="section-home-sect-3">
 	<div class="container">
 		<div class="inner text-content">
 			<div class="blocks-items">
@@ -213,6 +213,98 @@
 									Karena tanpa mereka kita bukanlah apa-apa.</p>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<!-- Home COba -->
+<section class="home-sect-coba">
+	<div class="container">
+		<div class="blocks-items">
+			<div class="title text-center">
+				<h3>Selamat Datang</h3>
+				<hr>
+			</div>
+			<div class="items text-center">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="icon">
+							<span class="iconify" data-icon="bi:chat-dots" data-width="30"></span>
+						</div>
+						<div class="title">
+							<h3>Konsultasi</h3>
+						</div>
+						<div class="desc">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos, non ipsum accusantium numquam magni iure unde, similique quos at nostrum nulla! .</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="icon">
+							<span class="iconify" data-icon="bx:book-heart" data-width="30"></span>
+						</div>
+						<div class="title">
+							<h3>Paket Pernikahan</h3>
+						</div>
+						<div class="desc">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt facilis animi ea aliquam.</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="icon">
+							<span class="iconify" data-icon="uiw:date" data-width="30"></span>
+						</div>
+						<div class="title">
+							<h3>Mudah Booking</h3>
+						</div>
+						<div class="desc">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates officiis magnam dolorem et itaque.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Hoome sect 4 coba -->
+<section class="home-sect-4-coba">
+	<div class="container-fluid">
+		<div class="blocks-items">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="pict">
+						<img src="<?= base_url() ?>assets/img/banner-wedding.jpg" alt="" class="img img-fluid">
+					</div>
+
+				</div>
+				<div class="col-md-6">
+					<div class="text">
+						<div class="title">
+							<h3>Siapa Kami</h3>
+						</div>
+						<div class="desc">
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint itaque quia magni tempora consequuntur laudantium aut voluptate dolorem eius fuga!</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="text">
+						<div class="title">
+							<h3>Vendor Kami</h3>
+						</div>
+						<div class="desc">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eum a perferendis sunt distinctio quia, quo debitis autem itaque necessitatibus!</p>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="pict">
+						<img src="<?= base_url() ?>assets/img/banner-wedding.jpg" alt="" class="img img-fluid">
 					</div>
 				</div>
 			</div>

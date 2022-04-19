@@ -24,6 +24,75 @@ $black: 900;
 // p {
 //     line-height: 1.5;
 // }
+
+
+// Paket All In Sect-2
+.paketAll-sect-2{
+    .blocks-items {
+        padding-top:100px ;
+        .title {
+            margin-bottom: 70px;
+            h3 {
+                font-family: $font-poppins;
+            }
+        }
+        .col-md-4 {
+            .block-filter{
+                .title-card {
+                    background-color: #666666;
+                    h3 {
+                        font-size: 25px;
+                        color: #fff;
+                        padding: 30px 0;
+                    }
+                }
+                .body-card{
+                    background-color: #e6e6e6;
+                    .title {
+                        margin-bottom: 20px;
+                        h3 {
+                            font-size: 20px;
+                        }
+                    }
+                    // select {
+                    //     margin-bottom: 30px;
+                    // }
+                    button {
+                        background-color: #fa8282;
+                        padding: 5px 30px;
+                        color: #fff;
+                        font-size: 20px;
+                        font-weight: 500;
+                        margin: 60px 0 20px;
+                        &:hover{
+                            background-color: #f88e8e;
+                        }
+                    }
+                }
+            }
+        }
+        .col-md-8 {
+            margin-bottom: 130px;
+            .block-card {
+                margin-bottom: 60px;
+                .card-body {
+                    .text-desc {
+                        height: 120px;
+                        margin-bottom: 10px;
+                    }
+                    .price {
+                        font-weight: 700;
+                    }
+                    a {
+                        background-color: #f88e8e;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 .section-paket-wedding-sect-2 {
     background-image: linear-gradient(180deg, $color-pink2, $color-pink, $color-pink3);
     .blocks-items {

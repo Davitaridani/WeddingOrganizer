@@ -21,7 +21,7 @@ $semibold:600;
 $bold: 700;
 $black: 900;
 p {
-    font-family: $font-raleway;
+    font-family: $font-raleway !important;
     // letter-spacing: 1.2px;
 }
 
@@ -253,6 +253,73 @@ p {
                     font-family: $font-raleway;
                     line-height: 1.5;
                     font-size: 17px;
+                }
+            }
+        }
+    }
+}
+
+// Home sect coba
+.home-sect-coba {
+    margin-bottom: 100px;
+    .blocks-items {
+        padding-top: 80px;
+        .title {
+            margin-bottom: 50px;
+            h3 {
+                font-size: 30px;
+                margin-bottom: 10px;
+
+            }
+            hr {
+                height:2px ;
+                color: #fa8282;
+                width: 150px;
+                margin: auto;
+            }
+        }
+        .items{
+            .row{
+                .col-md-4{
+                    .icon {
+                        margin-bottom: 30px;
+                        svg {
+                            color: #ee9e9e;
+                        }
+                    }
+                    .title {
+                        margin-bottom: 10px;
+                        h3 {
+                            font-size: 20px;
+                        }
+                    }
+                    .desc {
+                        p {
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Home setc 4 coba
+.home-sect-4-coba{
+    .blocks-items {
+        .row {
+            .col-md-6 {
+                // position: relative;
+                padding-left: 0 !important;
+                .pict {
+                    img {
+                        padding-right: 130px;
+                    }
+                }
+            }
+            .col-md-6 {
+                .text {
+                    width: 600px;
                 }
             }
         }

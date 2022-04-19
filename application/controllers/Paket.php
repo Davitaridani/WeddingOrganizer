@@ -28,4 +28,58 @@ class Paket extends CI_Controller
 		// $this->load->view('frontEnd/home');
 		// $this->load->view('frontEnd/include/footer');
 	}
+
+
+	public function dekorasi()
+	{
+
+		$data = [
+			'title' => 'Wedding Organizer',
+			'isi' => 'frontEnd/paket/dekorasi'
+
+		];
+		$this->load->view('frontEnd/include/wrapper', $data, FALSE);
+		// $this->load->view('frontEnd/home');
+		// $this->load->view('frontEnd/include/footer');
+	}
+
+	public function makeUp()
+	{
+
+		$data = [
+			'title' => 'Wedding Organizer',
+			'isi' => 'frontEnd/paket/makeUp'
+
+		];
+		$this->load->view('frontEnd/include/wrapper', $data, FALSE);
+		// $this->load->view('frontEnd/home');
+		// $this->load->view('frontEnd/include/footer');
+	}
+
+
+	public function gaun()
+	{
+
+		$data = [
+			'title' => 'Wedding Organizer',
+			'isi' => 'frontEnd/paket/gaun'
+
+		];
+		$this->load->view('frontEnd/include/wrapper', $data, FALSE);
+		// $this->load->view('frontEnd/home');
+		// $this->load->view('frontEnd/include/footer');
+	}
+
+	public function paket_all_in()
+	{
+
+		$data = [
+			'title' => 'Wedding Organizer',
+			'isi' => 'frontEnd/paket/paket_all_in'
+
+		];
+		$this->load->view('frontEnd/include/wrapper', $data, FALSE);
+		// $this->load->view('frontEnd/home');
+		// $this->load->view('frontEnd/include/footer');
+	}
 }
