@@ -14,6 +14,8 @@
 </section>
 <!-- end hero image banner -->
 
+
+
 <!-- About sect 2	-->
 <section class="section-tentangKami-sect-2">
 	<div class="container">
@@ -30,7 +32,7 @@
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, totam nihil placeat, facilis
 							dolorem nisi amet quaerat laboriosam autem odit quos illum quis excepturi omnis fugit labore. Voluptate
 							accusantium, voluptatibus, neque nihil quidem inventore magni odio corrupti iusto aliquam, aliquid quis
-							molestiae exercitationem velit at quod quisquam labore repellendus nulla! Natus est veniam cupiditate
+							molestiae exercitationem Natus est veniam cupiditate
 							recusandae fugiat illo impedit inventore hic rerum pariatur. Officiis minima molestias placeat deserunt
 							voluptatibus distinctio laboriosam!</p>
 						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, est eum at velit sunt dolor cupiditate,
