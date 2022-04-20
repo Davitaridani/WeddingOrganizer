@@ -16,4 +16,10 @@ class M_kategori extends CI_Model
 	{
 		$this->db->insert('tb_kategori', $data);
 	}
+
+	public function edit($data)
+	{
+		$this->db->where('id_kategori', $data['id_kategori']);
+		$this->db->update('tb_kategori', $data);
+	}
 }
