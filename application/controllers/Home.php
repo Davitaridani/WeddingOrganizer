@@ -7,7 +7,7 @@ class Home extends CI_Controller
 	{
 
 		$data = [
-			'title' => 'Wedding Organizer',
+			'title' => 'Home',
 			'isi' => 'frontEnd/home'
 
 		];
