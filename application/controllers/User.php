@@ -12,12 +12,10 @@ class User extends CI_Controller
 
 	public function index()
 	{
-
 		$data = [
 			'title' => 'User',
 			'user' => $this->m_user->get_all_data(),
 			'isi' => 'backEnd/user'
-
 		];
 		$this->load->view('backEnd/include/wrapper', $data, FALSE);
 	}
@@ -37,8 +35,19 @@ class User extends CI_Controller
 		redirect('user');
 	}
 
-	public function update()
+	public function edit($id_user = NULL)
 	{
+		$data = [
+			'id_user' => $id_user,
+			'nama' => $this->input->post('nama'),
+			'email' => $this->input->post('email'),
+			'telepon' => $this->input->post('telepon'),
+			'password' => $this->input->post('password'),
+			'level_user' => $this->input->post('level_user'),
+		];
+		$this->m_user->edit($data);
+		$this->session->set_flashdata('pesan', 'Data Berhasil Di Edit');
+		redirect('user');
 	}
 
 	public function delete()

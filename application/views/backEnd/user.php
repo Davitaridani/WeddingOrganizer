@@ -2,7 +2,6 @@
 	<div class="card card-primary">
 		<div class="card-header">
 			<h3 class="card-title">Data User</h3>
-
 			<div class="card-tools">
 				<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#add">
 					<i class="fas fa-user-plus"></i>
@@ -35,7 +34,6 @@
 				<tbody>
 					<?php $no = 1;
 					foreach ($user as $key => $value) { ?>
-
 						<tr>
 							<td class="text-center"><?= $no++; ?></td>
 							<td><?= $value->nama ?></td>
@@ -45,7 +43,6 @@
 							<td class="text-center">
 								<?php
 								if ($value->level_user == 1) {
-
 									echo '<span class="badge badge-success">Admin</span>';
 								} else {
 									echo '<span class="badge badge-info">User</span>';
@@ -53,8 +50,12 @@
 								?>
 							</td>
 							<td>
-								<button class="btn btn-info btn-sm"> <i class="fa fa-edit"></i></button>
-								<button class="btn btn-danger btn-sm"> <i class="fa fa-trash"></i></button>
+								<button data-toggle="modal" data-target="#edit<?= $value->id_user ?>" class="btn btn-info btn-sm">
+									<i class="fa fa-edit"></i>
+								</button>
+								<button class="btn btn-danger btn-sm">
+									<i class="fa fa-trash"></i>
+								</button>
 							</td>
 						</tr>
 					<?php  } ?>
@@ -76,10 +77,8 @@
 			</div>
 			<div class="modal-body">
 				<?php
-
 				echo form_open('user/add');
 				?>
-
 				<div class="form-group">
 					<label for="nama">Nama</label>
 					<input type="text" name="nama" class="form-control" id="nama" placeholder="Nama" required>
@@ -98,9 +97,8 @@
 
 				<div class="form-group">
 					<label for="password">Password</label>
-					<input type="text" class="form-control" name="password" id="password" placeholder="Telepon" required>
+					<input type="text" class="form-control" name="password" id="password" placeholder="Password" required>
 				</div>
-
 
 				<div class="form-group">
 					<label for="level_user">Level User</label>
@@ -122,3 +120,65 @@
 		</div>
 	</div>
 </div>
+
+
+<!-- Form Modal Edit -->
+<?php foreach ($user as $key => $value) { ?>
+	<div class="modal fade" id="edit<?= $value->id_user ?>">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Edit User</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<?php
+					echo form_open('user/edit/' . $value->id_user);
+					?>
+					<div class="form-group">
+						<label for="nama">Nama</label>
+						<input type="text" name="nama" value="<?= $value->nama ?>" class="form-control" id="nama" placeholder="Nama" required>
+					</div>
+
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" class="form-control" value="<?= $value->email ?>" name="email" id="email" placeholder="Email" required>
+					</div>
+
+					<div class="form-group">
+						<label for="telepon">Telepon</label>
+						<input type="number" class="form-control" name="telepon" value="<?= $value->telepon ?>" id="telepon" placeholder="Telepon" required>
+					</div>
+
+
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input type="text" class="form-control" name="password" value="<?= $value->password ?>" id="password" placeholder="Telepon" required>
+					</div>
+
+					<div class="form-group">
+						<label for="level_user">Level User</label>
+						<select name="level_user" class="form-control" id="level_user">
+							<option value="1" <?php if ($value->level_user == 1) {
+														echo 'selected';
+													} ?>>Admin</option>
+							<option value="2" <?php if ($value->level_user == 2) {
+														echo 'selected';
+													} ?>>User</option>
+						</select>
+					</div>
+
+				</div>
+				<div class="modal-footer justify-content-between">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="submit" class="btn btn-primary">Simpan</button>
+				</div>
+				<?php
+				echo form_close();
+				?>
+			</div>
+		</div>
+	</div>
+<?php } ?>
