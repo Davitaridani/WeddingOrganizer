@@ -50,6 +50,35 @@
 </div>
 
 <!-- Form Modal Add -->
+<div class="modal fade" id="add">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Tambah Kategori</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<?php
+				echo form_open('kategori/add');
+				?>
+				<div class="form-group">
+					<label for="nama_kategori">Nama Kategori</label>
+					<input type="text" name="nama_kategori" class="form-control" id="nama_kategori" placeholder="Nama Kategori" required>
+				</div>
+
+			</div>
+			<div class="modal-footer justify-content-between">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="submit" class="btn btn-primary">Simpan</button>
+			</div>
+			<?php
+			echo form_close();
+			?>
+		</div>
+	</div>
+</div>
 
 
 <!-- Form Modal Edit -->

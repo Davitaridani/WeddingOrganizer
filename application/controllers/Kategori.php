@@ -19,4 +19,14 @@ class Kategori extends CI_Controller
 		];
 		$this->load->view('backEnd/include/wrapper', $data, FALSE);
 	}
+
+	public function add()
+	{
+		$data = [
+			'nama_kategori' => $this->input->post('nama_kategori'),
+		];
+		$this->m_kategori->add($data);
+		$this->session->set_flashdata('pesan', 'Kategori Berhasil Di Tambahkan');
+		redirect('kategori');
+	}
 }
