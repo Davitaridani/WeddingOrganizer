@@ -50,7 +50,11 @@ class User extends CI_Controller
 		redirect('user');
 	}
 
-	public function delete()
+	public function delete($id_user = NULL)
 	{
+		$data = ['id_user' => $id_user];
+		$this->m_user->delete($data);
+		$this->session->set_flashdata('pesan', 'Data Berhasil Di Hapus');
+		redirect('user');
 	}
 }

@@ -22,4 +22,10 @@ class M_user extends CI_Model
 		$this->db->where('id_user', $data['id_user']);
 		$this->db->update('tb_user', $data);
 	}
+
+	public function delete($data)
+	{
+		$this->db->where('id_user', $data['id_user']);
+		$this->db->delete('tb_user', $data);
+	}
 }

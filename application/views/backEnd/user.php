@@ -53,7 +53,7 @@
 								<button data-toggle="modal" data-target="#edit<?= $value->id_user ?>" class="btn btn-info btn-sm">
 									<i class="fa fa-edit"></i>
 								</button>
-								<button class="btn btn-danger btn-sm">
+								<button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value->id_user ?>">
 									<i class="fa fa-trash"></i>
 								</button>
 							</td>
@@ -178,6 +178,30 @@
 				<?php
 				echo form_close();
 				?>
+			</div>
+		</div>
+	</div>
+<?php } ?>
+
+
+<!-- Form Modal Hapus -->
+<?php foreach ($user as $key => $value) { ?>
+	<div class="modal fade" id="delete<?= $value->id_user ?>">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title"><?= $value->nama ?></h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h5>Apakah Anda Yakin Ingin Menghapus Data Ini ...?</h5>
+				</div>
+				<div class="modal-footer justify-content-between">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Batal</button>
+					<a href="<?= base_url('user/delete/' . $value->id_user) ?>" class="btn btn-danger">Hapus</a>
+				</div>
 			</div>
 		</div>
 	</div>
