@@ -40,4 +40,12 @@ class Kategori extends CI_Controller
 		$this->session->set_flashdata('pesan', 'Data Berhasil Di Edit');
 		redirect('kategori');
 	}
+
+	public function delete($id_kategori = NULL)
+	{
+		$data = ['id_kategori' => $id_kategori];
+		$this->m_kategori->delete($data);
+		$this->session->set_flashdata('pesan', 'Data Berhasil Di Hapus');
+		redirect('kategori');
+	}
 }

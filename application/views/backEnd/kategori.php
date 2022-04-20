@@ -114,5 +114,25 @@
 	</div>
 <?php } ?>
 
-
 <!-- Form Modal Hapus -->
+<?php foreach ($kategori as $key => $value) { ?>
+	<div class="modal fade" id="delete<?= $value->id_kategori ?>">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title"><?= $value->nama_kategori ?></h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h5>Apakah Anda Yakin Ingin Menghapus Kategori Ini ...?</h5>
+				</div>
+				<div class="modal-footer justify-content-between">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Batal</button>
+					<a href="<?= base_url('kategori/delete/' . $value->id_kategori) ?>" class="btn btn-danger">Hapus</a>
+				</div>
+			</div>
+		</div>
+	</div>
+<?php } ?>

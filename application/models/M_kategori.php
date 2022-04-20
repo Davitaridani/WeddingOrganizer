@@ -22,4 +22,10 @@ class M_kategori extends CI_Model
 		$this->db->where('id_kategori', $data['id_kategori']);
 		$this->db->update('tb_kategori', $data);
 	}
+
+	public function delete($data)
+	{
+		$this->db->where('id_kategori', $data['id_kategori']);
+		$this->db->delete('tb_kategori', $data);
+	}
 }
