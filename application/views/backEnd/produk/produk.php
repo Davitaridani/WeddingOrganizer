@@ -3,7 +3,7 @@
 		<div class="card-header">
 			<h3 class="card-title">Data Produk</h3>
 			<div class="card-tools">
-				<a href="" type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#add">
+				<a href="<?= base_url('produk/add') ?>" class="btn btn-primary btn-sm">
 					<i class="fas fa-user-plus"></i>
 					Add
 				</a>
