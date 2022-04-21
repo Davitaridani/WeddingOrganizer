@@ -54,7 +54,7 @@ class Produk extends CI_Controller
 		if ($this->form_validation->run() == TRUE) {
 			$config['upload_path'] = './assets/gambar/';
 			$config['allowed_types'] = 'gif|jpg|png|jpeg|raw|tif';
-			$config['max_size']     = '1000';
+			$config['max_size']     = '9000';
 			$this->upload->initialize($config);
 			$field_name = "gambar";
 			if (!$this->upload->do_upload($field_name)) {
@@ -87,6 +87,90 @@ class Produk extends CI_Controller
 			'title' => 'Tambah Produk',
 			'kategori' => $this->m_kategori->get_all_data(),
 			'isi' => 'backEnd/produk/add'
+		];
+		$this->load->view('backEnd/include/wrapper', $data, FALSE);
+	}
+
+	public function edit($id_produk = NULL)
+	{
+		$this->form_validation->set_rules(
+			'nama_produk',
+			'Nama Produk',
+			'required',
+			['required' => '%s Harus Diisi !!']
+		);
+
+		$this->form_validation->set_rules(
+			'id_kategori',
+			'Nama Ketegori',
+			'required',
+			['required' => '%s Harus Diisi !!']
+		);
+
+		$this->form_validation->set_rules(
+			'harga',
+			'Harga',
+			'required',
+			['required' => '%s Harus Diisi !!']
+		);
+
+		$this->form_validation->set_rules(
+			'deskripsi',
+			'Deskripsi',
+			'required',
+			['required' => '%s Harus Diisi !!']
+		);
+
+		if ($this->form_validation->run() == TRUE) {
+			$config['upload_path'] = './assets/gambar/';
+			$config['allowed_types'] = 'gif|jpg|png|jpeg|raw|tif';
+			$config['max_size']     = '9000';
+			$this->upload->initialize($config);
+			$field_name = "gambar";
+			if (!$this->upload->do_upload($field_name)) {
+				$data = [
+					'title' => 'Edit Produk',
+					'kategori' => $this->m_kategori->get_all_data(),
+					'produk' => $this->m_produk->get_data($id_produk),
+					'error_upload' => $this->upload->display_errors(),
+					'isi' => 'backEnd/produk/edit'
+				];
+				$this->load->view('backEnd/include/wrapper', $data, FALSE);
+			} else {
+				$upload_data = ['uploads' => $this->upload->data()];
+				$config['image_library'] = 'gd2';
+				$config['source_image'] = './assets/gambar/' . $upload_data['uploads']['file_name'];
+				$this->load->library('image_lib', $config);
+				$data = [
+					'id_produk' => $id_produk,
+					'nama_produk' => $this->input->post('nama_produk'),
+					'id_kategori' => $this->input->post('id_kategori'),
+					'harga' => $this->input->post('harga'),
+					'deskripsi' => $this->input->post('deskripsi'),
+					'gambar' => $upload_data['uploads']['file_name'],
+				];
+				$this->m_produk->edit($data);
+				$this->session->set_flashdata('pesan', 'Data Berhasil Di Ubah/Edit');
+				redirect('produk');
+			}
+			// Jiika Tanpa gabti Gambar
+			$data = [
+				'id_produk' => $id_produk,
+				'nama_produk' => $this->input->post('nama_produk'),
+				'id_kategori' => $this->input->post('id_kategori'),
+				'harga' => $this->input->post('harga'),
+				'deskripsi' => $this->input->post('deskripsi'),
+			];
+			$this->m_produk->edit($data);
+			$this->session->set_flashdata('pesan', 'Data Berhasil Di Ubah/Edit');
+			redirect('produk');
+		}
+
+		$data = [
+			'title' => 'Edit Produk',
+			'kategori' => $this->m_kategori->get_all_data(),
+			'produk' => $this->m_produk->get_data($id_produk),
+			'isi' => 'backEnd/produk/edit'
 		];
 		$this->load->view('backEnd/include/wrapper', $data, FALSE);
 	}

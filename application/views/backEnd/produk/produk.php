@@ -44,7 +44,7 @@
 								<img src="<?= base_url('assets/gambar/' . $value->gambar) ?>" class="img img-thumbnail" width="200px" alt="">
 							</td>
 							<td>
-								<a href="<?= base_url() ?>" data-toggle="modal" data-target="#edit<?= $value->id_produk ?>" class="btn btn-info btn-sm">
+								<a href="<?= base_url('produk/edit/' . $value->id_produk) ?>" class="btn btn-info btn-sm">
 									<i class="fa fa-edit"></i>
 								</a>
 								<a href="" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value->id_produk ?>">
