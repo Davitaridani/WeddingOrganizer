@@ -43,7 +43,9 @@
 				</li>
 
 				<li class="nav-item">
-					<a href="#" class="nav-link ">
+					<a href="<?= base_url('produk') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'produk') {
+																								echo "active";
+																							} ?>">
 						<i class="nav-icon fas fa-th"></i>
 						<p>
 							Produk

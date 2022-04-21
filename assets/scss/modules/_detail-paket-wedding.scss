@@ -1,160 +1,155 @@
 @use "globals";
 // Untuk Title
-$font-raleway :'Raleway',
-sans-serif;
-$font-great:'Great Vibes',
-cursive;
-$font-poppins: 'Poppins',
-sans-serif;
-$font-halant: 'Halant',
-serif;
+$font-raleway: "Raleway", sans-serif;
+$font-great: "Great Vibes", cursive;
+$font-poppins: "Poppins", sans-serif;
+$font-halant: "Halant", serif;
 // color
-$color-pink:#ee9e9e;
-$color-pink2:#fa8282;
-$bg-section:#fffdfdea;
-$bg-section:#f9f9f9;
+$color-pink: #ee9e9e;
+$color-pink2: #fa8282;
+$bg-section: #fffdfdea;
+$bg-section: #f9f9f9;
 // Font Weight
 $light: 300;
 $reguler: 400;
 $medium: 500;
-$semibold:600;
+$semibold: 600;
 $bold: 700;
 $black: 900;
 .section-detail-paket-wedding-sect-3 {
-    background-color: $bg-section;
-    padding-bottom: 70px;
-    .blocks-items {
-        padding-top: 90px;
-        .col-md-7 {
-            .item-text-title {
-                .text-desc {
-                    padding: 70px 0 10px;
-                    p {
-                        font-size: 17px;
-                        font-family: $font-raleway;
-                    }
-                }
-                .text-title {
-                    margin-bottom: 20px;
-                    h3 {
-                        font-size: 30px;
-                        font-family: $font-halant;
-                    }
-                }
-                .text-desc-2 {
-                    margin: 20px 0 30px;
-                    p {
-                        font-size: 17px;
-                        font-family: $font-raleway;
-                        line-height: 1.5;
-                        padding-right: 30px;
-                    }
-                }
-                hr {
-                    width: 70px;
-                    height: 2px;
-                    color: $color-pink2;
-                }
-            }
-            .item-text-list {
-                .text-list {
-                    .text-title {
-                        margin-bottom: 10px;
-                        h3 {
-                            font-family: $font-poppins;
-                            font-weight: $reguler;
-                            font-size: 25px;
-                        }
-                    }
-                    .text-list {
-                        margin-bottom: 25px;
-                        li {
-                            font-size: 16px;
-                        }
-                    }
-                }
-                .text-list-tatarias {
-                    .text-list {
-                        margin: 10px 0;
-                    }
-                }
-            }
-            .block-btns {
-                margin-top: 30px;
-                button {
-                    font-family: $font-poppins;
-                    background-color: $color-pink2;
-                    font-size: 17px;
-                    padding: 10px 10px;
-                    color: #fff;
-                    border: 0;
-                    transition: all 0.5s;
-                    width: 210px;
-                }
-                button:hover {
-                    background-color: $color-pink;
-                }
-                .item-btn {
-                    span {
-                        position: relative;
-                        transition: 0.5s;
-                        letter-spacing: 1.2px;
-                    }
-                }
-                .item-btn span::after {
-                    content: '>>';
-                    position: absolute;
-                    opacity: 0;
-                    top: 0;
-                    padding-top: 2.5px;
-                    right: -20px;
-                    transition: 0.5s;
-                }
-                .item-btn:hover span {
-                    padding-right: 25px;
-                }
-                .item-btn:hover span::after {
-                    opacity: 1;
-                    right: 0;
-                }
-            }
-        }
-        .col-md-5 {
-            border: 1px solid rgb(209, 209, 209);
-            background-color: #fff;
-            margin: 70px 0 100px;
-            padding: 30px 30px 30px 30px;
-            box-shadow: 00 8px 8px 0 rgb(0 0 0 / 20%), 0 5px 10px 0 rgb(0 0 0 / 19%);
-            .pict {
-                background-color: #fff;
-                img {
-                    padding: 20px;
-                    background-color: #fff;
-                }
-            }
-        }
-        .block-item-cat {
-            background-color: #f8cccc;
-            width: max-content;
-            margin: auto;
-            border-radius: 5px;
-            .text-desc {
-                line-height: 1.5;
-                margin: 0 40px;
-                ;
-                p:nth-child(1) {
-                    font-size: 17px;
-                    padding-top: 40px;
-                }
-                p:nth-child(2) {
-                    font-size: 17px;
-                    line-height: 1.5;
-                }
-                p:nth-child(3) {
-                    font-size: 17px;
-                    padding-bottom: 30px;
-                }
-            }
-        }
-    }
+	background-color: $bg-section;
+	padding-bottom: 70px;
+	.blocks-items {
+		padding-top: 90px;
+		.col-md-7 {
+			.item-text-title {
+				.text-desc {
+					padding: 70px 0 10px;
+					p {
+						font-size: 17px;
+						font-family: $font-raleway;
+					}
+				}
+				.text-title {
+					margin-bottom: 20px;
+					h3 {
+						font-size: 30px;
+						font-family: $font-halant;
+					}
+				}
+				.text-desc-2 {
+					margin: 20px 0 30px;
+					p {
+						font-size: 17px;
+						font-family: $font-raleway;
+						line-height: 1.5;
+						padding-right: 30px;
+					}
+				}
+				hr {
+					width: 70px;
+					height: 2px;
+					color: $color-pink2;
+				}
+			}
+			.item-text-list {
+				.text-list {
+					.text-title {
+						margin-bottom: 10px;
+						h3 {
+							font-family: $font-poppins;
+							font-weight: $reguler;
+							font-size: 25px;
+						}
+					}
+					.text-list {
+						margin-bottom: 25px;
+						li {
+							font-size: 16px;
+						}
+					}
+				}
+				.text-list-tatarias {
+					.text-list {
+						margin: 10px 0;
+					}
+				}
+			}
+			.block-btns {
+				margin-top: 30px;
+				button {
+					font-family: $font-poppins;
+					background-color: $color-pink2;
+					font-size: 17px;
+					padding: 10px 10px;
+					color: #fff;
+					border: 0;
+					transition: all 0.5s;
+					width: 210px;
+				}
+				button:hover {
+					background-color: $color-pink;
+				}
+				.item-btn {
+					span {
+						position: relative;
+						transition: 0.5s;
+						letter-spacing: 1.2px;
+					}
+				}
+				.item-btn span::after {
+					content: ">>";
+					position: absolute;
+					opacity: 0;
+					top: 0;
+					padding-top: 2.5px;
+					right: -20px;
+					transition: 0.5s;
+				}
+				.item-btn:hover span {
+					padding-right: 25px;
+				}
+				.item-btn:hover span::after {
+					opacity: 1;
+					right: 0;
+				}
+			}
+		}
+		.col-md-5 {
+			border: 1px solid rgb(209, 209, 209);
+			background-color: #fff;
+			margin: 70px 0 100px;
+			padding: 30px 30px 30px 30px;
+			box-shadow: 00 8px 8px 0 rgb(0 0 0 / 20%), 0 5px 10px 0 rgb(0 0 0 / 19%);
+			.pict {
+				background-color: #fff;
+				img {
+					padding: 20px;
+					background-color: #fff;
+				}
+			}
+		}
+		.block-item-cat {
+			background-color: #f8cccc;
+			width: max-content;
+			margin: auto;
+			border-radius: 5px;
+			.text-desc {
+				line-height: 1.5;
+				margin: 0 40px;
+				p:nth-child(1) {
+					font-size: 17px;
+					padding-top: 40px;
+				}
+				p:nth-child(2) {
+					font-size: 17px;
+					line-height: 1.5;
+				}
+				p:nth-child(3) {
+					font-size: 17px;
+					padding-bottom: 30px;
+				}
+			}
+		}
+	}
 }
