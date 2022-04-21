@@ -79,7 +79,6 @@
 	</div>
 </div>
 
-
 <!-- Form Modal Edit -->
 <?php foreach ($kategori as $key => $value) { ?>
 	<div class="modal fade" id="edit<?= $value->id_kategori ?>">

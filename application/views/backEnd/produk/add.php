@@ -4,8 +4,20 @@
 			<h3 class="card-title">Form Tambah Produk</h3>
 		</div>
 		<div class="card-body">
-			<?php form_open_multipart('produk/add') ?>
+			<?php
+			// Notifikasi Jika Form Belum Diisi
+			echo validation_errors('<div class="alert alert-danger alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <h5><i class="icon fas fa-ban"></i>', '</h5> </div>');
 
+			// Notifikasi gagal Upload Gambar
+			if (isset($error_upload)) {
+				echo '<div class="alert alert-danger alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <h5><i class="icon fas fa-ban"></i>' . $error_upload . '</h5></div>';
+			}
+			echo form_open_multipart('produk/add')
+			?>
 			<div class="form-group">
 				<label for="nama_produk">Nama Produk</label>
 				<input type="text" class="form-control" name="nama_produk" value="<?= set_value('nama_produk') ?>" id="nama_produk" placeholder="Nama Produk">

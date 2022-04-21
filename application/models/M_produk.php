@@ -13,20 +13,20 @@ class M_produk extends CI_Model
 		return $this->db->get()->result();
 	}
 
-	// public function add($data)
-	// {
-	// 	$this->db->insert('tb_kategori', $data);
-	// }
+	public function add($data)
+	{
+		$this->db->insert('tb_produk', $data);
+	}
 
-	// public function edit($data)
-	// {
-	// 	$this->db->where('id_kategori', $data['id_kategori']);
-	// 	$this->db->update('tb_kategori', $data);
-	// }
+	public function edit($data)
+	{
+		$this->db->where('id_produk', $data['id_produk']);
+		$this->db->update('tb_produk', $data);
+	}
 
-	// public function delete($data)
-	// {
-	// 	$this->db->where('id_kategori', $data['id_kategori']);
-	// 	$this->db->delete('tb_kategori', $data);
-	// }
+	public function delete($data)
+	{
+		$this->db->where('id_produk', $data['id_produk']);
+		$this->db->delete('tb_produk', $data);
+	}
 }
