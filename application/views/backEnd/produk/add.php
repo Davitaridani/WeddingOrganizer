@@ -37,9 +37,19 @@
 				<textarea class="form-control" name="deskripsi" rows="5" id="deskripsi" placeholder="Deskripsi"><?= set_value('deskripsi') ?> </textarea>
 			</div>
 
-			<div class="form-group">
-				<label for="gambar">Gambar Produk</label>
-				<input type="file" name="gambar" id="gambar" class="form-control">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label for="">Gambar Produk</label>
+						<input type="file" name="gambar" id="preview_gambar" class="form-control" required>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="form-group">
+						<img src="<?= base_url('assets/gambar/no-foto.png') ?>" id="gambar_load" width="400px" class="img img-fluid" alt="">
+					</div>
+				</div>
 			</div>
 
 			<div class="form-group">
@@ -51,3 +61,18 @@
 		</div>
 	</div>
 </div>
+
+<script>
+	function cekGambar(input) {
+		if (input.files && input.files[0]) {
+			let reader = new FileReader();
+			reader.onload = function(e) {
+				$('#gambar_load').attr('src', e.target.result);
+			}
+			reader.readAsDataURL(input.files[0]);
+		}
+	}
+	$("#preview_gambar").change(function() {
+		cekGambar(this);
+	});
+</script>
