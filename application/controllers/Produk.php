@@ -137,6 +137,14 @@ class Produk extends CI_Controller
 				];
 				$this->load->view('backEnd/include/wrapper', $data, FALSE);
 			} else {
+				// Jika Produk Di Hapus, maka Gambar  Akan ikut Terhapus
+				$produk = $this->m_produk->get_data($id_produk);
+				if ($produk->gambar != "") {
+					unlink('./assets/gambar/' . $produk->gambar);
+				}
+				// End Hapus Gmabra
+
+
 				$upload_data = ['uploads' => $this->upload->data()];
 				$config['image_library'] = 'gd2';
 				$config['source_image'] = './assets/gambar/' . $upload_data['uploads']['file_name'];
@@ -173,5 +181,19 @@ class Produk extends CI_Controller
 			'isi' => 'backEnd/produk/edit'
 		];
 		$this->load->view('backEnd/include/wrapper', $data, FALSE);
+	}
+
+	public function delete($id_produk = NULL)
+	{
+		// Jika Produk Di Hapus, maka Gambar  Akan ikut Terhapus
+		$produk = $this->m_produk->get_data($id_produk);
+		if ($produk->gambar != "") {
+			unlink('./assets/gambar/' . $produk->gambar);
+		}
+		// End Hapus Gmabra
+		$data = ['id_produk' => $id_produk];
+		$this->m_produk->delete($data);
+		$this->session->set_flashdata('pesan', 'Data Berhasil Di Hapus');
+		redirect('produk');
 	}
 }
