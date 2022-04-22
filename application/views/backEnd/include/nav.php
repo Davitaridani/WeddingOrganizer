@@ -23,8 +23,10 @@
 			<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
 				<li class="nav-item">
-					<a href="#" class="nav-link">
-						<i class="nav-icon fas fa-th"></i>
+					<a href="<?= base_url('admin') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'admin') {
+																							echo "active";
+																						} ?>">
+						<i class="nav-icon fas fa-tachometer-alt"></i>
 						<p>
 							Dashboard
 						</p>
@@ -49,6 +51,17 @@
 						<i class="nav-icon fas fa-th"></i>
 						<p>
 							Produk
+						</p>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="<?= base_url('galeri') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'galeri') {
+																								echo "active";
+																							} ?>">
+						<i class="nav-icon fas fa-image"></i>
+						<p>
+							Foto Produk
 						</p>
 					</a>
 				</li>
