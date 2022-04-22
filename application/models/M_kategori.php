@@ -12,6 +12,8 @@ class M_kategori extends CI_Model
 		return $this->db->get()->result();
 	}
 
+
+
 	public function add($data)
 	{
 		$this->db->insert('tb_kategori', $data);

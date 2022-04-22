@@ -19,7 +19,7 @@
 	<div class="container">
 		<div class="blocks-items">
 			<div class="title text-center">
-				<h3>Paket Dekorasi</h3>
+				<h3></h3>
 			</div>
 			<div class="row">
 

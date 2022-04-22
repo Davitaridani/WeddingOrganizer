@@ -12,7 +12,5 @@ class Home extends CI_Controller
 
 		];
 		$this->load->view('frontEnd/include/wrapper', $data, FALSE);
-		// $this->load->view('frontEnd/home');
-		// $this->load->view('frontEnd/include/footer');
 	}
 }

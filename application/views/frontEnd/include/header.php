@@ -40,7 +40,7 @@
 	<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
 		<div class="container">
 			<div class="item-logo">
-				<a class="navbar-brand" href="/">
+				<a class="navbar-brand" href="<?= base_url('/') ?>">
 					<img src="<?= base_url() ?>assets/img/logo-DL.png" alt=""> <span></span></a>
 			</div>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,15 +54,19 @@
 					<li class="nav-item">
 						<a class="nav-link" href="<?= base_url(); ?>about">Tentang Kami</a>
 					</li>
+
+
+					<?php $kategori = $this->m_paket->get_all_data_kategori(); ?>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Paket
 						</a>
 						<ul class="dropdown-menu border-0" aria-labelledby="navbarScrollingDropdown">
-							<li><a class="dropdown-item" href="<?= base_url(); ?>paket/paket_all_in">Paket All In</a></li>
-							<li><a class="dropdown-item" href="<?= base_url(); ?>paket/dekorasi">Dekorasi</a></li>
-							<li><a class="dropdown-item" href="<?= base_url(); ?>paket/makeUp">Make Up</a></li>
-							<li><a class="dropdown-item" href="<?= base_url(); ?>paket/gaun">Gaun</a></li>
+							<?php foreach ($kategori as $key => $value) { ?>
+								<li>
+									<a class="dropdown-item" href="<?= base_url('paket/kategori/' . $value->id_kategori); ?>"><?= $value->nama_kategori ?></a>
+								</li>
+							<?php } ?>
 						</ul>
 					</li>
 

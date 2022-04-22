@@ -78,15 +78,10 @@
 				</div>
 
 				<div class="row">
-					<div class="col-8">
-						<div class="icheck-primary">
-							<input type="checkbox" id="remember">
-							<label for="remember">
-								Remember Me
-							</label>
-						</div>
+					<div class="col-6">
+						<a href="<?= base_url() ?>" class="btn btn-success btn-block">Wesbite</a>
 					</div>
-					<div class="col-4">
+					<div class="col-6">
 						<button type="submit" class="btn btn-primary btn-block">Log In</button>
 					</div>
 				</div>
