@@ -32,11 +32,8 @@
                   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                   <h5><i class="icon fas fa-ban"></i>' . $error_upload . '</h5></div>';
 			}
-			echo form_open_multipart('')
+			echo form_open_multipart('FotoProduk/add/' . $produk->id_produk)
 			?>
-
-
-
 			<div class="row">
 				<div class="form-group">
 					<label for="keterangan">Keterangan Foto</label>
@@ -73,7 +70,9 @@
 							<img src="<?= base_url('assets/foto_produk/' . $value->foto) ?>" id="gambar_load" width="auto" height="auto" class="img img-fluid text-center" alt="">
 						</div>
 						<p>Ket : <?= $value->keterangan ?></p>
-						<a href="#" class="btn btn-danger btn-block btn-sm"><i class="fa fa-trash"></i> Hapus</a>
+						<button data-toggle="modal" data-target="#delete<?= $value->id_foto_produk ?>" class="btn btn-danger btn-block btn-sm">
+							<i class="fa fa-trash"></i>
+							Hapus</button>
 					</div>
 				<?php } ?>
 			</div>
@@ -81,6 +80,35 @@
 		</div>
 	</div>
 </div>
+
+
+
+<!-- Form Modal Hapus -->
+<?php foreach ($foto as $key => $value) { ?>
+	<div class="modal fade" id="delete<?= $value->id_foto_produk ?>">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Hapus <?= $value->keterangan ?></h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body text-center">
+
+					<div class="form-group my-3 text-center">
+						<img src="<?= base_url('assets/foto_produk/' . $value->foto) ?>" id="gambar_load" width="auto" height="auto" class="img img-fluid text-center" alt="">
+					</div>
+					<h5 class="text-center">Apakah Anda Yakin Ingin Menghapus Foto Ini ...?</h5>
+				</div>
+				<div class="modal-footer justify-content-between">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Batal</button>
+					<a href="<?= base_url('fotoProduk/delete/' . $value->id_produk . '/' . $value->id_foto_produk) ?>" class="btn btn-danger">Hapus</a>
+				</div>
+			</div>
+		</div>
+	</div>
+<?php } ?>
 
 <script>
 	function cekGambar(input) {

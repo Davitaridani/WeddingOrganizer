@@ -74,6 +74,13 @@
 	</div>
 </div>
 
+
+
+
+
+
+
+
 <script>
 	function cekGambar(input) {
 		if (input.files && input.files[0]) {

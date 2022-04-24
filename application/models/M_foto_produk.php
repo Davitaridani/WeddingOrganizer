@@ -14,11 +14,30 @@ class M_foto_produk extends CI_Model
 		return $this->db->get()->result();
 	}
 
+	public function get_data($id_foto_produk)
+	{
+		$this->db->select('*');
+		$this->db->from('tb_foto_produk');
+		$this->db->where('id_foto_produk', $id_foto_produk);
+		return $this->db->get()->row();
+	}
+
 	public function get_foto($id_produk)
 	{
 		$this->db->select('*');
 		$this->db->from('tb_foto_produk');
 		$this->db->where('id_produk', $id_produk);
 		return $this->db->get()->result();
+	}
+
+	public function add($data)
+	{
+		$this->db->insert('tb_foto_produk', $data);
+	}
+
+	public function delete($data)
+	{
+		$this->db->where('id_foto_produk', $data['id_foto_produk']);
+		$this->db->delete('tb_foto_produk', $data);
 	}
 }
