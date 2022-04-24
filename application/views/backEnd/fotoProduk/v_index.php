@@ -2,12 +2,12 @@
 	<div class="card card-primary">
 		<div class="card-header">
 			<h3 class="card-title">Data Foto Produk</h3>
-			<div class="card-tools">
+			<!-- <div class="card-tools">
 				<a href="<?= base_url('produk/add') ?>" class="btn btn-primary btn-sm">
 					<i class="fas fa-user-plus"></i>
 					Add
 				</a>
-			</div>
+			</div> -->
 		</div>
 		<div class="card-body">
 			<?php
@@ -45,7 +45,7 @@
 								</span>
 							</td>
 							<th class="text-center">
-								<a href="" class="btn btn-primary"> <i class="fa fa-plus"></i> Add Foto</a>
+								<a href="<?= base_url('fotoProduk/add/' . $value->id_produk) ?>" class="btn btn-primary"> <i class="fa fa-plus"></i> Add Foto</a>
 							</th>
 						</tr>
 

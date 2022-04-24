@@ -13,4 +13,12 @@ class M_foto_produk extends CI_Model
 		$this->db->order_by('tb_produk.id_produk', 'desc');
 		return $this->db->get()->result();
 	}
+
+	public function get_foto($id_produk)
+	{
+		$this->db->select('*');
+		$this->db->from('tb_foto_produk');
+		$this->db->where('id_produk', $id_produk);
+		return $this->db->get()->result();
+	}
 }
