@@ -22,6 +22,16 @@ class M_paket extends CI_Model
 		return $this->db->get()->result();
 	}
 
+	public function detail_produk($id_produk)
+	{
+		$this->db->select('*');
+		$this->db->from('tb_produk');
+		$this->db->join('tb_kategori', 'tb_kategori.id_kategori = tb_produk.id_kategori', 'left');
+		$this->db->where('id_produk', $id_produk);
+		return $this->db->get()->row();
+	}
+
+
 	public function kategori($id_kategori)
 	{
 		$this->db->select('*');

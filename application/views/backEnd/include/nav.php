@@ -56,9 +56,9 @@
 				</li>
 
 				<li class="nav-item">
-					<a href="<?= base_url('galeri') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'galeri') {
-																								echo "active";
-																							} ?>">
+					<a href="<?= base_url('FotoProduk') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'FotoProduk') {
+																									echo "active";
+																								} ?>">
 						<i class="nav-icon fas fa-image"></i>
 						<p>
 							Foto Produk

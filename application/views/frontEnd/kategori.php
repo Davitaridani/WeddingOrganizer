@@ -40,7 +40,7 @@
 									<p> <b> Rp. <?= number_format($value->harga, 0) ?></b></p>
 								</div>
 
-								<a href="" class="btn btn-danger">Lihat Detail</a>
+								<a href="<?= base_url('paket/detail_produk/' . $value->id_produk) ?>" class="btn btn-danger">Lihat Detail</a>
 
 								<a href="" class="btn btn-success">Tambah Keranjang</a>
 							</div>

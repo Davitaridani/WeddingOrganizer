@@ -59,7 +59,6 @@
 	</div>
 </div>
 
-
 <!-- Form Modal Hapus -->
 <?php foreach ($produk as $key => $value) { ?>
 	<div class="modal fade" id="delete<?= $value->id_produk ?>">

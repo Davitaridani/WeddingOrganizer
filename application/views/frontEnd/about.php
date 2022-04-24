@@ -22,7 +22,7 @@
 		<div class="inner text-content">
 			<div class="blocks-items">
 				<div class="logo text-center">
-					<img src="<?= base_url(); ?>assets/img/logo-tentang-kami.png" alt="" class="img img-fluid">
+					<img src="<?= base_url(); ?>assets/img/logo-DL.png" alt="" class="img img-fluid">
 				</div>
 				<div class="item-text text-center">
 					<div class="text-title">
@@ -46,7 +46,6 @@
 	</div>
 </section>
 <!-- Edn about sect 2 -->
-
 
 <!-- About sect 3 -->
 <section class="section-home-sect-5">
