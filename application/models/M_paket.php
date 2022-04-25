@@ -31,6 +31,14 @@ class M_paket extends CI_Model
 		return $this->db->get()->row();
 	}
 
+	public function foto_produk($id_produk)
+	{
+		$this->db->select('*');
+		$this->db->from('tb_foto_produk');
+		$this->db->where('id_produk', $id_produk);
+		return $this->db->get()->result();
+	}
+
 
 	public function kategori($id_kategori)
 	{

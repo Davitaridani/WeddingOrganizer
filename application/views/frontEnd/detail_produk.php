@@ -17,41 +17,30 @@
 		<div class="inner text-content">
 			<div class="blocks-items">
 				<div class="row">
+
+
 					<div class="col-md-6 p-0">
 						<div class="owl-carousel owl-theme owl-lazy mx-auto" id="owl-img-detailProduk">
-							<div class="item">
-								<div class="logo">
-									<img src="<?= base_url() ?>assets/img/prewedding/prewedding (4).jpg" alt="">
+							<?php foreach ($foto as $key => $value) { ?>
+								<div class="item">
+									<div class="logo">
+										<img src="<?= base_url('assets/foto_produk/' . $value->foto) ?>" alt="">
+									</div>
 								</div>
-							</div>
-
-							<div class="item">
-								<div class="logo">
-									<img src="<?= base_url() ?>assets/img/prewedding/prewedding (5).jpg" alt="">
-								</div>
-							</div>
-
-							<div class="item">
-								<div class="logo">
-									<img src="<?= base_url() ?>assets/img/prewedding/prewedding (6).jpg" alt="">
-								</div>
-							</div>
-
-							<div class="item">
-								<div class="logo">
-									<img src="<?= base_url() ?>assets/img/prewedding/prewedding (10).jpg" alt="">
-								</div>
-							</div>
+							<?php } ?>
 						</div>
 					</div>
 
 					<div class="col-md-6">
 						<div class="item-text">
 							<div class="title">
-								<h3>Judl Produk</h3>
+								<h3><?= $produk->nama_produk ?></h3>
+							</div>
+							<div class="title-kat">
+								<h5>Nama kategori : <?= $produk->nama_kategori ?></h5>
 							</div>
 							<div class="price">
-								<p>Rp. 10.000.000</p>
+								<p>Rp. <?= number_format($produk->harga, 0) ?></p>
 							</div>
 							<div class="icon-cart">
 								<a href="" class="nav-link p-0">
@@ -61,22 +50,25 @@
 							</div>
 						</div>
 					</div>
-					<div class="item-nav-tab">
-						<ul class="nav nav-tabs ">
-							<li class="nav-item mx-auto">
-								<a class="nav-link " aria-current="page" href="#">Active</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Link</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Link</a>
-							</li>
+				</div>
 
-						</ul>
+
+				<div class="row">
+					<div class="title text-center">
+						<h3>Detail Produk</h3>
+						<hr>
 					</div>
-					<div class="tab-content ">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae culpa totam eveniet doloribus dolorum molestias aperiam aliquam eaque, vero quidem, ad amet fugiat animi dolores nam qui, reiciendis in nesciunt!</p>
+
+					<div class="col-md-8 offset-lg-3">
+						<div class="item-text">
+							<div class="title">
+								<h5>Dekorasi</h5>
+							</div>
+							<div class="desc">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, atque laboriosam quaerat soluta veritatis temporibus odio dignissimos quas omnis corrupti architecto repudiandae illo nostrum, quidem cupiditate accusamus impedit libero incidunt.</p>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>

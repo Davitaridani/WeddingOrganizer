@@ -28,6 +28,7 @@ class Paket extends CI_Controller
 	{
 		$data = [
 			'title' => 'Detail Produk',
+			'foto' => $this->m_paket->foto_produk($id_produk),
 			'produk' => $this->m_paket->detail_produk($id_produk),
 			'isi' => 'frontEnd/detail_produk'
 		];
