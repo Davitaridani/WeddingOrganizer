@@ -19,7 +19,7 @@
 				<div class="row">
 
 
-					<div class="col-md-6 p-0">
+					<div class="col-md-7 p-0">
 						<div class="owl-carousel owl-theme owl-lazy mx-auto" id="owl-img-detailProduk">
 							<?php foreach ($foto as $key => $value) { ?>
 								<div class="item">
@@ -31,13 +31,16 @@
 						</div>
 					</div>
 
-					<div class="col-md-6">
+					<div class="col-md-5">
 						<div class="item-text">
 							<div class="title">
 								<h3><?= $produk->nama_produk ?></h3>
 							</div>
 							<div class="title-kat">
 								<h5>Nama kategori : <?= $produk->nama_kategori ?></h5>
+							</div>
+							<div class="desc">
+								<p><?= $produk->deskripsi ?></p>
 							</div>
 							<div class="price">
 								<p>Rp. <?= number_format($produk->harga, 0) ?></p>

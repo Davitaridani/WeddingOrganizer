@@ -41,7 +41,7 @@
 							</td>
 							<td class="text-center">
 								<span class="badge badge-success">
-									<h5> <?= $value->total_foto ?></h5>
+									<h5> <?= $value->total_foto ?> </h5>
 								</span>
 							</td>
 							<th class="text-center">
