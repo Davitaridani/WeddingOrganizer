@@ -34,4 +34,24 @@
 	<script src="<?= base_url() ?>templates/dist/js/adminlte.min.js"></script>
 	<!-- AdminLTE for demo purposes -->
 	<script src="<?= base_url() ?>templates/dist/js/demo.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Link CDN tinymce -->
+	<!-- <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+	<script>
+		tinymce.init({
+			selector: '#mytextarea'
+		});
+	</script> -->
+
 </head>

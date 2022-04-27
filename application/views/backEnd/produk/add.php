@@ -46,7 +46,7 @@
 
 			<div class="form-group">
 				<label for="deskripsi">Deskripsi Produk</label>
-				<textarea class="form-control" name="deskripsi" rows="5" id="deskripsi" placeholder="Deskripsi"><?= set_value('deskripsi') ?> </textarea>
+				<textarea class="form-control" name="deskripsi" rows="5" id="deskrispiTinyMce" placeholder="Deskripsi Produk"><?= set_value('deskripsi') ?> </textarea>
 			</div>
 
 			<div class="row">
@@ -76,6 +76,31 @@
 
 
 
+
+
+
+
+<!-- Include plugin TINYMCE  -->
+<script src="../assets/tinymce/js/tinymce/tinymce.min.js"></script>
+
+<!-- cara mengunakan tinymce -->
+<script>
+	tinymce.init({
+		selector: '#deskrispiTinyMce',
+		height: 350,
+		menubar: false,
+		plugins: [
+			'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
+			'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
+			'insertdatetime', 'media', 'table', 'code', 'help', 'wordcount'
+		],
+		toolbar: 'undo redo | blocks | ' +
+			'bold italic backcolor | alignleft aligncenter ' +
+			'alignright alignjustify | bullist numlist outdent indent | ' +
+			'removeformat | help',
+		content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:16px }'
+	});
+</script>
 
 
 
