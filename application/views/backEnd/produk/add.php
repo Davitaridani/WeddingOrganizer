@@ -39,14 +39,19 @@
 				<div class="col-sm-6">
 					<div class="form-group">
 						<label for="harga">Harga</label>
-						<input type="text" class="form-control" name="harga" value="<?= set_value('harga') ?>" id="harga" placeholder="Harga">
+						<input type="number" class="form-control" name="harga" value="<?= set_value('harga') ?>" id="harga" placeholder="Harga">
 					</div>
 				</div>
 			</div>
 
 			<div class="form-group">
 				<label for="deskripsi">Deskripsi Produk</label>
-				<textarea class="form-control" name="deskripsi" rows="5" id="deskrispiTinyMce" placeholder="Deskripsi Produk"><?= set_value('deskripsi') ?> </textarea>
+				<textarea class="form-control" name="deskripsi" rows="5" id="deskripsi" placeholder="Deskripsi Produk"><?= set_value('deskripsi') ?> </textarea>
+			</div>
+
+			<div class="form-group">
+				<label for="spesifikasi_produk">Spesifikasi Produk</label>
+				<textarea class="form-control" name="spesifikasi_produk" rows="5" id="spesifikasi_produk" placeholder="Spesifikasi Produk"><?= set_value('deskripsi') ?> </textarea>
 			</div>
 
 			<div class="row">
@@ -86,7 +91,7 @@
 <!-- cara mengunakan tinymce -->
 <script>
 	tinymce.init({
-		selector: '#deskrispiTinyMce',
+		selector: '#spesifikasi_produk',
 		height: 350,
 		menubar: false,
 		plugins: [

@@ -1,3 +1,10 @@
+// Dropdown button bag/keranjang
+// function dropdown_bag() {
+// 	let bag = document.getElementById("#bag");
+// 	if ( ) {
+// 	}
+// }
+
 $(document).ready(function () {
 	var slider = $("#slider-home");
 	slider.owlCarousel({

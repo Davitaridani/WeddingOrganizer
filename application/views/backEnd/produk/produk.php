@@ -22,10 +22,11 @@
 			<table class="table table-bordered table-striped" id="data_tables">
 				<thead>
 					<tr>
-						<th width="3%" class="text-center">No </th>
-						<th width="15%">Nama Produk</th>
-						<th width="15%">Nama Kategori</th>
-						<th width="30%">Deskripsi</th>
+						<th width="2%" class="text-center">No</th>
+						<th width="12%">Nama Produk</th>
+						<th width="12%">Nama Kategori</th>
+						<th width="18%">Deskripsi</th>
+						<th width="20%">Spek Produk</th>
 						<th>Harga</th>
 						<th class="text-center">Gambar</th>
 						<th>Action</th>
@@ -39,15 +40,16 @@
 							<td><?= $value->nama_produk ?></td>
 							<td><?= $value->nama_kategori ?></td>
 							<td><?= $value->deskripsi ?></td>
+							<td><?= $value->spesifikasi_produk ?></td>
 							<td>Rp. <?= number_format($value->harga, 0) ?></td>
 							<td class="text-center">
 								<img src="<?= base_url('assets/gambar/' . $value->gambar) ?>" class="img img-thumbnail" width="200px" alt="">
 							</td>
-							<td>
-								<a href="<?= base_url('produk/edit/' . $value->id_produk) ?>" class="btn btn-info btn-sm">
+							<td class="text-center">
+								<a href="<?= base_url('produk/edit/' . $value->id_produk) ?>" class="btn btn-info btn-xs  text-center">
 									<i class="fa fa-edit"></i>
 								</a>
-								<button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value->id_produk ?>">
+								<button class="btn btn-danger btn-xs  text-center" data-toggle="modal" data-target="#delete<?= $value->id_produk ?>">
 									<i class="fa fa-trash"></i>
 								</button>
 							</td>

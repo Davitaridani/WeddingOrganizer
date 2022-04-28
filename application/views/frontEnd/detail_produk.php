@@ -35,7 +35,9 @@
 							</div>
 							<div class="title-kat">
 								<h5>Nama kategori : <?= $produk->nama_kategori ?></h5>
-
+								<div class="desc">
+									<p><?= $produk->deskripsi ?></p>
+								</div>
 								<div class="price">
 									<p>Rp. <?= number_format($produk->harga, 0) ?></p>
 								</div>
@@ -55,7 +57,7 @@
 						</div>
 						<div class="col-md-8 offset-lg-3">
 							<div class="desc">
-								<p><?= $produk->deskripsi ?></p>
+								<p><?= $produk->spesifikasi_produk ?></p>
 							</div>
 						</div>
 					</div>

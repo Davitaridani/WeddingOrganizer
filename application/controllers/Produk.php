@@ -51,6 +51,13 @@ class Produk extends CI_Controller
 			['required' => '%s Harus Diisi !!']
 		);
 
+		$this->form_validation->set_rules(
+			'spesifikasi_produk',
+			'Spesifikasi Produk',
+			'required',
+			['required' => '%s Harus Diisi !!']
+		);
+
 		if ($this->form_validation->run() == TRUE) {
 			$config['upload_path'] = './assets/gambar/';
 			$config['allowed_types'] = 'gif|jpg|png|jpeg|raw|tif';
@@ -75,6 +82,7 @@ class Produk extends CI_Controller
 					'id_kategori' => $this->input->post('id_kategori'),
 					'harga' => $this->input->post('harga'),
 					'deskripsi' => $this->input->post('deskripsi'),
+					'spesifikasi_produk' => $this->input->post('spesifikasi_produk'),
 					'gambar' => $upload_data['uploads']['file_name'],
 				];
 				$this->m_produk->add($data);
@@ -121,6 +129,13 @@ class Produk extends CI_Controller
 			['required' => '%s Harus Diisi !!']
 		);
 
+		$this->form_validation->set_rules(
+			'spesifikasi_produk',
+			'Spesifikasi Produk',
+			'required',
+			['required' => '%s Harus Diisi !!']
+		);
+
 		if ($this->form_validation->run() == TRUE) {
 			$config['upload_path'] = './assets/gambar/';
 			$config['allowed_types'] = 'gif|jpg|png|jpeg|raw|tif';
@@ -155,6 +170,7 @@ class Produk extends CI_Controller
 					'id_kategori' => $this->input->post('id_kategori'),
 					'harga' => $this->input->post('harga'),
 					'deskripsi' => $this->input->post('deskripsi'),
+					'spesifikasi_produk' => $this->input->post('spesifikasi_produk'),
 					'gambar' => $upload_data['uploads']['file_name'],
 				];
 				$this->m_produk->edit($data);
@@ -168,6 +184,7 @@ class Produk extends CI_Controller
 				'id_kategori' => $this->input->post('id_kategori'),
 				'harga' => $this->input->post('harga'),
 				'deskripsi' => $this->input->post('deskripsi'),
+				'spesifikasi_produk' => $this->input->post('spesifikasi_produk'),
 			];
 			$this->m_produk->edit($data);
 			$this->session->set_flashdata('pesan', 'Data Berhasil Di Ubah/Edit');

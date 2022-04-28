@@ -39,7 +39,7 @@
 				<div class="col-sm-6">
 					<div class="form-group">
 						<label for="harga">Harga</label>
-						<input type="text" class="form-control" name="harga" value="<?= $produk->harga ?>" id="harga" placeholder="Harga">
+						<input type="number" class="form-control" name="harga" value="<?= $produk->harga ?>" id="harga" placeholder="Harga">
 					</div>
 				</div>
 			</div>
@@ -47,6 +47,11 @@
 			<div class="form-group">
 				<label for="deskripsi">Deskripsi Produk</label>
 				<textarea id="textarea" class="form-control" name="deskripsi" rows="5" placeholder="Deskripsi"><?= $produk->deskripsi ?> </textarea>
+			</div>
+
+			<div class="form-group">
+				<label for="spesifikasi_produk">Spesifikasi Produk</label>
+				<textarea id="spesifikasi_produk_edit" class="form-control" name="spesifikasi_produk" rows="5" placeholder="Spesifikasi Produk"><?= $produk->spesifikasi_produk ?> </textarea>
 			</div>
 
 			<div class="row">
@@ -75,17 +80,13 @@
 </div>
 
 
-
-
-
-
 <!-- Include plugin TINYMCE  -->
 <script src="../assets/tinymce/js/tinymce/tinymce.min.js"></script>
 
 <!-- cara mengunakan tinymce -->
 <script>
 	tinymce.init({
-		selector: '#textarea',
+		selector: '#spesifikasi_produk_edit',
 		height: 350,
 		menubar: false,
 		plugins: [
@@ -100,10 +101,6 @@
 		content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:16px }'
 	});
 </script>
-
-
-
-
 
 <script>
 	function cekGambar(input) {

@@ -42,17 +42,36 @@
 
 								<a href="<?= base_url('paket/detail_produk/' . $value->id_produk) ?>" class="btn btn-danger">Lihat Detail</a>
 
-								<a href="" class="btn btn-success">Tambah Keranjang</a>
+								<button class="btn btn-success swalDefaultSuccess" id="sweetAlert">Tambah Keranjang</button>
 							</div>
 						</div>
 					</div>
-
-
-
 				<?php } ?>
-
-
 			</div>
 		</div>
 	</div>
 </section>
+
+
+
+
+<!-- SweetAlert2 Js dari templates -->
+<!-- <script src="<?= base_url() ?>templates/plugins/sweetalert2/sweetalert2.min.js"></script> -->
+
+<script type="text/javascript">
+	$(function() {
+		const Toast = Swal.mixin({
+			toast: true,
+			position: 'top-end',
+			showConfirmButton: false,
+			timer: 3000
+		});
+
+		$('.swalDefaultSuccess').click(function() {
+			Toast.fire({
+				icon: 'success',
+				title: 'Produk Berhasil Di Tambahkan Ke Keranjang.'
+			})
+		});
+	});
+</script>

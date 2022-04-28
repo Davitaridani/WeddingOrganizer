@@ -28,7 +28,8 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-
+	<!-- Sweetaler Dari template -->
+	<!-- <link rel="stylesheet" href="<?= base_url() ?>templates/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css"> -->
 
 	<!-- Lightbox css  -->
 	<link rel="stylesheet" href="<?= base_url() ?>assets/css/lightbox.min.css">
@@ -54,7 +55,6 @@
 					<li class="nav-item">
 						<a class="nav-link" href="<?= base_url(); ?>about">Tentang Kami</a>
 					</li>
-
 
 					<?php $kategori = $this->m_paket->get_all_data_kategori(); ?>
 					<li class="nav-item dropdown">
@@ -88,7 +88,30 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#">Pricing</a>
 					</li>
+
 				</ul>
+				<div class="icon-navbar d-flex">
+					<div class="line">
+						<span class="iconify float-right" data-icon="ci:line-xl" data-flip="horicontal"></span>
+					</div>
+					<div class="search">
+						<button type="sumbit" class="btn btn-link p-0">
+							<span class="iconify-inline" data-icon="fe:search" data-rotate="180deg" data-width="22" data-flip="vertical"></span>
+						</button>
+					</div>
+					<div class="bag" id="bag">
+						<button class="btn btn-default btns-bag" type="submit">
+							<span class="iconify-inline" data-icon="bi:bag-heart" data-rotate="180deg" data-width="23" data-flip="vertical"></span>
+						</button>
+						<a href="">
+							<span class="label-qty nav-link text-center p-0">1</span>
+						</a>
+
+						<div class="dropdown-content">
+							<a href="#">Lorem, ipsum.</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</nav>
