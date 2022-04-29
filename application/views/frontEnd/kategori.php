@@ -13,25 +13,29 @@
 	</div>
 </section>
 
-
-<!-- APket Dekorasi -->
-<section class="paket-dekorsi-sect-2">
+<!--  Kategori Produk Sect 2 -->
+<section class="kategoriProduk-sect-2">
 	<div class="container">
 		<div class="blocks-items">
 			<div class="title text-center">
-				<h3></h3>
+				<h3>Nama List kategori</h3>
 			</div>
 			<div class="row">
-
-
-
 				<?php foreach ($produk as $key => $value) { ?>
 					<div class="col-md-4">
-						<div class="card border-0">
-							<img class="card-img" src="<?= base_url('assets/gambar/' . $value->gambar) ?>" . alt="">
-							<div class="card-body">
+						<?php
+						echo form_open('belanja/add');
+						echo form_hidden('id', $value->id_produk);
+						echo form_hidden('qty', 1);
+						echo form_hidden('price', $value->harga);
+						echo form_hidden('name', $value->nama_produk);
+						echo form_hidden('redirect_page', str_replace('index.php/', '', current_url()));
+						?>
+						<div class="items-card border-0">
+							<img class="card-img" src="<?= base_url('assets/gambar/' . $value->gambar) ?>" alt="">
+							<div class="body-card">
 								<div class="title">
-									<h4><?= $value->nama_produk ?></h4>
+									<h3><?= $value->nama_produk ?></h3>
 								</div>
 								<div class="desc">
 									<p><?= $value->deskripsi ?></p>
@@ -39,12 +43,28 @@
 								<div class="price">
 									<p> <b> Rp. <?= number_format($value->harga, 0) ?></b></p>
 								</div>
+								<div class="item-btn">
 
-								<a href="<?= base_url('paket/detail_produk/' . $value->id_produk) ?>" class="btn btn-danger">Lihat Detail</a>
 
-								<button class="btn btn-success swalDefaultSuccess" id="sweetAlert">Tambah Keranjang</button>
+
+
+									<div class="detail">
+										<a href="<?= base_url('paket/detail_produk/' . $value->id_produk) ?>" class="btn-detail btn p">
+											Detail
+										</a>
+									</div>
+
+
+									<div class="add-cart">
+										<button type="submit" id="btnSweetAlert" class="btn">
+											Add Cart
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
+
+						<?php form_close() ?>
 					</div>
 				<?php } ?>
 			</div>
@@ -53,25 +73,16 @@
 </section>
 
 
-
-
-<!-- SweetAlert2 Js dari templates -->
-<!-- <script src="<?= base_url() ?>templates/plugins/sweetalert2/sweetalert2.min.js"></script> -->
-
-<script type="text/javascript">
-	$(function() {
-		const Toast = Swal.mixin({
-			toast: true,
-			position: 'top-end',
-			showConfirmButton: false,
-			timer: 3000
-		});
-
-		$('.swalDefaultSuccess').click(function() {
-			Toast.fire({
-				icon: 'success',
-				title: 'Produk Berhasil Di Tambahkan Ke Keranjang.'
-			})
-		});
+<script>
+	const btnSweetAlert = document.getElementById('btnSweetAlert');
+	btnSweetAlert.addEventListener('click', function() {
+		Swal.fire({
+			title: '<?= $value->nama_produk ?>',
+			imageUrl: '<?= base_url('assets/gambar/' . $value->gambar) ?>',
+			imageWidth: 450,
+			timer: 4000,
+			icon: 'success',
+			text: 'Berhasil Di Masukan Ke Keranjang',
+		})
 	});
 </script>

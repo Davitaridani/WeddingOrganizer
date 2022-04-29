@@ -1,0 +1,73 @@
+@use "globals";
+// Untuk Title
+$font-raleway :'Raleway',
+sans-serif;
+$font-great:'Great Vibes',
+cursive;
+$font-poppins: 'Poppins',
+sans-serif;
+$font-halant: 'Halant',
+serif;
+// color
+$color-pink:#ee9e9e;
+$color-pink2:#fa8282;
+$color-pink3:#fad8d8;
+$bg-section:#fffdfdea;
+$bg-section:#f9f9f9;
+// Font Weight
+$light: 300;
+$reguler: 400;
+$medium: 500;
+$semibold:600;
+$bold: 700;
+$black: 900;
+
+
+//  Kategori Produk Sect 2
+.kategoriProduk-sect-2{
+	.blocks-items {
+		.title {
+			margin: 50px 0 90px;
+			h3 {
+				font-size: 30px;
+				
+			}
+		}
+		.row{
+			.items-card {
+				// img {
+				// 	margin-bottom: 20px;
+				// }
+				.body-card {
+					.title {
+						margin: 0 0 20px;
+						h3 {
+							font-size: 25px;
+						}
+					}
+					.desc {
+						p {
+							height: 100px;
+						}
+					}
+					.item-btn {
+						display: flex;
+						.detail {
+							.btn-detail {
+								background-color: #fa8282;
+								margin-right: 20px;
+
+							}
+						}
+						.add-cart{
+							button {
+								background-color: #fa8282;
+							
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

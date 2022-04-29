@@ -117,6 +117,8 @@
 </footer>
 
 
+
+
 <!-- Link BS 5  -->
 <script src="<?= base_url() ?>assets/js/bootstrap.bundle.min.js"></script>
 
@@ -129,6 +131,10 @@
 
 <!--  Owl Card  -->
 <script src="<?= base_url() ?>assets/js/owl-card.js"></script>
+
+<!-- SWEETALERT JS -->
+<script src="<?= base_url() ?>assets/sweetalert_js/sweetalert2.all.min.js"></script>
+
 
 <!--  AOS Animasi  -->
 <script src="<?= base_url() ?>assets/js/aos.js"></script>

@@ -275,6 +275,50 @@ $black: 900;
             &:hover {
                 .dropdown-content {
                     display: block;
+                    .blocks-items {
+                        .dropdown-item {
+                            .media {
+                                display: flex;
+                                justify-items: center;
+                                img {
+                                    margin-right: 15px;
+                                    width: 90px;
+                                    height: 90px;
+                                }
+                                .media-body{
+                                    .title {
+                                        margin-bottom: 0;
+                                        h3 {
+                                            margin-bottom: 3px;
+                                            font-size: 14px;
+                                        }
+                                    }
+                                    .text{
+                                        p {
+                                            margin-bottom: 2px;
+                                        }
+                                    }
+                                    .sub_total {
+                                        svg {
+                                            color: #696969;
+                                            vertical-align: baseline  !important;
+                                            padding-top: 4px;
+                                        }
+                                        p {
+                                            vertical-align: 
+                                            middle;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    hr {
+                        margin: 0;
+                    }
+                    .item-link{
+                        display: block !important;
+                    }
                 }
             }
             
