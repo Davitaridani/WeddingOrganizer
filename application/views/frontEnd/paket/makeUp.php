@@ -1,5 +1,4 @@
-<!-- Paket Dekorasi sect 1 -->
-<section class="section-hero-image-banner hero-image-banner-paralax" data-parallax="scroll" data-z-index="1" data-image-src="<?= base_url() ?>assets/img/banner-contact.jpg">
+<!-- <section class="section-hero-image-banner hero-image-banner-paralax" data-parallax="scroll" data-z-index="1" data-image-src="<?= base_url() ?>assets/img/banner-contact.jpg">
 	<div class=" container">
 		<div class="inner text-content">
 			<div class="blocks-items ">
@@ -15,7 +14,6 @@
 
 
 
-<!-- APket Dekorasi -->
 <section class="paket-dekorsi-sect-2">
 	<div class="container">
 		<div class="blocks-items">
@@ -85,4 +83,4 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->

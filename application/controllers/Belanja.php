@@ -9,6 +9,16 @@ class Belanja extends CI_Controller
 		parent::__construct();
 	}
 
+	public function index()
+	{
+		$data = [
+			'title' => 'Keranjang Belanja',
+			'isi' => 'frontEnd/belanja'
+
+		];
+		$this->load->view('frontEnd/include/wrapper', $data, FALSE);
+	}
+
 
 	public function add()
 	{

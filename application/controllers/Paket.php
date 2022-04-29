@@ -19,7 +19,7 @@ class Paket extends CI_Controller
 		$data = [
 			'title' => 'Kategori Produk : ' . $kategori->nama_kategori,
 			'produk' => $this->m_paket->get_all_data_produk($id_kategori),
-			'isi' => 'frontEnd/kategori'
+			'isi' => 'frontEnd/kategori_produk'
 		];
 		$this->load->view('frontEnd/include/wrapper', $data, FALSE);
 	}
@@ -34,62 +34,4 @@ class Paket extends CI_Controller
 		];
 		$this->load->view('frontEnd/include/wrapper', $data, FALSE);
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	// public function paket_wedding()
-	// {
-
-	// 	$data = [
-	// 		'title' => 'Wedding Organizer',
-	// 		'isi' => 'frontEnd/paket/paket_wedding'
-	// 	];
-	// 	$this->load->view('frontEnd/include/wrapper', $data, FALSE);
-	// }
-
-	// public function paket_prewedding()
-	// {
-	// 	$data = [
-	// 		'title' => 'Wedding Organizer',
-	// 		'isi' => 'frontEnd/paket/paket_prewedding'
-	// 	];
-	// 	$this->load->view('frontEnd/include/wrapper', $data, FALSE);
-	// }
-
-
-	// public function dekorasi()
-	// {
-	// 	$data = [
-	// 		'title' => 'Wedding Organizer',
-	// 		'produk' => $this->m_paket->get_all_data(),
-	// 		'isi' => 'frontEnd/paket/dekorasi'
-	// 	];
-	// 	$this->load->view('frontEnd/include/wrapper', $data, FALSE);
-	// }
-
-
-
-	// public function makeUp()
-	// {
-
-	// 	$data = [
-	// 		'title' => 'Wedding Organizer',
-	// 		'isi' => 'frontEnd/paket/makeUp'
-
-	// 	];
-	// 	$this->load->view('frontEnd/include/wrapper', $data, FALSE);
-	// }
-
-
 }

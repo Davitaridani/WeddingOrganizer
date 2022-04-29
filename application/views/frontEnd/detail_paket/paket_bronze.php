@@ -1,5 +1,4 @@
-<!-- sect detail paket A -->
-<section class="section-detail-paket-wedding-sect-3">
+<!-- <section class="section-detail-paket-wedding-sect-3">
 	<div class="container">
 		<div class="inner text-content">
 			<div class="blocks-items">
@@ -86,4 +85,4 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->

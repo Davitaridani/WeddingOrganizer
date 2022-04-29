@@ -20,147 +20,6 @@ $medium: 500;
 $semibold:600;
 $bold: 700;
 $black: 900;
-// ul {
-//     list-style: none;
-// }
-// .navbar-item {
-//     position: sticky;
-//     top: 0;
-//     width: 100%;
-//     background: rgb(133, 125, 125);
-//     z-index: 1000;
-//     height: 65px;
-//     .container {
-//         max-width: 65rem;
-//         padding: 0 2rem;
-//         height: 3rem;
-//         margin: 0 auto;
-//         display: flex;
-//         .logo-container {
-//             flex: 1;
-//             align-items: center;
-//             .logo {
-//                 color: #fa8282;
-//                 font-size: 30px;
-//                 span {
-//                     color: #b11313;
-//                 }
-//             }
-//         }
-//         .nav-btn {
-//             flex: 3;
-//             display: flex;
-//             .nav-links {
-//                 flex: 2;
-//                 ul {
-//                     display: flex;
-//                     justify-content: center;
-//                     align-items: center;
-//                 }
-//             }
-//             .nav-link {
-//                 position: relative;
-//                 a {
-//                     text-decoration: none;
-//                     line-height: 3rem;
-//                     height: 3rem;
-//                     padding: 0 12px;
-//                     letter-spacing: 1px;
-//                     font-size: 15px;
-//                     display: flex;
-//                     justify-content: space-between;
-//                     align-items: center;
-//                     // transition: .4s;
-//                     .iconify {
-//                         margin-left: 5px;
-//                     }
-//                 }
-//                 .dropdown {
-//                     position: absolute;
-//                     top: 100%;
-//                     left: 0;
-//                     width: 10rem;
-//                     .dropdown-link:not(:nth-last-child(2)) {
-//                         border-bottom: 1px solid #efefef;
-//                     }
-//                     .dropdown-link:hover a {
-//                         background-color: #b11313;
-//                     }
-//                     .dropdown-link:first-child:hover~.arrow {
-//                         background-color: #b11313;
-//                     }
-//                     .dropdown-link {
-//                         position: relative;
-//                     }
-//                     .arrow {
-//                         position: absolute;
-//                         width: 11px;
-//                         height: 11px;
-//                         top: -5.5px;
-//                         left: 32px;
-//                         background-color: #fff;
-//                         transform: rotate(45deg);
-//                         cursor: pointer;
-//                         transition: .3s;
-//                         z-index: -1;
-//                     }
-//                     ul {
-//                         list-style-type: none;
-//                         display: inline-block;
-//                         position: relative;
-//                         padding-left: 10px;
-//                         .dropdown-link {
-//                             a {
-//                                 display: flex;
-//                                 background-color: #fff;
-//                                 color: #ee9e9e;
-//                                 padding: 8px 16px;
-//                                 align-items: center;
-//                                 justify-content: space-between;
-//                                 transition: .3s;
-//                             }
-//                             .dropdown-second {
-//                                 top: 0;
-//                                 left: 100%;
-//                                 margin-right: 16px;
-//                                 cursor: pointer;
-//                                 .arrow {
-//                                     top: 10px;
-//                                     left: -5.5px;
-//                                 }
-//                             }
-//                             .iconify {
-//                                 transform: rotate(-90deg);
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//             // .nav-link:hover a {
-//             //     transform: scale(1.1);
-//             // }
-//             .log-sign {
-//                 flex: 1;
-//                 display: flex;
-//                 justify-content: center;
-//                 align-items: center;
-//                 .btn {
-//                     display: inline-block;
-//                     padding: .5rem 1.3rem;
-//                     border: 2px solid #fff;
-//                     border-radius: 2rem;
-//                     line-height: 1;
-//                     text-transform: uppercase;
-//                     .solid,
-//                     .transparent {
-//                         background-color: transparent;
-//                         color: #fff;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
 .navbar {
     z-index: 999;
     .item-logo {
@@ -219,11 +78,10 @@ $black: 900;
                 vertical-align: middle !important;
                 margin-right: 20px !important;
                 color: #3f3d3d;
-                // font-size: 20px !important;
             }
         }
         .bag {
-            a {
+        //    a {
                 text-decoration: none;
                 svg {
                     vertical-align: middle !important;
@@ -239,11 +97,10 @@ $black: 900;
                     border-radius: 50%;
                     width: 14px;  
                 }
-            }
+// }
             position: relative;
             display: inline-block;
             .btns-bag {
-                // background-color: #4CAF50;
                 color: #ee9e9e;
                 padding: 0;
                 font-size: 15px;
@@ -251,7 +108,6 @@ $black: 900;
                 cursor: pointer;
                 box-shadow: none;
             }
-
             .dropdown-content {
                 display: none;
                 position: absolute;

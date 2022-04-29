@@ -41,19 +41,17 @@
 									<p><?= $value->deskripsi ?></p>
 								</div>
 								<div class="price">
-									<p> <b> Rp. <?= number_format($value->harga, 0) ?></b></p>
+									<p>
+										<b> Rp. <?= number_format($value->harga, 0) ?></b>
+									</p>
 								</div>
 								<div class="item-btn">
-
-
-
 
 									<div class="detail">
 										<a href="<?= base_url('paket/detail_produk/' . $value->id_produk) ?>" class="btn-detail btn p">
 											Detail
 										</a>
 									</div>
-
 
 									<div class="add-cart">
 										<button type="submit" id="btnSweetAlert" class="btn">

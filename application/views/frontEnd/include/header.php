@@ -105,70 +105,78 @@
 						</button>
 						<?php
 						$keranjang = $this->cart->contents();
-						$jmlh_item = 0;
+						$jml_item = 0;
 						foreach ($keranjang as $key => $value) {
-							$jmlh_item = $jmlh_item + $value['qty'];
+							$jml_item = $jml_item + $value['qty'];
 						}
 						?>
-						<a href="">
-							<span class="label-qty nav-link text-center p-0"><?= $jmlh_item ?></span>
-						</a>
+						<!-- <a href=""> -->
+						<span class="label-qty nav-link text-center p-0"><?= $jml_item ?></span>
+						<!-- </a> -->
 						<div class="dropdown-content">
 							<div class="blocks-items">
-								<?php foreach ($keranjang as $key => $value) {
-									$produk = $this->m_paket->detail_produk($value['id']);
-								?>
+
+								<?php if (empty($keranjang)) { ?>
 									<a href="#" class="dropdown-item">
-										<div class="media">
-											<img src="<?= base_url('assets/gambar/' . $produk->gambar) ?>" class="img img-thumbnail" alt="">
-											<div class="media-body">
-												<div class="title">
-													<h3><?= $value['name'] ?></h3>
-												</div>
-												<div class="text">
-													<p><?= $value['qty'] ?> x Rp. <?= number_format($value['price'], 0) ?> </p>
-												</div>
-												<div class="sub_total d-flex">
-													<span class="iconify" data-icon="clarity:calculator-line" data-width="22"></span>
-													<p>Rp.<?= $this->cart->format_number($value['subtotal']); ?></p>
-												</div>
-											</div>
-										</div>
+										<p>Keranjang Belanja Anda Kosong</p>
 									</a>
+
+									<?php } else {
+									foreach ($keranjang as $key => $value) {
+										$produk = $this->m_paket->detail_produk($value['id']);
+									?>
+										<a href="#" class="dropdown-item">
+											<div class="media">
+												<img src="<?= base_url('assets/gambar/' . $produk->gambar) ?>" class="img img-thumbnail" alt="">
+												<div class="media-body">
+													<div class="title">
+														<h3><?= $value['name'] ?></h3>
+													</div>
+													<div class="text">
+														<p><?= $value['qty'] ?> x Rp. <?= number_format($value['price'], 0) ?> </p>
+													</div>
+													<div class="sub_total d-flex">
+														<span class="iconify" data-icon="clarity:calculator-line" data-width="22"></span>
+														<p>Rp.<?= $this->cart->format_number($value['subtotal']); ?></p>
+													</div>
+												</div>
+											</div>
+										</a>
+										<hr>
+									<?php } ?>
+									<div class="blocks-items">
+										<a href="#" class="dropdown-item">
+											<div class="media" href="#">
+												<div class="media-body">
+													<tr>
+														<td colspan="2"> </td>
+														<td class="right"><strong>Total : </strong></td>
+														<td class="right">Rp. <?= $this->cart->format_number($this->cart->total()); ?></td>
+													</tr>
+													<div class="desc">
+													</div>
+													<div class="sub_total d-flex">
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
 									<hr>
+									<div class="item-link d-block text-center">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="view-cart">
+													<a href="<?= base_url('belanja') ?>">View Cart</a>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="check-out">
+													<a href="#">Check Out</a>
+												</div>
+											</div>
+										</div>
+									</div>
 								<?php } ?>
-							</div>
-							<div class="blocks-items">
-								<a href="#" class="dropdown-item">
-									<div class="media" href="#">
-										<div class="media-body">
-											<tr>
-												<td colspan="2"> </td>
-												<td class="right"><strong>Total : </strong></td>
-												<td class="right">Rp. <?= $this->cart->format_number($this->cart->total()); ?></td>
-											</tr>
-											<div class="desc">
-											</div>
-											<div class="sub_total d-flex">
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-							<hr>
-							<div class="item-link d-block text-center">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="view-cart">
-											<a href="#">View Cart</a>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="check-out">
-											<a href="#">Check Out</a>
-										</div>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>

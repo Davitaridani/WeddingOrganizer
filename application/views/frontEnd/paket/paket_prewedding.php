@@ -1,5 +1,4 @@
-<!-- Paket prewedding sect 2 -->
-<section class="section-paket-wedding-sect-2">
+<!-- <section class="section-paket-wedding-sect-2">
 	<div class="container">
 		<div class="inner text-content">
 			<div class="blocks-items">
@@ -18,7 +17,6 @@
 	</div>
 </section>
 
-<!-- Paket prewedding sect 3 -->
 <section class="section-paket-wedding-sect-3">
 	<div class="container">
 		<div class="inner text-content">
@@ -73,4 +71,4 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
