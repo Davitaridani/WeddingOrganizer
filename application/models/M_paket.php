@@ -39,7 +39,6 @@ class M_paket extends CI_Model
 		return $this->db->get()->result();
 	}
 
-
 	public function kategori($id_kategori)
 	{
 		$this->db->select('*');

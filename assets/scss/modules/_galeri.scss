@@ -1,0 +1,139 @@
+@use "globals";
+// Untuk Title
+$font-raleway :'Raleway',
+sans-serif;
+$font-great:'Great Vibes',
+cursive;
+$font-poppins: 'Poppins',
+sans-serif;
+$font-halant: 'Halant',
+serif;
+// color
+$color-pink:#ee9e9e;
+$color-pink2:#fa8282;
+$bg-section:#fffdfdea;
+$bg-section:#f9f9f9;
+$color-desc:#738ea5;
+$color-blue:#002642;
+// Font Weight
+$light: 300;
+$reguler: 400;
+$medium: 500;
+$semibold:600;
+$bold: 700;
+$black: 900;
+p {
+    font-family: $font-raleway;
+    font-size: 17px;
+}
+
+// Section prewedding
+// .galeri-sect-2 {
+//     .blocks-items {
+//         margin-top: 70px;
+//         .item-text {
+//             .text-title {
+//                 margin-bottom: 30px;
+//                 h3 {
+//                     font-family: $font-poppins;
+//                     font-weight: $medium;
+//                     font-size: 30px;
+//                 }
+//             }
+//             .text-desc {
+//                 // margin-bottom: 50px;
+//                 p {
+//                     line-height: 1.5;
+//                 }
+//             }
+//         }
+//         .item-pict {
+//             margin: 100px 0 120px;
+//             .g-20 {
+//                 --bs-gutter-x: 20px !important;
+//                 --bs-gutter-y: 20px;
+//                 img:hover {
+//                     box-shadow: 0 2px 5px 2px rgb(0 0 0 / 20%), 0 8px 10px 0 rgb(0 0 0 / 19%);
+//                     // transform: scale(1.1);
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+// Baru galeri sect 2
+.galeri-sect-2 {
+    .blocks-items {
+        padding: 100px 0 120px;
+        .block-title {
+            text-align: center;
+            margin: 0 0 50px;
+            .img-title {
+                margin-bottom: 20px;
+            }
+            .title {
+                margin-bottom: 20px;
+                h3 {
+                    font-size: 40px;
+                    color: $color-blue; 
+                    font-weight: $medium;   
+                }
+            }
+            .title-line{
+                max-width: 200px;
+                position: relative;
+                margin: 0 auto;
+                &::before {
+                    position: absolute;
+                    left: -70px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    content: "";
+                    // width: 100px;
+                    width: 140px;
+                    height: 1px;
+                    background: $color-desc;
+                }
+                &::after {
+                    position: absolute;
+                    right: -70px;
+                    left: auto;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    content: "";
+                    // width: 100px;
+                    width: 140px;
+                    height: 1px;
+                    background: #86a0b6;
+                }
+                .title-rounded{
+                    position: absolute;
+                    left: 50%;
+                    width: 15px;
+                    height: 15px;
+                    border: 1px solid #86a0b6;
+                    border-radius: 50%;
+                    transform: translateX(-50%);
+                    top: -6px;
+                }
+            }
+        }
+        .row {
+            // --bs-gutter-x: 5px !important;
+            .pict {
+                img {
+                    height: 100%;
+                    width: 100%;
+                    // transition: transform 1s;
+                    // object-fit: scale-down;
+                    // vertical-align: top;
+                    :hover {
+                        transform: scale(1.1, 1.1);
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+        }
+    }
+}

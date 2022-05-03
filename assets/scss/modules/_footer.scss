@@ -12,6 +12,8 @@ serif;
 $color-pink:#ee9e9e;
 $color-pink2:#fa8282;
 $bg-section:#fffdfdea;
+$color-desc:#738ea5;
+$color-blue:#002642;
 // Font Weight
 $light: 300;
 $reguler: 400;
@@ -19,116 +21,145 @@ $medium: 500;
 $semibold:600;
 $bold: 700;
 $black: 900;
-// Footer
+
+// Footer Baru
 .footer {
-    // Footer Atas
+    // Footer Top
     .footer-top {
-        background-color: #efefef;
-        .col-md-4 {
-            .item-text {
-                padding: 110px 0 70px;
-                .text-title-foot {
-                    margin-bottom: 15px;
-                    a {
-                        text-decoration: none;
-                        color: #333;
-                        h3 {
-                            font-family: $font-poppins;
-                            font-size: 30px;
-                            span {
-                                color: #fa8282;
-                            }
-                            span:hover {
-                                color: $color-pink;
-                            }
-                        }
-                    }
-                }
-                .text-desc-foot {
-                    width: 320px;
-                    margin-bottom: 15px;
-                    p {
-                        font-weight: $light;
-                        font-family: $font-raleway;
-                        font-size: 16px;
-                        line-height: 1.5;
-                    }
-                }
-                .item-sosmed {
-                    ul {
-                        list-style-type: none;
-                        padding: 0;
-                        .nav-item {
-                            display: inline-block;
-                            a {
-                                color: #635e5e;
-                                padding-left: 0;
-                                padding-right: 7px;
-                                // .iconify {
-                                //     color: #807e7e;
-                                // }
-                            }
-                            a:hover {
-                                color: $color-pink2 !important;
-                            }
-                        }
-                    }
-                }
-            }
+        padding: 100px 80px;
+        background-color: #edf3f8;
+        position: relative;
+        z-index: 1;
+        &::before {
+            position: absolute;
+            left: 1%;
+            top: 4%;
+            border: 1px solid #cde0ef;
+            content: "";
+            width: 98%;
+            height: 92%;
+            z-index: -1;
         }
-        .col-md-3 {
-            .item-text {
-                padding: 115px 0 70px;
-                .text-title-foot {
-                    padding-bottom: 15px;
-                    h3 {
-                        font-family: $font-poppins;
-                        font-weight: $medium;
-                        font-size: 18px;
+        .blocks-items {
+            .row {
+                .text {
+                    p {
+                        font-size: 16px;
+                        color: #525252 !important;
+                        width: 300px;
+                        line-height: 2;
                     }
                 }
-                .item-text-layan {
+                .icon-sosmed {
                     ul {
-                        list-style-type: none;
-                        padding: 0;
-                        .nav-item {
+                        list-style: none;
+                        display: flex;
+                        overflow: hidden;
+                        margin-top: 10px;
+                        padding-left: 0;
+                        li{
                             a {
-                                font-family: $font-raleway;
-                                font-weight: $light;
-                                font-size: 14px;
-                                padding-left: 0;
-                                color: #333;
-                            }
-                            a:hover {
-                                color: $color-pink2;
+                                line-height: 33px;
+                                background-color: #fff;
+                                color: $color-blue;
+                                text-align: center;
+                                border-radius: 50%;
+                                margin-right: 10px;
+                                height: 37px;
+                                width: 37px;
+                                display: block;
+                                    transition: all 0.4s;
+                                &:hover {
+                                    background-color: $color-blue;
+                                    color: #fff;
+                                }
+                                svg {
+                                    font-size: 22px;
+                                }
                             }
                         }
                     }
                 }
-            }
-            .item-text {
-                .text-title-infor {
-                    padding-bottom: 15px;
-                    h3 {
-                        font-weight: $medium;
-                        font-family: $font-poppins;
-                        font-size: 18px;
+                .items-infor {
+                    .title {
+                        margin-bottom: 25px;
+                        h3 {
+                            font-size: 20px;
+                            color: $color-blue;
+                            text-transform: uppercase;
+                            font-weight: $bold;
+                        }    
+                    }
+                    ul {
+                        list-style: none;
+                        padding-left: 0 ;
+                        li {
+                                padding-bottom: 7px;
+                            a {
+                                text-decoration: none;
+                                color: #575757;
+                                font-size: 17px;
+                                line-height: 2;
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            } 
+
+                        }
                     }
                 }
-                .text-infor {
-                    ul {
-                        list-style-type: none;
-                        padding: 0;
-                        .nav-item {
+                .block-alamat {
+                    .title {
+                        margin-bottom: 25px; 
+                        h3 {
+                            font-size: 20px;
+                            color: $color-blue;
+                            text-transform: uppercase;
+                            font-weight: $bold;
+                        } 
+                    }
+                    .text {
+                        mb2
+                        p {
+                            font-size: 16px;
+                            color: #525252;
+                            line-height: 1.7;    
+                        }
+                    }
+                    .items-icon {
+                        .icon {
+                            margin-bottom: 15px;
                             a {
-                                font-family: $font-raleway;
-                                font-weight: $light;
-                                font-size: 14px;
-                                color: #333;
-                                padding-left: 1px;
+                                text-decoration: none;
+                                color: $color-desc;
+                                font-size: 19px;
+                                svg {
+                                    font-size: 25px;
+                                    margin-right: 7px;
+                                }
                             }
-                            a:hover {
-                                color: $color-pink2;
+                        }
+                    }
+                }
+                .foot-img {
+                    .title {
+                        margin-bottom: 35px;
+                        h3 {
+                            font-size: 20px;
+                            color: $color-blue;
+                            text-transform: uppercase;
+
+
+                        }
+                    }
+                    .row {
+                        --bs-gutter-x: 10px;
+                        .img-foot {
+                            margin-bottom: 10px;
+                            img {
+                                height: 140px;
+                                width: 140px;
+                                object-fit: cover;
                             }
                         }
                     }
@@ -136,32 +167,22 @@ $black: 900;
             }
         }
     }
+
     // Footer Bawah
     .footer-bottom {
-        background-color: #635e5e;
-        margin-bottom: 0;
-        color: #fff;
+        background-color: $color-desc;
+        padding: 20px 0;
         .blocks-items {
-            .text-desc-copyright {
-                // height: 50px;
-                // line-height: 50px;
-                padding: 25px 0;
+            display: flex;
+            justify-content: center;
+            .text-copyright {
                 p {
-                    font-size: 13px;
-                    // line-height: 50px;
-                    letter-spacing: 1px;
-                    span {
-                        color: $color-pink;
-                    }
+                    font-size: 16px;
+                    color: #fff;
+                    margin-bottom: 0;
                 }
             }
-            // .text-desc-by {
-            //     p {
-            //         letter-spacing: 1px;
-            //         font-size: 13px;
-            //         line-height: 50px;
-            //     }
-            // }
         }
+    
     }
 }

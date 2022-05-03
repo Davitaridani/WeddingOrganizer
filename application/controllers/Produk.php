@@ -158,8 +158,6 @@ class Produk extends CI_Controller
 					unlink('./assets/gambar/' . $produk->gambar);
 				}
 				// End Hapus Gmabra
-
-
 				$upload_data = ['uploads' => $this->upload->data()];
 				$config['image_library'] = 'gd2';
 				$config['source_image'] = './assets/gambar/' . $upload_data['uploads']['file_name'];

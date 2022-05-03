@@ -178,8 +178,8 @@
 				<div class="row">
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
-							<div class="title ">
-								<h3>100</h3>
+							<div class="title">
+								<h3 class="counter">100</h3>
 							</div>
 							<div class="text">
 								<p>Weddings</p>
@@ -189,7 +189,7 @@
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
 							<div class="title ">
-								<h3>440</h3>
+								<h3 class="counter">440</h3>
 							</div>
 							<div class="text">
 								<p>Decoration</p>

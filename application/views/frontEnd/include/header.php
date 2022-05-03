@@ -31,6 +31,16 @@
 	<!-- Sweetaler Dari template -->
 	<!-- <link rel="stylesheet" href="<?= base_url() ?>templates/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css"> -->
 
+
+
+
+	<!-- CDN Counter  -->
+
+
+
+
+
+
 	<!-- Lightbox css  -->
 	<link rel="stylesheet" href="<?= base_url() ?>assets/css/lightbox.min.css">
 

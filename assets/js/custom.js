@@ -106,7 +106,10 @@ function myFunction() {
 // AOS.init();
 
 // COUNTER JS
-$(".counter").counterUp({
-	delay: 10,
-	time: 1000,
-});
+// $(".counter").counterUp();
+// $(document).ready(function ($) {
+// 	$(".counter").counterUp({
+// 		delay: 10,
+// 		time: 100,
+// 	});
+// });
