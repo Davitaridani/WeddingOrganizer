@@ -1,137 +1,248 @@
 @use "globals";
 // Untuk Title
-$font-raleway :'Raleway',
-sans-serif;
-$font-great:'Great Vibes',
-cursive;
-$font-poppins: 'Poppins',
-sans-serif;
-$font-halant: 'Halant',
-serif;
+$font-raleway: "Raleway", sans-serif;
+$font-great: "Great Vibes", cursive;
+$font-poppins: "Poppins", sans-serif;
+$font-halant: "Halant", serif;
 // color
-$color-pink:#ee9e9e;
-$color-pink2:#fa8282;
-$bg-section:#fffdfdea;
+$color-pink: #ee9e9e;
+$color-pink2: #fa8282;
+$bg-section: #fffdfdea;
 // Font Weight
 $light: 300;
 $reguler: 400;
 $medium: 500;
-$semibold:600;
+$semibold: 600;
 $bold: 700;
 $black: 900;
 .section-hero-image-banner {
-    .blocks-items {
-        .pict {
-            .background-banner-contact {
-                height: 550px;
-                background-position: center;
-                background-size: cover;
-                // opacity: 0.8;
-                .text-title h5 {
-                    font-family: $font-halant;
-                    font-weight: $medium;
-                    letter-spacing: 2px;
-                    font-size: 50px;
-                    padding-top: 250px;
-                }
-            }
-        }
-    }
+	.blocks-items {
+		.pict {
+			.background-banner-contact {
+				height: 550px;
+				background-position: center;
+				background-size: cover;
+				// opacity: 0.8;
+				.text-title h5 {
+					font-family: $font-halant;
+					font-weight: $medium;
+					letter-spacing: 2px;
+					font-size: 50px;
+					padding-top: 250px;
+				}
+			}
+		}
+	}
 }
 
-.section-contact-sect-2 {
-    // background-color: #ee9e9e;
-    .blocks-items {
-        .col-md-7 {
-            .item-text {
-                padding-top: 90px;
-                .text {
-                    margin-bottom: 10px;
-                    p {
-                        font-size: 17px;
-                    }
-                }
-                .text-title {
-                    margin-bottom: 15px;
-                    h3 {
-                        font-family: $font-poppins;
-                        font-weight: $reguler;
-                        font-size: 25px;
-                    }
-                    h4 {
-                        font-family: $font-poppins;
-                        font-weight: $reguler;
-                        padding-top: 20px;
-                        font-size: 25px;
-                    }
-                }
-                .text-desc {
-                    margin-top: 30px;
-                    p:nth-child(1) {
-                        font-size: 17px;
-                        line-height: 1.5;
-                        padding-right: 65px;
-                    }
-                }
-            }
-            hr {
-                width: 70px;
-                height: 2px;
-                color: #fa8282;
-            }
-        }
-        .col-md-5 {
-            border: 1px solid rgb(230, 229, 229);
-            height: max-content;
-            margin-top: 90px;
-            .pict {
-                padding: 25px;
-                // transform: scale(1.1);
-                transition: 0.5s;
-                img {
-                    box-shadow: 0 5px 1px 0 rgb(0 0 0 / 20%), 0 10px 11px 0 rgb(0 0 0 / 19%);
-                    transition: 0.5s;
-                }
-                img:hover {
-                    box-shadow: 00 4px 8px 0 rgb(0 0 0 / 20%), 0 5px 10px 0 rgb(0 0 0 / 19%);
-                    transform: scale(1.1);
-                    transition: 0.5s;
-                }
-            }
-        }
-    }
-}
+// .section-contact-sect-2 {
+// 	.blocks-items {
+// 		.col-md-7 {
+// 			.item-text {
+// 				padding-top: 90px;
+// 				.text {
+// 					margin-bottom: 10px;
+// 					p {
+// 						font-size: 17px;
+// 					}
+// 				}
+// 				.text-title {
+// 					margin-bottom: 15px;
+// 					h3 {
+// 						font-family: $font-poppins;
+// 						font-weight: $reguler;
+// 						font-size: 25px;
+// 					}
+// 					h4 {
+// 						font-family: $font-poppins;
+// 						font-weight: $reguler;
+// 						padding-top: 20px;
+// 						font-size: 25px;
+// 					}
+// 				}
+// 				.text-desc {
+// 					margin-top: 30px;
+// 					p:nth-child(1) {
+// 						font-size: 17px;
+// 						line-height: 1.5;
+// 						padding-right: 65px;
+// 					}
+// 				}
+// 			}
+// 			hr {
+// 				width: 70px;
+// 				height: 2px;
+// 				color: #fa8282;
+// 			}
+// 		}
+// 		.col-md-5 {
+// 			border: 1px solid rgb(230, 229, 229);
+// 			height: max-content;
+// 			margin-top: 90px;
+// 			.pict {
+// 				padding: 25px;
+// 				// transform: scale(1.1);
+// 				transition: 0.5s;
+// 				img {
+// 					box-shadow: 0 5px 1px 0 rgb(0 0 0 / 20%),
+// 						0 10px 11px 0 rgb(0 0 0 / 19%);
+// 					transition: 0.5s;
+// 				}
+// 				img:hover {
+// 					box-shadow: 00 4px 8px 0 rgb(0 0 0 / 20%),
+// 						0 5px 10px 0 rgb(0 0 0 / 19%);
+// 					transform: scale(1.1);
+// 					transition: 0.5s;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
 
 // Section contact 4
-.section-contact-sect-4 {
-    .blocks-items {
-        .text-title {
-            margin: 70px 0 25px;
-            h3 {
-                font-weight: $reguler;
-                font-family: $font-poppins;
-                font-size: 25px;
-            }
-        }
-        .col-md-8 {
-            .item-form-contact {
-                label {
-                    font-size: 17px;
-                    font-family: $font-raleway;
+// .section-contact-sect-4 {
+// 	.blocks-items {
+// 		.text-title {
+// 			margin: 70px 0 25px;
+// 			h3 {
+// 				font-weight: $reguler;
+// 				font-family: $font-poppins;
+// 				font-size: 25px;
+// 			}
+// 		}
+// 		.col-md-8 {
+// 			.item-form-contact {
+// 				label {
+// 					font-size: 17px;
+// 					font-family: $font-raleway;
+// 				}
+// 				.btns-items {
+// 					margin: 30px 0 50px;
+// 					button {
+// 						padding: 7px 20px;
+// 						font-family: $font-poppins;
+// 						letter-spacing: 0.5px;
+// 						border: 0;
+// 						background-color: #fa8282;
+// 						color: #fff;
+// 						font-size: 16px;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+
+
+// YANG BARU
+// Contact Sect 2
+.contact-sect-2 {
+    background-color: #fff;
+    .block-items {
+        padding: 100px 0 120px 0;
+        .row {
+            .item-body {
+                text-align: center;
+                background-color: #fff;
+                box-shadow: 0px 5px 15px 0px rgb(62 65 159 / 10%);
+                padding: 40px;
+                .icon{
+                    width: 85px;
+                    height: 85px;
+                    background: #f5f5f5;
+                    line-height: 85px;
+                    text-align: center;
+                    margin: 0 auto;
+                    border-radius: 50%;
+                    color: #738ea5;
+                    margin-bottom: 23px;
+                    svg {
+                        font-size: 40px;
+                    }
                 }
-                .btns-items {
-                    margin: 30px 0 50px;
-                    button {
-                        padding: 7px 20px;
-                        font-family: $font-poppins;
-                        letter-spacing: 0.5px;
-                        border: 0;
-                        background-color: #fa8282;
-                        color: #fff;
-                        font-size: 16px;
+                .title {
+                    h3 {
+                        font-weight: 500;
+                        font-size: 30px;
                     }
                 }
             }
+        }
+    }
+}
+
+// Contact Sect 3
+.contact-sect-3 {
+    .block-items {
+        margin-bottom: 120px;
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+            h3 {
+                font-size: 35px;
+                font-weight: 500;
+            }
+        }
+        .desc {
+            text-align: center;
+            margin-bottom: 50px;
+            p {
+                font-size: 16px;
+                color: #848892;
+                line-height: 1.7;
+
+            }
+        }
+        .item-form {
+        padding: 50px 40px 40px;
+        background: #fff;
+        box-shadow: 0px 1px 15px 0px rgb(62 65 159 / 10%);
+            .row {
+                .col-md-6 {
+                    margin-bottom:20px;
+                    input{
+                        height: 50px ;
+                        background: #f9f9f9;
+                        border-radius: 0;
+                        font-size: 20px;
+                        padding-left: 25px;
+                        &:focus {
+                            background-color: #fff;
+                            border-color: #86a0b6;
+                            box-shadow: none;
+                        }
+                    }
+                }
+                .col-md-12 {
+                    textarea {
+                        background-color: #f9f9f9;
+                        font-size: 20px;
+                        padding-left: 25px;
+                        &:focus {
+                            background-color: #fff;
+                            border-color: #86a0b6;
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+            .item-btn   {
+                text-align: center;
+                margin: 35px 0 20px;
+                button {
+                    margin: 0 auto;
+                    width: auto;
+                    border: 0;
+                    padding: 10px 50px;
+                    background-color: #ee9e9e;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+        
         }
     }
 }

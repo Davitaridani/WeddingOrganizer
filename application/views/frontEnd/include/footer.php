@@ -136,6 +136,15 @@
 <script src="<?= base_url() ?>assets/sweetalert_js/sweetalert2.all.min.js"></script>
 
 
+
+
+<!-- CDN Counter  -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="jquery.counterup.min.js"></script>
+
+
+
+
 <!--  AOS Animasi  -->
 <script src="<?= base_url() ?>assets/js/aos.js"></script>
 <script>
