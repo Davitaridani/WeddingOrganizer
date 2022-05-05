@@ -276,7 +276,7 @@
 
 
 <!-- Counter Up -->
-<script src="<?= base_url() ?>assets/js/jquery.counterup.min.js"></script>
+<!-- <script src="<?= base_url() ?>assets/js/jquery.counterup.min.js"></script> -->
 
 
 <!--  AOS Animasi  -->
@@ -302,6 +302,7 @@
 
 <!--  Jquery  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 
 
 <!--  Link OWL Caroseul JS -->

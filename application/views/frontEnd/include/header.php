@@ -32,11 +32,14 @@
 	<!-- <link rel="stylesheet" href="<?= base_url() ?>templates/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css"> -->
 
 
+	<!-- Counter Up -->
+	<!-- <script src="<?= base_url() ?>assets/js/index.js"></script> -->
 
+	<!-- Jquery -->
+	<!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
 
-	<!-- CDN Counter  -->
-
-
+	<!-- Waypoints -->
+	<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> -->
 
 
 

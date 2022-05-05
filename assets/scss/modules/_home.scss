@@ -13,6 +13,10 @@ $color-pink:#ee9e9e;
 $color-pink2:#fa8282;
 $bg-section:#fffdfdea;
 $bg-section:#f9f9f9;
+$color-desc:#738ea5;
+$biru-1: #d4e6f5;
+$biru-2: #86a0b6;
+$color-blue:#002642;
 // Font Weight
 $light: 300;
 $reguler: 400;
@@ -430,109 +434,246 @@ p {
 }
 
 // Section home sect 6
-.section-home-sect-6 {
-    .bg-parallax {
-        // background: url('../assets/img/3.jpg') no-repeat center;
-        background-size: cover;
-        // background-attachment: fixed;
-        // min-height: 500px;
-        background: transparent;
-    }
-    padding: 120px 0 90px;
-    // .bg-paralax {
-    //     .img-fluid {
-    //         background-image: url('../assets/img/banner-3.jpg');
-    //     }
-    // }
-    .blocks-items {
-        .item-text {
-            z-index: 2;
+// .section-home-sect-6 {
+//     .bg-parallax {
+//         // background: url('../assets/img/3.jpg') no-repeat center;
+//         background-size: cover;
+//         // background-attachment: fixed;
+//         // min-height: 500px;
+//         background: transparent;
+//     }
+//     padding: 120px 0 90px;
+//     // .bg-paralax {
+//     //     .img-fluid {
+//     //         background-image: url('../assets/img/banner-3.jpg');
+//     //     }
+//     // }
+//     .blocks-items {
+//         .item-text {
+//             z-index: 2;
+//             position: relative;
+//             .text-title {
+//                 margin-bottom: 15px;
+//                 h3 {
+//                     font-family: $font-raleway;
+//                     font-weight: $semibold;
+//                     letter-spacing: 1px;
+//                     font-size: 50px;
+//                     text-shadow: 2px 2px $color-pink2;
+//                     color: #fff;
+//                 }
+//             }
+//             .text-desc {
+//                 margin-bottom: 70px;
+//                 p {
+//                     font-family: $font-raleway;
+//                     // text-shadow: 1px 1px #fff;
+//                     font-weight: $reguler;
+//                     font-size: 17px;
+//                     color: #000;
+//                 }
+//             }
+//         }
+//         .testimoni-carousel {
+//             text-align: center;
+//             margin: 0 20px;
+//             .owl-dots {
+//                 text-align: center;
+//                 .active {
+//                     span {
+//                         background-color: #ee9e9e;
+//                     }
+//                 }
+//             }
+//             .owl-dot {
+//                 display: inline-block;
+//                 height: 20px !important;
+//                 width: 20px !important;
+//                 // background-color: #fff;
+//                 opacity: 0.8;
+//                 border-radius: 50%;
+//                 margin: 50px 5px 0;
+//             }
+//             .item-testimoni {
+//                 border-radius: 100px 0 100px;
+//                 // margin: 30px 0;
+//                 background-color: rgba(255, 255, 255, 0.748);
+//                 padding: 50px 0;
+//                 .pict {
+//                     width: 100px;
+//                     height: 100px;
+//                     display: block;
+//                     overflow: hidden;
+//                     border-radius: 50%;
+//                     margin: 0 auto;
+//                     img {
+//                         width: 100%;
+//                     }
+//                 }
+//             }
+//             .item-text {
+//                 .title {
+//                     text-transform: uppercase;
+//                     margin: 20px 0 10px;
+//                     h3 {
+//                         font-size: 18px;
+//                         font-family: $font-poppins;
+//                     }
+//                 }
+//                 .text-desc {
+//                     padding: 0 18px;
+//                     hr {
+//                         height: 2px;
+//                         width: 100px;
+//                         margin: 0 auto;
+//                         color: #fa8282;
+//                     }
+//                     p {
+//                         font-family: $font-raleway;
+//                         padding-top: 20px;
+//                         line-height: 1.4;
+//                         height: 100px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+
+// BARU Home sect 6
+.home-sect-6 {
+    background-color: #edf3f8;
+    max-width: 1400px !important;
+    position: relative;
+    margin: 0 auto;
+    .container-fluid {
+        max-width: 1170px ;
+        .blocks-items {
             position: relative;
-            .text-title {
-                margin-bottom: 15px;
-                h3 {
-                    font-family: $font-raleway;
-                    font-weight: $semibold;
-                    letter-spacing: 1px;
-                    font-size: 50px;
-                    text-shadow: 2px 2px $color-pink2;
-                    color: #fff;
-                }
-            }
-            .text-desc {
-                margin-bottom: 70px;
-                p {
-                    font-family: $font-raleway;
-                    // text-shadow: 1px 1px #fff;
-                    font-weight: $reguler;
-                    font-size: 17px;
-                    color: #000;
-                }
-            }
-        }
-        .testimoni-carousel {
-            text-align: center;
-            margin: 0 20px;
-            .owl-dots {
-                text-align: center;
-                .active {
-                    span {
-                        background-color: #ee9e9e;
-                    }
-                }
-            }
-            .owl-dot {
-                display: inline-block;
-                height: 20px !important;
-                width: 20px !important;
-                // background-color: #fff;
-                opacity: 0.8;
-                border-radius: 50%;
-                margin: 50px 5px 0;
-            }
-            .item-testimoni {
-                border-radius: 100px 0 100px;
-                // margin: 30px 0;
-                background-color: rgba(255, 255, 255, 0.748);
-                padding: 50px 0;
-                .pict {
-                    width: 100px;
-                    height: 100px;
-                    display: block;
-                    overflow: hidden;
-                    border-radius: 50%;
-                    margin: 0 auto;
+            padding: 120px 0;
+            .row {
+                .items-img {
+                    width: 438px;
+                    height: 438px;
+                    position: relative;
+                    left: -60px;
                     img {
                         width: 100%;
+                        border-radius: 50%;
+                        // object-fit: cover;
+                    }
+                    .img-bingkai {
+                    position: absolute;
+                    left: -24px;
+                    top: -37px;
+                    width: 115%;
+                    height: 100%;
+                        img {
+                            border-radius: 0;
+                        }
                     }
                 }
-            }
-            .item-text {
-                .title {
-                    text-transform: uppercase;
-                    margin: 20px 0 10px;
-                    h3 {
-                        font-size: 18px;
-                        font-family: $font-poppins;
+                .items-testimoni {
+                    .item {
+                        .title {
+                            h3 {
+                                position: relative;
+                                display: inline-block;
+                                padding-bottom: 55px;
+                                // &::before {
+                                //     position: absolute;
+                                //     bottom: 0;
+                                //     left: 3px;
+                                //     font-family: "Flaticon";
+                                //     content: "";
+                                //     font-size: 40px;
+                                // } 
+                                &::after {
+                                    position: absolute;
+                                    bottom: 25px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    content: "";
+                                    width: 110px;
+                                    height: 1px;
+                                    background: #86a0b6;
+                                }
+                            }
+                        }
+                        .text {
+                            margin-top: -10px;
+                            p {
+                                width: 650px;
+                                line-height: 1.8;
+                            }
+                        }
+                        .items-img-info{
+                            display: flex;
+                            align-items: center;
+                            padding-left: 10px;
+                            padding-bottom: 10px;
+                            margin-top: 20px;
+                            .testimoni-img {
+                                position: relative;
+                                margin-right: 20px;
+                                &::before {
+                                    position: absolute;
+                                left: -3px;
+                                top: -3px;
+                                width: 110%;
+                                height: 109%;
+                                content: "";
+                                background: #86a0b6;
+                                z-index: -1;
+                                border-radius: 50px;
+                                }
+                                img {
+                                    border-radius: 50%;
+                                    width: 70px;
+                                    height: 70px;
+                                }
+                            }
+                            .info-klien { 
+                                margin-bottom: 8px;
+                                h3 {
+                                    font-size: 20px;
+                                    text-transform: capitalize;
+                                    color: $color-blue;
+                                }
+                            }
+                        }
                     }
-                }
-                .text-desc {
-                    padding: 0 18px;
-                    hr {
-                        height: 2px;
-                        width: 100px;
-                        margin: 0 auto;
-                        color: #fa8282;
+                    svg {
+                        position: relative;
+                        top: -50px;
+                        font-size: 35px;
+                        color: $biru-2;
                     }
-                    p {
-                        font-family: $font-raleway;
-                        padding-top: 20px;
-                        line-height: 1.4;
-                        height: 100px;
+                    .owl-dots {
+                        text-align: start;
+                        .owl-dot {
+                            span {
+                                background-color: $biru-1;
+                            }
+                        }
+                            .active {
+                                span {
+                                    background: $color-desc;
+                                    color: $biru-2;
+                                }
+                            }
                     }
                 }
             }
         }
+    }
+    .img-shape {
+        position: absolute;
+        right: 70px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 
@@ -574,51 +715,237 @@ p {
 }
 
 // Section home sect 8
-.section-home-sect-8 {
+// .section-home-sect-8 {
+//     .blocks-items {
+//         margin: 90px 0 110px;
+//         .owl-carousel {
+//             .item {
+//                 .logo {
+//                     img {
+//                         max-height: 100px;
+//                         max-width: 100px;
+//                         margin: 50px auto;
+//                     }
+//                 }
+//             }
+//         }
+//         .owl-theme {
+//             .owl-dots {
+//                 .owl-dot {
+//                     display: none;
+//                 }
+//             }
+//         }
+//         .owl-nav {
+//             display: block !important;
+//         }
+//         .owl-prev,
+//         .owl-next {
+//             position: absolute;
+//             top: 50%;
+//             transform: translateY(-50%);
+//             color: #aaa !important;
+//             font-size: 65px !important;
+//             font-weight: bolder;
+//             background: none !important;
+//         }
+//         .owl-prev {
+//             left: -10px;
+//         }
+//         .owl-next {
+//             right: -10px;
+//         }
+//     }
+// }
+
+// BARU
+// Home sect 8
+.home-sect-8 {
     .blocks-items {
-        margin: 90px 0 110px;
-        .owl-carousel {
-            .item {
-                .logo {
+        .item-title {
+            text-align: center;
+            margin-bottom: 60px;
+            .text { 
+                margin-bottom: 0;
+                p {
+                    font-size: 16px;
+                }
+            }
+            .title {
+                margin: 20px 0;
+                h3 {
+                    font-size: 40px;
+                    color: $color-blue;
+                }
+            }
+            .title-img {
+                position: relative;
+                margin: 0 auto;
+                max-width: 200px;
+                &::before {
+                    position: absolute;
+                    left: -70px;
+                    background-color: $color-desc;
+                    content: "";
+                    width: 100px;
+                    height: 1px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                &::after {
+                    position: absolute;
+                    right: -70px;
+                    left: auto;
+                    background-color: $color-desc;
+                    content: "";
+                    width: 100px;
+                    height: 1px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                
+                }
+            }
+        }
+        .item-list-produk {
+            padding: 50px 80px;
+            border: 1px solid  $biru-1;
+            margin-bottom: 60px;
+            .row {
+                .img-produk {
+                    margin-bottom: 20px;
                     img {
-                        max-height: 100px;
-                        max-width: 100px;
-                        margin: 50px auto;
+                        width: 100%;
+                        height: 450px;
+                        object-fit: cover;
+                    }
+                }
+                .title {
+                        text-align: center;
+                    a {
+                        font-size: 20px;
+                        text-align: center;
+                        color: $color-blue;
+                        font-weight: $bold;
+                        text-decoration: none;
+                        transition: all 0.2s;
+
+                        &:hover {
+                            color: $biru-2;
+                        }
                     }
                 }
             }
         }
-        .owl-theme {
-            .owl-dots {
-                .owl-dot {
-                    display: none;
+    }
+} 
+
+
+// Homs sect 9
+.home-sect-9 {
+    background-image: url('../img/bg-1.jpg');
+    background-position: center;
+    background-size: cover;
+    z-index: 9;
+    .blocks-items {
+        // background-color: #18548b;
+        // opacity: 0.3;
+        // position: relative;
+        .img-bg-home {
+            // position: relative;
+            justify-content: center;
+            .item-text {
+                // position: relative;
+                z-index: 1;
+                padding: 145px 0;
+                .title {
+                    margin: 10px 0 30px;
+                    h3 {
+                        font-size: 60px;
+                        color: #fff;
+                        font-weight: $bold;
+                        text-transform: capitalize;
+                        text-shadow: 2px 3px 4px #3b3b3b;
+                    }
+                }
+                .btns {
+                    a {
+                        background: #f7fefa;
+                        color: $color-blue;
+                        display: inline-block;
+                        padding: 15px 45px;
+                        border: 0;
+                        text-transform: capitalize;
+                        z-index: 1;
+                        position: relative;
+                        font-size: 16px;
+                        transition: all 0.3s;
+                        text-decoration: none;
+                        font-weight: $medium;
+                        &::after {
+                            position: absolute;
+                            left: 5px;
+                            top: 5px;
+                            width: 100%;
+                            height: 100%;
+                            content: "";
+                            border: 1px solid #fff;
+                            z-index: -1;
+                            transition: all 0.3s;
+                        }
+                        &:hover {
+                            background-color: $biru-2;
+                            color: #fff;
+                            &::after {
+                            border: 1px solid #86a0b6;
+                            }
+                        }
+                    }
                 }
             }
-        }
-        .owl-nav {
-            display: block !important;
-        }
-        .owl-prev,
-        .owl-next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #aaa !important;
-            font-size: 65px !important;
-            font-weight: bolder;
-            background: none !important;
-        }
-        .owl-prev {
-            left: -10px;
-        }
-        .owl-next {
-            right: -10px;
         }
     }
 }
 
-// section Home sect 8 {
-.section-home-sect-9 {
+// Banner
+// Home sect 10
+.home-sect-10 {
+    background-image: url('../img/banner-home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .blocks-items {
+        margin-bottom: 100px;
+        .title {
+            padding: 100px 0;
+            h3 {
+                font-size: 40px;
+                color: $color-blue;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+// Homs sect 11 
+.home-sect-11 {
+    .blocks-items {
+        .block-contact{
+            position: relative;
+            max-width: 655px;
+            margin: 0 auto;
+            padding: 10px;
+            box-shadow: 0px 2px 16.8px 3.2px rgb(0 0 0 / 8%);
+            background-color: #fff;
+            .form-contact{
+                text-align: center;
+                border: 30px solid #cde0ef;
+                padding: 60px 40px;
+            }
+        }
+    }
+}
+
+// section Home sect 12
+.home-sect-12 {
     .blocks-items {
         .text-title {
             margin-bottom: 20px;

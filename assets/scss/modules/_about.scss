@@ -176,34 +176,54 @@ p {
     }
 }
 
-// About sect 3
-.about-sect-3 {
-    .blocks-items {
-        padding-bottom: 100px;
-        .block-counter {
-                    border: 1px solid #e4ebf2;
-                    padding: 80px 20px;
-            .row {
-                .item-counter {
-                    text-align: center;
-                    .title {
-                        h3 {
-                            margin-bottom: 10px;
-                            font-size: 50px;
-                            // font-style: $font-halant !important;
-                            color: $color-desc;
-                            font-weight: $bold;
+// About sect 3, Home sect 7
+.block-counterUp {
+    .container {
+        max-width: 1400px !important;
+        position: relative;        
+        .blocks-items {
+            padding-bottom: 100px;
+            .block-counter {
+                border: 1px solid #e4ebf2;
+                padding: 80px 100px;
+                position: relative;
+                z-index: 1;
+                background-color: #fff;
+                .row {
+                    justify-content: center;
+                    .item-counter {
+                        text-align: center;
+                        .title {
+                            h3 {
+                                margin-bottom: 10px;
+                                font-size: 50px;
+                                // font-style: $font-halant !important;
+                                color: $color-desc;
+                                font-weight: $bold;
+                            }
                         }
-                    }
-                    .text {
-                        p {
-                            font-size: 20px;
-                            color: #002642;
-                            font-weight: $bold;
-                            margin-top: 0;
+                        .text {
+                            p {
+                                font-size: 20px;
+                                color: #002642;
+                                font-weight: $bold;
+                                margin-top: 0;
+                            }
                         }
                     }
                 }
+            }
+            .img-shape-1{
+                position: absolute;
+                left: -171px;
+                top: -34px;
+                z-index: -1;
+            }
+            .img-shape-2 {
+                position: absolute;
+                right: -171px;
+                top: -34px;
+                z-index: -1;
             }
         }
     }

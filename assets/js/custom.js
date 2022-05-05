@@ -101,15 +101,34 @@ function myFunction() {
 		x.className = "topnav";
 	}
 }
+// OWL Carousel Testimoni
+$(".items-testimoni").owlCarousel({
+	loop: true,
+	margin: 10,
+	autoplay: true,
+	autoplayTimeout: 9000,
+	smartSpeed: 1100,
+	autoplayHoverPause: true,
+	responsive: {
+		0: {
+			items: 2,
+		},
+		600: {
+			items: 1,
+		},
+		1000: {
+			items: 1,
+		},
+	},
+});
 
 // AOS JS Animasi
 // AOS.init();
 
 // COUNTER JS
-// $(".counter").counterUp();
-// $(document).ready(function ($) {
-// 	$(".counter").counterUp({
-// 		delay: 10,
-// 		time: 100,
-// 	});
+// const el = document.querySelector(".counter ");
+
+// counterUp(el, {
+// 	duration: 1000,
+// 	delay: 16,
 // });

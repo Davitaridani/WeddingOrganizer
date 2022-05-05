@@ -46,3 +46,13 @@ $color-blue:#002642;
         padding: 0 0 !important;
     }
 }
+
+.container_content {
+    max-width: 100% !important;
+    padding: 0 15px !important;
+
+    @media screen and (min-width: 1400px) {
+        max-width: 1400px !important;
+        padding: 0 0 !important;
+    }
+}

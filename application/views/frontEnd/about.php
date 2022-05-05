@@ -171,7 +171,7 @@
 </section>
 
 <!-- about sect 3 -->
-<section class="about-sect-3">
+<section class="about-sect-3 block-counterUp">
 	<div class="container">
 		<div class="blocks-items">
 			<div class="block-counter">
@@ -179,7 +179,7 @@
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
 							<div class="title">
-								<h3 class="counter">100</h3>
+								<h3 class="counter" id="num">100</h3>
 							</div>
 							<div class="text">
 								<p>Weddings</p>
@@ -189,7 +189,7 @@
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
 							<div class="title ">
-								<h3 class="counter">440</h3>
+								<h3 class="counter" id="num">440</h3>
 							</div>
 							<div class="text">
 								<p>Decoration</p>
@@ -199,7 +199,7 @@
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
 							<div class="title ">
-								<h3>890</h3>
+								<h3 class="counter" id="num">890</h3>
 							</div>
 							<div class="text">
 								<p>Make Up</p>
@@ -209,7 +209,7 @@
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
 							<div class="title">
-								<h3>120</h3>
+								<h3 class="counter" id="num">120</h3>
 							</div>
 							<div class="text">
 								<p>Weddings</p>
@@ -218,6 +218,14 @@
 					</div>
 				</div>
 			</div>
+			<!-- <div class="items-img-shape"> -->
+			<div class="img-shape-1">
+				<img src="<?= base_url() ?>assets/img/img-shape-1.png" alt="" class="img img-fluid">
+			</div>
+			<div class="img-shape-2">
+				<img src="<?= base_url() ?>assets/img/img-shape-2.png" alt="" class="img img-fluid">
+			</div>
+			<!-- </div> -->
 		</div>
 	</div>
 </section>
