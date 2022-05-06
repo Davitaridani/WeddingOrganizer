@@ -232,7 +232,7 @@
 
 
 <!-- Baru About sect 5 -->
-<section class="about-sect-5">
+<section class="about-sect-5 items-team">
 	<div class="container">
 		<div class="blocks-items">
 			<div class="item-title">

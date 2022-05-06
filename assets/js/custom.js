@@ -106,7 +106,7 @@ $(".items-testimoni").owlCarousel({
 	loop: true,
 	margin: 10,
 	autoplay: true,
-	autoplayTimeout: 9000,
+	autoplayTimeout: 5000,
 	smartSpeed: 1100,
 	autoplayHoverPause: true,
 	responsive: {

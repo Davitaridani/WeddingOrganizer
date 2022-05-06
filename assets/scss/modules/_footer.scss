@@ -87,7 +87,7 @@ $black: 900;
                             font-size: 20px;
                             color: $color-blue;
                             text-transform: uppercase;
-                            font-weight: $bold;
+                            font-weight: $semibold;
                         }    
                     }
                     ul {
@@ -115,7 +115,7 @@ $black: 900;
                             font-size: 20px;
                             color: $color-blue;
                             text-transform: uppercase;
-                            font-weight: $bold;
+                            font-weight: $semibold;
                         } 
                     }
                     .text {
@@ -133,9 +133,13 @@ $black: 900;
                                 text-decoration: none;
                                 color: $color-desc;
                                 font-size: 19px;
+                                transition: all .8s;
                                 svg {
                                     font-size: 25px;
                                     margin-right: 7px;
+                                }
+                                &:hover {
+                                    text-decoration: underline;
                                 }
                             }
                         }
@@ -157,8 +161,8 @@ $black: 900;
                         .img-foot {
                             margin-bottom: 10px;
                             img {
-                                height: 140px;
-                                width: 140px;
+                                height: 120px;
+                                width: auto;
                                 object-fit: cover;
                             }
                         }

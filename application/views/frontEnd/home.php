@@ -390,7 +390,7 @@
 </section>
 
 <!--  Section Home sect 5  -->
-<section class="section-home-sect-5">
+<!-- <section class="home-sect-5">
 	<div class="container">
 		<div class="inner text-content">
 			<div class="blocks-items">
@@ -403,7 +403,6 @@
 					</div>
 				</div>
 
-				<!--  <div class="item-pict">  -->
 				<div class="row">
 					<div class="col-md-3">
 						<div class="pict">
@@ -467,6 +466,153 @@
 			</div>
 		</div>
 	</div>
+</section> -->
+
+<!-- BARU -->
+<!-- Home sect 5 -->
+<section class="about-sect-5 items-team">
+	<div class="container">
+		<div class="blocks-items">
+			<div class="item-title">
+				<div class="title">
+					<p>Tim Kami</p>
+					<h3>TEMUI PERENCANA KAMI</h3>
+				</div>
+				<div class="pict-title">
+					<img src="<?= base_url() ?>assets/img/section-title.png" alt="" class="img img-fluid">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="card-team">
+						<div class="img-team">
+							<img src="<?= base_url() ?>assets/img/card-carousel-4.jpg" alt="" class="img img-fluid">
+						</div>
+						<div class="title">
+							<a href="">Robert Willy</a>
+						</div>
+						<div class="text">
+							<p>Wedding Planner</p>
+						</div>
+						<div class="icon-sosmed">
+							<div class="fb">
+								<a href="#">
+									<span class="iconify" data-icon="bxl:facebook"></span>
+								</a>
+							</div>
+							<div class="ig">
+								<a href="#">
+									<span class="iconify" data-icon="ant-design:instagram-filled"></span>
+								</a>
+							</div>
+							<div class="tik-tok">
+								<a href="#">
+									<span class="iconify" data-icon="ic:outline-tiktok"></span>
+								</a>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-3">
+					<div class="card-team">
+						<div class="img-team">
+							<img src="<?= base_url() ?>assets/img/card-carousel-3.jpg" alt="" class="img img-fluid">
+						</div>
+						<div class="title">
+							<a href="">Elizabeth Anny</a>
+						</div>
+						<div class="text">
+							<p>Wedding Planner</p>
+						</div>
+						<div class="icon-sosmed">
+							<div class="fb">
+								<a href="#">
+									<span class="iconify" data-icon="bxl:facebook"></span>
+								</a>
+							</div>
+							<div class="ig">
+								<a href="#">
+									<span class="iconify" data-icon="ant-design:instagram-filled"></span>
+								</a>
+							</div>
+							<div class="tik-tok">
+								<a href="#">
+									<span class="iconify" data-icon="ic:outline-tiktok"></span>
+								</a>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-3">
+					<div class="card-team">
+						<div class="img-team">
+							<img src="<?= base_url() ?>assets/img/card-carousel-2.jpg" alt="" class="img img-fluid">
+						</div>
+						<div class="title">
+							<a href="">Maria D'Souza</a>
+						</div>
+						<div class="text">
+							<p>Wedding Planner</p>
+						</div>
+						<div class="icon-sosmed">
+							<div class="fb">
+								<a href="#">
+									<span class="iconify" data-icon="bxl:facebook"></span>
+								</a>
+							</div>
+							<div class="ig">
+								<a href="#">
+									<span class="iconify" data-icon="ant-design:instagram-filled"></span>
+								</a>
+							</div>
+							<div class="tik-tok">
+								<a href="#">
+									<span class="iconify" data-icon="ic:outline-tiktok"></span>
+								</a>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-3">
+					<div class="card-team">
+						<div class="img-team">
+							<img src="<?= base_url() ?>assets/img/card-carousel-4.jpg" alt="" class="img img-fluid">
+						</div>
+						<div class="title">
+							<a href="">Robert Willy</a>
+						</div>
+						<div class="text">
+							<p>Wedding Planner</p>
+						</div>
+						<div class="icon-sosmed">
+							<div class="fb">
+								<a href="#">
+									<span class="iconify" data-icon="bxl:facebook"></span>
+								</a>
+							</div>
+							<div class="ig">
+								<a href="#">
+									<span class="iconify" data-icon="ant-design:instagram-filled"></span>
+								</a>
+							</div>
+							<div class="tik-tok">
+								<a href="#">
+									<span class="iconify" data-icon="ic:outline-tiktok"></span>
+								</a>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -974,8 +1120,107 @@
 </section>
 
 
-<!-- Home sect 10 banner-->
+<!-- Home sect 10 -->
 <section class="home-sect-10">
+	<div class="container">
+		<div class="blocks-items">
+			<div class="item-title text-uppercase">
+				<div class="title">
+					<h3>PAKET PERNIKAHAN</h3>
+				</div>
+				<div class="img-title">
+					<img src="<?= base_url() ?>assets/img/section-title.png" alt="" class="img img-fluid">
+				</div>
+			</div>
+			<div class="block-wrap-card">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="item-card">
+							<div class="card-top">
+								<div class="img-title">
+									<img src="<?= base_url() ?>assets/img/price-imag-1.png" alt="" class="img img-fluid">
+								</div>
+								<div class="title">
+									<h3>Paket Dasar</h3>
+								</div>
+							</div>
+							<div class="card-bottom">
+								<div class="item-text">
+									<ul>
+										<li>Riasan gaya untuk pengantin.</li>
+										<li>Susunan label teratas</li>
+										<li>Makanan & sarapan yang luar biasa</li>
+										<li>Manikur & Pedikur</li>
+										<li>Polandia seluruh tubuh</li>
+									</ul>
+									<div class="item-btns">
+										<a href="">Lihat Paket</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="item-card">
+							<div class="card-top">
+								<div class="img-title">
+									<img src="<?= base_url() ?>assets/img/price-3.png" alt="" class="img img-fluid">
+								</div>
+								<div class="title">
+									<h3>Paket Standar</h3>
+								</div>
+							</div>
+							<div class="card-bottom">
+								<div class="item-text">
+									<ul>
+										<li>Riasan gaya untuk pengantin.</li>
+										<li>Susunan label teratas</li>
+										<li>Makanan & sarapan yang luar biasa</li>
+										<li>Manikur & Pedikur</li>
+										<li>Polandia seluruh tubuh</li>
+									</ul>
+									<div class="item-btns">
+										<a href="">Lihat Paket</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="item-card">
+							<div class="card-top">
+								<div class="img-title">
+									<img src="<?= base_url() ?>assets/img/price-imag-2.png" alt="" class="img img-fluid">
+								</div>
+								<div class="title">
+									<h3>Paket Mewah</h3>
+								</div>
+							</div>
+							<div class="card-bottom">
+								<div class="item-text">
+									<ul>
+										<li>Riasan gaya untuk pengantin.</li>
+										<li>Susunan label teratas</li>
+										<li>Makanan & sarapan yang luar biasa</li>
+										<li>Manikur & Pedikur</li>
+										<li>Polandia seluruh tubuh</li>
+									</ul>
+									<div class="item-btns">
+										<a href="">Lihat Paket</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- Home sect 11 banner-->
+<section class="home-sect-11">
 	<div class="container-fluid p-0">
 		<div class="blocks-items">
 			<div class="title text-center">
@@ -986,8 +1231,8 @@
 </section>
 
 
-<!-- Home sect 11 -->
-<section class="home-sect-11">
+<!-- Home sect 12 -->
+<section class="home-sect-12">
 	<div class="container">
 		<div class="blocks-items">
 			<div class="block-contact">
@@ -998,21 +1243,60 @@
 						<div class="img-title">
 							<img src="<?= base_url() ?>assets/img/img-title.png" alt="" class="img img-fluid">
 						</div>
-						<div class="item-form">
+						<div class="items-form">
 							<form action="" method="post">
+								<div class="item-form">
+									<input type="text" class="form-control" id="nama" placeholder="Nama">
+								</div>
 
+								<div class="item-form">
+									<input type="email" class="form-control" id="email" placeholder="Email">
+								</div>
+
+								<div class="item-form">
+									<input type="text" class="form-control" id="alamat" placeholder="Alamat">
+								</div>
+
+								<div class="item-form">
+									<input type="number" class="form-control" id="telepon" placeholder="Telepon">
+								</div>
+								<div class="item-option">
+									<select class="form-control" name="" id="">
+										<span class="iconify" data-icon="dashicons:arrow-down-alt2"></span>
+										<option selected>Pilih Layanan</option>
+										<option value="wedding">Wedding</option>
+										<option value="">Prewedding</option>
+										<option value="">Engagement</option>
+										<option value="">Dekorasi</option>
+										<option value="">Make Up</option>
+										<option value="">Gaun</option>
+									</select>
+								</div>
+								<textarea name="pesan" class="form-control" id="" cols="3" rows="1" placeholder="Pesan"></textarea>
+								<div class="btn-submit">
+									<button type="submit">Kirim Pertanyaan</button>
+								</div>
 							</form>
 						</div>
 					</div>
 				</div>
-
+				<!-- <div class="item-img-vector"> -->
+				<div class="img-vector-1">
+					<img src="<?= base_url() ?>assets/img/img-vector.png" alt="">
+				</div>
+				<div class="img-vector-2">
+					<img src="<?= base_url() ?>assets/img/right-shape.png" alt="">
+				</div>
 			</div>
+
 		</div>
+
+		<!-- </div> -->
 	</div>
 </section>
 
-<!--  Section home sect 9  -->
-<section class="home-sect-12">
+<!--  Home sect 13  -->
+<section class="home-sect-13">
 	<div class="container">
 		<div class="inner text-content">
 			<div class="blocks-items">

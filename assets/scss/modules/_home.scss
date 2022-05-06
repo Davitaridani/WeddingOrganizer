@@ -379,10 +379,11 @@ p {
 }
 
 // Section Home 5 
-.section-home-sect-5 {
+.home-sect-5 {
     background-color: $bg-section;
     .blocks-items {
         padding: 100px 0 20px;
+        margin-bottom: 120px;
         .item-text {
             .text-title {
                 margin-bottom: 15px;
@@ -762,13 +763,14 @@ p {
 // Home sect 8
 .home-sect-8 {
     .blocks-items {
+        margin-bottom: 100px;
         .item-title {
             text-align: center;
             margin-bottom: 60px;
             .text { 
                 margin-bottom: 0;
                 p {
-                    font-size: 16px;
+                    font-size: 18px;
                 }
             }
             .title {
@@ -809,7 +811,7 @@ p {
         .item-list-produk {
             padding: 50px 80px;
             border: 1px solid  $biru-1;
-            margin-bottom: 60px;
+            // margin-bottom: 60px;
             .row {
                 .img-produk {
                     margin-bottom: 20px;
@@ -850,6 +852,7 @@ p {
         // background-color: #18548b;
         // opacity: 0.3;
         // position: relative;
+        margin-bottom: 100px;
         .img-bg-home {
             // position: relative;
             justify-content: center;
@@ -906,28 +909,157 @@ p {
     }
 }
 
-// Banner
 // Home sect 10
 .home-sect-10 {
+    .blocks-items {
+        padding-bottom: 120px;
+        .item-title {
+            text-align: center;
+            margin-bottom: 60px;
+            .title {
+                margin-bottom: 20px;
+                h3 {
+                    font-size: 40px;
+                    color: $color-blue;
+                }
+            }
+            .img-title {
+                position: relative;
+                margin: 0 auto;
+                max-width: 200px;
+                &::before {
+                    position: absolute;
+                    width: 100px;
+                    height: 1px;
+                    background-color: $color-desc;
+                    content: "";
+                    top: 50%;
+                    left: -70px;
+                    transform: translateY(-50%);
+                }
+                img {
+                    height: auto;
+                    max-width: 100%;
+                    }
+                &::after {
+                    position: absolute;
+                    width: 100px;
+                    height: 1px;
+                    background-color: $color-desc;
+                    content: "";
+                    top: 50%;
+                    left: auto;
+                    right: -70px;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        .block-wrap-card {
+            padding-top: 85px;
+            .row {
+                .item-card {
+                    box-shadow: 0px 2px 16.8px 3.2px #00264214;
+                    .card-top {
+                        text-align: center;
+                        border-bottom: 1px solid $biru-1;
+                        padding: 30px;
+                        padding-top: 0;
+                        .title {
+                            h3 {
+                                color: $color-blue;
+                                font-size: 25px;
+                            }
+                        }
+                        .img-title {
+                            width: 170px;
+                            height: 170px;
+                            padding: 10px;
+                            box-shadow: 0px 2px 16.8px 3.2px rgb(0 38 66 / 8%);
+                            background: #fff;
+                            border-radius: 50%;
+                            margin: 0 auto;
+                            position: relative;
+                            top: -85px;
+                            margin-bottom: -50px;
+                            img {
+                                height: auto;
+                                max-width: 100%;
+                                border: none;
+                                border-radius: 50%;
+
+                            }
+                        }
+                    }
+                    .card-bottom {
+                        padding: 40px;
+                        text-align: center;
+                        .item-text {
+                            ul {
+                                list-style: none;
+                                li {
+                                    color: #7b7b7b;
+                                    padding-bottom: 15px;
+                                }
+                            }
+                        }
+                        .item-btns {
+                            a {
+                                text-decoration: none;
+                                color: $color-blue;
+                                font-weight: $bold;
+                                margin-top: 20px;
+                                padding-bottom: 10px;
+                                position: relative; 
+                                transition: all 0.2s;
+                                &::before {
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: 0;
+                                    width: 100%;
+                                    height: 1px;
+                                    background: #002642;
+                                    content: "";
+                                    transition: all 0.3s;
+                                }
+                                &:hover {
+                                    color: $biru-2;
+                                   
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Banner
+// Home sect 11
+.home-sect-11 {
     background-image: url('../img/banner-home.jpg');
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     .blocks-items {
-        margin-bottom: 100px;
+        margin-bottom: 120px;
         .title {
             padding: 100px 0;
             h3 {
                 font-size: 40px;
                 color: $color-blue;
                 text-transform: capitalize;
+                width: 850px;
+                margin: 0 auto;
             }
         }
     }
 }
 
-// Homs sect 11 
-.home-sect-11 {
+// Homs sect 12 
+.home-sect-12 {
     .blocks-items {
+        padding-bottom: 120px;
         .block-contact{
             position: relative;
             max-width: 655px;
@@ -935,17 +1067,109 @@ p {
             padding: 10px;
             box-shadow: 0px 2px 16.8px 3.2px rgb(0 0 0 / 8%);
             background-color: #fff;
-            .form-contact{
+            .form-contact {
                 text-align: center;
                 border: 30px solid #cde0ef;
                 padding: 60px 40px;
+                .form-title {
+                    p {
+                        margin-bottom: 20px;
+                        font-size: 20px;
+                    }
+                    h3 {
+                        font-size: 35px;
+                        color: $color-blue;
+                        margin-bottom: 20px;
+                    }
+                    .img-title {
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+        .items-form {
+            form {
+                .item-form {
+                    margin-bottom: 20px;
+                    input {
+                        border: 0;
+                        border-bottom: 1px solid #cde0ef ;
+                        border-radius: 0;
+                        background: transparent;
+                        color: $color-desc;
+                        &:focus {
+                            box-shadow: none;
+                            border-color: $color-desc;
+                        }
+                    }
+                } 
+                .item-option {
+                    margin-bottom: 20px;
+                    select {
+                        border: 0;
+                        border-radius: 0;
+                        border-bottom: 1px solid #cde0ef;
+                        background-color: transparent;
+                        color: #6c757d;
+                        background-image: transparent url('../img/select-icon2.png') no-repeat calc(100% - 15px) center;
+                        &:focus {
+                            box-shadow: none;
+                            border-color: $color-desc;
+                        }
+                    }
+                }
+                textarea {
+                    border: 0;
+                    border-radius: 0;
+                    border-bottom: 1px solid #cde0ef;
+                    background-color: transparent;
+                    color: #6c757d;
+                    
+                    &:focus {
+                        box-shadow: none;
+                        border-color: $color-desc;
+                    }
+                }
+                .btn-submit {
+                    button {
+                        margin-top: 50px;
+                        border: 0;
+                        background-color: $biru-1;
+                        padding: 15px 45px;
+                        font-weight: $semibold;
+                        color: $color-blue;
+                        transition: all 0.5s;
+                        &:hover {
+                            color: #fff;
+                            background-color: $color-desc;
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .img-vector-1 {
+            img {
+                position: absolute;
+                left: -59%;
+                bottom: 0;
+                z-index: 111;
+            }
+        }
+
+        .img-vector-2 {
+            img {
+                position: absolute;
+                right: -38%;
+                top: 0;
+                z-index: -1;
             }
         }
     }
 }
 
-// section Home sect 12
-.home-sect-12 {
+// Home sect 13
+.home-sect-13 {
     .blocks-items {
         .text-title {
             margin-bottom: 20px;
