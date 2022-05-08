@@ -23,9 +23,8 @@ $reguler: 400;
 $medium: 500;
 $semibold:600;
 $bold: 700;
-$black: 900;
 p {
-    font-family: $font-raleway !important;
+    font-family: $font-raleway ;
     // letter-spacing: 1.2px;
 }
 
@@ -74,6 +73,7 @@ p {
                 width: 1260px;
                 line-height: 1;
                 text-shadow: 2px 2px #9d9797;
+                color: #fff;
             }
         }
         .text-desc {
@@ -84,7 +84,7 @@ p {
                 font-size: 18px;
                 letter-spacing: 1.2px;
                 width: 40%;
-                color: #fff;
+                color: #fff !important;
                 margin: auto;
                 text-shadow: 1px 1px #b8b4b4;
             }
@@ -98,7 +98,7 @@ p {
                 line-height: 40px;
                 font-size: 17px;
                 letter-spacing: 1px;
-                color: #fff;
+                color: #fff !important;
                 text-transform: uppercase;
                 text-decoration: none;
             }
@@ -309,21 +309,113 @@ p {
 }
 
 // Home setc 4 coba
-.home-sect-4-coba{
+.home-sect-4{
     .blocks-items {
-        .row {
-            .col-md-6 {
-                // position: relative;
-                padding-left: 0 !important;
-                .pict {
-                    img {
-                        padding-right: 130px;
+        .blocks-layanan {
+            .owl-carousel {
+                .item {
+                    position: relative;
+                    margin: 0 15px;
+                    .item-service{
+                        background-color: #edf3f8;
+                        padding: 8px;
+                        .img-service{
+                            position: relative;
+                            img {
+                                height: 360px;
+                                width: 360px;
+                                object-fit: cover;
+                            }
+                            .item-service-text {
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                                padding: 20px;
+                                background: rgba(255, 255, 255, 0.8);
+                                width: 240px;
+                                text-align: center;
+                                .icon {
+                                    margin-bottom: 10px;
+                                    position: relative;
+                                    display: inline-block;
+
+                                    &::before {
+                                        position: absolute;
+                                        left: -45px;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        width: 30px;
+                                        height: 2px;
+                                        background: $biru-2;
+                                        content: "";
+                                    }
+                                    svg {
+                                        font-size: 33px;
+                                        color: $biru-2;
+                                    }
+                                    &::after {
+                                        position: absolute;
+                                        left: auto;
+                                        right: -45px;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        width: 30px;
+                                        height: 2px;
+                                        background: $biru-2;
+                                        content: "";
+                                    }
+                                }
+                                h3 {
+                                    margin: 0;
+                                    font-weight: 600;
+                                    a {
+                                        text-decoration: none;
+                                        color: $color-blue !important;
+                                        font-size: 18px !important;
+                                        &:hover {
+                                            color: $color-desc !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
-            }
-            .col-md-6 {
-                .text {
-                    width: 600px;
+                .owl-nav {
+                    display: block;
+                    .owl-prev {
+                        left: -25px;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: #738ea5;
+                        background-color: transparent;
+                        span {
+                            font-size: 50px;
+                        }
+                        &:hover {
+                            color: #002642;
+                        }
+                    }
+                    .owl-next {
+                        right: -25px;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: #738ea5;
+                        background-color: transparent;
+
+                        span {
+                            font-size: 50px;
+                        }
+                        &:hover {
+                            color: #002642;
+                        }
+                    }
+                }
+                .owl-dots {
+                    display: none;
                 }
             }
         }
@@ -331,7 +423,7 @@ p {
 }
 
 // Section home 4
-.section-home-sect-4 {
+.home-sect-4 {
     // background-color: $bg-section;
     .blocks-items {
         padding: 71px 0;
@@ -434,115 +526,6 @@ p {
     }
 }
 
-// Section home sect 6
-// .section-home-sect-6 {
-//     .bg-parallax {
-//         // background: url('../assets/img/3.jpg') no-repeat center;
-//         background-size: cover;
-//         // background-attachment: fixed;
-//         // min-height: 500px;
-//         background: transparent;
-//     }
-//     padding: 120px 0 90px;
-//     // .bg-paralax {
-//     //     .img-fluid {
-//     //         background-image: url('../assets/img/banner-3.jpg');
-//     //     }
-//     // }
-//     .blocks-items {
-//         .item-text {
-//             z-index: 2;
-//             position: relative;
-//             .text-title {
-//                 margin-bottom: 15px;
-//                 h3 {
-//                     font-family: $font-raleway;
-//                     font-weight: $semibold;
-//                     letter-spacing: 1px;
-//                     font-size: 50px;
-//                     text-shadow: 2px 2px $color-pink2;
-//                     color: #fff;
-//                 }
-//             }
-//             .text-desc {
-//                 margin-bottom: 70px;
-//                 p {
-//                     font-family: $font-raleway;
-//                     // text-shadow: 1px 1px #fff;
-//                     font-weight: $reguler;
-//                     font-size: 17px;
-//                     color: #000;
-//                 }
-//             }
-//         }
-//         .testimoni-carousel {
-//             text-align: center;
-//             margin: 0 20px;
-//             .owl-dots {
-//                 text-align: center;
-//                 .active {
-//                     span {
-//                         background-color: #ee9e9e;
-//                     }
-//                 }
-//             }
-//             .owl-dot {
-//                 display: inline-block;
-//                 height: 20px !important;
-//                 width: 20px !important;
-//                 // background-color: #fff;
-//                 opacity: 0.8;
-//                 border-radius: 50%;
-//                 margin: 50px 5px 0;
-//             }
-//             .item-testimoni {
-//                 border-radius: 100px 0 100px;
-//                 // margin: 30px 0;
-//                 background-color: rgba(255, 255, 255, 0.748);
-//                 padding: 50px 0;
-//                 .pict {
-//                     width: 100px;
-//                     height: 100px;
-//                     display: block;
-//                     overflow: hidden;
-//                     border-radius: 50%;
-//                     margin: 0 auto;
-//                     img {
-//                         width: 100%;
-//                     }
-//                 }
-//             }
-//             .item-text {
-//                 .title {
-//                     text-transform: uppercase;
-//                     margin: 20px 0 10px;
-//                     h3 {
-//                         font-size: 18px;
-//                         font-family: $font-poppins;
-//                     }
-//                 }
-//                 .text-desc {
-//                     padding: 0 18px;
-//                     hr {
-//                         height: 2px;
-//                         width: 100px;
-//                         margin: 0 auto;
-//                         color: #fa8282;
-//                     }
-//                     p {
-//                         font-family: $font-raleway;
-//                         padding-top: 20px;
-//                         line-height: 1.4;
-//                         height: 100px;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-
-
-
 // BARU Home sect 6
 .home-sect-6 {
     background-color: #edf3f8;
@@ -594,7 +577,7 @@ p {
                                 &::after {
                                     position: absolute;
                                     bottom: 25px;
-                                    left: 50%;
+                                    left: 45%;
                                     transform: translateX(-50%);
                                     content: "";
                                     width: 110px;
@@ -606,8 +589,10 @@ p {
                         .text {
                             margin-top: -10px;
                             p {
+                                color: $color-blue !important;
                                 width: 650px;
                                 line-height: 1.8;
+                                font-size: 19px !important;
                             }
                         }
                         .items-img-info{
@@ -715,50 +700,6 @@ p {
     }
 }
 
-// Section home sect 8
-// .section-home-sect-8 {
-//     .blocks-items {
-//         margin: 90px 0 110px;
-//         .owl-carousel {
-//             .item {
-//                 .logo {
-//                     img {
-//                         max-height: 100px;
-//                         max-width: 100px;
-//                         margin: 50px auto;
-//                     }
-//                 }
-//             }
-//         }
-//         .owl-theme {
-//             .owl-dots {
-//                 .owl-dot {
-//                     display: none;
-//                 }
-//             }
-//         }
-//         .owl-nav {
-//             display: block !important;
-//         }
-//         .owl-prev,
-//         .owl-next {
-//             position: absolute;
-//             top: 50%;
-//             transform: translateY(-50%);
-//             color: #aaa !important;
-//             font-size: 65px !important;
-//             font-weight: bolder;
-//             background: none !important;
-//         }
-//         .owl-prev {
-//             left: -10px;
-//         }
-//         .owl-next {
-//             right: -10px;
-//         }
-//     }
-// }
-
 // BARU
 // Home sect 8
 .home-sect-8 {
@@ -826,13 +767,12 @@ p {
                     a {
                         font-size: 20px;
                         text-align: center;
-                        color: $color-blue;
+                        color: $color-blue !important;
                         font-weight: $bold;
                         text-decoration: none;
                         transition: all 0.2s;
-
                         &:hover {
-                            color: $biru-2;
+                            color: $biru-2 !important;
                         }
                     }
                 }
@@ -873,17 +813,18 @@ p {
                 .btns {
                     a {
                         background: #f7fefa;
-                        color: $color-blue;
+                        color: $color-blue  !important;
                         display: inline-block;
                         padding: 15px 45px;
                         border: 0;
                         text-transform: capitalize;
                         z-index: 1;
                         position: relative;
-                        font-size: 16px;
+                        font-size: 16px !important;
                         transition: all 0.3s;
                         text-decoration: none;
-                        font-weight: $medium;
+                        font-weight: $semibold !important;
+                        letter-spacing: 1 !important;
                         &::after {
                             position: absolute;
                             left: 5px;
@@ -896,10 +837,10 @@ p {
                             transition: all 0.3s;
                         }
                         &:hover {
-                            background-color: $biru-2;
-                            color: #fff;
+                            background-color: $biru-2 !important;
+                            color: #fff !important;
                             &::after {
-                            border: 1px solid #86a0b6;
+                            border: 1px solid #86a0b6 !important;
                             }
                         }
                     }
@@ -1005,8 +946,8 @@ p {
                         .item-btns {
                             a {
                                 text-decoration: none;
-                                color: $color-blue;
-                                font-weight: $bold;
+                                color: $color-blue !important;
+                                font-weight: $bold !important;
                                 margin-top: 20px;
                                 padding-bottom: 10px;
                                 position: relative; 
@@ -1017,13 +958,12 @@ p {
                                     bottom: 0;
                                     width: 100%;
                                     height: 1px;
-                                    background: #002642;
+                                    background: $color-blue !important;
                                     content: "";
                                     transition: all 0.3s;
                                 }
                                 &:hover {
-                                    color: $biru-2;
-                                   
+                                    color: $biru-2 !important;
                                 }
                             }
                         }
@@ -1174,15 +1114,14 @@ p {
         .text-title {
             margin-bottom: 20px;
             h3 {
-                font-weight: $reguler;
-                font-size: 30px;
+                font-weight: $semibold;
+                font-size: 35xpx;
             }
         }
         .text-desc {
             margin-bottom: 50px;
             p {
-                font-size: 17px;
-                font-family: $font-raleway;
+                font-size: 17px !important;
             }
         }
         .row {

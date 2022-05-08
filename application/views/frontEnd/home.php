@@ -46,180 +46,6 @@
 	</div>
 </section>
 
-<!--  Section home 2  -->
-<!-- <section class="section-home-sect-2" id="">
-	<div class="container">
-		<div class="inner text-content">
-			<div class="blocks-items">
-				<div class="text-title mx-auto text-uppercase" data-aos="fade-down" data-aos-offset="500" data-aos-delay="50" data-aos-duration="3000">
-					<h1>Welcome to <br>Wedding Orgainzer Dhewi lestari</h1>
-				</div>
-				<div class="item">
-					<div class="row ">
-						<div class="col-md-6">
-							<div class="text-desc" data-aos="fade-right" data-aos-offset="500" data-aos-delay="500" data-aos-duration="2000">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sequi laudantium odio atque
-									blanditiis, culpa itaque et rerum possimus commodi. Molestias accusamus perferendis
-									reiciendis sint.
-								</p>
-								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officia aliquam quae
-									beatae aut eos quo vel rem facilis explicabo et, voluptates provident ea nobis modi, suscipit
-									harum ullam nemo soluta voluptate. Recusandae ipsum incidunt deserunt blanditiis ea quo,
-									eveniet aspernatur hic pariatur quaerat cumque culpa, rem accusantium, excepturi quidem
-									voluptas iure voluptatum fuga odio! . Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
-									consectetur eaque quasi ipsam aliquam! Hic tempore eius non, molestiae necessitatibus, placeat, ipsa
-									incidunt error sequi rerum odit itaque obcaecati excepturi.</p>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate hic, odio earum sapiente
-									illo laudantium natus a neque commodi? At deserunt reprehenderit alias sit illum ex odit?
-									Labore facere assumenda vitae dolores repudiandae tempore beatae, eaque maxime ipsum iusto
-									quidem.</p>
-							</div>
-						</div>
-						<div class="col-md-5" data-aos="fade-left" data-aos-offset="500" data-aos-delay="100" data-aos-duration="3000">
-							<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-								<div class="carousel-indicators">
-									<button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-									<button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
-									<button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
-								</div>
-								<div class="carousel-inner">
-									<div class="carousel-item active">
-										<img src="<?= base_url() ?>assets/img/img-carousel-1.jpg" class="d-block w-100 img img-fluid" alt="...">
-										<div class="carousel-caption ">
-											<h5>Wedding Angga & Dinda</h5>
-										</div>
-									</div>
-									<div class="carousel-item">
-										<img src="<?= base_url() ?>assets/img/img-carousel-2.jpg" class="d-block w-100 img img-fluid" alt="...">
-										<div class="carousel-caption ">
-											<h5>Wedding Riyan & Sinta</h5>
-										</div>
-									</div>
-									<div class="carousel-item">
-										<img src="<?= base_url() ?>assets/img/img-carousel-3.jpg" class="d-block w-100 img img-fluid" alt="...">
-										<div class="carousel-caption ">
-											<h5>Wedding Dimas & Bella</h5>
-										</div>
-									</div>
-								</div>
-								<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span class="visually-hidden">Previous</span>
-								</button>
-								<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-									<span class="visually-hidden">Next</span>
-								</button>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section> -->
-
-<!--  Section Home sect 3  -->
-<!-- <section class="section-home-sect-3">
-	<div class="container">
-		<div class="inner text-content">
-			<div class="blocks-items">
-				<div class="item-text text-center">
-					<div class="text-title ">
-						<h3>Kenapa kamu harus mengunakan jasa kami?</h3>
-					</div>
-					<div class="text-desc">
-						<p>Ini adalah ada beberapa alasan kenapa anda harus memilih jasa Dhewi Lestari sebagai partner anda</p>
-					</div>
-				</div>
-
-				<div class="row justify-content-evenly">
-					<div class="col-md-4">
-						<div class="item-desc text-center">
-							<div class="icons" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="500" data-aos-duration="2000">
-								<span class="iconify" data-icon="ic:outline-miscellaneous-services" data-width="19"></span>
-							</div>
-							<div class="text-title">
-								<h5>Kami Melayani</h5>
-							</div>
-							<div class="text-desc">
-								<p>Kami memberikan pelayanan terbaik kepada klien dan membuat mereka bahagia dengan apa yang kami
-									lakukan.
-									Kita melayani,
-									tidak untuk dilayani</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="item-desc text-center">
-							<div class="icons" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="500" data-aos-duration="2000">
-								<span class="iconify" data-icon="bi:person-circle" data-width="19"></span>
-							</div>
-							<div class="text-title">
-								<h5>Klient</h5>
-							</div>
-							<div class="text-desc">
-								<p>Kami menjadikan klien sebagai pusat dari apa yang kami kerjakan dan kami memastikan mereka nyaman dan
-									semua kebutuhan
-									yang diperlukan terpenuhi.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="item-desc text-center">
-							<div class="icons" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="500" data-aos-duration="2000">
-								<span class="iconify" data-icon="eos-icons:service-outlined" data-width="19"></span>
-							</div>
-							<div class="text-title">
-								<h5>Saling Percaya</h5>
-							</div>
-							<div class="text-desc">
-								<p>Kepercayaan adalah pondasi yang memperkuat layanan kami dan kepercayaan klien pada kami akan kami
-									jaga
-									dengan sebaik
-									mungkin.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="item-desc text-center">
-							<div class="icons" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="500" data-aos-duration="2000">
-								<span class="iconify" data-icon="mdi:ticket" data-width="19"></span>
-							</div>
-							<div class="text-title">
-								<h5>Unggul dalam Integritas</h5>
-							</div>
-							<div class="text-desc">
-								<p>Integritas sangat penting. Kami memberikan integritas penuh untuk apa yang kami lakukan dan berikan
-									kepada klien</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="item-desc text-center">
-							<div class="icons" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="500" data-aos-duration="2000">
-								<span class="iconify" data-icon="clarity:group-solid" data-width="19"></span>
-							</div>
-							<div class="text-title">
-								<h5>Hargai Anggota</h5>
-							</div>
-							<div class="text-desc">
-								<p>Kami menghargai, memberikan tantangan, dan menghargai para member. Menghargai pekerjaan anggota kami
-									sangat penting.
-									Karena tanpa mereka kita bukanlah apa-apa.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section> -->
-
 <!-- Home COba -->
 <section class="home-sect-coba">
 	<div class="container">
@@ -313,162 +139,140 @@
 </section>
 
 <!--  Section home sect 4  -->
-<section class="section-home-sect-4">
+<section class="home-sect-4">
 	<div class="container">
-		<div class="inner text-content">
-			<div class="blocks-items">
-				<div class="item-text text-center ">
-					<div class="text-title">
-						<h3>Jasa Apa yang Kami Sediakan?</h3>
-					</div>
-					<div class="text-desc">
-						<p>Ini adalah beberapa layanan terbaik yang dapat kami berikan kepada anda</p>
-					</div>
+		<div class="blocks-items">
+			<div class="item-text text-center ">
+				<div class="text-title">
+					<h3>Jasa Apa yang Kami Sediakan?</h3>
 				</div>
+				<div class="text-desc">
+					<p>Ini adalah beberapa layanan terbaik yang dapat kami berikan kepada anda</p>
+				</div>
+			</div>
+
+			<div class="blocks-layanan">
+				<div class="owl-carousel owl-theme" id="owl_layanan">
 
 
-				<div class="block-layanan">
-					<div class="row">
-						<div class="col-md-3">
-							<div class="items text-center">
-								<div class="pict">
-									<img src="<?= base_url() ?>assets/img/home-1.jpg" alt="" class=" img img-fluid">
-								</div>
-								<div class="title">
-									<h5>Paket Pernikahan</h5>
-								</div>
-								<div class="desc">
-									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem dolore at earum molestiae repellat dignissimos ad ?</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="items text-center">
-								<div class="pict">
-									<img src="<?= base_url() ?>assets/img/home-1.jpg" alt="" class=" img img-fluid">
-								</div>
-								<div class="title">
-									<h5>Dekorasi</h5>
-								</div>
-								<div class="desc">
-									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. ad exercitationem inventore accusantium similique?</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="items text-center">
-								<div class="pict">
-									<img src="<?= base_url() ?>assets/img/home-1.jpg" alt="" class=" img img-fluid">
-								</div>
-								<div class="title">
-									<h5>Make Up</h5>
-								</div>
-								<div class="desc">
-									<p>Lorem ipsum dolor sit dignissimos ad exercitationem inventore accusantium similique?</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="items text-center">
-								<div class="pict">
-									<img src="<?= base_url() ?>assets/img/home-1.jpg" alt="" class=" img img-fluid">
-								</div>
-								<div class="title">
-									<h5>Dan Lain-lain</h5>
-								</div>
-								<div class="desc">
-									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. similique?</p>
-								</div>
-							</div>
-						</div>
+					<div class=" item">
+						<div class="item-service">
+							<div class="img-service">
+								<img src="<?= base_url() ?>assets/img/img-service-4.jpg" alt="" class="img img-fluid">
+								<div class="item-service-text">
+									<div class="icon">
+										<span class="iconify" data-icon="material-symbols:volunteer-activism-outline-rounded"></span>
+									</div>
+									<h3>
+										<a href="">Wedding</a>
+									</h3>
 
+								</div>
+							</div>
+						</div>
 					</div>
+
+					<div class=" item">
+						<div class="item-service">
+							<div class="img-service">
+								<img src="<?= base_url() ?>assets/img/home-8.jpg" alt="" class="img img-fluid">
+								<div class="item-service-text">
+									<div class="icon">
+										<span class="iconify" data-icon="material-symbols:video-camera-back-outline-sharp"></span>
+									</div>
+									<h3>
+										<a href="">Prewedding</a>
+									</h3>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class=" item">
+						<div class="item-service">
+							<div class="img-service">
+								<img src="<?= base_url() ?>assets/img/banner-wedding.jpg" alt="" class="img img-fluid">
+								<div class="item-service-text">
+									<div class="icon">
+										<span class="iconify" data-icon="emojione-monotone:ring"></span>
+									</div>
+									<h3>
+										<a href="">Engagement</a>
+									</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class=" item">
+						<div class="item-service">
+							<div class="img-service">
+								<img src="<?= base_url() ?>assets/img/make-up/make-up (4).jpg" alt="" class="img img-fluid">
+								<div class="item-service-text">
+									<div class="icon">
+										<span class="iconify" data-icon="material-symbols:redeem"></span>
+									</div>
+									<h3>
+										<a href="">Make Up</a>
+									</h3>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class=" item">
+						<div class="item-service">
+							<div class="img-service">
+								<img src="<?= base_url() ?>assets/img/dekor/dekor (12).jpg" alt="" class="img img-fluid">
+								<div class="item-service-text">
+									<div class="icon">
+										<span class="iconify" data-icon="emojione-monotone:pine-decoration"></span>
+									</div>
+									<h3>
+										<a href="">Dekorasi</a>
+									</h3>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class=" item">
+						<div class="item-service">
+							<div class="img-service">
+								<img src="<?= base_url() ?>assets/img/thumbnail (2).jpg" alt="" class="img img-fluid">
+								<div class="item-service-text">
+									<div class="icon">
+										<span class="iconify" data-icon="emojione-monotone:dress"></span>
+									</div>
+									<h3>
+										<a href="">Gaun</a>
+									</h3>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+
+
+
+
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<!--  Section Home sect 5  -->
-<!-- <section class="home-sect-5">
-	<div class="container">
-		<div class="inner text-content">
-			<div class="blocks-items">
-				<div class="item-text text-center">
-					<div class="text-title">
-						<h3>Partner Kerja Kami Wedding Organizer Dhewi Lesatri</h3>
-					</div>
-					<div class="text-desc">
-						<p>Ini adalah partner kerja terbaik kami yang sudah kami sediakan</p>
-					</div>
-				</div>
 
-				<div class="row">
-					<div class="col-md-3">
-						<div class="pict">
-							<img src="<?= base_url() ?>assets/img/tim-1.jpg" alt="" class="img img-fluid w-100">
-						</div>
-						<div class="text-title text-center">
-							<p>Dhewi</p>
-						</div>
-						<div class="link-sosmed-icons text-center">
 
-							<a href="" class="items-icons ">
-								<span class="iconify icon-ig" data-icon="fa-brands:instagram"></span>
-								<span class="iconify icon-fb" data-icon="fa-brands:facebook-square"></span>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="pict">
-							<img src="<?= base_url() ?>assets/img/tim-2.jpg" alt="" class="img img-fluid w-100">
-						</div>
-						<div class="text-title text-center">
-							<p>Siska</p>
-						</div>
-						<div class="link-sosmed-icons text-center
-							">
-							<a href="" class="items-icons ">
-								<span class="iconify icon-ig" data-icon="fa-brands:instagram"></span>
-								<span class="iconify icon-fb" data-icon="fa-brands:facebook-square"></span>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="pict">
-							<img src="<?= base_url() ?>assets/img/tim-3.jpg" alt="" class="img img-fluid w-100">
-						</div>
-						<div class="text-title text-center">
-							<p>Dinda</p>
-						</div>
-						<div class="link-sosmed-icons text-center">
-							<a href="" class="items-icons ">
-								<span class="iconify icon-ig" data-icon="fa-brands:instagram"></span>
-								<span class="iconify icon-fb" data-icon="fa-brands:facebook-square"></span>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="pict">
-							<img src="<?= base_url() ?>assets/img/tim-4.jpg" alt="" class="img img-fluid w-100">
-						</div>
-						<div class="text-title text-center">
-							<p>Satria</p>
-						</div>
-						<div class="link-sosmed-icons  text-center">
-							<a href="" class="items-icons ">
-								<span class="iconify icon-ig" data-icon="fa-brands:instagram"></span>
-								<span class="iconify icon-fb" data-icon="fa-brands:facebook-square"></span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section> -->
-
-<!-- BARU -->
 <!-- Home sect 5 -->
 <section class="about-sect-5 items-team">
 	<div class="container">
@@ -616,185 +420,7 @@
 	</div>
 </section>
 
-<!--  Section home sect 6  -->
-<!-- <section class="section-home-sect-6" data-parallax="scroll" data-z-index="1" data-image-src="<?= base_url() ?>assets/img/bg-paralax.jpg">
-	<div class="bg-parallax">
-		<div class="container">
-			<div class="inner text-content">
-				<div class="blocks-items">
-					<div class="item-text text-center">
-						<div class="text-title">
-							<h3>Testimoni dari klien-klien kami</h3>
-						</div>
-						<div class="text-desc">
-							<p>Ini adalah beberapa kata-kata indah dari klien kami yang mendorong kami untuk terus memberikan layanan
-								terbaik</p>
-						</div>
-					</div>
-					<div class="testimoni-carousel owl-carousel owl-theme owl-loaded">
-						<div class="item-testimoni">
-							<div class="pict">
-								<img src="<?= base_url() ?>assets/img/card-carousel-1.jpg" alt="">
-							</div>
-							<div class="item-text">
-								<div class="title">
-									<h3>Sinta</h3>
-								</div>
-								<div class="text-desc">
-									<hr>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero?</p>
-								</div>
-							</div>
-						</div>
 
-						<div class="item-testimoni">
-							<div class="pict">
-								<img src="<?= base_url() ?>assets/img/card-carousel-2.jpg" alt="">
-							</div>
-							<div class="item-text">
-								<div class="title">
-									<h3>Firda</h3>
-								</div>
-								<div class="text-desc">
-									<hr>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero? Lorem ipsum dolor sit amet
-										consectetur,
-										adipisicing elit. Nesciunt, ad. Est perferendis, ab culpa expedita laborum, blanditiis laudantium
-										esse
-										architecto </p>
-								</div>
-							</div>
-						</div>
-
-						<div class="item-testimoni">
-							<div class="pict">
-								<img src="<?= base_url() ?>assets/img/card-carousel-3.jpg" alt="">
-							</div>
-							<div class="item-text">
-								<div class="title">
-									<h3>Dinda</h3>
-								</div>
-								<div class="text-desc">
-									<hr>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero? Lorem ipsum dolor, sit amet
-										consectetur
-										adipisicing elit.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="item-testimoni">
-							<div class="pict">
-								<img src="<?= base_url() ?>assets/img/card-carousel-4.jpg" alt="">
-							</div>
-							<div class="item-text">
-								<div class="title">
-									<h3>Salsa</h3>
-								</div>
-								<div class="text-desc">
-									<hr>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea tenetur quo, neque ullam aperiam earum
-										maiores
-										unde . Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, eligendi aspernatur?</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="item-testimoni">
-							<div class="pict">
-								<img src="<?= base_url() ?>assets/img/card-carousel-5.jpg" alt="">
-							</div>
-							<div class="item-text">
-								<div class="title">
-									<h3>Irma</h3>
-								</div>
-								<div class="text-desc">
-									<hr>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea Lorem ipsum dolor sit amet
-										consectetur,
-										adipisicing elit., neque ullam aperiam earum
-										maiores
-										unde harum voluptatem accusantium.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="item-testimoni">
-							<div class="pict">
-								<img src="<?= base_url() ?>assets/img/card-carousel-2.jpg" alt="">
-							</div>
-							<div class="item-text">
-								<div class="title">
-									<h3>Sindi</h3>
-								</div>
-								<div class="text-desc">
-									<hr>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea tenetur quo, neque ullam aperiam earum
-										maiores
-										unde harum voluptatem accusantium.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="item-testimoni">
-							<div class="pict">
-								<img src="<?= base_url() ?>assets/img/card-carousel-6.jpg" alt="">
-							</div>
-							<div class="item-text">
-								<div class="title">
-									<h3>Putri</h3>
-								</div>
-								<div class="text-desc">
-									<hr>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea tenetur quo, neque ullam aperiam earum
-										maiores
-										unde harum voluptatem accusantium.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="item-testimoni">
-							<div class="pict">
-								<img src="<?= base_url() ?>assets/img/card-carousel-7.jpg" alt="">
-							</div>
-							<div class="item-text">
-								<div class="title">
-									<h3>Fina</h3>
-								</div>
-								<div class="text-desc">
-									<hr>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea tenetur quo, neque ullam aperiam earum
-										maiores
-										unde harum voluptatem accusantium.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="item-testimoni">
-							<div class="pict">
-								<img src="<?= base_url() ?>assets/img/card-carousel-8.jpg" alt="">
-							</div>
-							<div class="item-text">
-								<div class="title">
-									<h3>Dini</h3>
-								</div>
-								<div class="text-desc">
-									<hr>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea tenetur quo, neque ullam aperiam earum
-										maiores
-										unde harum voluptatem accusantium.</p>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section> -->
-
-<!-- BARU TESTIMONI KLIEN -->
 <!-- Home Sect 6 -->
 <section class="home-sect-6">
 	<div class="container-fluid">
@@ -875,62 +501,8 @@
 	<div class="img-shape">
 		<img class="img img-fluid" src="<?= base_url() ?>assets/img/test-shape2.png" alt="">
 	</div>
-
 </section>
 
-<!--  Section home 7  -->
-<!-- <section class="section-home-sect-7">
-	<div class="container">
-		<div class="inner text-content">
-			<div class="blocks-items">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="item-text text-center">
-							<div class="text-title">
-								<h3>1200 <span class="iconify" data-icon="charm:plus" data-width="50"></span></h3>
-							</div>
-							<div class="text-desc">
-								<p>Client</p>
-								<p>Kami membantu klien merencanakan momen bahagianya, mulai dari mendesain, menyediakan segala jasa
-									pendukung dan
-									mengorganisir acara.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="item-text text-center">
-							<div class="text-title">
-								<h3>1500 <span class="iconify" data-icon="charm:plus" data-width="50"></span></h3>
-							</div>
-							<div class="text-desc">
-								<p>Event</p>
-								<p>Kami melayani event di Jember dan sekitarnya, mulai dari lamaran, akad nikah, wedding, prewedding,
-									dan
-									sebagainya.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="item-text text-center">
-							<div class="text-title">
-								<h3>50 <span class="iconify" data-icon="charm:plus" data-width="50"></span></h3>
-							</div>
-							<div class="text-desc">
-								<p>Partners</p>
-								<p>Kami memiliki partner atau tim yang terdiri dari beberapa vendor pendukung wedding, gedung
-									serbaguna, hotel dan
-									sebagainya.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-</section> -->
-
-<!-- Baru -->
 <!-- Hoem sect 7 -->
 <section class="home-sect-7 block-counterUp">
 	<div class="container">
@@ -1111,7 +683,7 @@
 						<h3>Rayakan Cinta Anda bersama Kami</h3>
 					</div>
 					<div class="btns">
-						<a href="">Hubunggi Kami</a>
+						<a href="#">Hubungi Kami</a>
 					</div>
 				</div>
 			</div>
