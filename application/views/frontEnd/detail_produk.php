@@ -5,6 +5,12 @@
 			<div class="blocks-items">
 				<div class="text-title text-center">
 					<h3>Detail Porduk</h3>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="<?= base_url() ?>">Home</a></li>
+							<li class="breadcrumb-item">Detail Produk</li>
+						</ol>
+					</nav>
 				</div>
 			</div>
 		</div>
@@ -30,17 +36,16 @@
 					</div>
 
 					<div class="col-md-5">
-						<div class="item-text">
+						<div class="items-text">
 							<div class="title">
 								<h3><?= $produk->nama_produk ?></h3>
 							</div>
-							<div class="title-kat">
-								<h5>Nama kategori : <?= $produk->nama_kategori ?></h5>
-								<div class="desc">
-									<p><?= $produk->deskripsi ?></p>
-								</div>
+							<div class="text">
 								<div class="price">
 									<p>Rp. <?= number_format($produk->harga, 0) ?></p>
+								</div>
+								<div class="desc">
+									<p><?= $produk->deskripsi ?></p>
 								</div>
 
 								<?php
@@ -52,26 +57,31 @@
 								?>
 								<div class="row">
 									<div class="col-md-3">
-										<input type="number" name="qty" min="1" max="1" value="1" class="form-control">
+										<div class="item-qty">
+											<input type="number" name="qty" min="1" max="1" value="1" class="form-control">
+										</div>
 									</div>
 									<div class="col-md-5">
-										<div class="icon-cart">
+										<div class="item-addCart">
 											<button type="submit" id="btnSweetAlert" class="nav-link p-0">
-												<span class="iconify " data-width="30" data-icon="fa:cart-plus"></span>
 												Add Cart
 											</button>
 										</div>
 									</div>
+									<div class="item-meta-kat">
+										<h5>Kategori: <a href="<?= base_url() ?>"> <?= $produk->nama_kategori ?></a>
+										</h5>
+									</div>
 								</div>
+
 								<?php form_close(); ?>
 
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="title text-center">
-							<h3>Detail Produk</h3>
-							<hr>
+						<div class="title">
+							<h3>Keterangan</h3>
 						</div>
 						<div class="col-md-8 offset-lg-3">
 							<div class="desc">
