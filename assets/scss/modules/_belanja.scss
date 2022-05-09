@@ -1,0 +1,174 @@
+@use "globals";
+// Untuk Title
+$font-raleway :'Raleway',
+sans-serif;
+$font-great: 'Great Vibes',
+	cursive;
+$font-poppins: 'Poppins',
+	sans-serif;
+$font-halant: 'Halant',
+	serif;
+// color
+$color-pink: #ee9e9e;
+$color-pink2: #fa8282;
+$bg-section: #fffdfdea;
+$color-desc: #738ea5;
+$biru-1: #d4e6f5;
+$biru-2: #86a0b6;
+$color-blue: #002642;
+// Font Weight
+$light: 300;
+$reguler: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$black: 900;
+
+p {
+	color: $color-desc ;
+}
+
+
+
+// Belanja/Checkout Sect 2
+.tableBelanja-sect-2 {
+	.blocks-items {
+		padding: 100px 0 120px;
+		.card {
+			border: 0;
+			margin-bottom: 35px;
+			.card-body {
+				box-shadow: 0 1px 20px 0 rgb(0 0 0 / 8%);
+				padding: 25px;
+				.table-belanja {
+					border-radius: 0;
+					tr {
+						th {
+							font-size: 15px;
+							color: #333;
+							font-weight: $bold;
+						}
+						td {
+							color: #635c5c;
+							// h5 {
+							// 	color: #635c5c;
+							// }
+						}
+						.btn-hapus {
+							a {
+								border:none ;
+								svg {
+									border-radius: 50%;
+									transition: all 0.3s;
+									font-size: 22px;
+									&:hover {
+										background-color: $color-desc;
+										color: #fff;
+										padding: 2px;
+									}
+								}
+							}
+						}
+					}
+				}
+				.items-btn {
+					button {
+						background-color: $biru-2;
+						color: #fff;
+						font-size: 14px;
+						padding: 8px 24px;
+						letter-spacing: 1px;
+						border: 0;
+						font-weight: $reguler;
+						transition: all 0.3s;
+						font-family: $font-raleway ;
+						&:hover {
+								background-color: #86a0b6de;
+							}
+					}
+					a {
+						background-color: $biru-2;
+						color: #fff !important;
+						font-size: 14px !important;
+						height: 38px;
+						line-height: 38px;
+						padding: 10px 24px;
+						letter-spacing: 1px;
+						border: 0;
+						font-weight: $reguler;
+						transition: all 0.3s;
+						text-decoration: none;
+						&:hover {
+							background-color: #86a0b6de;
+						}
+					}
+				}
+			}
+		}
+		.card-total {
+			background-color: #fff;
+			box-shadow: 0 1px 20px 0 rgb(0 0 0 / 8%);
+			padding: 25px 40px;
+			.card-body {
+				.title {
+					margin-bottom: 25px;
+					h3 {
+						font-size: 30px;
+						font-weight: $medium;	
+					}
+				}
+				.table {
+					.cart-subTotal {
+						.text-subTotal {
+							font-size: 16px;
+							color: #333;
+							text-transform: uppercase;
+							font-weight: $medium;
+							width: 35%;
+						}
+						.sub-total {
+							span {
+								font-size: 18px;
+								color: #23282d;
+								font-weight: 600;
+							}
+						}
+					}
+					.cart-total {
+						.text-total {
+							font-size: 16px;
+							color: #333;
+							text-transform: uppercase;
+							font-weight: $medium;
+						}
+						.total {
+							span {
+								font-size: 18px;
+								color: #23282d;
+								font-weight: 600;
+							}
+						}
+					}
+				}
+				.btn-checkOut {
+					a {
+						background-color: $biru-2;
+						color: #fff !important;
+						font-size: 14px !important;
+						height: 38px;
+						line-height: 38px;
+						padding: 10px 24px;
+						letter-spacing: 1px;
+						border: 0;
+						font-weight: $reguler;
+						transition: all 0.3s;
+						text-decoration: none;
+						&:hover {
+							background-color: #86a0b6de;
+						}
+					}
+				}
+			}
+		}
+	}
+}
