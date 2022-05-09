@@ -14,122 +14,7 @@
 </section>
 <!-- end hero image banner -->
 
-
-
-<!-- About sect 2	-->
-<!-- <section class="section-tentangKami-sect-2">
-	<div class="container">
-		<div class="inner text-content">
-			<div class="blocks-items">
-				<div class="logo text-center">
-					<img src="<?= base_url(); ?>assets/img/logo-DL.png" alt="" class="img img-fluid">
-				</div>
-				<div class="item-text text-center">
-					<div class="text-title">
-						<h3>Kami hadir karena sebuah Kepercayaan</h3>
-					</div>
-					<div class="text-desc mx-auto">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, totam nihil placeat, facilis
-							dolorem nisi amet quaerat laboriosam autem odit quos illum quis excepturi omnis fugit labore. Voluptate
-							accusantium, voluptatibus, neque nihil quidem inventore magni odio corrupti iusto aliquam, aliquid quis
-							molestiae exercitationem Natus est veniam cupiditate
-							recusandae fugiat illo impedit inventore hic rerum pariatur. Officiis minima molestias placeat deserunt
-							voluptatibus distinctio laboriosam!</p>
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, est eum at velit sunt dolor cupiditate,
-							ducimus nobis unde rerum minima ad magnam! Aspernatur distinctio, ullam accusamus fuga facere veniam,
-							velit et alias eaque nam illo quaerat incidunt voluptatibus voluptatum ut, vero blanditiis ex nemo a?
-							Quia, reprehenderit aliquam?</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section> -->
-<!-- Edn about sect 2 -->
-
-<!-- About sect 3 -->
-<!-- <section class="section-home-sect-5">
-	<div class="container">
-		<div class="inner text-content">
-			<div class="blocks-items">
-				<div class="item-text text-center">
-					<div class="text-title">
-						<h3>Partner Kerja Kami Wedding Organizer Dhewi Lesatri</h3>
-					</div>
-					<div class="text-desc">
-						<p>Ini adalah partner kerja terbaik kami yang sudah kami sediakan</p>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-3">
-						<div class="pict">
-							<img src="<?= base_url(); ?>assets/img/tim-1.jpg" alt="" class="img img-fluid w-100">
-						</div>
-						<div class="text-title text-center">
-							<p>Dhewi</p>
-						</div>
-						<div class="link-sosmed-icons text-center">
-
-							<a href="" class="items-icons ">
-								<span class="iconify icon-ig" data-icon="fa-brands:instagram"></span>
-								<span class="iconify icon-fb" data-icon="fa-brands:facebook-square"></span>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="pict">
-							<img src="<?= base_url(); ?>assets/img/tim-2.jpg" alt="" class="img img-fluid w-100">
-						</div>
-						<div class="text-title text-center">
-							<p>Siska</p>
-						</div>
-						<div class="link-sosmed-icons text-center
-							">
-							<a href="" class="items-icons ">
-								<span class="iconify icon-ig" data-icon="fa-brands:instagram"></span>
-								<span class="iconify icon-fb" data-icon="fa-brands:facebook-square"></span>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="pict">
-							<img src="<?= base_url(); ?>assets/img/tim-3.jpg" alt="" class="img img-fluid w-100">
-						</div>
-						<div class="text-title text-center">
-							<p>Dinda</p>
-						</div>
-						<div class="link-sosmed-icons text-center">
-							<a href="" class="items-icons ">
-								<span class="iconify icon-ig" data-icon="fa-brands:instagram"></span>
-								<span class="iconify icon-fb" data-icon="fa-brands:facebook-square"></span>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="pict">
-							<img src="<?= base_url(); ?>assets/img/tim-4.jpg" alt="" class="img img-fluid w-100">
-						</div>
-						<div class="text-title text-center">
-							<p>Satria</p>
-						</div>
-						<div class="link-sosmed-icons  text-center">
-							<a href="" class="items-icons ">
-								<span class="iconify icon-ig" data-icon="fa-brands:instagram"></span>
-								<span class="iconify icon-fb" data-icon="fa-brands:facebook-square"></span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	</div>
-</section> -->
-<!-- Edn about sect 3 -->
-
-
-<!-- Baru About sect 2 -->
+<!-- About sect 2 -->
 <section class="about-sect-2">
 	<div class="container">
 		<div class="blocks-items">
@@ -182,7 +67,7 @@
 								<h3 class="counter" id="num">100</h3>
 							</div>
 							<div class="text">
-								<p>Weddings</p>
+								<p>Wedding</p>
 							</div>
 						</div>
 					</div>
@@ -192,7 +77,7 @@
 								<h3 class="counter" id="num">440</h3>
 							</div>
 							<div class="text">
-								<p>Decoration</p>
+								<p>Prewedding</p>
 							</div>
 						</div>
 					</div>
@@ -212,7 +97,7 @@
 								<h3 class="counter" id="num">120</h3>
 							</div>
 							<div class="text">
-								<p>Weddings</p>
+								<p>Dekorasi</p>
 							</div>
 						</div>
 					</div>
@@ -230,14 +115,13 @@
 	</div>
 </section>
 
-
 <!-- Baru About sect 5 -->
 <section class="about-sect-5 items-team">
 	<div class="container">
 		<div class="blocks-items">
 			<div class="item-title">
 				<div class="title">
-					<p>Tim Kami</p>
+					<!-- <p>Tim Kami</p> -->
 					<h3>TEMUI PERENCANA KAMI</h3>
 				</div>
 				<div class="pict-title">
@@ -336,7 +220,6 @@
 									<span class="iconify" data-icon="ic:outline-tiktok"></span>
 								</a>
 							</div>
-
 						</div>
 					</div>
 
@@ -372,6 +255,93 @@
 						</div>
 					</div>
 
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- About sec 6 -->
+<section class="about-sect-6">
+	<div class="container-fluid p-0">
+		<div class="blocks-items">
+			<div class="item-title">
+				<div class="title">
+					<p>Tim Kami</p>
+					<h3>partner Kerja KAMI</h3>
+				</div>
+				<div class="pict-title">
+					<img src="<?= base_url() ?>assets/img/section-title.png" alt="" class="img img-fluid">
+				</div>
+			</div>
+			<div class="row">
+				<div class="owl-carousel owl-theme" id="owl-logo">
+					<div class="item">
+						<div class="img-partner">
+							<img src="<?= base_url() ?>assets/img/logo-1.jpg" alt="" class="img img-fluid">
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="img-partner">
+							<img src="<?= base_url() ?>assets/img/logo-2.jpg" alt="" class="img img-fluid">
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="img-partner">
+							<img src="<?= base_url() ?>assets/img/logo-3.jpg" alt="" class="img img-fluid">
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="img-partner">
+							<img src="<?= base_url() ?>assets/img/logo-4.jpg" alt="" class="img img-fluid">
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="img-partner">
+							<img src="<?= base_url() ?>assets/img/logo-5.jpg" alt="" class="img img-fluid">
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="img-partner">
+							<img src="<?= base_url() ?>assets/img/logo-6.jpg" alt="" class="img img-fluid">
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="img-partner">
+							<img src="<?= base_url() ?>assets/img/logo-7.jpg" alt="" class="img img-fluid">
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--  About sect 7  -->
+<section class="about-sect-7 home-sect-13">
+	<div class="container">
+		<div class="inner text-content">
+			<div class="blocks-items">
+				<div class="item-text text-center">
+					<div class="text-title">
+						<h3>Sukseskan Acaramu Bersama Kami</h3>
+					</div>
+					<div class="text-desc">
+						<p>Karena Kita Ditetapkan untuk Petualangan Hidup Baru Bersama</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 mx-auto" data-aos="zoom-out-up" data-aos-delay="50" data-aos-duration="2000">
+						<img src="<?= base_url() ?>assets/img/1.jpg" alt="" class="img img-fluid ">
+					</div>
 				</div>
 			</div>
 		</div>

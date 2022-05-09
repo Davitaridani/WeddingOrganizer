@@ -13,6 +13,10 @@ $color-pink:#ee9e9e;
 $color-pink2:#fa8282;
 $bg-section:#fffdfdea;
 $bg-section:#f9f9f9;
+$color-desc: #738ea5;
+$biru-1: #d4e6f5;
+$biru-2: #86a0b6;
+$color-blue: #002642;
 // Font Weight
 $light: 300;
 $reguler: 400;
@@ -22,6 +26,8 @@ $bold: 700;
 $black: 900;
 .navbar {
     z-index: 999;
+    // max-width: 120px;
+    box-shadow: 0 -5px 15px #27292bad;
     .item-logo {
         height: 70px;
         line-height: 70px;
@@ -38,10 +44,12 @@ $black: 900;
         }
     }
     .navbar-nav {
+        margin: 0 auto;
         .nav-item {
-            margin-right: 20px;
+            // margin-right: 20px;
+            padding: 0 15px;
             .active {
-                color: #fa8282 !important;
+                color: $biru-2 !important;
             }
             a {
                 font-family: $font-poppins;
@@ -49,9 +57,10 @@ $black: 900;
                 font-size: 15px;
                 text-transform: uppercase;
                 letter-spacing: 0.6px;
-            }
-            a:hover {
-                color: #fa8282 !important;
+                color: #232f4b !important;
+                &:hover {
+                    color: $biru-2 !important;
+                }
             }
             .dropdown-menu {
                 a {
@@ -85,15 +94,15 @@ $black: 900;
                 text-decoration: none;
                 svg {
                     vertical-align: middle !important;
-                    color: #fa8282;
+                    color: $color-desc;
                 }
                 .label-qty {
                     position: relative;
                     top: -32px;
                     left: 13px;
                     font-size: 10px;
-                    background-color: #f7c3c3;
-                    color: #000000;
+                    background-color: $biru-2;
+                    color: #fff;
                     border-radius: 50%;
                     width: 14px;  
                 }

@@ -16,6 +16,7 @@ $bg-section:#f9f9f9;
 $color-desc:#738ea5;
 $biru-1: #d4e6f5;
 $biru-2: #86a0b6;
+$biru-3:#cde0ef;
 $color-blue:#002642;
 // Font Weight
 $light: 300;
@@ -91,7 +92,7 @@ p {
         }
         .btns-slide {
             height: 40px;
-            background-color: #ee9e9e;
+            background-color: $biru-2;
             display: inline-block;
             width: 200px;
             a {
@@ -143,141 +144,21 @@ p {
     }
 }
 
-// Section home 2 
-.section-home-sect-2 {
-    .blocks-items {
-        margin: 100px 0 80px;
-        .text-title {
-            margin-bottom: 40px;
-            h1 {
-                color: $color-pink2;
-                font-family: $font-halant;
-                font-size: 40px;
-                letter-spacing: 1px;
-                line-height: 1.2;
-            }
-        }
-        .text-desc {
-            // margin-bottom: 20px;
-            p:nth-child(1) {
-                font-family: $font-raleway;
-                font-weight: $reguler;
-                font-size: 17px;
-                line-height: 1.5;
-                margin-bottom: 20px;
-            }
-            p:nth-child(2) {
-                font-family: $font-raleway;
-                font-weight: $reguler;
-                font-size: 17px;
-                line-height: 1.5;
-                margin-bottom: 20px;
-            }
-            p:nth-child(3) {
-                font-family: $font-raleway;
-                font-weight: $reguler;
-                font-size: 17px;
-                line-height: 1.5;
-                margin-bottom: 20px;
-            }
-        }
-        .col-md-5 {
-            .carousel-inner {
-                .carousel-item {
-                    img {
-                        object-fit: cover;
-                        height: 570px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-// Section home 3
-.section-home-sect-3 {
-    background-color: $bg-section;
-    .blocks-items {
-        padding: 100px 0 80px;
-        .item-text {
-            .text-title {
-                padding: 0 0 15px;
-                h3 {
-                    font-family: $font-poppins;
-                    color: #333;
-                    font-weight: $reguler;
-                    font-size: 30px;
-                }
-            }
-            .text-desc {
-                margin-bottom: 50px;
-                p {
-                    font-family: $font-raleway;
-                    font-weight: $reguler;
-                    font-size: 17px;
-                    line-height: 1.5;
-                }
-            }
-        }
-        .item-card {
-            .team_body {
-                .team_title a:hover {
-                    color: #ee9e9e;
-                }
-                .team_subtitle p {
-                    font-size: 14px;
-                    line-height: 1.5;
-                    padding: 0 15px;
-                }
-            }
-        }
-        .item-desc {
-            .icons {
-                margin-bottom: 30px;
-                .iconify {
-                    background-color: #ee9e9e;
-                    color: #fff;
-                    height: 50px;
-                    width: 50px;
-                    padding: 10px;
-                    border-radius: 50%;
-                }
-            }
-            .text-title {
-                margin-bottom: 10px;
-                h5 {
-                    font-family: $font-poppins;
-                    font-weight: $medium;
-                    font-size: 20px;
-                }
-            }
-            .text-desc {
-                margin-bottom: 30px;
-                p {
-                    font-family: $font-raleway;
-                    line-height: 1.5;
-                    font-size: 17px;
-                }
-            }
-        }
-    }
-}
-
-// Home sect coba
-.home-sect-coba {
+// Home sect 
+.home-sect-2 {
     margin-bottom: 100px;
     .blocks-items {
         padding-top: 80px;
         .title {
             margin-bottom: 50px;
             h3 {
-                font-size: 30px;
+                font-size: 40px;
                 margin-bottom: 10px;
 
             }
             hr {
                 height:2px ;
-                color: #fa8282;
+                color: $biru-2;
                 width: 150px;
                 margin: auto;
             }
@@ -287,12 +168,19 @@ p {
                 .col-md-4{
                     .icon {
                         margin-bottom: 30px;
+                        border-radius: 50%;
+                        height: 50px;
+                        width: 50px;
+                        line-height: 42px;
+                        margin: 0 auto 25px;
+                        background-color: $biru-2;
                         svg {
-                            color: #ee9e9e;
+                            color: #fff;
+                            font-size: 22px;
                         }
                     }
                     .title {
-                        margin-bottom: 10px;
+                        margin-bottom: 15px;
                         h3 {
                             font-size: 20px;
                         }
@@ -308,9 +196,151 @@ p {
     }
 }
 
+// Section home 3
+.home-sect-3 {
+    .blocks-items {
+        padding: 0 0 120px;
+        .row {
+            .items-pict {
+                position: relative;
+                z-index: 1;
+                .img-about-1 {
+                    padding: 16px;
+                    box-shadow: 0px 2px 16.8px 3.2px rgb(0 0 0 / 8%);
+                    background: #fff;
+                    max-width: 505px;
+                    text-align: center;
+                    .pict-1 {
+                        padding: 20px;
+                        background: #86a0b6;
+                        img {
+                            margin: 0 auto;
+                            width: 100%;
+                        }
+                    }
+                }
+                .item-img {
+                    position: absolute;
+                    left: 28px;
+                    top: 40px;
+                    transition: all 5s;
+                    transform: rotate(10deg);
+                    .img-about-2 {
+                        padding: 15px;
+                        box-shadow: 0px 2px 16.8px 3.2px rgb(0 0 0 / 8%);
+                        background: #fff;
+                        max-width: 465px;
+                            .pict-2 {
+                                padding: 20px;
+                                background-color: $biru-2;
+                                img {
+                                    height: auto;
+                                    max-width: 100%;
+                                    border: none;
+                                    border-radius: 0;
+                                }
+                            }
+                        }
+                }
+
+                .img-single {
+                    img {
+                        position: absolute;
+                        left: -45%;
+                        bottom: 0;
+                        z-index: -1;
+                    }
+                }
+            }
+
+            .items-text {
+                .pict-title {
+                    margin-bottom: 20px;
+
+                    img {
+                        width: 90px;
+                    }
+                }
+
+                .title {
+                    margin-bottom: 35px;
+
+                    h3 {
+                        color: #002642;
+                        font-size: 35px;
+                    }
+                }
+                .desc {
+                    p:nth-child(1) {
+                        margin-bottom: 25px;
+                        font-size: 16px;
+                        color: #848892;
+                    }
+
+                    p:nth-child(2) {
+                        margin-bottom: 25px;
+                        font-size: 16px;
+                        color: #848892;
+                    }
+                }
+                .items-btn {
+                    margin-top: 40px;
+                    // border: 1px solid #cde0ef;
+                    a {
+                        background-color: $biru-3;
+                        text-decoration: none;
+                        color: $color-blue !important;
+                        padding: 15px 45px;
+                        font-weight: $semibold;
+                        border: 0;
+                        position: relative;
+                        z-index: 1;
+                        transition: all 0.3s;
+                        font-size: 16px !important;
+                        &::after {
+                            border: 1px solid #cde0ef;
+                            position: absolute;
+                            top: 5px;
+                            left: 5px;
+                            width: 100%;
+                            height: 100%;
+                            content: "";
+                            z-index: -1;
+                            transition: all 0.3s;
+                        }
+                        &:hover {
+                            background: #86a0b6;
+                            color: #fff !important;
+                            &::after {
+                                border: 1px solid #86a0b6 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 // Home setc 4 coba
 .home-sect-4{
     .blocks-items {
+        padding-bottom: 120px;
+        .item-text {
+            .title {
+                margin-bottom: 20px;
+                h3 {
+                    font-size: 35px;
+                    color: $color-blue !important;
+                }
+            }
+            .desc {
+                margin-bottom: 50px;
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
         .blocks-layanan {
             .owl-carousel {
                 .item {
@@ -416,54 +446,6 @@ p {
                 }
                 .owl-dots {
                     display: none;
-                }
-            }
-        }
-    }
-}
-
-// Section home 4
-.home-sect-4 {
-    // background-color: $bg-section;
-    .blocks-items {
-        padding: 71px 0;
-        .item-text {
-            .text-title {
-                margin-bottom: 15px;
-                h3 {
-                    font-family: $font-poppins;
-                    color: #333;
-                    font-weight: $reguler;
-                    font-size: 30px;
-                }
-            }
-            .text-desc {
-                margin-bottom: 50px;
-            }
-        }
-        .block-layanan {
-            .row {
-                .items {
-                    .pict {
-                        margin-bottom: 50px;
-                        img {
-                            border-radius: 50%;
-                            width: 150px;
-                            height: 150px;
-                        }
-                    }
-                    .title {
-                        margin-bottom: 15px;
-                        h5 {
-                            font-size: 18px;
-                        }
-                    }
-                    .desc {
-                        p {
-                            font-size: 15px;
-                            line-height: 1.5;
-                        }
-                    }
                 }
             }
         }
@@ -780,7 +762,6 @@ p {
         }
     }
 } 
-
 
 // Homs sect 9
 .home-sect-9 {

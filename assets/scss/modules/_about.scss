@@ -49,46 +49,6 @@ p {
     }
 }
 
-// Section tentang kami sect 2
-// .section-tentangKami-sect-2 {
-//     .blocks-items {
-//         padding-top: 100px;
-//         .logo {
-//             margin-bottom: 30px;
-//             img {
-//                 width: 130px;
-//             }
-//         }
-//         .item-text {
-//             .text-title {
-//                 margin-bottom: 20px;
-//                 h3 {
-//                     font-weight: $semibold;
-//                     color: $color-pink2;
-//                     font-family: $font-halant;
-//                     font-size: 30px;
-//                 }
-//             }
-//             .text-desc {
-//                 width: 950px;
-//                 margin-bottom: 50px;
-//                 // margin: 0 auto;
-//                 p:nth-child(1) {
-//                     font-family: $font-raleway;
-//                     line-height: 1.5;
-//                     font-size: 17px;
-//                     margin-bottom: 20px;
-//                 }
-//                 p:nth-child(2) {
-//                     font-family: $font-raleway;
-//                     line-height: 1.5;
-//                     font-size: 17px;
-//                 }
-//             }
-//         }
-//     }
-// }
-
 
 // About sect 2 (Baru)
 .about-sect-2 {
@@ -116,7 +76,7 @@ p {
                 .img-single {
                     img {
                         position: absolute;
-                        left: -55%;
+                        left: -50%;
                         bottom: 0;
                         z-index: -1;
                     }
@@ -149,8 +109,8 @@ p {
                     }
                     ul {
 
-                        list-style: none;
-                        padding-left: 40px;
+                        list-style: none ;
+                        padding-left: 0;
                         font-weight: 600;
                         li {
                             padding: 6px 0;
@@ -191,23 +151,39 @@ p {
                 background-color: #fff;
                 .row {
                     justify-content: center;
-                    .item-counter {
-                        text-align: center;
-                        .title {
-                            h3 {
-                                margin-bottom: 10px;
-                                font-size: 50px;
-                                // font-style: $font-halant !important;
-                                color: $color-desc;
-                                font-weight: $bold;
-                            }
+                    .col-sm-6{
+                        &::before {
+                            position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                height: 25%;
+                                width: 1px;
+                                content: "";
+                                background: #86a0b6;
                         }
-                        .text {
-                            p {
-                                font-size: 20px;
-                                color: #002642;
-                                font-weight: $bold;
-                                margin-top: 0;
+                        &::after {
+                            display: block;
+                            clear: both;
+                            content: "";
+                        }
+                        .item-counter {
+                            text-align: center;
+                            .title {
+                                h3 {
+                                    margin-bottom: 10px;
+                                    font-size: 50px;
+                                    color: $color-desc;
+                                    font-weight: $bold;
+                                }
+                            }
+                            .text {
+                                p {
+                                    font-size: 20px;
+                                    color: $color-blue !important;
+                                    font-weight: $bold;
+                                    margin-top: 0;
+                                    letter-spacing: 1;
+                                }
                             }
                         }
                     }
@@ -311,11 +287,11 @@ p {
                     margin-bottom: 10px;
                     a {
                         text-decoration: none;
-                        color: $color-blue;
+                        color: $color-blue !important;
                         font-size: 22px;
                         font-weight: $bold;
                         &:hover {
-                            color: $color-desc;
+                            color: $color-desc !important;
                         }
                     }
                 }
@@ -330,7 +306,7 @@ p {
                     justify-content: center;
                     a {
                         background-color: #edf3f8;
-                        color: $color-blue;
+                        color: $color-blue !important;
                         width: 42px;
                         height: 42px;
                         line-height: 37px;
@@ -342,8 +318,8 @@ p {
                             font-size: 22px;
                         }
                         &:hover {
-                            color: #edf3f8;
-                            background-color: $color-blue;
+                            color: #fff !important;
+                            background-color: $color-desc !important;
                             transition: all 0.3s;
                         }
                     }
@@ -353,3 +329,67 @@ p {
         }
     }
 }
+
+// About sect 6
+.about-sect-6 {
+    .blocks-items {
+        padding-bottom: 120px;
+        .item-title {
+                text-align: center;
+                margin-bottom: 70px;
+                .title {
+                    margin-bottom: 25px;
+                    h3 {
+                        font-size: 35px;
+                        text-transform: uppercase
+                    }
+                }
+        
+                .pict-title {
+                    img {
+                        height: auto;
+                        max-width: 100%;
+                    }
+        
+                    position: relative;
+                    margin: 0 auto;
+                    max-width: 200px;
+        
+                    &::before {
+                        background-color: $color-desc;
+                        position: absolute;
+                        width: 110px;
+                        left: -70px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        height: 1px;
+                        content: "";
+                    }
+        
+                    &::after {
+                        right: -70px;
+                        left: auto;
+                        background-color: $color-desc;
+                        position: absolute;
+                        width: 110px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        height: 1px;
+                        content: "";
+                    }
+                }
+            }
+        }
+        .row {
+            .owl-carousel{
+                .img-partner {
+                    img {
+                        margin: 0 auto;
+                        height: auto;
+                        width: 150px;
+                    }
+                }
+            }
+        }
+
+} 

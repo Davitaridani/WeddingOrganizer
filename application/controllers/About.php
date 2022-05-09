@@ -7,7 +7,7 @@ class About extends CI_Controller
 	{
 
 		$data = [
-			'title' => 'Wedding Organizer',
+			'title' => 'About',
 			'isi' => 'frontEnd/about'
 
 		];
