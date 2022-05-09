@@ -6,7 +6,7 @@
 			<div class="text-title text-capitalize">
 				<h1>Pelayanan dengan kualitas tinggi adalah kunci kesuksesan kami</h1>
 			</div>
-			<div class="text-desc" data-aos="fade-down" data-aos-offset="500" data-aos-delay="50" data-aos-duration="3000">
+			<div class="text-desc">
 				<p>Pelayanan yang baik dan memenuhi seluruh kebutuhan klien adalah prioritas kami.</p>
 			</div>
 			<div class="btns-slide">
@@ -46,8 +46,8 @@
 	</div>
 </section>
 
-<!-- Home COba -->
-<section class="home-sect-coba">
+<!-- Home Sect 2 -->
+<section class="home-sect-2">
 	<div class="container">
 		<div class="blocks-items">
 			<div class="title text-center">
@@ -58,9 +58,9 @@
 				<div class="row">
 					<div class="col-md-4">
 						<div class="icon">
-							<span class="iconify" data-icon="bi:chat-dots" data-width="30"></span>
+							<span class="iconify" data-icon="bi:chat-dots"></span>
 						</div>
-						<div class="title">
+						<div class=" title">
 							<h3>Konsultasi</h3>
 						</div>
 						<div class="desc">
@@ -69,7 +69,7 @@
 					</div>
 					<div class="col-md-4">
 						<div class="icon">
-							<span class="iconify" data-icon="bx:book-heart" data-width="30"></span>
+							<span class="iconify" data-icon="bx:book-heart"></span>
 						</div>
 						<div class="title">
 							<h3>Paket Pernikahan</h3>
@@ -80,7 +80,7 @@
 					</div>
 					<div class="col-md-4">
 						<div class="icon">
-							<span class="iconify" data-icon="uiw:date" data-width="30"></span>
+							<span class="iconify" data-icon="uiw:date"></span>
 						</div>
 						<div class="title">
 							<h3>Mudah Booking</h3>
@@ -95,42 +95,49 @@
 	</div>
 </section>
 
-<!-- Hoome sect 4 coba -->
-<section class="home-sect-4-coba">
-	<div class="container-fluid">
+<!-- Home sect 3 -->
+<section class="home-sect-3">
+	<div class="container">
 		<div class="blocks-items">
 			<div class="row">
 				<div class="col-md-6">
-					<div class="pict">
-						<img src="<?= base_url() ?>assets/img/banner-wedding.jpg" alt="" class="img img-fluid">
-					</div>
-
-				</div>
-				<div class="col-md-6">
-					<div class="text">
-						<div class="title">
-							<h3>Siapa Kami</h3>
-						</div>
-						<div class="desc">
-							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint itaque quia magni tempora consequuntur laudantium aut voluptate dolorem eius fuga!</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="text">
-						<div class="title">
-							<h3>Vendor Kami</h3>
-						</div>
-						<div class="desc">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eum a perferendis sunt distinctio quia, quo debitis autem itaque necessitatibus!</p>
+					<div class="items-pict">
+						<div class="img-about-1">
+							<div class="pict-1">
+								<img src="<?= base_url() ?>assets/img/about-1.png" alt="" class=" img img-fluid">
+							</div>
 						</div>
 
+						<div class="item-img" data-aos-duration="2500" data-aos-delay="150 " data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine">
+							<div class="img-about-2">
+								<div class="pict-2">
+									<img src="<?= base_url() ?>assets/img/about-2.png" alt="" class="img img-fluid">
+								</div>
+							</div>
+						</div>
+
+						<div class="img-single">
+							<img src="<?= base_url() ?>assets/img/about-shape.png" class=" img img-fluid" alt="">
+						</div>
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div class="pict">
-						<img src="<?= base_url() ?>assets/img/banner-wedding.jpg" alt="" class="img img-fluid">
+					<div class="items-text">
+						<div class="pict-title">
+							<img src="<?= base_url() ?>assets/img/about-title.png" alt="" class=" img img-fluid">
+						</div>
+						<div class="title" data-aos="fade-left" data-aos-offset="100" data-aos-delay="50" data-aos-duration="2500">
+							<h3>Perencana untuk Pernikahan Sempurna Anda</h3>
+						</div>
+						<div class="desc" data-aos="fade-left" data-aos-offset="150" data-aos-delay="250" data-aos-duration="2000">
+							<p>Sudah menjadi fakta lama bahwa pembaca akan terganggu oleh konten halaman yang dapat dibaca ketika melihat tata letaknya. Inti dari penggunaan Lorem Ipsum adalah bahwa ia memiliki distribusi huruf yang kurang lebih normal.</p>
+							<p>Konten di sini, konten di sini', membuatnya tampak seperti bahasa Inggris yang dapat dibaca. Banyak paket penerbitan desktop dan editor halaman web sekarang menggunakan.</p>
+						</div>
+						<div class="items-btn">
+							<a href="<?= base_url() ?>about">Lihat Detail
+
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -143,10 +150,10 @@
 	<div class="container">
 		<div class="blocks-items">
 			<div class="item-text text-center ">
-				<div class="text-title">
+				<div class="title">
 					<h3>Jasa Apa yang Kami Sediakan?</h3>
 				</div>
-				<div class="text-desc">
+				<div class="desc">
 					<p>Ini adalah beberapa layanan terbaik yang dapat kami berikan kepada anda</p>
 				</div>
 			</div>
@@ -155,7 +162,7 @@
 				<div class="owl-carousel owl-theme" id="owl_layanan">
 
 
-					<div class=" item">
+					<div class=" item" data-aos="flip-down" data-aos-offset="50" data-aos-duration="2500">
 						<div class="item-service">
 							<div class="img-service">
 								<img src="<?= base_url() ?>assets/img/img-service-4.jpg" alt="" class="img img-fluid">
@@ -172,7 +179,7 @@
 						</div>
 					</div>
 
-					<div class=" item">
+					<div class=" item" data-aos="flip-down" data-aos-offset="50" data-aos-duration="2500">
 						<div class="item-service">
 							<div class="img-service">
 								<img src="<?= base_url() ?>assets/img/home-8.jpg" alt="" class="img img-fluid">
@@ -190,7 +197,7 @@
 					</div>
 
 
-					<div class=" item">
+					<div class="item" data-aos="flip-down" data-aos-offset="50" data-aos-duration="2500">
 						<div class="item-service">
 							<div class="img-service">
 								<img src="<?= base_url() ?>assets/img/banner-wedding.jpg" alt="" class="img img-fluid">
@@ -206,7 +213,7 @@
 						</div>
 					</div>
 
-					<div class=" item">
+					<div class=" item" data-aos="flip-down" data-aos-offset="50" data-aos-duration="2500">
 						<div class="item-service">
 							<div class="img-service">
 								<img src="<?= base_url() ?>assets/img/make-up/make-up (4).jpg" alt="" class="img img-fluid">
@@ -223,7 +230,7 @@
 						</div>
 					</div>
 
-					<div class=" item">
+					<div class="item" data-aos="flip-down" data-aos-offset="50" data-aos-duration="2500">
 						<div class="item-service">
 							<div class="img-service">
 								<img src="<?= base_url() ?>assets/img/dekor/dekor (12).jpg" alt="" class="img img-fluid">
@@ -240,7 +247,7 @@
 						</div>
 					</div>
 
-					<div class=" item">
+					<div class="item" data-aos="flip-down" data-aos-offset="50" data-aos-duration="2500">
 						<div class="item-service">
 							<div class="img-service">
 								<img src="<?= base_url() ?>assets/img/thumbnail (2).jpg" alt="" class="img img-fluid">
@@ -251,27 +258,16 @@
 									<h3>
 										<a href="">Gaun</a>
 									</h3>
-
 								</div>
 							</div>
 						</div>
 					</div>
-
-
-
-
-
-
-
-
 
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-
-
 
 <!-- Home sect 5 -->
 <section class="about-sect-5 items-team">
@@ -420,7 +416,6 @@
 	</div>
 </section>
 
-
 <!-- Home Sect 6 -->
 <section class="home-sect-6">
 	<div class="container-fluid">
@@ -428,8 +423,7 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="items-img">
-						<img src="<?= base_url() ?>assets/img/test-thumb.jpg" alt="">
-
+						<img src="<?= base_url() ?>assets/img/test-thumb.jpg" alt="" data-aos="zoom-in" data-aos-offset="250" data-aos-delay="100" data-aos-duration="1000">
 						<div class="img-bingkai">
 							<img src="<?= base_url() ?>assets/img/testi-shape.png" alt="">
 						</div>
@@ -563,57 +557,6 @@
 	</div>
 </section>
 
-
-<!--  Section home sect-8 -->
-<!-- <section class="section-home-sect-8">
-	<div class="container-fluid">
-		<div class="inner text-content">
-			<div class="blocks-items">
-				<hr>
-				<div class="owl-carousel owl-theme mx-auto" id="owl-logo">
-					<div class="item">
-						<div class="logo">
-							<img src="<?= base_url() ?>assets/img/logo-1.jpg" alt="">
-						</div>
-					</div>
-					<div class="item">
-						<div class="logo">
-							<img src="<?= base_url() ?>assets/img/logo-2.jpg" alt="">
-						</div>
-					</div>
-					<div class="item">
-						<div class="logo">
-							<img src="<?= base_url() ?>assets/img/logo-3.jpg" alt="">
-						</div>
-					</div>
-					<div class="item">
-						<div class="logo">
-							<img src="<?= base_url() ?>assets/img/logo-4.jpg" alt="">
-						</div>
-					</div>
-					<div class="item">
-						<div class="logo">
-							<img src="<?= base_url() ?>assets/img/logo-5.jpg" alt="">
-						</div>
-					</div>
-					<div class="item">
-						<div class="logo">
-							<img src="<?= base_url() ?>assets/img/logo-6.jpg" alt="">
-						</div>
-					</div>
-					<div class="item">
-						<div class="logo">
-							<img src="<?= base_url() ?>assets/img/logo-7.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<hr>
-			</div>
-		</div>
-	</div>
-</section> -->
-
-
 <!-- Baru Home sect 8 -->
 <section class="home-sect-8">
 	<div class="container">
@@ -632,36 +575,93 @@
 			<div class="item-list-produk">
 				<div class="row">
 					<div class="col-md-4">
-						<div class="img-produk">
-							<img src="<?= base_url() ?>assets/img/home-1.jpg" alt="" class="img img-fluid">
-						</div>
-						<div class="title">
-							<a href="#">Wedding</a>
-						</div>
-						<div class="price">
-							<p></p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="img-produk">
-							<img src="<?= base_url() ?>assets/img/home-2.jpg" alt="" class="img img-fluid">
-						</div>
-						<div class="title">
-							<a href="#">Prewedding</a>
-						</div>
-						<div class="price">
-							<p></p>
+						<div class="item-produk">
+
+							<div class="img-produk" data-aos="flip-left" data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">
+								<img src="<?= base_url() ?>assets/img/home-1.jpg" alt="" class="img img-fluid">
+								<a href="">Lihat Detail</a>
+							</div>
+							<div class="title">
+								<a href="#">Wedding</a>
+							</div>
+							<div class="price">
+								<p></p>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="img-produk">
-							<img src="<?= base_url() ?>assets/img/home-3.jpg" alt="" class="img img-fluid">
+						<div class="item-produk">
+
+							<div class="img-produk" data-aos="flip-left" data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">
+								<img src="<?= base_url() ?>assets/img/home-2.jpg" alt="" class="img img-fluid">
+								<a href="">Lihat Detail</a>
+							</div>
+							<div class="title">
+								<a href="#">Prewedding</a>
+							</div>
+							<div class="price">
+								<p></p>
+							</div>
 						</div>
-						<div class="title">
-							<a href="#">Engagement</a>
+					</div>
+					<div class="col-md-4">
+						<div class="item-produk">
+
+							<div class="img-produk" data-aos="flip-left" data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">
+								<img src="<?= base_url() ?>assets/img/home-3.jpg" alt="" class="img img-fluid">
+								<a href="">Lihat Detail</a>
+							</div>
+							<div class="title">
+								<a href="#">Engagement</a>
+							</div>
+							<div class="price">
+								<p></p>
+							</div>
 						</div>
-						<div class="price">
-							<p></p>
+					</div>
+					<div class="col-md-4">
+						<div class="item-produk" data-aos="flip-left" data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">
+
+							<div class="img-produk">
+								<img src="<?= base_url() ?>assets/img/dekor/dekor (4).jpg" alt="" class="img img-fluid">
+								<a href="">Lihat Detail</a>
+							</div>
+							<div class="title">
+								<a href="#">Dekorasi</a>
+							</div>
+							<div class="price">
+								<p></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="item-produk" data-aos="flip-left" data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">
+
+							<div class="img-produk">
+								<img src="<?= base_url() ?>assets/img/make-up/make-up (4).jpg" alt="" class="img img-fluid">
+								<a href="">Lihat Detail</a>
+							</div>
+							<div class="title">
+								<a href="#">Make Up</a>
+							</div>
+							<div class="price">
+								<p></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="item-produk" data-aos="flip-left" data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">
+
+							<div class="img-produk">
+								<img src="<?= base_url() ?>assets/img/gown-home.jpg" alt="" class="img img-fluid">
+								<a href="">Lihat Detail</a>
+							</div>
+							<div class="title">
+								<a href="#">Gaun</a>
+							</div>
+							<div class="price">
+								<p></p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -709,7 +709,7 @@
 					<div class="col-md-4">
 						<div class="item-card">
 							<div class="card-top">
-								<div class="img-title">
+								<div class="img-title" data-aos="fade-down" data-aos-offset="150" data-aos-delay="100" data-aos-duration="2000">
 									<img src="<?= base_url() ?>assets/img/price-imag-1.png" alt="" class="img img-fluid">
 								</div>
 								<div class="title">
@@ -735,7 +735,7 @@
 					<div class="col-md-4">
 						<div class="item-card">
 							<div class="card-top">
-								<div class="img-title">
+								<div class="img-title" data-aos="fade-down" data-aos-offset="150" data-aos-delay="100" data-aos-duration="2000">
 									<img src="<?= base_url() ?>assets/img/price-3.png" alt="" class="img img-fluid">
 								</div>
 								<div class="title">
@@ -761,7 +761,7 @@
 					<div class="col-md-4">
 						<div class="item-card">
 							<div class="card-top">
-								<div class="img-title">
+								<div class="img-title" data-aos="fade-down" data-aos-offset="150" data-aos-delay="100" data-aos-duration="2000">
 									<img src="<?= base_url() ?>assets/img/price-imag-2.png" alt="" class="img img-fluid">
 								</div>
 								<div class="title">
@@ -854,10 +854,10 @@
 				</div>
 				<!-- <div class="item-img-vector"> -->
 				<div class="img-vector-1">
-					<img src="<?= base_url() ?>assets/img/img-vector.png" alt="">
+					<img src="<?= base_url() ?>assets/img/img-vector.png" alt="" data-aos="fade-down-right" data-aos-offset="500" data-aos-delay="100" data-aos-duration="2500">
 				</div>
 				<div class="img-vector-2">
-					<img src="<?= base_url() ?>assets/img/right-shape.png" alt="">
+					<img src="<?= base_url() ?>assets/img/right-shape.png" alt="" data-aos="fade-down-left" data-aos-offset="100" data-aos-delay="50" data-aos-duration="2500">
 				</div>
 			</div>
 
@@ -881,7 +881,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-12 mx-auto" data-aos="zoom-out-up" data-aos-delay="50" data-aos-duration="2000">
+					<div class="col-12 mx-auto" data-aos="zoom-out-up" data-aos-offset="100" data-aos-delay="400" data-aos-duration="2500">
 						<img src="<?= base_url() ?>assets/img/1.jpg" alt="" class="img img-fluid ">
 					</div>
 				</div>
