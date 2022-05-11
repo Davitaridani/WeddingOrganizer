@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Halant:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700;800&display=swap');
 // 
-$font-playfair :'Raleway',
+$font-raleway :'Raleway',
 sans-serif;
 $font-great:'Great Vibes',
 cursive;
@@ -13,10 +13,10 @@ serif;
 $light:300;
 $reguler: 400;
 $medium: 500;
+$semibold:600;
 $bold: 700;
 $black: 900;
 // Color 
-$pink:#FF98A1;
 $color-desc:#738ea5;
 $color-blue:#002642;
 // Clear text 
@@ -38,6 +38,25 @@ $color-blue:#002642;
     }
 }
 
+p,
+a,
+li {
+    font-family: $font-raleway;
+    font-size: 16px !important;
+    letter-spacing: 0.5px;
+    color: #848892 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $color-blue;
+    font-weight: $semibold;
+}
+
 .container {
     max-width: 100% !important;
     padding: 0 15px !important;
@@ -56,3 +75,40 @@ $color-blue:#002642;
         padding: 0 0 !important;
     }
 }
+
+
+.breadcrumb {
+    margin-top: 17px;
+    text-align: center;
+    justify-content: center;
+
+    li:first-child {
+        z-index: 1;
+        font-weight: $bold;
+
+        a {
+            text-decoration: none;
+            color: #fff !important;
+        font-size: 16px !important;
+        padding-top: 1.5px;
+        }
+    }
+
+    li:last-child {
+        font-weight: $bold;
+        z-index: 1;
+
+        font-size: $bold;
+        color: #fff !important;
+        text-decoration: none;
+        font-size: 16px !important;
+
+        &::before {
+            color: #fff;
+            content: "/" !important;
+            height: max-content;
+        }
+    }
+}
+
+

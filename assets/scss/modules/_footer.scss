@@ -60,8 +60,8 @@ $black: 900;
                         li{
                             a {
                                 line-height: 33px;
-                                background-color: #fff;
-                                color: $color-blue;
+                                background-color: #fff !important;
+                                color: $color-blue !important;
                                 text-align: center;
                                 border-radius: 50%;
                                 margin-right: 10px;
@@ -70,8 +70,8 @@ $black: 900;
                                 display: block;
                                     transition: all 0.4s;
                                 &:hover {
-                                    background-color: $color-blue;
-                                    color: #fff;
+                                    background-color: $color-blue !important;
+                                    color: #fff !important;
                                 }
                                 svg {
                                     font-size: 22px;
@@ -97,8 +97,9 @@ $black: 900;
                                 padding-bottom: 7px;
                             a {
                                 text-decoration: none;
-                                color: #575757;
+                                color: #575757 !important;
                                 font-size: 17px;
+                                font-weight: $semibold;
                                 line-height: 2;
                                 &:hover {
                                     text-decoration: underline;
@@ -131,7 +132,7 @@ $black: 900;
                             margin-bottom: 15px;
                             a {
                                 text-decoration: none;
-                                color: $color-desc;
+                                color: $color-desc !important;
                                 font-size: 19px;
                                 transition: all .8s;
                                 svg {
@@ -182,7 +183,7 @@ $black: 900;
             .text-copyright {
                 p {
                     font-size: 16px;
-                    color: #fff;
+                    color: #fff !important;
                     margin-bottom: 0;
                 }
             }

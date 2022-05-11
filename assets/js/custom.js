@@ -43,22 +43,22 @@ $(document).ready(function () {
 	});
 });
 
-// owl logo
+// owl logo partner Kerja
 $(document).ready(function () {
 	var owl_logo = $("#owl-logo");
 	owl_logo.owlCarousel({
 		loop: true,
 		autoplay: true,
 		items: 5,
-		autoplaySpeed: 1000,
+		autoplaySpeed: 700,
 		autoplayHoverPause: true,
 		smartSpeed: 1000,
 		responsive: {
 			0: {
-				items: 2,
+				items: 1,
 			},
 			600: {
-				items: 3,
+				items: 2,
 			},
 			1000: {
 				items: 5,
@@ -87,6 +87,30 @@ $(document).ready(function () {
 			},
 			1000: {
 				items: 1,
+			},
+		},
+	});
+});
+
+// Home sect 4 (OWL Layanan)
+$(document).ready(function () {
+	var owl_layanan = $("#owl_layanan");
+	owl_layanan.owlCarousel({
+		loop: true,
+		autoplay: true,
+		items: 3,
+		autoplaySpeed: 700,
+		autoplayHoverPause: true,
+		smartSpeed: 1000,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			600: {
+				items: 2,
+			},
+			1000: {
+				items: 3,
 			},
 		},
 	});

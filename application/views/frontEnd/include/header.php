@@ -83,18 +83,18 @@
 						</ul>
 					</li>
 
+					<?php $kategori = $this->m_galeri->get_all_data_galeri(); ?>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Galeri
 						</a>
 						<ul class="dropdown-menu border-0" aria-labelledby="navbarScrollingDropdown">
-							<li><a class="dropdown-item" href="<?= base_url(); ?>galeri/wedding">Wedding</a></li>
-							<li><a class="dropdown-item" href="<?= base_url(); ?>galeri/prewedding">Prewedding</a></li>
-							<li><a class="dropdown-item" href="#">Lamaran</a></li>
-							<li><a class="dropdown-item" href="<?= base_url(); ?>galeri/dekorasi">Dekorasi</a></li>
-							<li><a class="dropdown-item" href="<?= base_url(); ?>galeri/make_up">Make Up</a></li>
+							<?php foreach ($kategori as $key => $value) { ?>
+								<li><a class="dropdown-item" href="<?= base_url('galeri/kategori/' . $value->id_kategori); ?>"><?= $value->nama_kategori ?></a></li>
+							<?php } ?>
 						</ul>
 					</li>
+
 					<li class="nav-item">
 						<a class="nav-link" href="<?= base_url(); ?>contact">Contact Us</a>
 					</li>

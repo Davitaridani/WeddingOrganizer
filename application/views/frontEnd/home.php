@@ -108,7 +108,7 @@
 							</div>
 						</div>
 
-						<div class="item-img" data-aos-duration="2500" data-aos-delay="150 " data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine">
+						<div class="item-img" data-aos="fade-right" data-aos-duration="2500" data-aos-delay="150 " data-aos-offset="200">
 							<div class="img-about-2">
 								<div class="pict-2">
 									<img src="<?= base_url() ?>assets/img/about-2.png" alt="" class="img img-fluid">

@@ -6,6 +6,13 @@
 				<div class="items text-center">
 					<div class="text-title">
 						<h3>Dekorasi</h3>
+
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="<?= base_url() ?>">Home</a></li>
+								<li class="breadcrumb-item">Paket Produk</li>
+							</ol>
+						</nav>
 					</div>
 				</div>
 			</div>
@@ -18,7 +25,7 @@
 	<div class="container">
 		<div class="blocks-items">
 			<div class="title text-center">
-				<h3>Nama List kategori</h3>
+				<!-- <h3>Nama List kategori</h3> -->
 			</div>
 			<div class="row">
 				<?php foreach ($produk as $key => $value) { ?>

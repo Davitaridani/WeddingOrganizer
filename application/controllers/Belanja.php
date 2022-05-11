@@ -15,7 +15,6 @@ class Belanja extends CI_Controller
 			redirect('home');
 		}
 
-
 		$data = [
 			'title' => 'Keranjang Belanja',
 			'isi' => 'frontEnd/belanja'
