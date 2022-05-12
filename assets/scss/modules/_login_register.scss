@@ -1,0 +1,235 @@
+@use "globals";
+// Untuk Title
+$font-raleway: "Raleway", sans-serif;
+$font-great: "Great Vibes", cursive;
+$font-poppins: "Poppins", sans-serif;
+$font-halant: "Halant", serif;
+// color
+$color-desc: #738ea5;
+$color-desc-2: #848892;
+$biru-1: #d4e6f5;
+$biru-2: #86a0b6;
+$biru-3: #cde0ef;
+$color-blue: #002642;
+// Font Weight
+$light: 300;
+$reguler: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$black: 900;
+
+// CSS Login
+// Login sect 1
+.login-sect-1 {
+	background-image: url('../img/banner-wedding.jpg');
+	// height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	.blocks-items {
+		padding: 80px 0 ;
+		.row {
+			justify-content: center;
+			.col-md-6 {
+				// position: relative;
+				.items-login {
+					background-color: #fff;
+					padding: 55px 60px 50px 50px;
+					box-shadow: 0px 10px 30px 0px rgb(13 12 13 / 20%);
+					// position: absolute;
+					.item-title {
+						.title-img {
+							text-align: center;
+							margin-bottom: 20px;
+							img {
+								height: 85px;
+								width: 170px;
+							}
+						}
+						.title {
+							text-align: center;
+							p {
+								font-size: 35px;
+								color: $color-blue;
+							}
+						}
+					}
+					.items-input {
+						.block-input {
+							margin-bottom: 20px;
+							label {
+								color: #002642;
+								font-weight: 400;
+								font-size: 17px !important;
+							}
+							input {
+								border: 1px solid #C9C9C9;
+								border-radius: 0 !important;
+								padding-left: 20px;
+								height: 47px;
+								&:focus {
+									box-shadow: none;
+									border-color: $biru-2;
+								}
+							}
+						}
+
+						.item-login {
+
+							.btn-login {
+								margin-bottom: 15px;
+								button {
+									background-color: $biru-2;
+									width: 100%;
+									border: 0;
+									color: #fff;
+									padding: 10px 0;
+									letter-spacing: 1px;
+									font-size: 13px;
+									text-transform: uppercase;
+									font-weight: $semibold;
+									border-radius: 5px;
+									transition: 0.3s;
+									&:hover {
+										background-color: #708fa6c5;
+									}
+								}
+							}
+							.link-register {
+								display: flex;
+								justify-content: center;
+								p {
+									font-size: 15px !important;
+									padding-right: 3px;
+								}
+								a {
+									color: $color-desc !important;
+									font-weight: $semibold;
+									transition: 0.3s;
+									&:hover {
+										color: $biru-2 !important;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// Css Register
+// Register 
+.register-sect-1 {
+	background-image: url('../img/img-home-4.jpg');
+	// height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	.blocks-items {
+		padding: 80px 0;
+
+		.row {
+			justify-content: center;
+
+			.col-md-6 {
+				.items-register {
+					background-color: #fff;
+					padding: 55px 60px 50px 50px;
+					box-shadow: 0px 10px 30px 0px rgb(13 12 13 / 20%);
+					.item-title {
+						.title-img {
+							text-align: center;
+							margin-bottom: 20px;
+
+							img {
+								height: 85px;
+								width: 170px;
+							}
+						}
+
+						.title {
+							text-align: center;
+
+							p {
+								font-size: 35px;
+								color: $color-blue;
+							}
+						}
+					}
+
+					.items-input {
+						.block-input {
+							margin-bottom: 20px;
+
+							label {
+								color: #002642;
+								font-weight: 400;
+								font-size: 17px !important;
+							}
+
+							input {
+								border: 1px solid #C9C9C9;
+								border-radius: 0 !important;
+								padding-left: 20px;
+								height: 47px;
+
+								&:focus {
+									box-shadow: none;
+									border-color: $biru-2;
+								}
+							}
+						}
+						.item-register {
+							padding-top: 20px;
+							.btn-register {
+								margin-bottom: 15px;
+
+								button {
+									background-color: $biru-2;
+									width: 100%;
+									border: 0;
+									color: #fff;
+									padding: 10px 0;
+									letter-spacing: 1px;
+									font-size: 13px;
+									text-transform: uppercase;
+									font-weight: $semibold;
+									border-radius: 5px;
+									transition: 0.3s;
+
+									&:hover {
+										background-color: #708fa6c5;
+									}
+								}
+							}
+
+							.link-register {
+								display: flex;
+								justify-content: center;
+
+								p {
+									font-size: 15px !important;
+									padding-right: 3px;
+								}
+
+								a {
+									color: $color-desc  !important;
+									font-weight: $semibold;
+									transition: 0.3s;
+
+									&:hover {
+										color: $biru-2  !important;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
