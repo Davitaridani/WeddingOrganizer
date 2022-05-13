@@ -104,14 +104,32 @@
 
 				</ul>
 				<div class="icon-navbar d-flex">
+
+					<?php if ($this->session->userdata('email') == "") { ?>
+						<a href="<?= base_url('customer') ?>" class="nav-link p-0">
+							<span class="iconify">Login</span>
+						</a>
+					<?php } else {  ?>
+						nama pelangan
+
+						<div class="line">
+							<a href="<?= base_url('customer/register') ?>">
+								<span class="iconify" data-icon="carbon:user-avatar-filled-alt"></span>
+							</a>
+						</div>
+
+					<?php } ?>
+
 					<div class="line">
-						<span class="iconify float-right" data-icon="ci:line-xl" data-flip="horicontal"></span>
+						<a href="<?= base_url('customer/register') ?>">
+							<span class="iconify" data-icon="carbon:user-avatar-filled-alt"></span>
+						</a>
 					</div>
-					<div class="search">
+					<!-- <div class="search">
 						<button type="sumbit" class="btn btn-link p-0">
 							<span class="iconify-inline" data-icon="fe:search" data-rotate="180deg" data-width="22" data-flip="vertical"></span>
 						</button>
-					</div>
+					</div> -->
 					<div class="bag" id="bag">
 						<button class="btn btn-default btns-bag" type="submit">
 							<span class="iconify-inline" data-icon="bi:bag-heart" data-rotate="180deg" data-width="23" data-flip="vertical"></span>

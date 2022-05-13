@@ -2,7 +2,6 @@
 <section class="login-sect-1">
 	<div class="container">
 		<div class="blocks-items">
-			<?php form_open() ?>
 			<div class="row">
 				<div class="col-md-6">
 					<div class="items-login">
@@ -13,20 +12,23 @@
 							<div class="title">
 								<p>Silahkan Login</p>
 							</div>
-							<!-- <div class="text text-center">
-								<p>Silahkan Login, Sebelum Melakukan Transaksi</p>
-							</div> -->
 						</div>
 
+						<!-- Notifikasi Jika User Cutomer  Berhasil registrasi -->
+						<?= $this->session->flashdata('pesan'); ?>
+
+						<?php echo form_open('customer') ?>
 						<div class="items-input">
 							<div class="block-input">
-								<label for="username" class="form-label">Username</label>
-								<input type="text" class="form-control " id="username" placeholder="Username">
+								<label for="email" class="form-label">Email</label>
+								<input type="email" class="form-control " id="email" name="email" placeholder="Email" value="<?= set_value('email') ?>">
+								<?= form_error('email', '<small class="text-danger">', '</small>') ?>
 							</div>
 
 							<div class="block-input">
 								<label for="password" class="form-label">Password</label>
-								<input type="password" class="form-control " id="password" placeholder="Password">
+								<input type="password" class="form-control " id="password" name="password" placeholder="Password">
+								<?= form_error('password', '<small class="text-danger">', '</small>') ?>
 							</div>
 
 							<div class="item-login">
@@ -36,14 +38,14 @@
 								</div>
 								<div class="link-register">
 									<p>Belum Punya Akun? </p>
-									<a href="<?php base_url() ?>register"> Daftar</a>
+									<a href="<?= base_url('customer/register') ?>"> Daftar</a>
 								</div>
 							</div>
 						</div>
+						<?php form_close() ?>
 					</div>
 				</div>
 			</div>
-			<?php form_close() ?>
 		</div>
 	</div>
 </section>

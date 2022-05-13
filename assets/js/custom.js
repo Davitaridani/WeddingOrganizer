@@ -150,9 +150,9 @@ $(".items-testimoni").owlCarousel({
 // AOS.init();
 
 // COUNTER JS
-// const el = document.querySelector(".counter ");
+const el = document.querySelector(".counter ");
 
-// counterUp(el, {
-// 	duration: 1000,
-// 	delay: 16,
-// });
+counterUp(el, {
+	duration: 1000,
+	delay: 16,
+});
