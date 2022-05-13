@@ -8,11 +8,12 @@ class Customer extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('m_customer');
+		$this->load->model('m_auth');
 		$this->load->library('form_validation');
 	}
 
 
-	public function index()
+	public function login()
 	{
 		$this->form_validation->set_rules(
 			'email',
@@ -69,14 +70,14 @@ class Customer extends CI_Controller
 					Password Anda Salah !!
 					<button type="button" class="btn-close float-end" data-bs-dismiss="alert" aria-label="Close"></button>
 					</div>');
-					redirect('customer');
+					redirect('customer/login');
 				}
 			} else {
 				$this->session->set_flashdata('pesan', '<div class="alert alert-danger" role="alert">
 					Email Anda Belum Terdaftar !!
 					<button type="button" class="btn-close float-end" data-bs-dismiss="alert" aria-label="Close"></button>
 					</div>');
-				redirect('customer');
+				redirect('customer/login');
 			}
 		} else {
 			// Jka User Tidak Ada / belum terdaftar
@@ -84,7 +85,7 @@ class Customer extends CI_Controller
 					Email Anda Belum Terdaftar !!
 					<button type="button" class="btn-close float-end" data-bs-dismiss="alert" aria-label="Close"></button>
 					</div>');
-			redirect('customer');
+			redirect('customer/login');
 		}
 	}
 
@@ -103,6 +104,7 @@ class Customer extends CI_Controller
 		);
 		$this->form_validation->set_rules('telepon', 'Telepon', 'required', ['required' => '%s  Harus Di Isi!']);
 		$this->form_validation->set_rules('alamat', 'Alamat', 'required', ['required' => '%s  Harus Di Isi!']);
+		// $this->form_validation->set_rules('foto', 'Foto', 'required', ['required' => '%s  Harus Di Isi!']);
 		$this->form_validation->set_rules(
 			'password',
 			'Password',
@@ -127,6 +129,7 @@ class Customer extends CI_Controller
 				'email' => htmlspecialchars($this->input->post('email', true)),
 				'telepon' => htmlspecialchars($this->input->post('telepon', true)),
 				'alamat' => htmlspecialchars($this->input->post('alamat', true)),
+				'foto' => htmlspecialchars($this->input->post('foto', true)),
 				'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
 				'is_active' => 1,
 				'date_created' => time(),
@@ -136,18 +139,31 @@ class Customer extends CI_Controller
 					Registrasi Anda Berhasil, Silahkan Login
 					<button type="button" class="btn-close float-end" data-bs-dismiss="alert" aria-label="Close"></button>
 					</div>');
-			redirect('customer');
+			redirect('customer/login');
 		}
 	}
 
-	// public function logout()
-	// {
-	// 	$this->session->unset_userdata('email');
+	public function logout()
+	{
+		$this->session->unset_userdata('email');
+		$this->session->unset_userdata('foto');
 
-	// 	$this->session->set_flashdata('pesan', '<div class="alert alert-danger" role="alert">
-	// 				Anda Berhasil Logout !!
-	// 				<button type="button" class="btn-close float-end" data-bs-dismiss="alert" aria-label="Close"></button>
-	// 				</div>');
-	// 	redirect('customer');
-	// }
+		$this->session->set_flashdata('pesan', '<div class="alert alert-danger" role="alert">
+					Anda Berhasil Logout !!
+					<button type="button" class="btn-close float-end" data-bs-dismiss="alert" aria-label="Close"></button>
+					</div>');
+		redirect('customer/login');
+	}
+
+	public function akun_saya()
+	{
+		// Proteksi Halaman
+		$this->customer_login->proteksi_halaman();
+
+		$data = [
+			'title' => 'Edit Profil',
+			'isi' => 'frontEnd/akun_saya'
+		];
+		$this->load->view('frontEnd/include/wrapper', $data, FALSE);
+	}
 }

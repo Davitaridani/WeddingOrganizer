@@ -286,6 +286,16 @@
 </script>
 
 
+<!-- Waktu Alert Hilang, Di semua Alert -->
+<script>
+	window.setTimeout(function() {
+		$(".alert").fadeTo(500, 0).slideUp(500, function() {
+			$(this).remove();
+		});
+	}, 2000)
+</script>
+
+
 <!--  LINK CDN OAS  -->
 <script src=" https://unpkg.com/aos@next/dist/aos.js "> </script>
 <script>

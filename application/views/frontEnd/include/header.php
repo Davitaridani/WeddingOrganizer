@@ -96,40 +96,52 @@
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="<?= base_url(); ?>contact">Contact Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Pricing</a>
+						<a class="nav-link" href="<?= base_url('contact'); ?>">Contact Us</a>
 					</li>
 
 				</ul>
 				<div class="icon-navbar d-flex">
 
 					<?php if ($this->session->userdata('email') == "") { ?>
-						<a href="<?= base_url('customer') ?>" class="nav-link p-0">
+						<a href="<?= base_url('customer/login') ?>" class="nav-link p-0">
 							<span class="iconify">Login</span>
+							<span class="iconify" data-icon="carbon:user-avatar-filled-alt"></span>
+							<!-- <img src="" alt=""> -->
 						</a>
-					<?php } else {  ?>
-						nama pelangan
 
-						<div class="line">
+
+					<?php } else {  ?>
+						<span>
+							<?= $this->session->userdata('email') ?>
+						</span>
+
+						<!-- <div class="line">
 							<a href="<?= base_url('customer/register') ?>">
 								<span class="iconify" data-icon="carbon:user-avatar-filled-alt"></span>
 							</a>
+						</div> -->
+
+						<div class="dropdown">
+							<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+								<span class="iconify">Login</span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+								<li><a class="dropdown-item" href="<?= base_url('customer/akun_saya') ?>">Akun Saya</a></li>
+								<li><a class="dropdown-item" href="#">Pesanan Saya</a></li>
+								<div class="dropdown-divider"></div>
+								<li><a class="dropdown-item" href="<?= base_url('customer/logout') ?>">Log Out</a></li>
+							</ul>
 						</div>
 
 					<?php } ?>
 
 					<div class="line">
 						<a href="<?= base_url('customer/register') ?>">
-							<span class="iconify" data-icon="carbon:user-avatar-filled-alt"></span>
+							<img src="<?= base_url('assets/foto/' . $this->session->userdata('foto')) ?>" alt="" class="img-fluid">
 						</a>
 					</div>
-					<!-- <div class="search">
-						<button type="sumbit" class="btn btn-link p-0">
-							<span class="iconify-inline" data-icon="fe:search" data-rotate="180deg" data-width="22" data-flip="vertical"></span>
-						</button>
-					</div> -->
+
+
 					<div class="bag" id="bag">
 						<button class="btn btn-default btns-bag" type="submit">
 							<span class="iconify-inline" data-icon="bi:bag-heart" data-rotate="180deg" data-width="23" data-flip="vertical"></span>

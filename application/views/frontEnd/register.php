@@ -59,7 +59,7 @@
 
 									<div class="link-register">
 										<p>Sudah Punya Akun? </p>
-										<a href="<?= base_url('customer') ?>"> Masuk</a>
+										<a href="<?= base_url('customer/login') ?>"> Masuk</a>
 									</div>
 								</div>
 

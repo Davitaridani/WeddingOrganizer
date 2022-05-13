@@ -17,7 +17,17 @@
 						<!-- Notifikasi Jika User Cutomer  Berhasil registrasi -->
 						<?= $this->session->flashdata('pesan'); ?>
 
-						<?php echo form_open('customer') ?>
+						<?php
+
+						// Jika User Belum Login
+						if ($this->session->flashdata('error')) {
+							echo ' <div class="alert alert-danger alert-dismissible">';
+							echo $this->session->flashdata('error');
+							echo '</div>';
+						}
+
+						echo form_open('customer/login') ?>
+
 						<div class="items-input">
 							<div class="block-input">
 								<label for="email" class="form-label">Email</label>
