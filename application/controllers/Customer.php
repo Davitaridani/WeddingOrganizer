@@ -67,7 +67,7 @@ class Customer extends CI_Controller
 					redirect('home');
 				} else {
 					$this->session->set_flashdata('pesan', '<div class="alert alert-danger" role="alert">
-					Password Anda Salah !!
+					Password Atau Email Anda Salah !!
 					<button type="button" class="btn-close float-end" data-bs-dismiss="alert" aria-label="Close"></button>
 					</div>');
 					redirect('customer/login');
@@ -157,7 +157,7 @@ class Customer extends CI_Controller
 
 	public function akun_saya()
 	{
-		// Proteksi Halaman
+		// Proteksi Halaman(Jka elum login Tidak bisa masuk)
 		$this->customer_login->proteksi_halaman();
 
 		$data = [
