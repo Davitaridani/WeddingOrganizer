@@ -119,7 +119,7 @@
 								</tbody>
 							</table>
 							<div class="btn-checkOut">
-								<a href="">Checkout</a>
+								<a href="<?= base_url('belanja/checkout') ?>">Checkout</a>
 							</div>
 						</div>
 					</div>

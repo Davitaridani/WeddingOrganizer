@@ -180,7 +180,7 @@
 													</div>
 													<div class="sub_total d-flex">
 														<span class="iconify" data-icon="clarity:calculator-line" data-width="22"></span>
-														<p>Rp.<?= $this->cart->format_number($value['subtotal']); ?></p>
+														<p>Rp. <?= $this->cart->format_number($value['subtotal']); ?></p>
 													</div>
 												</div>
 											</div>
@@ -214,7 +214,7 @@
 											</div>
 											<div class="col-md-6">
 												<div class="check-out">
-													<a href="#">Check Out</a>
+													<a href="<?= base_url('belanja/checkout') ?>">Check Out</a>
 												</div>
 											</div>
 										</div>

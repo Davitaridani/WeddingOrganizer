@@ -62,4 +62,17 @@ class Belanja extends CI_Controller
 		$this->cart->destroy();
 		redirect('belanja');
 	}
+
+	public function checkout()
+	{
+		// Proteksi Halaman(Jka elum login Tidak bisa masuk)
+		// $this->customer_login->proteksi_halaman();
+
+		$data = [
+			'title' => 'Check Out',
+			'isi' => 'frontEnd/checkout'
+
+		];
+		$this->load->view('frontEnd/include/wrapper', $data, FALSE);
+	}
 }
