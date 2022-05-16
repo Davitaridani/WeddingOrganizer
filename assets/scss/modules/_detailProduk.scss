@@ -36,6 +36,8 @@ $bold: 700;
 							max-height: 90%;
 							max-width: 90%;
 							margin: 5px auto;
+							height: 400px;
+							object-fit: cover;
 						}
 					}
 				}
@@ -97,13 +99,23 @@ $bold: 700;
 					.price {
 						margin-bottom: 30px;
 						p {
-							font-size: 20px !important;
+							font-size: 22px !important;
 							color: $color-blue !important;
 							font-weight: $semibold;
 						}
 					}
 					.desc {
 						height: 150px;
+						overflow: hidden;
+						margin-bottom: 30px;
+						&:hover {
+							overflow: auto;
+						}
+						p {
+							font-size: 17px !important;
+							line-height: 1.4 !important;
+
+						}
 					}
 					.row {
 						.item-qty {
@@ -150,9 +162,43 @@ $bold: 700;
 									color: $biru-2 !important;
 								}
 							}
-	
 						}
 					}
+				}
+			}
+			.block-spek-produk {
+				margin-top: 50px;
+				.row {
+					.title {
+						margin-bottom: 20px;
+						h3 {
+							font-size: 25px;
+							text-transform: capitalize;
+						}
+					}
+				}
+			}
+		}
+		.item-note {
+			margin-top: 50px;
+			.text {
+				background-color: $biru-2;
+				border: 1px solid $color-desc-2;
+				border-radius: 20px;
+				margin: 0 auto;
+				width: 600px;
+				text-align: center;
+				padding: 20px 0 30px;
+				p:nth-child(1) {
+					font-size: 20px !important;
+					color: #fff !important;
+					margin-bottom: 0;
+					
+				}
+				p:nth-child(2) {
+					font-size: 15px !important;
+					color: #fff !important;
+					margin-bottom: 0;
 				}
 			}
 		}
