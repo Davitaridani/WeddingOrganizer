@@ -1,13 +1,9 @@
 @use "globals";
 // Untuk Title
-$font-raleway :'Raleway',
-sans-serif;
-$font-great: 'Great Vibes',
-	cursive;
-$font-poppins: 'Poppins',
-	sans-serif;
-$font-halant: 'Halant',
-	serif;
+$font-raleway: "Raleway", sans-serif;
+$font-great: "Great Vibes", cursive;
+$font-poppins: "Poppins", sans-serif;
+$font-halant: "Halant", serif;
 // color
 $color-pink: #ee9e9e;
 $color-pink2: #fa8282;
@@ -25,10 +21,8 @@ $bold: 700;
 $black: 900;
 
 p {
-	color: $color-desc ;
+	color: $color-desc;
 }
-
-
 
 // Keranjang Belanja Sect 2
 .tableBelanja-sect-2 {
@@ -56,7 +50,7 @@ p {
 						}
 						.btn-hapus {
 							a {
-								border:none ;
+								border: none;
 								svg {
 									border-radius: 50%;
 									transition: all 0.3s;
@@ -81,10 +75,10 @@ p {
 						border: 0;
 						font-weight: $reguler;
 						transition: all 0.3s;
-						font-family: $font-raleway ;
+						font-family: $font-raleway;
 						&:hover {
-								background-color: #86a0b6de;
-							}
+							background-color: #86a0b6de;
+						}
 					}
 					a {
 						background-color: $biru-2;
@@ -114,7 +108,7 @@ p {
 					margin-bottom: 25px;
 					h3 {
 						font-size: 30px;
-						font-weight: $medium;	
+						font-weight: $medium;
 					}
 				}
 				.table {
@@ -175,7 +169,7 @@ p {
 
 // Chcek Out sect 2
 .checkOut-sect-2 {
-	.blocks-items{
+	.blocks-items {
 		.table-checkOut {
 			padding: 100px 0 120px;
 			.row {
@@ -185,57 +179,56 @@ p {
 							margin-bottom: 20px;
 							h3 {
 								font-size: 25px;
-
 							}
 						}
 						.items-form {
-							form {
-								.item-input {
-									padding: 5px;
-									label {
-										margin-bottom: 7px;
-									}
-									input {
-										background-color: #f9f9f9 !important;
-										border-radius: 0;
-										height: 50px;
-										padding-left: 15px;
-										transition: all 0.3s;
-										margin-bottom: 25px;
-										&:focus {
-											box-shadow: none;
-											border: 1px solid $color-desc;
-										}
-									}
-										textarea {
-											background-color: #f9f9f9 !important;
-											border-radius: 0;
-											// height: 50px;
-											padding-left: 15px;
-											transition: all 0.3s;
-											margin-bottom: 25px;
-											&:focus {
-												box-shadow: none;
-												border: 1px solid $color-desc;
-											}
+							// form {
+							.item-input {
+								padding: 5px;
+								label {
+									margin-bottom: 7px;
+								}
+								input {
+									background-color: #f9f9f9 !important;
+									border-radius: 0;
+									height: 50px;
+									padding-left: 15px;
+									transition: all 0.3s;
+									margin-bottom: 25px;
+									&:focus {
+										box-shadow: none;
+										border: 1px solid $color-desc;
 									}
 								}
-								.item-infoTambahan{
-									.title {
-										margin: 30px 0 0;
-										h3 {
-											font-size: 25px;
-										}
+								textarea {
+									background-color: #f9f9f9 !important;
+									border-radius: 0;
+									// height: 50px;
+									padding-left: 15px;
+									transition: all 0.3s;
+									margin-bottom: 25px;
+									&:focus {
+										box-shadow: none;
+										border: 1px solid $color-desc;
 									}
 								}
 							}
+							.item-infoTambahan {
+								.title {
+									margin: 30px 0 0;
+									h3 {
+										font-size: 25px;
+									}
+								}
+							}
+							// }
 						}
 					}
 				}
 				.col-md-5 {
 					.block-checkOut {
 						.title-pesanan {
-							margin: 15px  0 20px 15px;
+							margin: 15px 0 20px 15px;
 							h3 {
 								font-size: 25px;
 							}
@@ -264,20 +257,20 @@ p {
 									}
 								}
 								tbody {
-								.cart-item {
-									.nama-produk {
-										border-bottom: solid 1px #dee2e6;
-										color: #656668;
-										font-weight: 400;
-										padding: 16px 0 10px;
-										font-size: 16px;
-									}
-									.total-produk {
-										border-bottom: solid 1px #dee2e6;
-										color: #656668;
-										font-weight: 400;
-										padding: 16px 0 10px;
-										font-size: 16px;
+									.cart-item {
+										.nama-produk {
+											border-bottom: solid 1px #dee2e6;
+											color: #656668;
+											font-weight: 400;
+											padding: 16px 0 10px;
+											font-size: 16px;
+										}
+										.total-produk {
+											border-bottom: solid 1px #dee2e6;
+											color: #656668;
+											font-weight: 400;
+											padding: 16px 0 10px;
+											font-size: 16px;
 										}
 									}
 								}
@@ -291,7 +284,6 @@ p {
 											text-align: end;
 											padding: 16px 0 10px;
 											color: #333;
-
 										}
 									}
 									.order-total {
@@ -307,23 +299,51 @@ p {
 									}
 								}
 							}
-							.btn-border {
-								margin: 30px 0 30px;
-								button {
-									background-color: $biru-2 !important;
-									font-size: 16px !important;
-									height: 47px;
-									line-height: 47px;
-									padding: 0 25px;
-									border: 0;
-									font-weight: 500;
-									letter-spacing: 1px;
-									text-transform: capitalize;
-									color: #fff;
-									transition: 0.3s;
-									&:hover {
-										background-color: #8da6bbd4 !important;
-
+							.items-btn {
+								display: flex;
+								align-items: center;
+								justify-content: space-between;
+								.btn-back {
+									margin: 30px 0 30px;
+									a {
+										text-decoration: none;
+										background-color: $biru-2 !important;
+										font-size: 16px !important;
+										// height: 47px;
+										// line-height: 47px;
+										padding: 14px 20px;
+										border: 0;
+										font-weight: 500;
+										// letter-spacing: 1px;
+										text-transform: capitalize;
+										color: #fff !important;
+										transition: 0.3s;
+										vertical-align: bottom;
+										margin-left: -2px;
+										svg {
+											font-size: 20px;
+											margin-bottom: 3px;
+											margin-right: 2px;
+										}
+									}
+								}
+								.btn-order {
+									margin: 30px 0 30px;
+									button {
+										background-color: $biru-2 !important;
+										font-size: 16px !important;
+										height: 47px;
+										line-height: 47px;
+										padding: 0 20px;
+										border: 0;
+										font-weight: 500;
+										// letter-spacing: 1px;
+										text-transform: capitalize;
+										color: #fff;
+										transition: 0.3s;
+										&:hover {
+											background-color: #8da6bbd4 !important;
+										}
 									}
 								}
 							}

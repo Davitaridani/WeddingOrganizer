@@ -24,55 +24,61 @@
 <section class="kategoriProduk-sect-2">
 	<div class="container">
 		<div class="blocks-items">
-			<div class="title text-center">
-				<!-- <h3>Nama List kategori</h3> -->
+			<div class="item-title">
+				<div class="title">
+					<h3>Produk Spesial Untuk anda</h3>
+				</div>
+				<div class="title-img">
+					<img src="<?= base_url() ?>assets/img/section-title.png" class=" img img-fluid" alt="">
+				</div>
 			</div>
-			<div class="row">
-				<?php foreach ($produk as $key => $value) { ?>
-					<div class="col-md-4">
-						<?php
-						echo form_open('belanja/add');
-						echo form_hidden('id', $value->id_produk);
-						echo form_hidden('qty', 1);
-						echo form_hidden('price', $value->harga);
-						echo form_hidden('name', $value->nama_produk);
-						echo form_hidden('redirect_page', str_replace('index.php/', '', current_url()));
-						?>
-						<div class="items-card border-0">
-							<img class="card-img" src="<?= base_url('assets/gambar/' . $value->gambar) ?>" alt="">
-							<div class="body-card">
-								<div class="title">
-									<h3><?= $value->nama_produk ?></h3>
-								</div>
-								<div class="desc">
-									<p><?= $value->deskripsi ?></p>
-								</div>
-								<div class="price">
-									<p>
-										<b> Rp. <?= number_format($value->harga, 0) ?></b>
-									</p>
-								</div>
-								<div class="item-btn">
-
-									<div class="detail">
-										<a href="<?= base_url('paket/detail_produk/' . $value->id_produk) ?>" class="btn-detail btn p">
-											Detail
-										</a>
+			<div class="items-produk">
+				<div class="row">
+					<?php foreach ($produk as $key => $value) { ?>
+						<div class="col-md-4">
+							<?php
+							echo form_open('belanja/add');
+							echo form_hidden('id', $value->id_produk);
+							echo form_hidden('qty', 1);
+							echo form_hidden('price', $value->harga);
+							echo form_hidden('name', $value->nama_produk);
+							echo form_hidden('redirect_page', str_replace('index.php/', '', current_url()));
+							?>
+							<div class="items-card border-0">
+								<img class="card-img" src="<?= base_url('assets/gambar/' . $value->gambar) ?>" alt="">
+								<div class="body-card">
+									<div class="title">
+										<h3><?= $value->nama_produk ?></h3>
 									</div>
-
-									<div class="add-cart">
-										<button type="submit" id="btnSweetAlert" class="btn">
-											Add Cart
-										</button>
+									<div class="desc">
+										<p><?= $value->deskripsi ?></p>
+									</div>
+									<div class="price">
+										<p>
+											<b> Rp. <?= number_format($value->harga, 0) ?></b>
+										</p>
+									</div>
+									<div class="item-btn">
+										<div class="detail">
+											<a href="<?= base_url('paket/detail_produk/' . $value->id_produk) ?>" class="">
+												Detail
+											</a>
+										</div>
+										<div class="add-cart">
+											<button type="submit" id="btnSweetAlert" class="border-0">
+												Add Cart
+											</button>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<?php form_close() ?>
-					</div>
-				<?php } ?>
+							<?php form_close() ?>
+						</div>
+					<?php } ?>
+				</div>
 			</div>
+
 		</div>
 	</div>
 </section>

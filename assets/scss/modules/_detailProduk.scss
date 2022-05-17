@@ -182,7 +182,7 @@ $bold: 700;
 		.item-note {
 			margin-top: 50px;
 			.text {
-				background-color: $biru-2;
+				background-color: $biru-3;
 				border: 1px solid $color-desc-2;
 				border-radius: 20px;
 				margin: 0 auto;
@@ -191,13 +191,13 @@ $bold: 700;
 				padding: 20px 0 30px;
 				p:nth-child(1) {
 					font-size: 20px !important;
-					color: #fff !important;
+					color: #333 !important;
 					margin-bottom: 0;
 					
 				}
 				p:nth-child(2) {
 					font-size: 15px !important;
-					color: #fff !important;
+					color: #333 !important;
 					margin-bottom: 0;
 				}
 			}
