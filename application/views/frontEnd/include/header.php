@@ -96,7 +96,11 @@
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="<?= base_url('contact'); ?>">Contact Us</a>
+						<a class="nav-link" href="<?= base_url('contact'); ?>">Contact</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="<?= base_url('our_story'); ?>">Our Story</a>
 					</li>
 
 				</ul>
@@ -127,7 +131,7 @@
 							</button>
 							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 								<li><a class="dropdown-item" href="<?= base_url('customer/akun_saya') ?>">Akun Saya</a></li>
-								<li><a class="dropdown-item" href="#">Pesanan Saya</a></li>
+								<li><a class="dropdown-item" href="<?= base_url('pesanan_saya') ?>">Pesanan Saya</a></li>
 								<div class="dropdown-divider"></div>
 								<li><a class="dropdown-item" href="<?= base_url('customer/logout') ?>">Log Out</a></li>
 							</ul>
