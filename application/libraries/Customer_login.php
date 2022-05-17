@@ -4,9 +4,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Customer_login
 {
-
 	protected $ci;
-
 
 	public function __construct()
 	{
@@ -14,7 +12,7 @@ class Customer_login
 		$this->ci->load->model('m_auth');
 	}
 
-	public function index($email, $password)
+	public function login($email, $password)
 	{
 		$cek = $this->ci->m_auth->login_customer($email, $password);
 		if ($cek) {

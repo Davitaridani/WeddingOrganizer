@@ -4,17 +4,24 @@
 		<div class="blocks-items pt-4">
 			<div class="row">
 				<div class="col-md-12">
+					<?php
+					if ($this->session->flashdata('pesan')) {
+						echo ' <div class="alert alert-success alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <h5><i class="icon fas fa-check"></i> Succes!</h5>';
+						echo $this->session->flashdata('pesan');
+						echo '</div>';
+					}
+
+					?>
 					<div class="card">
-
 						<div class="card-header">
-
-
 							<ul class="nav nav-tabs" id="myTab" role="tablist">
 								<li class="nav-item" role="presentation">
 									<a href="" class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Belum Bayar</a>
 								</li>
 								<li class="nav-item" role="presentation">
-									<a href="" class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+									<a href="" class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Diproses</a>
 								</li>
 								<li class="nav-item" role="presentation">
 									<a href="" class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
@@ -38,17 +45,23 @@
 												<th>Total Bayar</th>
 												<th>Action</th>
 											</tr>
-											<tr>
-												<td>No Order</td>
-												<td>Tgl Order</td>
-												<td>TGl Acara</td>
-												<td>Total Bayar</td>
-												<td>
-													<div class="item-btn-bayar">
-														<a href="<?= base_url('pesanan_saya/bayar/' . $value->id_transaksi) ?>" class="btn btn-danger">Bayar</a>
-													</div>
-												</td>
-											</tr>
+											<?php foreach ($belum_bayar as $key => $value) { ?>
+												<tr>
+													<td><?= $value->no_order ?></td>
+													<td><?= $value->tgl_order ?></td>
+													<td><?= $value->tgl_acara ?></td>
+													<td>
+														<b> Rp. <?= number_format($value->sub_total, 0) ?></b><br>
+														<span class="btn btn-danger btn-sm">Belum Bayar</span>
+													</td>
+													<td>
+														<div class="item-btn-bayar">
+															<a href="" class="btn btn-danger">Bayar</a>
+														</div>
+													</td>
+												</tr>
+											<?php } ?>
+
 										</table>
 									</div>
 								</div>

@@ -89,11 +89,12 @@ class Belanja extends CI_Controller
 		} else {
 			// Data Akan Di Simpan Di Tabel Transaksi
 			$data = [
+				'id_customer' => $this->session->userdata('id_customer'),
 				'no_order' => $this->input->post('no_order'),
 				'nama' => $this->input->post('nama'),
 				'email' => $this->input->post('email'),
 				'tgL_order' => date('Y-m-d'),
-				'tgL_acara' => $this->input->post('tgL_acara'),
+				'tgL_acara' => date('Y-m-d'),
 				'telepon' => $this->input->post('telepon'),
 				'kota' => $this->input->post('kota'),
 				'kecamatan' => $this->input->post('kecamatan'),

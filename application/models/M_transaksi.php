@@ -15,11 +15,13 @@ class M_transaksi extends CI_Model
 		$this->db->insert('tb_detail_transaksi', $data_detail);
 	}
 
-	// public function belum_bayar()
-	// {
-	// 	$this->db->select('*');
-	// 	$this->db->from('tb_transaksi');
-	// 	$this->db->where('status_bayar=0');
-	// 	$this->db->order_by();
-	// }
+	public function belum_bayar()
+	{
+		$this->db->select('*');
+		$this->db->from('tb_transaksi');
+		$this->db->where('status_bayar=0');
+		$this->db->where('id_customer', $this->session->userdata('id_customer'));
+		$this->db->order_by('id_transaksi', 'desc');
+		return $this->db->get()->result();
+	}
 }
