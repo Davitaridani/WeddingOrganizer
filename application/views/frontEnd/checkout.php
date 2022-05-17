@@ -19,7 +19,6 @@
 	<div class="container">
 		<div class="blocks-items">
 			<div class="table-checkOut">
-
 				<?php
 				echo form_open('belanja/checkout');
 				$no_order = date('Ymd') . strtoupper(random_string('alnum', 8));
@@ -81,7 +80,6 @@
 							<!-- <input name="total_bayar"> -->
 
 							<!-- Simpan Data Detail Transaksi -->
-
 							<?php
 							$i = 1;
 							foreach ($this->cart->contents() as $items) {
@@ -136,9 +134,7 @@
 								</table>
 								<div class="items-btn">
 									<div class="btn-back">
-										<a href="<?= base_url('belanja') ?>"><span class="iconify" data-icon="ion:play-back"></span>
-											Kembali
-										</a>
+										<a href="<?= base_url('belanja') ?>"><span class="iconify" data-icon="ion:play-back"></span>Kembali</a>
 									</div>
 									<div class="btn-order">
 										<button type="submit">Proses Checkout</button>
