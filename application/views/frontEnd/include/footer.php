@@ -7,7 +7,8 @@
 				<div class="row">
 					<div class="col-md-3">
 						<div class="img-footer">
-							<img class="img img-fluid" src="" alt="">
+							<!-- <img class="img img-fluid" src="" alt=""> -->
+							<h3>Dhewi Lestari</h3>
 						</div>
 						<div class="text">
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloremque tempora atque assumenda eos odio!</p>
