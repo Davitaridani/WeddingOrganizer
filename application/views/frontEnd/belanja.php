@@ -24,8 +24,22 @@
 	<div class="blocks-items">
 		<div class="container">
 			<div class="card">
+
 				<div class="card-body">
+
+
 					<div class="row">
+						<div class="col-md-12">
+							<!-- JIka Keranjang berhasil  DI Update, Keluar Notif(Tapi Nootif Belum Keluar) -->
+							<?php
+
+							if ($this->session->flashdata('pesan')) {
+								echo ' <div class="alert alert-success alert-dismissible">
+									<span class="iconify" data-icon="akar-icons:check" data-width="25"></span>';
+								echo $this->session->flashdata('pesan');
+								echo '</div>';
+							} ?>
+						</div>
 						<div class="col-md-12">
 							<?php echo form_open('belanja/update'); ?>
 							<table class="table-belanja table " cellpadding="6" cellspacing="1" style="width:100%">
