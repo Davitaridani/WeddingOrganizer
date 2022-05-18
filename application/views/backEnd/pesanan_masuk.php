@@ -1,6 +1,17 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-12 col-sm-12">
+
+			<?php
+			if ($this->session->flashdata('pesan')) {
+				echo ' <div class="alert alert-success alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <h5><i class="icon fas fa-check"></i> Succes!</h5>';
+				echo $this->session->flashdata('pesan');
+				echo '</div>';
+			}
+			?>
+
 			<div class="card card-primary card-outline card-tabs">
 				<div class="card-header p-0 pt-1 border-bottom-0">
 					<ul class="nav nav-tabs" id="custom-tabs-three-tab" role="tablist">
@@ -55,8 +66,34 @@
 
 							</table>
 						</div>
+
 						<div class="tab-pane fade" id="custom-tabs-three-profile" role="tabpanel" aria-labelledby="custom-tabs-three-profile-tab">
-							Mauris tincidunt mi at erat gravida, eget tristique urna bibendum. Mauris pharetra purus ut ligula tempor, et vulputate metus facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas sollicitudin, nisi a luctus interdum, nisl ligula placerat mi, quis posuere purus ligula eu lectus. Donec nunc tellus, elementum sit amet ultricies at, posuere nec nunc. Nunc euismod pellentesque diam.
+							<table class="table">
+								<tr>
+									<th>No Order</th>
+									<th>Tgl Order</th>
+									<th>Tgl Acara</th>
+									<th>Total Bayar</th>
+									<th class="text-center">Action</th>
+								</tr>
+								<?php foreach ($pesanan_diproses as $key => $value) { ?>
+									<tr>
+										<td><?= $value->no_order ?></td>
+										<td><?= $value->tgl_order ?></td>
+										<td><?= $value->tgl_acara ?></td>
+										<td>
+											<b> <span> Rp. <?= number_format($value->sub_total, 0) ?></span></b><br>
+											<span class="badge badge-success">Diproses</span>
+										</td>
+										<td class="text-center">
+											<?php if ($value->status_bayar == 1) { ?>
+												<a class="btn bg-purple btn-sm text-center" href="<?= base_url('admin/proses/' . $value->id_transaksi) ?>" class="">Proses</a>
+											<?php } ?>
+										</td>
+									</tr>
+								<?php } ?>
+
+							</table>
 						</div>
 						<div class="tab-pane fade" id="custom-tabs-three-messages" role="tabpanel" aria-labelledby="custom-tabs-three-messages-tab">
 							Morbi turpis dolor, vulputate vitae felis non, tincidunt congue mauris. Phasellus volutpat augue id mi placerat mollis. Vivamus faucibus eu massa eget condimentum. Fusce nec hendrerit sem, ac tristique nulla. Integer vestibulum orci odio. Cras nec augue ipsum. Suspendisse ut velit condimentum, mattis urna a, malesuada nunc. Curabitur eleifend facilisis velit finibus tristique. Nam vulputate, eros non luctus efficitur, ipsum odio volutpat massa, sit amet sollicitudin est libero sed ipsum. Nulla lacinia, ex vitae gravida fermentum, lectus ipsum gravida arcu, id fermentum metus arcu vel metus. Curabitur eget sem eu risus tincidunt eleifend ac ornare magna.

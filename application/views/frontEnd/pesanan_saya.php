@@ -35,9 +35,8 @@
 						echo $this->session->flashdata('pesan');
 						echo '</div>';
 					}
-
 					?>
-					<div class="card">
+					<div class="card ">
 						<div class="card-header">
 							<ul class="nav nav-tabs" id="myTab" role="tablist">
 								<li class="nav-item" role="presentation">
@@ -58,6 +57,7 @@
 						<div class="card-body">
 
 							<div class="tab-content" id="myTabContent">
+								<!-- Data Pesnana belum Bayar -->
 								<div class="block-belum-bayar">
 									<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 										<div class="items-table">
@@ -105,11 +105,53 @@
 										</div>
 									</div>
 								</div>
+								<!-- Data Pesnana belum Bayar -->
 
 
+								<!-- Block Data Pesanan DI Proses -->
 								<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam amet, fuga dignissimos vero nisi fugiat nobis recusandae cum aperiam eveniet nihil dicta sapiente sunt ratione maxime quasi temporibus eos obcaecati? Iure laudantium harum autem officiis cum a eligendi. Repudiandae voluptatem aliquid assumenda itaque doloribus quas saepe. Asperiores, quam repellat possimus id, fuga nihil reprehenderit repudiandae esse molestiae doloremque laudantium reiciendis ratione quasi error a autem incidunt voluptate sunt dignissimos. Omnis?</p>
+									<div class="item-diproses">
+										<table class="table">
+											<tr>
+												<th>No Order</th>
+												<th>Tgl Order</th>
+												<th>Tgl Acara</th>
+												<th>Total Bayar</th>
+												<!-- <th class="text-center">Action</th> -->
+											</tr>
+											<?php foreach ($diproses as $key => $value) { ?>
+												<tr>
+													<td><?= $value->no_order ?></td>
+													<td><?= $value->tgl_order ?></td>
+													<td><?= $value->tgl_acara ?></td>
+													<td>
+														<div class="item-bg">
+															<p> Rp. <?= number_format($value->sub_total, 0) ?></p>
+
+															<div class="bg-sudah-bayar">
+																<span>Terverifikasi</span>
+															</div>
+															<div class="bg-verifikasi">
+																<span class="">Diproses</span>
+															</div>
+
+														</div>
+													</td>
+													<!-- <td>
+														<div class="item-btn-bayar ">
+															<?php if ($value->status_bayar == 0) { ?>
+																<a href="<?= base_url('pesanan_saya/bayar/' . $value->id_transaksi) ?>" class="">Bayar</a>
+															<?php } ?>
+														</div>
+													</td> -->
+												</tr>
+											<?php } ?>
+
+										</table>
+									</div>
 								</div>
+								<!-- End  Data Pesanan DI Proses -->
+
 
 								<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam qui nesciunt sequi ullam odio illum, quo expedita nemo eligendi laboriosam quod quos impedit ipsa dolorem consequuntur ad dolor ab architecto. Perspiciatis tenetur in voluptatem aliquam labore est dolorum deserunt ipsum ad sequi dicta veritatis dolorem quaerat ipsa molestiae omnis animi necessitatibus, consequuntur corrupti aperiam veniam adipisci itaque ullam. Eveniet ipsam architecto, sunt vitae libero soluta ullam dolores debitis inventore porro fugit molestias, dolore esse necessitatibus reprehenderit est, temporibus consequuntur pariatur?</p>
