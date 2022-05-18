@@ -90,7 +90,6 @@ class Produk extends CI_Controller
 				redirect('produk');
 			}
 		}
-
 		$data = [
 			'title' => 'Tambah Produk',
 			'kategori' => $this->m_kategori->get_all_data(),

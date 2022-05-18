@@ -1,7 +1,30 @@
+<!-- Pesansn Saya sect 1 -->
+<section class="section-hero-image-banner hero-image-banner-paralax" data-parallax="scroll" data-z-index="1" data-image-src="<?= base_url() ?>assets/img/banner-contact.jpg">
+	<div class=" container">
+		<div class="inner text-content">
+			<div class="blocks-items ">
+				<div class="items text-center">
+					<div class="text-title">
+						<h3>Pesanan</h3>
+
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="<?= base_url() ?>">Home</a></li>
+								<li class="breadcrumb-item">Pesanan Saya</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
 <!-- Pesanan Saya sect 2 -->
 <section class="pesanan-sect-2">
 	<div class="container">
-		<div class="blocks-items pt-4">
+		<div class="blocks-items">
 			<div class="row">
 				<div class="col-md-12">
 					<?php
@@ -35,36 +58,54 @@
 						<div class="card-body">
 
 							<div class="tab-content" id="myTabContent">
-								<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-									<div class="items-table">
-										<table class="table">
-											<tr>
-												<th>No Order</th>
-												<th>Tgl Order</th>
-												<th>Tgl Acara</th>
-												<th>Total Bayar</th>
-												<th>Action</th>
-											</tr>
-											<?php foreach ($belum_bayar as $key => $value) { ?>
+								<div class="block-belum-bayar">
+									<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+										<div class="items-table">
+											<table class="table">
 												<tr>
-													<td><?= $value->no_order ?></td>
-													<td><?= $value->tgl_order ?></td>
-													<td><?= $value->tgl_acara ?></td>
-													<td>
-														<b> Rp. <?= number_format($value->sub_total, 0) ?></b><br>
-														<span class="btn btn-danger btn-sm">Belum Bayar</span>
-													</td>
-													<td>
-														<div class="item-btn-bayar">
-															<a href="" class="btn btn-danger">Bayar</a>
-														</div>
-													</td>
+													<th>No Order</th>
+													<th>Tgl Order</th>
+													<th>Tgl Acara</th>
+													<th>Total Bayar</th>
+													<th class="text-center">Action</th>
 												</tr>
-											<?php } ?>
+												<?php foreach ($belum_bayar as $key => $value) { ?>
+													<tr>
+														<td><?= $value->no_order ?></td>
+														<td><?= $value->tgl_order ?></td>
+														<td><?= $value->tgl_acara ?></td>
+														<td>
+															<div class="item-bg">
+																<p> Rp. <?= number_format($value->sub_total, 0) ?></p>
+																<?php if ($value->status_bayar == 0) { ?>
+																	<div class="bg-belum-bayar">
+																		<span class="">Belum Bayar</span>
+																	</div>
+																<?php } else { ?>
+																	<div class="bg-sudah-bayar">
+																		<span>Sudah Bayar</span>
+																	</div>
+																	<div class="bg-verifikasi">
+																		<span class="">Nunggu Verifikasi</span>
+																	</div>
+																<?php } ?>
+															</div>
+														</td>
+														<td>
+															<div class="item-btn-bayar ">
+																<?php if ($value->status_bayar == 0) { ?>
+																	<a href="<?= base_url('pesanan_saya/bayar/' . $value->id_transaksi) ?>" class="">Bayar</a>
+																<?php } ?>
+															</div>
+														</td>
+													</tr>
+												<?php } ?>
 
-										</table>
+											</table>
+										</div>
 									</div>
 								</div>
+
 
 								<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam amet, fuga dignissimos vero nisi fugiat nobis recusandae cum aperiam eveniet nihil dicta sapiente sunt ratione maxime quasi temporibus eos obcaecati? Iure laudantium harum autem officiis cum a eligendi. Repudiandae voluptatem aliquid assumenda itaque doloribus quas saepe. Asperiores, quam repellat possimus id, fuga nihil reprehenderit repudiandae esse molestiae doloremque laudantium reiciendis ratione quasi error a autem incidunt voluptate sunt dignissimos. Omnis?</p>

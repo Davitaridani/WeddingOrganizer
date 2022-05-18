@@ -19,7 +19,6 @@ class Belanja extends CI_Controller
 		$data = [
 			'title' => 'Keranjang Belanja',
 			'isi' => 'frontEnd/belanja'
-
 		];
 		$this->load->view('frontEnd/include/wrapper', $data, FALSE);
 	}

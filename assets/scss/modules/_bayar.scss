@@ -1,0 +1,139 @@
+@use "globals";
+// Untuk Title
+$font-raleway :'Raleway',
+sans-serif;
+$font-great: 'Great Vibes',
+	cursive;
+$font-poppins: 'Poppins',
+	sans-serif;
+$font-halant: 'Halant',
+	serif;
+
+$color-desc: #738ea5;
+$color-desc-2: #848892;
+$biru-1: #d4e6f5;
+$biru-2: #86a0b6;
+$biru-3: #cde0ef;
+$color-blue: #002642;
+// Font Weight
+$light: 300;
+$reguler: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+// Bayar sect 2
+.bayar-sect-2 {
+	.container {
+		.blocks-items {
+			padding: 100px 0 120px;
+			.row {
+				.col-md-6:first-child {
+					.card {
+						.card-header {
+							background-color: $biru-2;
+							padding: 20px 0 ;
+							text-align: center;
+							h3 {
+								color: #fff;
+								font-size: 25px;
+							}
+						}
+						.card-body {
+							padding-bottom: 30px;
+							.item-info {
+								p {
+									margin: 20px 0 10px;
+									font-size: 17px !important;
+									color: $color-blue !important;
+									font-weight: $semibold;
+								}
+							}
+							.text-price {
+								margin-bottom: 30px;
+								h3 {
+									font-size: 30px;
+									color: $color-desc !important;
+								}
+							}
+							.table {
+								tr {
+									th {
+										color: #333 !important;
+									}
+									td {
+										color: $color-blue;
+										font-size: 17px;
+									}
+								}
+							}
+						}
+					}
+				}
+				.col-md-6:last-child {
+					.card-header {
+							background-color: $biru-2;
+							padding: 20px 0;
+							text-align: center;
+						.title {
+							h3 {
+								color: #fff;
+								font-size: 25px;
+							}
+						}
+					}
+					.card-body {
+						padding: 30px 20px 50px ;
+						.form-group {
+							margin-bottom: 17px;
+							label {
+								margin-bottom: 6px;
+								font-size: 17px !important;
+								color: #333 !important;
+							}
+							input {
+								height: 45px;
+								font-size: 17px;
+								color: #333;
+								&:focus {
+
+								}
+							}
+						}
+						.items-btn {
+							display: flex;
+							margin-top: 35px;
+							.item-link {
+								margin-top: 9px;
+								margin-right: 15px;
+									a {
+										text-decoration: none;
+										background-color: $biru-2;
+										color: #fff !important;
+										padding: 12px 15px;
+										font-weight: $semibold;
+										svg {
+												font-size: 22px;
+											}
+									}
+								}
+							.item-btn {
+								button {
+									background-color: $biru-2;
+									color: #fff;
+									padding: 8px 21px;
+									border-radius: 0 !important;
+									font-family: $font-raleway !important;
+									font-weight: $semibold;
+									svg {
+										font-size: 22px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

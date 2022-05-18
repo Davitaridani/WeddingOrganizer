@@ -1,0 +1,133 @@
+@use "globals";
+// Untuk Title
+$font-raleway :'Raleway',
+sans-serif;
+$font-great: 'Great Vibes',
+	cursive;
+$font-poppins: 'Poppins',
+	sans-serif;
+$font-halant: 'Halant',
+	serif;
+
+$color-desc: #738ea5;
+$color-desc-2: #848892;
+$biru-1: #d4e6f5;
+$biru-2: #86a0b6;
+$biru-3: #cde0ef;
+$color-blue: #002642;
+// Font Weight
+$light: 300;
+$reguler: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+// Pesansn Saya Sect 2
+.pesanan-sect-2 {
+	.container {
+		.blocks-items {
+			padding: 100px 0 120px;
+
+			.row {
+				.card {
+
+					.card-header {
+						background-color: $biru-2;
+						ul {
+							li {
+								.nav-link {
+									color: #fff !important;
+								}
+								.active {
+									color: $color-blue !important;
+								}
+							}
+						}
+					}
+
+
+
+
+					.card-body {
+						padding: 30px 15px;
+						.tab-content {
+							.block-belum-bayar {
+								.items-table {
+									tr {
+										td {
+
+											.item-bg {
+												p {
+													margin-bottom: 0;
+													font-weight: $semibold;
+													color: $color-blue !important;
+													font-size: 17px !important;
+													margin-bottom: 5px;
+												}
+												.bg-belum-bayar {
+													background-color: #e1291a;
+													padding: 3px;
+													border-radius: 5px !important;
+													font-size: 12px !important;
+													text-align: center;
+													width: 80px;
+													span {
+														color: #fff;
+													}
+												}
+
+												.bg-sudah-bayar {
+													background-color: #3cb371;
+													padding: 3px;
+													border-radius: 5px !important;
+													padding-bottom: 8px;
+													width: 80px;
+													font-size: 12px !important;
+													text-align: center;
+													margin-bottom: 4px;
+													span {
+														color: #fff;																
+													}
+												}
+
+												.bg-verifikasi {
+													background-color: #ab3ddc;
+													padding: 3px;
+													border-radius: 5px !important;
+													font-size: 12px !important;
+													padding-bottom: 8px;
+													width: 110px;
+													text-align: center;
+													span {
+														color: #fff;
+													}
+												}
+											}
+
+											.item-btn-bayar {
+												text-align: center;
+												margin-top: 15px;
+												// align-items: center;
+												// display: flex;
+												// justify-content: center;
+												a {
+													margin-top: 10px;
+													padding: 10px 18px;
+													background-color: $biru-2;
+													color: #fff !important;
+													text-decoration: none;
+													margin: auto 0;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
