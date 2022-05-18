@@ -23,7 +23,7 @@
 			<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
 				<li class="nav-item">
-					<a href="<?= base_url('admin') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'admin') {
+					<a href="<?= base_url('admin') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'admin' and $this->uri->segment(2) == "") {
 																							echo "active";
 																						} ?>">
 						<i class="nav-icon fas fa-tachometer-alt"></i>
@@ -63,6 +63,15 @@
 						<p>
 							Foto Produk
 						</p>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="<?= base_url('admin/pesanan_masuk') ?>" class="nav-link <?php if ($this->uri->segment(2) == 'pesanan_masuk' and $this->uri->segment(1) == 'admin') {
+																												echo "active";
+																											} ?>">
+						<i class="nav-icon fas fa-download"></i>
+						<p>Pesanan Masuk</p>
 					</a>
 				</li>
 

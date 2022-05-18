@@ -1,0 +1,4 @@
+0 = order
+1 = diproses
+2 = di catat
+3 = selesai
