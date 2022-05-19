@@ -87,7 +87,7 @@
 										</td>
 										<td class="text-center">
 											<?php if ($value->status_bayar == 1) { ?>
-												<a class="btn bg-purple btn-sm text-center" href="<?= base_url('admin/proses/' . $value->id_transaksi) ?>" class="">Proses</a>
+												<button type="submit" class="btn bg-purple btn-sm text-center" data-toggle="modal" data-target="#dicatat<?= $value->id_transaksi ?>">Proses </button>
 											<?php } ?>
 										</td>
 									</tr>
@@ -96,10 +96,56 @@
 							</table>
 						</div>
 						<div class="tab-pane fade" id="custom-tabs-three-messages" role="tabpanel" aria-labelledby="custom-tabs-three-messages-tab">
-							Morbi turpis dolor, vulputate vitae felis non, tincidunt congue mauris. Phasellus volutpat augue id mi placerat mollis. Vivamus faucibus eu massa eget condimentum. Fusce nec hendrerit sem, ac tristique nulla. Integer vestibulum orci odio. Cras nec augue ipsum. Suspendisse ut velit condimentum, mattis urna a, malesuada nunc. Curabitur eleifend facilisis velit finibus tristique. Nam vulputate, eros non luctus efficitur, ipsum odio volutpat massa, sit amet sollicitudin est libero sed ipsum. Nulla lacinia, ex vitae gravida fermentum, lectus ipsum gravida arcu, id fermentum metus arcu vel metus. Curabitur eget sem eu risus tincidunt eleifend ac ornare magna.
+							<table class="table">
+								<tr>
+									<th>No Order</th>
+									<th>Tgl Order</th>
+									<th>Tgl Acara</th>
+									<th>Total Bayar</th>
+									<th class="text-center">No Pesanan</th>
+								</tr>
+								<?php foreach ($pesanan_dicatat as $key => $value) { ?>
+									<tr>
+										<td><?= $value->no_order ?></td>
+										<td><?= $value->tgl_order ?></td>
+										<td><?= $value->tgl_acara ?></td>
+										<td>
+											<b> <span> Rp. <?= number_format($value->sub_total, 0) ?></span></b><br>
+											<span class="badge badge-success">Catat</span>
+										</td>
+										<td class="text-center">
+											<h5> <?= $value->no_pesanan ?></h5>
+										</td>
+									</tr>
+								<?php } ?>
+
+							</table>
 						</div>
 						<div class="tab-pane fade" id="custom-tabs-three-settings" role="tabpanel" aria-labelledby="custom-tabs-three-settings-tab">
-							Pellentesque vestibulum commodo nibh nec blandit. Maecenas neque magna, iaculis tempus turpis ac, ornare sodales tellus. Mauris eget blandit dolor. Quisque tincidunt venenatis vulputate. Morbi euismod molestie tristique. Vestibulum consectetur dolor a vestibulum pharetra. Donec interdum placerat urna nec pharetra. Etiam eget dapibus orci, eget aliquet urna. Nunc at consequat diam. Nunc et felis ut nisl commodo dignissim. In hac habitasse platea dictumst. Praesent imperdiet accumsan ex sit amet facilisis.
+							<table class="table">
+								<tr>
+									<th>No Order</th>
+									<th>Tgl Order</th>
+									<th>Tgl Acara</th>
+									<th>Total Bayar</th>
+									<th class="text-center">No Pesanan</th>
+								</tr>
+								<?php foreach ($pesanan_selesai as $key => $value) { ?>
+									<tr>
+										<td><?= $value->no_order ?></td>
+										<td><?= $value->tgl_order ?></td>
+										<td><?= $value->tgl_acara ?></td>
+										<td>
+											<b> <span> Rp. <?= number_format($value->sub_total, 0) ?></span></b><br>
+											<span class="badge badge-success">Diterima</span>
+										</td>
+										<td class="text-center">
+											<h5> <?= $value->no_pesanan ?></h5>
+										</td>
+									</tr>
+								<?php } ?>
+
+							</table>
 						</div>
 					</div>
 				</div>
@@ -152,6 +198,60 @@
 				<div class="modal-footer justify-content-between">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
+			</div>
+		</div>
+	</div>
+<?php } ?>
+
+
+<!-- Modal  -->
+<?php foreach ($pesanan_diproses as $key => $value) { ?>
+	<div class="modal fade" id="dicatat<?= $value->id_transaksi ?>">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title"><?= $value->no_order ?></h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<?php echo form_open('admin/dicatat/' . $value->id_transaksi) ?>
+					<table class="table">
+						<tr>
+							<th>Nama </th>
+							<th>:</th>
+							<th><?= $value->nama ?></th>
+						</tr>
+
+						<tr>
+							<th>Tgl Acara </th>
+							<th>:</th>
+							<th><?= $value->tgl_acara ?></th>
+						</tr>
+						<tr>
+							<th>Bayar </th>
+							<th>:</th>
+							<th>Rp. <?= number_format($value->sub_total, 0) ?></th>
+						</tr>
+
+						<tr>
+							<th>No Pesanan </th>
+							<th>:</th>
+							<th>
+								<input type="text" name="no_pesanan" class="form-control" placeholder="No Pesanan">
+							</th>
+						</tr>
+
+
+
+					</table>
+				</div>
+				<div class="modal-footer justify-content-between">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="submit" class="btn btn-primary">Simpan</button>
+				</div>
+				<?php echo form_close() ?>
 			</div>
 		</div>
 	</div>

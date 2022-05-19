@@ -103,6 +103,8 @@ class Belanja extends CI_Controller
 				'total_bayar' => $this->input->post('total_bayar'),
 				'status_bayar' => '0',
 				'status_order' => '0',
+				'no_pesanan' => $this->input->post('no_pesanan'),
+
 			];
 			$this->m_transaksi->simpan_transaksi($data);
 			// Data Akan Di Simpan Di Tabel Detail Transaksi

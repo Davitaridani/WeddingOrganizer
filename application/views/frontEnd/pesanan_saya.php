@@ -46,10 +46,10 @@
 									<a href="" class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Diproses</a>
 								</li>
 								<li class="nav-item" role="presentation">
-									<a href="" class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+									<a href="" class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Dicatat</a>
 								</li>
 								<li class="nav-item" role="presentation">
-									<a href="" class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#coba" type="button" role="tab" aria-controls="contact" aria-selected="false">Coba</a>
+									<a href="" class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#coba" type="button" role="tab" aria-controls="contact" aria-selected="false">Selesai</a>
 								</li>
 							</ul>
 						</div>
@@ -152,13 +152,74 @@
 								</div>
 								<!-- End  Data Pesanan DI Proses -->
 
-
+								<!-- Pesanan DI CAtat -->
 								<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam qui nesciunt sequi ullam odio illum, quo expedita nemo eligendi laboriosam quod quos impedit ipsa dolorem consequuntur ad dolor ab architecto. Perspiciatis tenetur in voluptatem aliquam labore est dolorum deserunt ipsum ad sequi dicta veritatis dolorem quaerat ipsa molestiae omnis animi necessitatibus, consequuntur corrupti aperiam veniam adipisci itaque ullam. Eveniet ipsam architecto, sunt vitae libero soluta ullam dolores debitis inventore porro fugit molestias, dolore esse necessitatibus reprehenderit est, temporibus consequuntur pariatur?</p>
+									<table class="table">
+										<tr>
+											<th>No Order</th>
+											<th>Tgl Order</th>
+											<th>Tgl Acara</th>
+											<th>Total Bayar</th>
+											<th class="text-center">No Pesanan</th>
+										</tr>
+										<?php foreach ($dicatat as $key => $value) { ?>
+											<tr>
+												<td><?= $value->no_order ?></td>
+												<td><?= $value->tgl_order ?></td>
+												<td><?= $value->tgl_acara ?></td>
+												<td>
+													<div class="item-bg">
+														<p> Rp. <?= number_format($value->sub_total, 0) ?></p>
+
+														<div class="bg-verifikasi">
+															<span class="">DiCatat</span>
+														</div>
+
+													</div>
+												</td>
+												<td class="no_pesanan text-center">
+													<?= $value->no_pesanan ?>
+													<div class="btn-terima">
+														<button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#dicatat" id="diterima">Terima</button>
+													</div>
+												</td>
+											</tr>
+										<?php } ?>
+
+									</table>
 								</div>
 
 								<div class="tab-pane fade" id="coba" role="tabpanel" aria-labelledby="contact-tab">
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vel voluptatibus explicabo hic minus iste. Laudantium eligendi nihil culpa qui!</p>
+									<table class="table">
+										<tr>
+											<th>No Order</th>
+											<th>Tgl Order</th>
+											<th>Tgl Acara</th>
+											<th>Total Bayar</th>
+											<th class="text-center">No Pesanan</th>
+										</tr>
+										<?php foreach ($selesai as $key => $value) { ?>
+											<tr>
+												<td><?= $value->no_order ?></td>
+												<td><?= $value->tgl_order ?></td>
+												<td><?= $value->tgl_acara ?></td>
+												<td>
+													<div class="item-bg">
+														<p> Rp. <?= number_format($value->sub_total, 0) ?></p>
+
+														<div class="bg-verifikasi">
+															<span class="">Selesai</span>
+														</div>
+
+													</div>
+												</td>
+												<td class="no_pesanan text-center">
+													<?= $value->no_pesanan ?>
+												</td>
+											</tr>
+										<?php } ?>
+
+									</table>
 								</div>
 							</div>
 						</div>
@@ -170,3 +231,31 @@
 	</div>
 
 </section>
+
+
+
+<?php foreach ($dicatat as $key => $value) { ?>
+	<div class="form-modal">
+		<div class="modal fade" id="dicatat" <?php echo $value->id_transaksi ?>>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title"><?= $value->no_order ?></h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<h5>Apakah Anda Yakin Pesanan Sudah DI Terima ?</h5>
+					</div>
+					<div class="modal-footer justify-content-between">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Tidak</button>
+						<a href="<?= base_url('pesanan_saya/diterima/' . $value->id_transaksi) ?>" class="btn btn-primary">Ya</a>
+					</div>
+					<?php echo form_close() ?>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<?php } ?>

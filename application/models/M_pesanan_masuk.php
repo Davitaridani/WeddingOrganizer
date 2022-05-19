@@ -21,6 +21,23 @@ class M_pesanan_masuk extends CI_Model
 		$this->db->order_by('id_transaksi', 'desc');
 		return $this->db->get()->result();
 	}
+	public function pesanan_dicatat()
+	{
+		$this->db->select('*');
+		$this->db->from('tb_transaksi');
+		$this->db->where('status_order=2');
+		$this->db->order_by('id_transaksi', 'desc');
+		return $this->db->get()->result();
+	}
+
+	public function pesanan_selesai()
+	{
+		$this->db->select('*');
+		$this->db->from('tb_transaksi');
+		$this->db->where('status_order=3');
+		$this->db->order_by('id_transaksi', 'desc');
+		return $this->db->get()->result();
+	}
 
 	public function update_order($data)
 	{
