@@ -75,6 +75,17 @@
 					</a>
 				</li>
 
+				<li class="nav-item">
+					<a href="<?= base_url('laporan') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'laporan') {
+																								echo "active";
+																							} ?>">
+						<i class="nav-icon fas fa-file-pdf"></i>
+						<p>
+							Laporan
+						</p>
+					</a>
+				</li>
+
 
 				<li class="nav-item has-treeview">
 					<a href="#" class="nav-link">
@@ -142,6 +153,6 @@
 	</div>
 
 	<!-- /.content-header -->
-	<!-- <div class="content">
-		<div class="container-fluid">
-			<div class="row"> -->
+	<div class="content">
+		<!-- <div class="container-fluid"> -->
+		<!-- <div class="row"> -->
