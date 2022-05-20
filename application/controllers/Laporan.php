@@ -13,19 +13,18 @@ class Laporan extends CI_Controller
 	public function index()
 	{
 		$data = [
-			'title' => 'Laporan Penjulan',
+			'title' => 'Data Laporan',
 			'isi' => 'backEnd/laporan'
 
 		];
 		$this->load->view('backEnd/include/wrapper', $data, FALSE);
 	}
 
-	public function laporan_harian()
+	public function lap_harian()
 	{
-
-		$tanggal = $this->input->post('tanggal');
-		$bulan = $this->input->post('bulan');
-		$tahun = $this->input->post('tahun');
+		$tanggal  = $this->input->post('tanggal');
+		$bulan  = $this->input->post('bulan');
+		$tahun  = $this->input->post('tahun');
 
 
 		$data = [
@@ -33,9 +32,37 @@ class Laporan extends CI_Controller
 			'tanggal' => $tanggal,
 			'bulan' => $bulan,
 			'tahun' => $tahun,
-			'laporan' => $this->m_laporan->laporan_harian($tanggal, $bulan, $tahun),
-			'isi' => 'backEnd/laporan_harian'
+			'laporan' => $this->m_laporan->lap_harian($tanggal, $bulan, $tahun),
+			'isi' => 'backEnd/lap_harian'
 
+		];
+		$this->load->view('backEnd/include/wrapper', $data, FALSE);
+	}
+
+	public function lap_bulanan()
+	{
+		$bulan  = $this->input->post('bulan');
+		$tahun  = $this->input->post('tahun');
+
+		$data = [
+			'title' => 'Laporan Bulanan',
+			'bulan' => $bulan,
+			'tahun' => $tahun,
+			'laporan' => $this->m_laporan->lap_bulanan($bulan, $tahun),
+			'isi' => 'backEnd/lap_bulanan'
+		];
+		$this->load->view('backEnd/include/wrapper', $data, FALSE);
+	}
+
+	public function lap_tahunan()
+	{
+		$tahun  = $this->input->post('tahun');
+
+		$data = [
+			'title' => 'Laporan Bulanan',
+			'tahun' => $tahun,
+			'laporan' => $this->m_laporan->lap_tahunan($tahun),
+			'isi' => 'backEnd/lap_tahunan'
 		];
 		$this->load->view('backEnd/include/wrapper', $data, FALSE);
 	}
