@@ -62,7 +62,7 @@
 												'maxlength' => '3',
 												'size' => '5',
 												'min' => '0',
-												'max' => '2',
+												'max' => '1',
 												'type' => 'number',
 												'class' => 'form-control',
 											));

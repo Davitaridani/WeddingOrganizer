@@ -31,7 +31,7 @@
 					<div class="items-pict">
 						<div class="bg-1">
 							<div class="pict">
-								<img src="<?= base_url() ?>assets/img/about-1.png" alt="" class=" img img-fluid">
+								<img src="<?= base_url() ?>assets/img/wedding (7).jpg" alt="" class=" img img-fluid">
 							</div>
 						</div>
 						<div class="img-single">

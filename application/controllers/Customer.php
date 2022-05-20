@@ -12,7 +12,6 @@ class Customer extends CI_Controller
 		$this->load->library('form_validation');
 	}
 
-
 	public function login()
 	{
 		$this->form_validation->set_rules(

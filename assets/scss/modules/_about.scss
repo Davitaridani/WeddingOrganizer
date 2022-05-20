@@ -278,6 +278,7 @@ p {
                         height: 200px;
                         transform: scale(1);
                         transition: all 0.3s;
+                        object-fit: cover;
                     }
                 }
                 .title {

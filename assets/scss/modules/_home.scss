@@ -39,12 +39,14 @@ p {
         background-repeat: no-repeat;
         background-position: center center;
         background-attachment: fixed;
+        // object-fit: cover;
         .img-fluid {
             position: absolute;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
             height: 100vh !important;
+            object-fit: cover;
         }
     }
     .slide::before {
@@ -225,7 +227,7 @@ p {
                     left: 20px;
                     top: 20px;
                     transition: all 5s;
-                    transform: rotate(10deg);
+                    transform: rotate(6deg);
                     .img-about-2 {
                         padding: 15px;
                         box-shadow: 0px 2px 16.8px 3.2px rgb(0 0 0 / 8%);
@@ -798,7 +800,7 @@ p {
 
 // Homs sect 9
 .home-sect-9 {
-    background-image: url('../img/bg-1.jpg');
+    background-image: url('../img/banner-our-story.jpg');
     background-position: center;
     background-size: cover;
     z-index: 9;

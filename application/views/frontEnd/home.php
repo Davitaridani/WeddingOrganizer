@@ -1,7 +1,7 @@
 <!--  Owl Carousel  -->
 <section class="section-img-banner owl-carousel owl-theme owl-slider" id="slider-home">
 	<div class="slide slide-1">
-		<img src="<?= base_url() ?>assets/img/banner-2.jpg" class="img-fluid" alt="...">
+		<img src="<?= base_url() ?>assets/img/foto-shot-(14).jpg" class="img-fluid" alt="...">
 		<div class="slide-content">
 			<div class="text-title text-capitalize">
 				<h1>Pelayanan dengan kualitas tinggi adalah kunci kesuksesan kami</h1>
@@ -15,7 +15,7 @@
 		</div>
 	</div>
 	<div class="slide slide-2">
-		<img src="<?= base_url() ?>assets/img/banner-3.jpg " class="img-fluid" alt="...">
+		<img src="<?= base_url() ?>assets/img/banner-2.jpg " class="img-fluid" alt="...">
 		<div class="slide-content">
 			<div class="text-title text-capitalize">
 				<h1>Momen berkesan yang tidak terlupakan hanya untuk kamu</h1>
@@ -30,7 +30,7 @@
 		</div>
 	</div>
 	<div class="slide slide-3">
-		<img src="<?= base_url() ?>assets/img/banner-1.jpg " class="img-fluid" alt="...">
+		<img src="<?= base_url() ?>assets/img/bg-checkOut.jpg " class="img-fluid" alt="...">
 		<div class="slide-content">
 			<div class="text-title">
 				<h1>Untuk membawa cinta, tawa, dan kebahagiaan selamanya</h1>
@@ -104,14 +104,14 @@
 					<div class="items-pict">
 						<div class="img-about-1">
 							<div class="pict-1">
-								<img src="<?= base_url() ?>assets/img/about-1.png" alt="" class=" img img-fluid">
+								<img src="<?= base_url() ?>assets/img/img-(7).jpg" alt="" class=" img img-fluid">
 							</div>
 						</div>
 
 						<div class="item-img" data-aos="fade-right" data-aos-duration="2500" data-aos-delay="150 " data-aos-offset="200">
 							<div class="img-about-2">
 								<div class="pict-2">
-									<img src="<?= base_url() ?>assets/img/about-2.png" alt="" class="img img-fluid">
+									<img src="<?= base_url() ?>assets/img/img-(8).jpg" alt="" class="img img-fluid">
 								</div>
 							</div>
 						</div>
@@ -165,7 +165,7 @@
 					<div class=" item" data-aos="flip-down" data-aos-offset="50" data-aos-duration="2500">
 						<div class="item-service">
 							<div class="img-service">
-								<img src="<?= base_url() ?>assets/img/img-service-4.jpg" alt="" class="img img-fluid">
+								<img src="<?= base_url() ?>assets/img/wedding (8).jpg" alt="" class="img img-fluid">
 								<div class="item-service-text">
 									<div class="icon">
 										<span class="iconify" data-icon="material-symbols:volunteer-activism-outline-rounded"></span>
@@ -182,7 +182,7 @@
 					<div class=" item" data-aos="flip-down" data-aos-offset="50" data-aos-duration="2500">
 						<div class="item-service">
 							<div class="img-service">
-								<img src="<?= base_url() ?>assets/img/home-8.jpg" alt="" class="img img-fluid">
+								<img src="<?= base_url() ?>assets/img/img-(7).jpg" alt="" class="img img-fluid">
 								<div class="item-service-text">
 									<div class="icon">
 										<span class="iconify" data-icon="material-symbols:video-camera-back-outline-sharp"></span>
@@ -216,7 +216,7 @@
 					<div class=" item" data-aos="flip-down" data-aos-offset="50" data-aos-duration="2500">
 						<div class="item-service">
 							<div class="img-service">
-								<img src="<?= base_url() ?>assets/img/make-up/make-up (4).jpg" alt="" class="img img-fluid">
+								<img src="<?= base_url() ?>assets/img/make-up/MUA (3).jpg" alt="" class="img img-fluid">
 								<div class="item-service-text">
 									<div class="icon">
 										<span class="iconify" data-icon="material-symbols:redeem"></span>
@@ -250,7 +250,7 @@
 					<div class="item" data-aos="flip-down" data-aos-offset="50" data-aos-duration="2500">
 						<div class="item-service">
 							<div class="img-service">
-								<img src="<?= base_url() ?>assets/img/thumbnail (2).jpg" alt="" class="img img-fluid">
+								<img src="<?= base_url() ?>assets/img/img (4).jpg" alt="" class="img img-fluid">
 								<div class="item-service-text">
 									<div class="icon">
 										<span class="iconify" data-icon="emojione-monotone:dress"></span>
@@ -286,13 +286,13 @@
 				<div class="col-md-3">
 					<div class="card-team">
 						<div class="img-team">
-							<img src="<?= base_url() ?>assets/img/card-carousel-4.jpg" alt="" class="img img-fluid">
+							<img src="<?= base_url() ?>assets/img/img-team (1).jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Robert Willy</a>
+							<a href="">Dhewi Lestari</a>
 						</div>
 						<div class="text">
-							<p>Wedding Planner</p>
+							<p>Owner</p>
 						</div>
 						<div class="icon-sosmed">
 							<div class="fb">
@@ -423,7 +423,7 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="items-img">
-						<img src="<?= base_url() ?>assets/img/test-thumb.jpg" alt="" data-aos="zoom-in" data-aos-offset="250" data-aos-delay="100" data-aos-duration="1000">
+						<img src="<?= base_url() ?>assets/img/img (3).jpg" alt="" data-aos="zoom-in" data-aos-offset="250" data-aos-delay="100" data-aos-duration="1000">
 						<div class="img-bingkai">
 							<img src="<?= base_url() ?>assets/img/testi-shape.png" alt="">
 						</div>
@@ -578,7 +578,7 @@
 						<div class="item-produk">
 
 							<div class="img-produk" data-aos="flip-left" data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">
-								<img src="<?= base_url() ?>assets/img/home-1.jpg" alt="" class="img img-fluid">
+								<img src="<?= base_url() ?>assets/img/wedding (5).jpg" alt="" class="img img-fluid">
 								<a href="">Lihat Detail</a>
 							</div>
 							<div class="title">
@@ -593,7 +593,7 @@
 						<div class="item-produk">
 
 							<div class="img-produk" data-aos="flip-left" data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">
-								<img src="<?= base_url() ?>assets/img/home-2.jpg" alt="" class="img img-fluid">
+								<img src="<?= base_url() ?>assets/img/img (12).jpg" alt="" class="img img-fluid">
 								<a href="">Lihat Detail</a>
 							</div>
 							<div class="title">
@@ -608,7 +608,7 @@
 						<div class="item-produk">
 
 							<div class="img-produk" data-aos="flip-left" data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">
-								<img src="<?= base_url() ?>assets/img/home-3.jpg" alt="" class="img img-fluid">
+								<img src="<?= base_url() ?>assets/img/home-2.jpg" alt="" class="img img-fluid">
 								<a href="">Lihat Detail</a>
 							</div>
 							<div class="title">
@@ -638,7 +638,7 @@
 						<div class="item-produk" data-aos="flip-left" data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">
 
 							<div class="img-produk">
-								<img src="<?= base_url() ?>assets/img/make-up/make-up (4).jpg" alt="" class="img img-fluid">
+								<img src="<?= base_url() ?>assets/img/make-up/MUA (2).jpg" alt="" class="img img-fluid">
 								<a href="">Lihat Detail</a>
 							</div>
 							<div class="title">
@@ -653,7 +653,7 @@
 						<div class="item-produk" data-aos="flip-left" data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">
 
 							<div class="img-produk">
-								<img src="<?= base_url() ?>assets/img/gown-home.jpg" alt="" class="img img-fluid">
+								<img src="<?= base_url() ?>assets/img/img (6).jpg" alt="" class="img img-fluid">
 								<a href="">Lihat Detail</a>
 							</div>
 							<div class="title">
@@ -710,7 +710,7 @@
 						<div class="item-card">
 							<div class="card-top">
 								<div class="img-title" data-aos="fade-down" data-aos-offset="150" data-aos-delay="100" data-aos-duration="2000">
-									<img src="<?= base_url() ?>assets/img/price-imag-1.png" alt="" class="img img-fluid">
+									<img src="<?= base_url() ?>assets/img/circle-img-1.jpg" alt="" class="img img-fluid">
 								</div>
 								<div class="title">
 									<h3>Paket Dasar</h3>
@@ -762,7 +762,7 @@
 						<div class="item-card">
 							<div class="card-top">
 								<div class="img-title" data-aos="fade-down" data-aos-offset="150" data-aos-delay="100" data-aos-duration="2000">
-									<img src="<?= base_url() ?>assets/img/price-imag-2.png" alt="" class="img img-fluid">
+									<img src="<?= base_url() ?>assets/img/circle-img-2.jpg" alt="" class="img img-fluid">
 								</div>
 								<div class="title">
 									<h3>Paket Mewah</h3>
