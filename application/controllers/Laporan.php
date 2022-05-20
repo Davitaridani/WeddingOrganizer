@@ -3,7 +3,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Laporan extends CI_Controller
 {
-
 	public function __construct()
 	{
 		parent::__construct();
@@ -15,7 +14,6 @@ class Laporan extends CI_Controller
 		$data = [
 			'title' => 'Data Laporan',
 			'isi' => 'backEnd/laporan'
-
 		];
 		$this->load->view('backEnd/include/wrapper', $data, FALSE);
 	}
@@ -26,7 +24,6 @@ class Laporan extends CI_Controller
 		$bulan  = $this->input->post('bulan');
 		$tahun  = $this->input->post('tahun');
 
-
 		$data = [
 			'title' => 'Laporan Harian',
 			'tanggal' => $tanggal,
@@ -34,7 +31,6 @@ class Laporan extends CI_Controller
 			'tahun' => $tahun,
 			'laporan' => $this->m_laporan->lap_harian($tanggal, $bulan, $tahun),
 			'isi' => 'backEnd/lap_harian'
-
 		];
 		$this->load->view('backEnd/include/wrapper', $data, FALSE);
 	}
@@ -43,7 +39,6 @@ class Laporan extends CI_Controller
 	{
 		$bulan  = $this->input->post('bulan');
 		$tahun  = $this->input->post('tahun');
-
 		$data = [
 			'title' => 'Laporan Bulanan',
 			'bulan' => $bulan,
@@ -57,9 +52,8 @@ class Laporan extends CI_Controller
 	public function lap_tahunan()
 	{
 		$tahun  = $this->input->post('tahun');
-
 		$data = [
-			'title' => 'Laporan Bulanan',
+			'title' => 'Laporan Tahunan',
 			'tahun' => $tahun,
 			'laporan' => $this->m_laporan->lap_tahunan($tahun),
 			'isi' => 'backEnd/lap_tahunan'

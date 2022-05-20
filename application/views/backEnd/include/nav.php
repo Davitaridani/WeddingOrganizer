@@ -48,7 +48,8 @@
 					<a href="<?= base_url('produk') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'produk') {
 																								echo "active";
 																							} ?>">
-						<i class="nav-icon fas fa-th"></i>
+						<i class="nav-icon fas fa-toolbox"></i>
+						<!-- <i class="fa fa-toolbox"></i> -->
 						<p>
 							Produk
 						</p>

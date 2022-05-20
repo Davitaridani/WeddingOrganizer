@@ -27,11 +27,9 @@
 				<img src="<?= base_url() ?>assets/img/logo-DL.png" alt="" class="img img-fluid mb-2" style="width:160px;">
 			</a>
 		</div>
-		<!-- /.login-logo -->
 		<div class="card">
 			<div class="card-body login-card-body">
 				<p class="login-box-msg">Silahkan Login</p>
-
 
 				<?php
 
@@ -54,7 +52,6 @@
 					echo $this->session->flashdata('pesan');
 					echo '</div>';
 				}
-
 				echo form_open('auth/login_user')
 				?>
 				<div class="input-group mb-3">
@@ -85,11 +82,8 @@
 					</div>
 				</div>
 				<?php
-
 				echo form_close();
-
 				?>
-
 			</div>
 		</div>
 	</div>

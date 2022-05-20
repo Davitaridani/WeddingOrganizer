@@ -43,7 +43,7 @@
 				<div class="col-sm-4">
 					<div class="form-group">
 						<label for="">Gambar Produk</label>
-						<input type="file" name="gambar" id="preview_gambar" class="form-control" required>
+						<input type="file" name="gambar" id="preview_gambar" class="form-control">
 					</div>
 				</div>
 
