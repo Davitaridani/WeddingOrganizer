@@ -83,8 +83,6 @@
 
 
 
-
-
 <!-- Include plugin TINYMCE  -->
 <script src="../assets/tinymce/js/tinymce/tinymce.min.js"></script>
 
