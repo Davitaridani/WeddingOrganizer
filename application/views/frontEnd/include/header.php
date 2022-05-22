@@ -83,7 +83,6 @@
 						</ul>
 					</li>
 
-					<?php $kategori = $this->m_galeri->get_all_data_galeri(); ?>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Galeri

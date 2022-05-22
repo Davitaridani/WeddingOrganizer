@@ -72,7 +72,7 @@
 								</div>
 							</div>
 
-							<?php form_close() ?>
+							<?php echo form_close() ?>
 						</div>
 					<?php } ?>
 				</div>

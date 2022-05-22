@@ -68,6 +68,28 @@
 				</li>
 
 				<li class="nav-item">
+					<a href="<?= base_url('kategori_galeri') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'kategori_galeri') {
+																											echo "active";
+																										} ?>">
+						<i class="nav-icon fas fa-image"></i>
+						<p>
+							Kategori Galeri
+						</p>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="<?= base_url('galeri') ?>" class="nav-link <?php if ($this->uri->segment(1) == '	') {
+																								echo "active";
+																							} ?>">
+						<i class="nav-icon fas fa-image"></i>
+						<p>
+							Galeri Foto
+						</p>
+					</a>
+				</li>
+
+				<li class="nav-item">
 					<a href="<?= base_url('admin/pesanan_masuk') ?>" class="nav-link <?php if ($this->uri->segment(2) == 'pesanan_masuk' and $this->uri->segment(1) == 'admin') {
 																												echo "active";
 																											} ?>">

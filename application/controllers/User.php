@@ -20,7 +20,6 @@ class User extends CI_Controller
 		$this->load->view('backEnd/include/wrapper', $data, FALSE);
 	}
 
-
 	public function add()
 	{
 		$data = [
