@@ -30,10 +30,8 @@ class Kategori_galeri extends CI_Controller
 		redirect('kategori_galeri');
 	}
 
-
 	public function edit($id_kategori_galeri)
 	{
-
 		$data = [
 			'id_kategori_galeri' => $id_kategori_galeri,
 			'nama_kategori_galeri' => $this->input->post('nama_kategori_galeri'),
@@ -42,7 +40,6 @@ class Kategori_galeri extends CI_Controller
 		$this->session->set_flashdata('pesan', 'Data Berhasil Di Edit');
 		redirect('kategori_galeri');
 	}
-
 
 	public function delete($id_kategori_galeri = NULL)
 	{

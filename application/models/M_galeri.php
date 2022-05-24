@@ -22,6 +22,14 @@ class M_galeri extends CI_Model
 		return $this->db->get()->row();
 	}
 
+	public function get_all_data_kategori_galeri()
+	{
+		$this->db->select('*');
+		$this->db->from('tb_kategori_galeri');
+		$this->db->order_by('id_kategori_galeri', 'desc');
+		return $this->db->get()->result();
+	}
+
 	public function add($data)
 	{
 		$this->db->insert('tb_galeri', $data);

@@ -83,13 +83,18 @@
 						</ul>
 					</li>
 
+
+					<?php $kategori_galeri = $this->m_foto->get_all_kategori_galeri(); ?>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Galeri
 						</a>
 						<ul class="dropdown-menu border-0" aria-labelledby="navbarScrollingDropdown">
-							<?php foreach ($kategori as $key => $value) { ?>
-								<li><a class="dropdown-item" href="<?= base_url('galeri/kategori/' . $value->id_kategori); ?>"><?= $value->nama_kategori ?></a></li>
+							<?php foreach ($kategori_galeri as $key => $value) { ?>
+								<li>
+									<a class="dropdown-item" href="<?= base_url('foto/kategori_galeri/' . $value->id_kategori_galeri); ?>"><?= $value->nama_kategori_galeri ?>
+									</a>
+								</li>
 							<?php } ?>
 						</ul>
 					</li>

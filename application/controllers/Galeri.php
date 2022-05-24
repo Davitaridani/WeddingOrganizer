@@ -22,7 +22,6 @@ class Galeri extends CI_Controller
 		$this->load->view('backEnd/include/wrapper', $data, FALSE);
 	}
 
-
 	// Add Foto galeri
 	public function add()
 	{
@@ -68,7 +67,6 @@ class Galeri extends CI_Controller
 		];
 		$this->load->view('backEnd/include/wrapper', $data, FALSE);
 	}
-
 
 	// Edit Foto galeri
 	public function edit($id_galeri)
