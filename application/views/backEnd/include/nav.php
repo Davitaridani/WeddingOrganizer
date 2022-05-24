@@ -11,7 +11,7 @@
 		<!-- Sidebar user panel (optional) -->
 		<div class="user-panel mt-3 pb-3 mb-3 d-flex">
 			<div class="image">
-				<img src="<?= base_url() ?>templates/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+				<img src="<?= base_url('assets/gambar/logo.png') ?>" class="img-circle elevation-2" alt="User Image">
 			</div>
 			<div class="info">
 				<a href="#" class="d-block"><?= $this->session->userdata('nama'); ?></a>
@@ -71,7 +71,7 @@
 					<a href="<?= base_url('kategori_galeri') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'kategori_galeri') {
 																											echo "active";
 																										} ?>">
-						<i class="nav-icon fas fa-image"></i>
+						<i class="nav-icon fas fa-list-alt"></i>
 						<p>
 							Kategori Galeri
 						</p>
@@ -82,7 +82,7 @@
 					<a href="<?= base_url('galeri') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'galeri') {
 																								echo "active";
 																							} ?>">
-						<i class="nav-icon fas fa-image"></i>
+						<i class="nav-icon fas fa-images"></i>
 						<p>
 							Galeri Foto
 						</p>
@@ -111,7 +111,7 @@
 
 
 				<li class="nav-item has-treeview">
-					<a href="#" class="nav-link">
+					<!-- <a href="#" class="nav-link">
 						<i class="nav-icon fas fa-tachometer-alt"></i>
 						<p>
 							Dashboard
@@ -132,7 +132,7 @@
 							</a>
 						</li>
 					</ul>
-				</li>
+				</li> -->
 				<li class="nav-item">
 					<a href="<?= base_url('user') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'user') {
 																							echo "active";
@@ -146,8 +146,9 @@
 
 				<li class="nav-item">
 					<a href="<?= base_url('auth/logout_user') ?>" class="nav-link">
-						<i class="nav-icon fas fa-sign"></i>
+						<i class="nav-icon fas fa-sign-out-alt"></i>
 						<p>Log Out</p>
+						<!-- <i class="fas fa-sign-out-alt"></i> -->
 					</a>
 				</li>
 			</ul>

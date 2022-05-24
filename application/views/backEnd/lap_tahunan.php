@@ -3,8 +3,9 @@
 		<div class="row">
 			<div class="col-12">
 				<h4>
-					<i class="fas fa-globe"></i> <?= $title ?>
-					<small class="float-right">Tahun:<?= $tahun ?></small>
+					<img src="<?= base_url('assets/img/logo-DL.png') ?>" alt="" class="img img-fluid pr-1 mb-2" width="60px">
+					<?= $title ?>
+					<small class="float-right mb-2">Tahun:<?= $tahun ?></small>
 				</h4>
 			</div>
 		</div>

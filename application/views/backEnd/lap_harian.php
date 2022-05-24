@@ -3,8 +3,9 @@
 		<div class="row">
 			<div class="col-12">
 				<h4>
-					<i class="fas fa-globe"></i> <?= $title ?>
-					<small class="float-right">Tanggal: <?= $tanggal ?>/<?= $bulan ?>/<?= $tahun ?></small>
+					<img src="<?= base_url('assets/img/logo-DL.png') ?>" alt="" class="img img-fluid pr-1 mb-2" width="60px">
+					<?= $title ?>
+					<small class="float-right mb-2">Tanggal: <?= $tanggal ?>/<?= $bulan ?>/<?= $tahun ?></small>
 				</h4>
 			</div>
 		</div>
@@ -41,12 +42,9 @@
 								<td>
 									<img src="<?= base_url('assets/gambar/' . $value->gambar) ?>" alt="" class="img img-fluid" width="100px" height="60px">
 								</td>
-
 								<td>Rp. <?= number_format($tot_harga, 0) ?></td>
-
 							</tr>
 						<?php } ?>
-
 					</tbody>
 				</table>
 				<hr>
@@ -56,8 +54,6 @@
 				</div>
 			</div>
 		</div>
-
-
 
 		<div class="row no-print">
 			<div class="col-12">

@@ -22,9 +22,9 @@
 			<table class="table table-bordered table-striped" id="data_tables">
 				<thead>
 					<tr>
-						<th class="text-center">No </th>
+						<th class="text-center" width="5%">No </th>
 						<th>Nama Kategori Galeri</th>
-						<th>Action</th>
+						<th width="15%" class="text-center">Action</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -33,7 +33,7 @@
 						<tr>
 							<td class="text-center"><?= $no++; ?></td>
 							<td><?= $value->nama_kategori_galeri ?></td>
-							<td>
+							<td class="text-center">
 								<button data-toggle="modal" data-target="#edit<?= $value->id_kategori_galeri  ?>" class="btn btn-info btn-sm">
 									<i class="fa fa-edit"></i>
 								</button>

@@ -16,6 +16,9 @@ class Admin extends CI_Controller
 			'title' => 'Dashboard',
 			'total_produk' => $this->m_admin->total_produk(),
 			'total_kategori' => $this->m_admin->total_kategori(),
+			'total_transaksi' => $this->m_admin->total_transaksi(),
+			'total_customer' => $this->m_admin->total_customer(),
+			'total_pesanan_masuk' => $this->m_admin->total_pesanan_masuk(),
 			'isi' => 'backEnd/admin'
 
 		];

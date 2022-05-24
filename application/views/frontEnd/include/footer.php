@@ -163,6 +163,8 @@
 <script src="<?= base_url() ?>assets/js/bootstrap.bundle.min.js"></script>
 
 
+
+
 <!--  Lightbox JS  -->
 <script src="<?= base_url() ?>assets/js/lightbox.min.js"></script>
 

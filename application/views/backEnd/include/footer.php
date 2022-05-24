@@ -3,15 +3,13 @@
 </div>
 </div>
 <footer class="main-footer">
-	<!-- To the right -->
-	<div class="float-right d-none d-sm-inline">
+	<!-- <div class="float-right d-none d-sm-inline">
 		Anything you want
-	</div>
+	</div> -->
 	<!-- Default to the left -->
-	<strong>Copyright &copy; 2022 <a href="https://adminlte.io">Dhewi Lestari</a>.</strong> All rights reserved.
+	<strong>Copyright &copy; 2022 <a href="<?= base_url('admin') ?>">Dhewi Lestari</a>.</strong> All rights reserved.
 </footer>
 </div>
-<!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->
 <script>
