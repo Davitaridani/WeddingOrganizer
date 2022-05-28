@@ -50,16 +50,17 @@ $black: 900;
     right: 20px;
     bottom: 10px;
     z-index: 9999;
-    a {
+    button {
         border-radius: 50%;
-        background-color: $biru-2;
+        background-color: #97a6b4;
         text-align: center;
         padding: 10px 8px 10px 8px;
+        border: 0;
         height: 44px;
-            width: 44px;
+        width: 44px;
         box-shadow: 0 1px 8px rgb(0 0 0 / 12%);
         svg {
-            margin-bottom: 10px;
+            margin-bottom: 9px;
             color: #fff;
             font-size: 24px;
         }

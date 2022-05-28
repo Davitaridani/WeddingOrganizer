@@ -146,5 +146,22 @@ $(".items-testimoni").owlCarousel({
 	},
 });
 
+// Button scrolll top
+var myButton = $("#btnScrollTop");
+
+$(window).scroll(function () {
+	if ($(window).scrollTop() > 300) {
+		$("#btnScrollTop").fadeIn();
+	} else {
+		$("#btnScrollTop").fadeOut();
+	}
+});
+
+myButton.on("click", function (e) {
+	e.preventDefault();
+	$("html, body").animate({ scrollTop: 0 }, "900");
+});
+// End Scroll Top
+
 // AOS JS Animasi
 // AOS.init();

@@ -7,9 +7,9 @@
 </div>
 
 <div class="item-scroll-top">
-	<a href="">
+	<button type="button" id="btnScrollTop">
 		<span class="iconify" data-icon="ep:arrow-up"></span>
-	</a>
+	</button>
 </div>
 
 
