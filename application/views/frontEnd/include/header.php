@@ -8,7 +8,6 @@
 	<meta name="description" content="Unicat project">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-
 	<!-- Link scss  -->
 	<link rel="stylesheet" href="<?= base_url() ?>assets/css/main_custom.css">
 	<link rel="stylesheet" href="<?= base_url() ?>assets/css/bootstrap.min.css">
@@ -42,10 +41,8 @@
 	<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> -->
 
 
-
-
 	<!-- Lightbox css  -->
-	<link rel="stylesheet" href="<?= base_url() ?>assets/css/lightbox.min.css">
+	<link rel="stylesheet" href="<?= base_url('assets/lightbox2/dist/css/lightbox.css') ?>">
 
 </head>
 
@@ -83,7 +80,6 @@
 						</ul>
 					</li>
 
-
 					<?php $kategori_galeri = $this->m_foto->get_all_kategori_galeri(); ?>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -109,26 +105,15 @@
 
 				</ul>
 				<div class="icon-navbar d-flex">
-
 					<?php if ($this->session->userdata('email') == "") { ?>
 						<a href="<?= base_url('customer/login') ?>" class="nav-link p-0">
 							<span class="iconify">Login</span>
 							<span class="iconify" data-icon="carbon:user-avatar-filled-alt"></span>
-							<!-- <img src="" alt=""> -->
 						</a>
-
-
 					<?php } else {  ?>
 						<span>
 							<?= $this->session->userdata('email') ?>
 						</span>
-
-						<!-- <div class="line">
-							<a href="<?= base_url('customer/register') ?>">
-								<span class="iconify" data-icon="carbon:user-avatar-filled-alt"></span>
-							</a>
-						</div> -->
-
 						<div class="dropdown">
 							<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 								<span class="iconify">Login</span>
@@ -145,7 +130,7 @@
 
 					<div class="line">
 						<a href="<?= base_url('customer/register') ?>">
-							<img src="<?= base_url('assets/foto/' . $this->session->userdata('foto')) ?>" alt="" class="img-fluid">
+							<!-- <img src="<?= base_url('assets/foto/' . $this->session->userdata('foto')) ?>" alt="" class="img-fluid"> -->
 						</a>
 					</div>
 

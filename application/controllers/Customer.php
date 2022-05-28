@@ -54,7 +54,6 @@ class Customer extends CI_Controller
 
 		// Jika User Ada/Email Ada
 		if ($user) {
-
 			// JIka User Active
 			if ($user['is_active'] == 1) {
 				// Cek Password

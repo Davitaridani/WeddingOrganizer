@@ -95,12 +95,14 @@
 </section>
 
 <!-- Our Story Sect 3 -->
-<section class="ourStory-sect-3">
-	<div class="container">
+<!-- Our Story Sect 1 -->
+<section class="section-hero-image-banner hero-image-banner-paralax mb-lg-5" data-parallax="scroll" data-z-index="1" data-image-src="<?= base_url() ?>assets/img/bg-checkOut.jpg">
+	<div class="container-fluid p-0 ">
 		<div class="blocks-items">
-
+			<div class="text-title text-center w-75 mx-auto">
+				<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora! </h3>
+			</div>
 		</div>
-	</div>
 </section>
 
 

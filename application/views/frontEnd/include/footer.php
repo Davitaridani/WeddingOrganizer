@@ -1,3 +1,18 @@
+<!-- Items Wa -->
+<div class="item-wa">
+	<a href="https://api.whatsapp.com/send?phone=62 857-4907-1844&text=Selamat Siang%20Kakak,%20Saya%20Ingin%20Konsultasi%20Mengenai%20Wedding.">
+		<span class="iconify" data-icon="logos:whatsapp"></span>
+
+	</a>
+</div>
+
+<div class="item-scroll-top">
+	<a href="">
+		<span class="iconify" data-icon="ep:arrow-up"></span>
+	</a>
+</div>
+
+
 <!-- Footer -->
 <footer class="footer">
 	<!-- Baru Footer Top -->
@@ -79,15 +94,15 @@
 										</a>
 									</div>
 									<div class="icon">
-										<a href="">
+										<a href="https://api.whatsapp.com/send?phone=62 857-4907-1844&text=Selamat Siang%20Kakak,%20Saya%20Ingin%20Konsultasi%20Mengenai%20Wedding.">
 											<span class="iconify" data-icon="fluent:call-48-filled"></span>
-											<span>+888 (123) 869523</span>
+											<span>+62 821-3998-6759</span>
 										</a>
 									</div>
 									<div class="icon">
-										<a href="">
+										<a href="https://www.google.co.id/maps/place/DEWI+LESTARI+Makeup+Artist+(MUA)/@-8.3642887,113.4935234,17z/data=!4m12!1m6!3m5!1s0x2dd683ca01118aa9:0xe23fbf8fd2dfd76b!2sDEWI+LESTARI+Makeup+Artist+(MUA)!8m2!3d-8.3642887!4d113.4977506!3m4!1s0x2dd683ca01118aa9:0xe23fbf8fd2dfd76b!8m2!3d-8.3642887!4d113.4977506?hl=id">
 											<span class="iconify" data-icon="carbon:location-filled"></span>
-											<span>New York – 1075 Firs Avenue</span>
+											<span>Jl. Sultan Agung No.7, Kepel, Lojejer, Wuluhan, Kabupaten Jember, Jawa Timur 68162, Indonesia</span>
 										</a>
 									</div>
 								</div>
@@ -103,35 +118,35 @@
 							<div class="row">
 								<div class="col-md-4">
 									<div class="img-foot">
-										<img class="img img-fluid" src="<?= base_url(); ?>assets/img/img-home-3.jpg" alt="">
+										<img class="img img-fluid" src="<?= base_url(); ?>assets/img/img (4).jpg" alt="">
 									</div>
 								</div>
 								<div class="col-md-4">
 									<div class="img-foot">
-										<img class="img img-fluid" src="<?= base_url(); ?>assets/img/thumbnail (6).jpg" alt="">
+										<img class="img img-fluid" src="<?= base_url(); ?>assets/img/wedding (7).jpg" alt="">
 									</div>
 								</div>
 								<div class="col-md-4">
 									<div class="img-foot">
-										<img class="img img-fluid" src="<?= base_url(); ?>assets/img/banner-wedding.jpg" alt="">
-									</div>
-								</div>
-
-								<div class="col-md-4">
-									<div class="img-foot">
-										<img class="img img-fluid" src="<?= base_url(); ?>assets/img/banner-wedding.jpg" alt="">
+										<img class="img img-fluid" src="<?= base_url(); ?>assets/img/foto/foto-wedding (1).jpg" alt="">
 									</div>
 								</div>
 
 								<div class="col-md-4">
 									<div class="img-foot">
-										<img class="img img-fluid" src="<?= base_url(); ?>assets/img/img-home-4.jpg" alt="">
+										<img class="img img-fluid" src="<?= base_url(); ?>assets/img/img (3).jpg" alt="">
 									</div>
 								</div>
 
 								<div class="col-md-4">
 									<div class="img-foot">
-										<img class="img img-fluid" src="<?= base_url(); ?>assets/img/thumbnail (2).jpg" alt="">
+										<img class="img img-fluid" src="<?= base_url(); ?>assets/img/img (12).jpg" alt="">
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="img-foot">
+										<img class="img img-fluid" src="<?= base_url(); ?>assets/img/foto/foto-wedding (8).jpg" alt="">
 									</div>
 								</div>
 							</div>
@@ -163,13 +178,15 @@
 <script src="<?= base_url() ?>assets/js/bootstrap.bundle.min.js"></script>
 
 
-
-
 <!--  Lightbox JS  -->
-<script src="<?= base_url() ?>assets/js/lightbox.min.js"></script>
+<!-- <script src="<?= base_url('assets/lightbox2/dist/js/lightbox.min.js') ?>"></script> -->
+
+
 
 <!--  Ligbox jquery  -->
-<script src="<?= base_url() ?>assets/js/lightbox-plus-jquery.min.js"></script>
+<script src="<?= base_url('assets/lightbox2/dist/js/lightbox-plus-jquery.min.js') ?>"></script>
+
+
 
 <!--  Owl Card  -->
 <script src="<?= base_url() ?>assets/js/owl-card.js"></script>

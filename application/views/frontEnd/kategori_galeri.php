@@ -40,7 +40,9 @@
 					<?php foreach ($foto as $key => $value) { ?>
 						<div class="col-md-4">
 							<div class="pict">
-								<img src="<?= base_url('assets/galeri_foto/' . $value->foto) ?>" alt="" class="img img-fluid">
+								<a href="<?= base_url('assets/galeri_foto/' . $value->foto) ?>" data-lightbox="image-1">
+									<img src="<?= base_url('assets/galeri_foto/' . $value->foto) ?>" alt="" class="img img-fluid">
+								</a>
 							</div>
 						</div>
 					<?php } ?>

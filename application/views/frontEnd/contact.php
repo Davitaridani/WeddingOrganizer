@@ -25,10 +25,10 @@
 							<span class="iconify" data-icon="clarity:map-marker-solid"></span>
 						</div>
 						<div class="title ">
-							<h3>Address</h3>
+							<h3>Alamat</h3>
 						</div>
 						<div class="text">
-							<p>7 Green Lake Street<br> Crawfordsville, IN 47933</p>
+							<p>Jl. Sultan Agung No.7, Kepel, Lojejer, Wuluhan, Kab. Jember, Jawa Timur </p>
 						</div>
 					</div>
 				</div>
@@ -52,11 +52,11 @@
 							<span class="iconify" data-icon="dashicons:whatsapp"></span>
 						</div>
 						<div class="title ">
-							<h3>Email</h3>
+							<h3>Whatsapp</h3>
 						</div>
 						<div class="text">
-							<p>085 123 456 789 <br>
-								083 800 123 654 987</p>
+							<p>+62 821-3998-6759 <br>
+								+62 821-3998-6759</p>
 						</div>
 					</div>
 				</div>

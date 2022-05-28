@@ -75,7 +75,7 @@
 								</div>
 							</div>
 							<!-- Simpan Data Transaksi -->
-							<input name="no_order" value="<?= $no_order ?>" hidden>
+							<input name="no_order" value="<?= $no_order ?>">
 							<input name="sub_total" value="<?= $this->cart->total() ?>" hidden>
 							<!-- <input name="total_bayar"> -->
 

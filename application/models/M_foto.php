@@ -13,7 +13,6 @@ class M_foto extends CI_Model
 		return $this->db->get()->result();
 	}
 
-
 	public function get_all_kategori_galeri()
 	{
 		$this->db->select('*');

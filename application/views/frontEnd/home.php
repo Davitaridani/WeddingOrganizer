@@ -130,8 +130,9 @@
 							<h3>Perencana untuk Pernikahan Sempurna Anda</h3>
 						</div>
 						<div class="desc" data-aos="fade-left" data-aos-offset="150" data-aos-delay="250" data-aos-duration="2000">
-							<p>Sudah menjadi fakta lama bahwa pembaca akan terganggu oleh konten halaman yang dapat dibaca ketika melihat tata letaknya. Inti dari penggunaan Lorem Ipsum adalah bahwa ia memiliki distribusi huruf yang kurang lebih normal.</p>
-							<p>Konten di sini, konten di sini', membuatnya tampak seperti bahasa Inggris yang dapat dibaca. Banyak paket penerbitan desktop dan editor halaman web sekarang menggunakan.</p>
+
+							<p>Dhewi Lestari adalah Wedding Planner atau Wedding Organizer yang berbasis di kota Jember Selatan. Kami memberikan pelayanan kepada pasangan atau calon mempelai yang akan menikah mengenai perencanaan pernikahan atau acara mereka. Tidak hanya berkaitan dengan wedding atau pernikahan saja, Dhewi Lestari juga siap dalam menghandle acara-acara atau event-event besar lainnya. </p>
+							<p>Kami berkomitmen untuk selalu memberikan pelayanan yang terbaik kepada seluruh klien.</p>
 						</div>
 						<div class="items-btn">
 							<a href="<?= base_url() ?>about">Lihat Detail
@@ -160,8 +161,6 @@
 
 			<div class="blocks-layanan">
 				<div class="owl-carousel owl-theme" id="owl_layanan">
-
-
 					<div class=" item" data-aos="flip-down" data-aos-offset="50" data-aos-duration="2500">
 						<div class="item-service">
 							<div class="img-service">
@@ -296,12 +295,12 @@
 						</div>
 						<div class="icon-sosmed">
 							<div class="fb">
-								<a href="#">
+								<a href="https://www.facebook.com/profile.php?id=100007898836533">
 									<span class="iconify" data-icon="bxl:facebook"></span>
 								</a>
 							</div>
 							<div class="ig">
-								<a href="#">
+								<a href="https://www.instagram.com/dewilestari_makeup_artist/">
 									<span class="iconify" data-icon="ant-design:instagram-filled"></span>
 								</a>
 							</div>
@@ -438,15 +437,15 @@
 							</div>
 							<span class="iconify" data-icon="bxs:quote-alt-right"></span>
 							<div class="text">
-								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, autem. Atque corrupti minus, quas praesentium mollitia possimus? Dolor, et iure!</p>
+								<p>Mua terbagus sihh, padahal muka lagi breakout bisa jadi mulus banget di tangan mbak Dewi dan team, bisa bikin muka pangling jugaa. Terima kasih untuk mbak Dewi dan team telah mewujudkan wedding dream aku, dan terima kasih sudah memberikan pelayanan terbaik dan sangat ramah</p>
 							</div>
 							<div class="items-img-info">
 								<div class="testimoni-img">
-									<img src="<?= base_url() ?>assets/img/card-carousel-4.jpg" alt="">
+									<img src="<?= base_url() ?>assets/img/img-testimoni (1).png" alt="">
 								</div>
 								<div class="info-klien">
-									<h3>Aliza ananda</h3>
-									<p>Wedding : <span>10/13/2020</span></p>
+									<h3>Andini Agus</h3>
+									<p>Wedding : <span>10/02/2021</span></p>
 								</div>
 							</div>
 						</div>
@@ -456,15 +455,17 @@
 							</div>
 							<span class="iconify" data-icon="bxs:quote-alt-right"></span>
 							<div class="text">
-								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, autem. Atque corrupti minus, quas praesentium mollitia possimus? Dolor, et iure!</p>
+								<p>MUA terdabest menurutku, sampe acara selesai gak ada pecah sedikitpun, kakak²nya ramah ramah
+									Bikin muka pangling banget, sampe banya muji cangtip banget🥰
+									Thankyou Dewi Lestari MUA dan Crew</p>
 							</div>
 							<div class="items-img-info">
 								<div class="testimoni-img">
-									<img src="<?= base_url() ?>assets/img/card-carousel-6.jpg" alt="">
+									<img src="<?= base_url() ?>assets/img/img-testimoni.png" alt="">
 								</div>
 								<div class="info-klien">
-									<h3>Sinta dewi</h3>
-									<p>Wedding : <span>10/13/2020</span></p>
+									<h3>fatimatus zahro</h3>
+									<p>Wedding : <span>19/01/2021</span></p>
 								</div>
 							</div>
 						</div>
@@ -474,15 +475,57 @@
 							</div>
 							<span class="iconify" data-icon="bxs:quote-alt-right"></span>
 							<div class="text">
-								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, autem. Atque corrupti minus, quas praesentium mollitia possimus? Dolor, et iure!</p>
+								<p>Terimakasih banyak team Dewi Lestari 🥰
+									Make up paling the best 🥰🥰
+									Gak bisa move on sama make upnya pokok.
+									Dah gabisa berkata apa apa .</p>
 							</div>
 							<div class="items-img-info">
 								<div class="testimoni-img">
-									<img src="<?= base_url() ?>assets/img/card-carousel-5.jpg" alt="">
+									<img src="<?= base_url() ?>assets/img/img-testimoni (2).png" alt="">
 								</div>
 								<div class="info-klien">
-									<h3>Bella saskia</h3>
-									<p>Wedding : <span>10/13/2020</span></p>
+									<h3>Dwi Ratnaningtyas</h3>
+									<p>Wedding : <span>20/02/2021</span></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="title">
+								<h3>Apa Kata Klien kami</h3>
+							</div>
+							<span class="iconify" data-icon="bxs:quote-alt-right"></span>
+							<div class="text">
+								<p>Best banget pokoknya, super puasss banget 🥰...
+									Terimakasih banyak sudah dibantu, sudah dibikin cantik ❣️...</p>
+							</div>
+							<div class="items-img-info">
+								<div class="testimoni-img">
+									<img src="<?= base_url() ?>assets/img/img-testimoni (3).png" alt="">
+								</div>
+								<div class="info-klien">
+									<h3>Eska</h3>
+									<p>Wedding : <span>24/02/2021</span></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="title">
+								<h3>Apa Kata Klien kami</h3>
+							</div>
+							<span class="iconify" data-icon="bxs:quote-alt-right"></span>
+							<div class="text">
+								<p>Mantap jaya. Recom sekali make up nya di jamin bakal gak kecewa gaes.</p>
+							</div>
+							<div class="items-img-info">
+								<div class="testimoni-img">
+									<img src="<?= base_url() ?>assets/img/img-testimoni (4).png" alt="">
+								</div>
+								<div class="info-klien">
+									<h3>Joe Image</h3>
+									<p>Wedding : <span>25/01/2021</span></p>
 								</div>
 							</div>
 						</div>
@@ -683,7 +726,7 @@
 						<h3>Rayakan Cinta Anda bersama Kami</h3>
 					</div>
 					<div class="btns">
-						<a href="#">Hubungi Kami</a>
+						<a href="<?= base_url('contact') ?>">Hubungi Kami</a>
 					</div>
 				</div>
 			</div>

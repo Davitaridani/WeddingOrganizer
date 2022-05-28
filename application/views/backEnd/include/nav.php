@@ -39,7 +39,7 @@
 																							} ?>">
 						<i class="nav-icon fas fa-list"></i>
 						<p>
-							kategori
+							Kategori Produk
 						</p>
 					</a>
 				</li>
@@ -148,14 +148,11 @@
 					<a href="<?= base_url('auth/logout_user') ?>" class="nav-link">
 						<i class="nav-icon fas fa-sign-out-alt"></i>
 						<p>Log Out</p>
-						<!-- <i class="fas fa-sign-out-alt"></i> -->
 					</a>
 				</li>
 			</ul>
 		</nav>
-		<!-- /.sidebar-menu -->
 	</div>
-	<!-- /.sidebar -->
 </aside>
 
 <!-- Content Wrapper. Contains page content -->

@@ -72,21 +72,12 @@ $black: 900;
         }
     }
     .icon-navbar {
-        padding-top: 10px;
-        .line {
+        // padding-top: 10px;
+        a {
+        padding-top: 5.5px !important;
             svg {
-                height: 25px;
-                margin-right: 20px !important;
-                width: auto;
-                color: #696969;
-            }
-        }
-        .search {
-            cursor: pointer ;
-            svg {
-                vertical-align: middle !important;
-                margin-right: 20px !important;
-                color: #3f3d3d;
+                font-size: 25px;
+                margin-right: 10px;
             }
         }
         .bag {

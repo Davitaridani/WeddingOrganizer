@@ -48,13 +48,16 @@
 							<h3>Perencana untuk Pernikahan Sempurna Anda</h3>
 						</div>
 						<div class="desc">
-							<p>Sudah menjadi fakta lama bahwa pembaca akan terganggu oleh konten halaman yang dapat dibaca ketika melihat tata letaknya. Inti dari penggunaan Lorem Ipsum adalah bahwa ia memiliki distribusi huruf yang kurang lebih normal, dibandingkan dengan menggunakan Lorem Ipsum sekarang.</p>
-							<p>Konten di sini, konten di sini', membuatnya tampak seperti bahasa Inggris yang dapat dibaca. Banyak paket penerbitan desktop dan editor halaman web sekarang menggunakan Lorem Ipsum sebagai teks model default mereka.</p>
-							<ul>
+							<p>Dhewi Lestari adalah Wedding Planner atau Wedding Organizer yang berbasis di kota Jember Selatan. Kami memberikan pelayanan kepada pasangan atau calon mempelai yang akan menikah mengenai perencanaan pernikahan atau acara mereka. Tidak hanya berkaitan dengan wedding atau pernikahan saja, Dhewi Lestari juga siap dalam menghandle acara-acara atau event-event besar lainnya. </p>
+
+							<p>Dhewi Lestari memiliki visi untuk mewujudkan keinginan setiap orang untuk mendapatkan layanan terbaik dengan inovasi, kreativitas, dan dedikasi kami di setiap momen yang ada. Kami merancang acara pernikahan sesuai kebutuhan dari klien, mulai dari konsep acara (tradisional atau modern), akad nikah, konsep dekorasi, make up, gaun, fotografi dan videografi. Kami berkomitmen untuk selalu memberikan pelayanan yang terbaik kepada seluruh klien.</p>
+
+							<!-- <p>Dhewi Lestari Wedding Organizer Jember merupakan jasa wedding professional yang bergerak di bidang penyelenggara acara pernikahan secara menyeluruh. Kami merancang acara pernikahan sesuai kebutuhan dari klien, mulai dari konsep acara (tradisional atau modern), akad nikah, konsep dekorasi, make up, gaun, fotografi dan videografi. Kami berkomitmen untuk selalu memberikan pelayanan yang terbaik kepada seluruh klien.</p> -->
+							<!-- <ul>
 								<li>Pergi melalui kutipan kata dalam klasik.</li>
 								<li>Ada banyak variasi bagian.</li>
 								<li>Membuatnya terlihat seperti bahasa Inggris yang dapat dibaca dan diucapkan.</li>
-							</ul>
+							</ul> -->
 						</div>
 					</div>
 				</div>
@@ -143,19 +146,19 @@
 							<img src="<?= base_url() ?>assets/img/card-carousel-4.jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Robert Willy</a>
+							<a href="">Dhewi Lestari</a>
 						</div>
 						<div class="text">
-							<p>Wedding Planner</p>
+							<p>Owner</p>
 						</div>
 						<div class="icon-sosmed">
 							<div class="fb">
-								<a href="#">
+								<a href="https://www.facebook.com/profile.php?id=100007898836533">
 									<span class="iconify" data-icon="bxl:facebook"></span>
 								</a>
 							</div>
 							<div class="ig">
-								<a href="#">
+								<a href="https://www.instagram.com/dewilestari_makeup_artist/">
 									<span class="iconify" data-icon="ant-design:instagram-filled"></span>
 								</a>
 							</div>
