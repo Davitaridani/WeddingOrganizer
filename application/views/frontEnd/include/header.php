@@ -67,7 +67,7 @@
 					</li>
 
 					<?php $kategori = $this->m_paket->get_all_data_kategori(); ?>
-					<li class="nav-item dropdown">
+					<li class="nav-item dropdown ">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Paket
 						</a>
@@ -111,15 +111,15 @@
 							<span class="iconify" data-icon="carbon:user-avatar-filled-alt"></span>
 						</a>
 					<?php } else {  ?>
-						<span>
+						<span class="name-user">
 							<?= $this->session->userdata('email') ?>
 						</span>
-						<div class="dropdown">
-							<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-								<span class="iconify">Login</span>
-							</button>
-							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-								<li><a class="dropdown-item" href="<?= base_url('customer/akun_saya') ?>">Akun Saya</a></li>
+						<div class="dropdown dropdown-user">
+							<div class="btns-dropdown dropdown-menu-left" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+								<span class="iconify" data-icon="carbon:user-avatar-filled-alt"></span>
+							</div>
+							<ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton1">
+								<!-- <li><a class="dropdown-item" href="<?= base_url('customer/akun_saya') ?>">Akun Saya</a></li> -->
 								<li><a class="dropdown-item" href="<?= base_url('pesanan_saya') ?>">Pesanan Saya</a></li>
 								<div class="dropdown-divider"></div>
 								<li><a class="dropdown-item" href="<?= base_url('customer/logout') ?>">Log Out</a></li>

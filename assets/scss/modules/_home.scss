@@ -9,8 +9,8 @@ sans-serif;
 $font-halant: 'Halant',
 serif;
 // color
-$color-pink:#ee9e9e;
-$color-pink2:#fa8282;
+// $color-pink:#ee9e9e;
+// $color-pink2:#fa8282;
 $bg-section:#fffdfdea;
 $bg-section:#f9f9f9;
 $color-desc:#738ea5;    
@@ -94,17 +94,25 @@ p {
             }
         }
         .btns-slide {
-            height: 40px;
+                        height: 50px;
             background-color: $biru-2;
             display: inline-block;
             width: 200px;
+            cursor: pointer;
+            transition: all 0.5s;
             a {
                 line-height: 40px;
-                font-size: 17px;
+                font-size: 17px !important; 
                 letter-spacing: 1px;
                 color: #fff !important;
-                text-transform: uppercase;
+                text-transform: capitalize;
                 text-decoration: none;
+                // padding: 15px 25px;
+                transition: all 0.5s;
+                &:hover {
+                    background-color: $biru-3;
+                    color: #002642 !important;
+                }
             }
         }
     }
@@ -658,7 +666,7 @@ p {
             .text-title {
                 margin-bottom: 20px;
                 h3 {
-                    color: $color-pink2;
+                    // color: $color-pink2; 
                     font-family: $font-halant;
                     font-weight: $semibold;
                     font-size: 70px;

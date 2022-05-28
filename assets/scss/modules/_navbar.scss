@@ -9,8 +9,8 @@ sans-serif;
 $font-halant: 'Halant',
 serif;
 // color
-$color-pink:#ee9e9e;
-$color-pink2:#fa8282;
+// $color-pink:#ee9e9e;
+// $color-pink2:#fa8282;
 $bg-section:#fffdfdea;
 $bg-section:#f9f9f9;
 $color-desc: #738ea5;
@@ -35,9 +35,6 @@ $black: 900;
             font-size: 30px;
             font-family: $font-halant;
             font-weight: $semibold;
-            span {
-                color: $color-pink2;
-            }
             img {
                 height: 50px;
             }
@@ -47,7 +44,7 @@ $black: 900;
         margin: 0 auto;
         .nav-item {
             // margin-right: 20px;
-            padding: 0 15px;
+            padding: 0 10px;
             .active {
                 color: $biru-2 !important;
             }
@@ -63,11 +60,16 @@ $black: 900;
                 }
             }
             .dropdown-menu {
+                margin-top: 15px;
                 a {
                     text-transform: capitalize;
                     font-weight: $reguler;
                     font-family: $font-raleway;
+                    &:active {
+                        background-color: transparent;
+                    }
                 }
+
             }
         }
     }
@@ -80,24 +82,45 @@ $black: 900;
                 margin-right: 10px;
             }
         }
-        .bag {
-        //    a {
-                text-decoration: none;
+        .name-user {
+            padding-top: 5px;
+            font-size: 16px;
+        }
+        .dropdown-user {
+            margin-right: 10px;
+            padding-top: 2px;
+            .btns-dropdown {
+                margin-left: 6px;
                 svg {
-                    vertical-align: middle !important;
-                    color: $color-desc;
+                    font-size: 25px;
+                    color: rgb(75, 74, 74) !important;
                 }
-                .label-qty {
-                    position: relative;
-                    top: -32px;
-                    left: 13px;
-                    font-size: 10px;
-                    background-color: $biru-2;
-                    color: #fff;
-                    border-radius: 50%;
-                    width: 14px;  
+            }
+            ul {
+                border-radius: 0;
+                border-color: #fff;
+                margin-top: 10px;
+                .dropdown-divider {
+                    margin: 0;
                 }
-// }
+            }
+        }
+        .bag {
+            text-decoration: none;
+            svg {
+                vertical-align: middle !important;
+                color: $color-desc;
+            }
+            .label-qty {
+                position: relative;
+                top: -32px;
+                left: 13px;
+                font-size: 10px;
+                background-color: $biru-2;
+                color: #fff;
+                border-radius: 50%;
+                width: 14px;  
+            }
             position: relative;
             display: inline-block;
             .btns-bag {

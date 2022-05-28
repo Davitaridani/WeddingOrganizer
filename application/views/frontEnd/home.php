@@ -10,7 +10,7 @@
 				<p>Pelayanan yang baik dan memenuhi seluruh kebutuhan klien adalah prioritas kami.</p>
 			</div>
 			<div class="btns-slide">
-				<a href="">Selengkapnya</a>
+				<a href="<?= base_url('about') ?>">Selengkapnya</a>
 			</div>
 		</div>
 	</div>
@@ -25,7 +25,7 @@
 				</p>
 			</div>
 			<div class="btns-slide">
-				<a href="">Selengkapnya</a>
+				<a href="<?= base_url('about') ?>">Selengkapnya</a>
 			</div>
 		</div>
 	</div>
@@ -39,7 +39,7 @@
 				<p>Harapan kami adalah kebahagiaan serta keberkatan untuk semua klien kami</p>
 			</div>
 			<div class="btns-slide">
-				<a href="">Selengkapnya</a>
+				<a href="<?= base_url('about') ?>">Selengkapnya</a>
 			</div>
 		</div>
 	</div>

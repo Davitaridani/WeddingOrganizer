@@ -143,7 +143,7 @@
 				<div class="col-md-3">
 					<div class="card-team">
 						<div class="img-team">
-							<img src="<?= base_url() ?>assets/img/card-carousel-4.jpg" alt="" class="img img-fluid">
+							<img src="<?= base_url() ?>assets/img/img-team (1).jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
 							<a href="">Dhewi Lestari</a>
@@ -181,7 +181,7 @@
 							<a href="">Elizabeth Anny</a>
 						</div>
 						<div class="text">
-							<p>Wedding Planner</p>
+							<p>Admin</p>
 						</div>
 						<div class="icon-sosmed">
 							<div class="fb">
