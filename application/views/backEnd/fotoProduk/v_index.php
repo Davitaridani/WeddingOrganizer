@@ -1,5 +1,5 @@
 <div class="col-md-12">
-	<div class="card card-primary">
+	<div class="card card-purple">
 		<div class="card-header">
 			<h3 class="card-title">Data Foto Produk</h3>
 			<!-- <div class="card-tools">
@@ -40,12 +40,12 @@
 								<img src="<?= base_url('assets/gambar/' . $value->gambar) ?>" class="img img-thumbnail" width="150px" alt="">
 							</td>
 							<td class="text-center">
-								<span class="badge badge-success">
+								<span class="badge badge-primary">
 									<h5> <?= $value->total_foto ?> </h5>
 								</span>
 							</td>
 							<th class="text-center">
-								<a href="<?= base_url('fotoProduk/add/' . $value->id_produk) ?>" class="btn btn-primary"> <i class="fa fa-plus"></i> Add Foto</a>
+								<a href="<?= base_url('fotoProduk/add/' . $value->id_produk) ?>" class="btn btn-success live btn-sm"> <i class="fa fa-plus"></i> Add Foto</a>
 							</th>
 						</tr>
 

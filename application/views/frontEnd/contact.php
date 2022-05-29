@@ -28,7 +28,7 @@
 							<h3>Alamat</h3>
 						</div>
 						<div class="text">
-							<p>Jl. Sultan Agung No.7, Kepel, Lojejer, Wuluhan, Kab. Jember, Jawa Timur </p>
+							<a href="https://www.google.co.id/maps/place/DEWI+LESTARI+Makeup+Artist+(MUA)/@-8.3642887,113.4935234,17z/data=!4m12!1m6!3m5!1s0x2dd683ca01118aa9:0xe23fbf8fd2dfd76b!2sDEWI+LESTARI+Makeup+Artist+(MUA)!8m2!3d-8.3642887!4d113.4977506!3m4!1s0x2dd683ca01118aa9:0xe23fbf8fd2dfd76b!8m2!3d-8.3642887!4d113.4977506?hl=id">Jl. Sultan Agung No.7, Kepel, Lojejer, Wuluhan, Kab. Jember, Jawa Timur </a>
 						</div>
 					</div>
 				</div>
@@ -41,8 +41,7 @@
 							<h3>Email</h3>
 						</div>
 						<div class="text">
-							<p>dhewilesatri@gmail.com
-								makeupdhewi@gmail.com</p>
+							<a href="#">dhewilesatri@gmail.com</a>
 						</div>
 					</div>
 				</div>
@@ -55,8 +54,7 @@
 							<h3>Whatsapp</h3>
 						</div>
 						<div class="text">
-							<p>+62 821-3998-6759 <br>
-								+62 821-3998-6759</p>
+							<a href="https://api.whatsapp.com/send?phone=62 857-4907-1844&text=Selamat Siang%20Kakak,%20Saya%20Ingin%20Konsultasi%20Mengenai%20Wedding.">+62 821-3998-6759</a>
 						</div>
 					</div>
 				</div>

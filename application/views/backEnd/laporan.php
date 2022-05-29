@@ -1,6 +1,6 @@
 <!-- Laporan harian -->
 <div class="col-md-4">
-	<div class="card card-primary">
+	<div class="card card-purple">
 		<div class="card-header">
 			<h3 class="card-title">Laporan Harian</h3>
 		</div>
@@ -64,7 +64,7 @@
 
 <!-- Laporan Bulanan -->
 <div class="col-md-4">
-	<div class="card card-primary">
+	<div class="card card-purple">
 		<div class="card-header">
 			<h3 class="card-title">Laporan Bulanan</h3>
 		</div>
@@ -116,7 +116,7 @@
 <!-- Laporan Tahuan -->
 
 <div class="col-md-4">
-	<div class="card card-primary">
+	<div class="card card-purple">
 		<div class="card-header">
 			<h3 class="card-title">Laporan Tahunan</h3>
 		</div>

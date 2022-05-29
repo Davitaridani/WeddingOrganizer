@@ -49,6 +49,7 @@ $black: 900;
                 background-color: #fff;
                 box-shadow: 0px 5px 15px 0px rgb(62 65 159 / 10%);
                 padding: 40px;
+                height: 300px;
                 .icon{
                     width: 85px;
                     height: 85px;
@@ -67,6 +68,16 @@ $black: 900;
                     h3 {
                         font-weight: 500;
                         font-size: 30px;
+                    }
+                }
+                .text {
+                    a {
+                        text-decoration: none;
+                        transition: .1ms;
+                        &:hover {
+                            text-decoration: underline;
+                            color: $color-desc !important;
+                        }
                     }
                 }
             }

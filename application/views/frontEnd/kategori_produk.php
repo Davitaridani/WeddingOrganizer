@@ -80,7 +80,6 @@
 	</div>
 </section>
 
-
 <script>
 	const btnSweetAlert = document.getElementById('btnSweetAlert');
 	btnSweetAlert.addEventListener('click', function() {

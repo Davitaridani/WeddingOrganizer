@@ -9,8 +9,8 @@ sans-serif;
 $font-halant: 'Halant',
 serif;
 // color
-$color-pink:#ee9e9e;
-$color-pink2:#fa8282;
+// $color-pink:#ee9e9e;
+// $color-pink2:#fa8282;
 $bg-section:#fffdfdea;
 $color-desc:#738ea5;
 $color-blue:#002642;
@@ -152,28 +152,34 @@ p {
                 .row {
                     justify-content: center;
                     .col-sm-6{
-                        &::before {
-                            position: absolute;
-                                top: 50%;
-                                transform: translateY(-50%);
-                                height: 25%;
-                                width: 1px;
-                                content: "";
-                                background: #86a0b6;
-                        }
-                        &::after {
-                            display: block;
-                            clear: both;
-                            content: "";
-                        }
+                        // &::before {
+                        //     position: absolute;
+                        //         top: 50%;
+                        //         transform: translateY(-50%);
+                        //         height: 25%;
+                        //         width: 1px;
+                        //         content: "";
+                        //         background: #86a0b6;
+                        // }
+                        // &::after {
+                        //     display: block;
+                        //     clear: both;
+                        //     content: "";
+                        // }
                         .item-counter {
                             text-align: center;
                             .title {
                                 h3 {
-                                    margin-bottom: 10px;
-                                    font-size: 50px;
+                                    margin-bottom: -10px;
+                                    font-size: 70px;
                                     color: $color-desc;
                                     font-weight: $bold;
+                                    font-family: $font-great;
+                                    text-align: center;
+                                    svg {
+                                        margin-left: -9px;
+                                        margin-bottom: 15px;
+                                    }
                                 }
                             }
                             .text {

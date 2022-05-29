@@ -89,6 +89,15 @@ $black: 900;
         }
         .blocks-items {
             .row {
+                .img-footer {
+
+                    h3 {
+                        font-size: 50px !important;
+                        font-family: $font-great;
+                        font-weight: $semibold;
+                        letter-spacing: 3px !important;
+                    }
+                }
                 .text {
                     p {
                         font-size: 16px;

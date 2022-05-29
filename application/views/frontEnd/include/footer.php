@@ -26,7 +26,7 @@
 							<h3>Dhewi Lestari</h3>
 						</div>
 						<div class="text">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloremque tempora atque assumenda eos odio!</p>
+							<p>Dhewi Lestari Wedding Oragaanizer memiliki pilihan paket pernikahan dengan kualitas professional .</p>
 						</div>
 						<div class="icon-sosmed">
 							<ul>

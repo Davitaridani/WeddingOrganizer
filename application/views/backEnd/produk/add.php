@@ -1,5 +1,5 @@
 <div class="col-md-12">
-	<div class="card card-primary">
+	<div class="card card-purple">
 		<div class="card-header">
 			<h3 class="card-title">Form Tambah Produk</h3>
 		</div>
@@ -70,8 +70,8 @@
 			</div>
 
 			<div class="form-group">
-				<button type="submit" class="btn btn-success btn-sm">Simpan</button>
 				<a href="<?= base_url('produk') ?>" class="btn btn-danger btn-sm">Kembali</a>
+				<button type="submit" class="btn btn-success btn-sm">Simpan</button>
 			</div>
 
 			<?php echo form_close() ?>

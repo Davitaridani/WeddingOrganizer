@@ -7,7 +7,7 @@
 				<h1>Pelayanan dengan kualitas tinggi adalah kunci kesuksesan kami</h1>
 			</div>
 			<div class="text-desc">
-				<p>Pelayanan yang baik dan memenuhi seluruh kebutuhan klien adalah prioritas kami.</p>
+				<!-- <p>Pelayanan yang baik dan memenuhi seluruh kebutuhan klien adalah prioritas kami.</p> -->
 			</div>
 			<div class="btns-slide">
 				<a href="<?= base_url('about') ?>">Selengkapnya</a>
@@ -22,7 +22,7 @@
 			</div>
 			<div class="text-desc">
 				<p>Pelayanan yang baik dan memenuhi seluruh kebutuhan klien adalah prioritas kami
-				</p>
+					<!-- </p> -->
 			</div>
 			<div class="btns-slide">
 				<a href="<?= base_url('about') ?>">Selengkapnya</a>
@@ -33,10 +33,10 @@
 		<img src="<?= base_url() ?>assets/img/bg-checkOut.jpg " class="img-fluid" alt="...">
 		<div class="slide-content">
 			<div class="text-title">
-				<h1>Untuk membawa cinta, tawa, dan kebahagiaan selamanya</h1>
+				<h1>Beritahu kami tentang pernikahan inpianmu, kami siap membantu mewujudkannya</h1>
 			</div>
 			<div class="text-desc">
-				<p>Harapan kami adalah kebahagiaan serta keberkatan untuk semua klien kami</p>
+				<!-- <p>Harapan kami adalah kebahagiaan serta keberkatan untuk semua klien kami</p> -->
 			</div>
 			<div class="btns-slide">
 				<a href="<?= base_url('about') ?>">Selengkapnya</a>
@@ -64,7 +64,7 @@
 							<h3>Konsultasi</h3>
 						</div>
 						<div class="desc">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos, non ipsum accusantium numquam magni iure unde, similique quos at nostrum nulla! .</p>
+							<p>Kami memberikan pelayanan terbaik kepada klien dan membuat mereka bahagia dengan apa yang kami lakukan. Kita melayani, tidak untuk dilayani.</p>
 						</div>
 					</div>
 					<div class="col-md-4">
@@ -75,7 +75,7 @@
 							<h3>Paket Pernikahan</h3>
 						</div>
 						<div class="desc">
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt facilis animi ea aliquam.</p>
+							<p>Kami melayani segala jenis paket mulai dari paket wedding, prewedding, dekorasi, make up, gaun. dengan konsep tradisional/moderen</p>
 						</div>
 					</div>
 					<div class="col-md-4">
@@ -83,10 +83,10 @@
 							<span class="iconify" data-icon="uiw:date"></span>
 						</div>
 						<div class="title">
-							<h3>Mudah Booking</h3>
+							<h3>Unggul dalam Integritas</h3>
 						</div>
 						<div class="desc">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates officiis magnam dolorem et itaque.</p>
+							<p>Integritas sangat penting. Kami memberikan integritas penuh untuk apa yang kami lakukan dan berikan kepada klien</p>
 						</div>
 					</div>
 				</div>
@@ -309,10 +309,8 @@
 									<span class="iconify" data-icon="ic:outline-tiktok"></span>
 								</a>
 							</div>
-
 						</div>
 					</div>
-
 				</div>
 				<div class="col-md-3">
 					<div class="card-team">
@@ -320,10 +318,10 @@
 							<img src="<?= base_url() ?>assets/img/card-carousel-3.jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Elizabeth Anny</a>
+							<a href="">Risa Kurnia</a>
 						</div>
 						<div class="text">
-							<p>Wedding Planner</p>
+							<p>Admin</p>
 						</div>
 						<div class="icon-sosmed">
 							<div class="fb">
@@ -352,10 +350,10 @@
 							<img src="<?= base_url() ?>assets/img/card-carousel-2.jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Maria D'Souza</a>
+							<a href="">Dinda</a>
 						</div>
 						<div class="text">
-							<p>Wedding Planner</p>
+							<p>Crew</p>
 						</div>
 						<div class="icon-sosmed">
 							<div class="fb">
@@ -384,10 +382,10 @@
 							<img src="<?= base_url() ?>assets/img/card-carousel-4.jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Robert Willy</a>
+							<a href="">Silvi</a>
 						</div>
 						<div class="text">
-							<p>Wedding Planner</p>
+							<p>Crew</p>
 						</div>
 						<div class="icon-sosmed">
 							<div class="fb">
@@ -549,27 +547,27 @@
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
 							<div class="title">
-								<h3 class="counter" id="num">100</h3>
+								<h3 class="counter" id="num">1000<span class="iconify" data-icon="bi:plus"></span></h3>
 							</div>
 							<div class="text">
-								<p>Weddings</p>
+								<p>Wedding</p>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
 							<div class="title ">
-								<h3 class="counter" id="num">440</h3>
+								<h3 class="counter" id="num">490<span class="iconify" data-icon="bi:plus"></span></h3>
 							</div>
 							<div class="text">
-								<p>Decoration</p>
+								<p>Prewedding</p>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
 							<div class="title ">
-								<h3 class="counter" id="num">890</h3>
+								<h3 class="counter" id="num">890<span class="iconify" data-icon="bi:plus"></span></h3>
 							</div>
 							<div class="text">
 								<p>Make Up</p>
@@ -579,10 +577,10 @@
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
 							<div class="title">
-								<h3 class="counter" id="num">120</h3>
+								<h3 class="counter" id="num">690<span class="iconify" data-icon="bi:plus"></span></h3>
 							</div>
 							<div class="text">
-								<p>Weddings</p>
+								<p>Dekorasi</p>
 							</div>
 						</div>
 					</div>
@@ -875,7 +873,7 @@
 								<div class="item-form">
 									<input type="number" class="form-control" id="telepon" placeholder="Telepon">
 								</div>
-								<div class="item-option">
+								<!-- <div class="item-option">
 									<select class="form-control" name="" id="">
 										<span class="iconify" data-icon="dashicons:arrow-down-alt2"></span>
 										<option selected>Pilih Layanan</option>
@@ -886,7 +884,7 @@
 										<option value="">Make Up</option>
 										<option value="">Gaun</option>
 									</select>
-								</div>
+								</div> -->
 								<textarea name="pesan" class="form-control" id="" cols="3" rows="1" placeholder="Pesan"></textarea>
 								<div class="btn-submit">
 									<button type="submit">Kirim Pertanyaan</button>

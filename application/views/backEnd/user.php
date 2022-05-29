@@ -1,9 +1,9 @@
 <div class="col-md-12">
-	<div class="card card-primary">
+	<div class="card card-purple">
 		<div class="card-header">
 			<h3 class="card-title">Data User</h3>
 			<div class="card-tools">
-				<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#add">
+				<button type="button" class="btn btn-purple text-white btn-sm" data-toggle="modal" data-target="#add">
 					<i class="fas fa-user-plus"></i>
 					Add
 				</button>

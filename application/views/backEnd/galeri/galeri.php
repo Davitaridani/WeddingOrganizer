@@ -1,9 +1,9 @@
 <div class="col-md-12">
-	<div class="card card-primary">
+	<div class="card card-purple">
 		<div class="card-header">
 			<h3 class="card-title">Data User</h3>
 			<div class="card-tools">
-				<a href="<?= base_url('galeri/add') ?>" class="btn btn-primary btn-sm">
+				<a href="<?= base_url('galeri/add') ?>" class="btn btn-purple btn-sm">
 					<i class="fas fa-user-plus"></i>
 					Add
 				</a>

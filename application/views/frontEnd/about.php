@@ -75,7 +75,7 @@
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
 							<div class="title">
-								<h3 class="counter" id="num">100</h3>
+								<h3 class="counter" id="num">1000<span class="iconify" data-icon="bi:plus"></span></h3>
 							</div>
 							<div class="text">
 								<p>Wedding</p>
@@ -85,7 +85,7 @@
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
 							<div class="title ">
-								<h3 class="counter" id="num">440</h3>
+								<h3 class="counter" id="num">490<span class="iconify" data-icon="bi:plus"></span></h3>
 							</div>
 							<div class="text">
 								<p>Prewedding</p>
@@ -95,7 +95,7 @@
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
 							<div class="title ">
-								<h3 class="counter" id="num">890</h3>
+								<h3 class="counter" id="num">890<span class="iconify" data-icon="bi:plus"></span></h3>
 							</div>
 							<div class="text">
 								<p>Make Up</p>
@@ -105,7 +105,7 @@
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
 							<div class="title">
-								<h3 class="counter" id="num">120</h3>
+								<h3 class="counter" id="num">690<span class="iconify" data-icon="bi:plus"></span></h3>
 							</div>
 							<div class="text">
 								<p>Dekorasi</p>
@@ -167,10 +167,8 @@
 									<span class="iconify" data-icon="ic:outline-tiktok"></span>
 								</a>
 							</div>
-
 						</div>
 					</div>
-
 				</div>
 				<div class="col-md-3">
 					<div class="card-team">
@@ -178,7 +176,7 @@
 							<img src="<?= base_url() ?>assets/img/card-carousel-3.jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Elizabeth Anny</a>
+							<a href="">Risa Kurnia</a>
 						</div>
 						<div class="text">
 							<p>Admin</p>
@@ -199,10 +197,8 @@
 									<span class="iconify" data-icon="ic:outline-tiktok"></span>
 								</a>
 							</div>
-
 						</div>
 					</div>
-
 				</div>
 				<div class="col-md-3">
 					<div class="card-team">
@@ -210,10 +206,10 @@
 							<img src="<?= base_url() ?>assets/img/card-carousel-2.jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Maria D'Souza</a>
+							<a href="">Dinda</a>
 						</div>
 						<div class="text">
-							<p>Wedding Planner</p>
+							<p>Crew</p>
 						</div>
 						<div class="icon-sosmed">
 							<div class="fb">
@@ -241,10 +237,10 @@
 							<img src="<?= base_url() ?>assets/img/card-carousel-4.jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Robert Willy</a>
+							<a href="">Silvi</a>
 						</div>
 						<div class="text">
-							<p>Wedding Planner</p>
+							<p>Crew</p>
 						</div>
 						<div class="icon-sosmed">
 							<div class="fb">
@@ -289,46 +285,45 @@
 				<div class="owl-carousel owl-theme" id="owl-logo">
 					<div class="item">
 						<div class="img-partner">
-							<img src="<?= base_url() ?>assets/img/logo-1.jpg" alt="" class="img img-fluid">
+							<img src="<?= base_url() ?>assets/img/partner (1).webp" alt="" class="img img-fluid">
 						</div>
 					</div>
 
 					<div class="item">
 						<div class="img-partner">
-							<img src="<?= base_url() ?>assets/img/logo-2.jpg" alt="" class="img img-fluid">
+							<img src="<?= base_url() ?>assets/img/partner (2).webp" alt="" class="img img-fluid">
 						</div>
 					</div>
 
 					<div class="item">
 						<div class="img-partner">
-							<img src="<?= base_url() ?>assets/img/logo-3.jpg" alt="" class="img img-fluid">
+							<img src="<?= base_url() ?>assets/img/partner (3).webp" alt="" class="img img-fluid">
 						</div>
 					</div>
 
 					<div class="item">
 						<div class="img-partner">
-							<img src="<?= base_url() ?>assets/img/logo-4.jpg" alt="" class="img img-fluid">
+							<img src="<?= base_url() ?>assets/img/partner (4).webp" alt="" class="img img-fluid">
 						</div>
 					</div>
 
 					<div class="item">
 						<div class="img-partner">
-							<img src="<?= base_url() ?>assets/img/logo-5.jpg" alt="" class="img img-fluid">
+							<img src="<?= base_url() ?>assets/img/partner (5).webp" alt="" class="img img-fluid">
 						</div>
 					</div>
+
+					<!-- <div class="item">
+						<div class="img-partner">
+							<img src="<?= base_url() ?>assets/img/partner (5).webp" alt="" class="img img-fluid">
+						</div>
+					</div> -->
 
 					<div class="item">
 						<div class="img-partner">
-							<img src="<?= base_url() ?>assets/img/logo-6.jpg" alt="" class="img img-fluid">
+							<img src="<?= base_url() ?>assets/img/partner (6).jpg" alt="" class="img img-fluid">
 						</div>
 					</div>
-
-					<div class="item">
-						<div class="img-partner">
-							<img src="<?= base_url() ?>assets/img/logo-7.jpg" alt="" class="img img-fluid">
-						</div>
-					</div>
-
 
 				</div>
 			</div>

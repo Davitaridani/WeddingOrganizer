@@ -1,5 +1,5 @@
 <div class="col-md-12">
-	<div class="card card-primary">
+	<div class="card card-purple">
 		<div class="card-header">
 			<h3 class="card-title">Ganti Foto Galeri</h3>
 		</div>

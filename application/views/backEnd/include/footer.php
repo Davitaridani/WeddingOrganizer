@@ -7,7 +7,7 @@
 		Anything you want
 	</div> -->
 	<!-- Default to the left -->
-	<strong>Copyright &copy; 2022 <a href="<?= base_url('admin') ?>">Dhewi Lestari</a>.</strong> All rights reserved.
+	<strong>Copyright &copy; 2022 <a href="<?= base_url('admin') ?>" class="text-secondary  ">Dhewi Lestari</a>.</strong> All rights reserved.
 </footer>
 </div>
 

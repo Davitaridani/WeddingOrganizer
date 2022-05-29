@@ -260,7 +260,7 @@
 								<div class="row">
 									<div class="col-md-6">
 										<div class="item-img">
-											<img src="<?= base_url() ?>assets/img/price-imag-2.png" alt="">
+											<img src="<?= base_url() ?>assets/img/story-5.jpg" alt="" class="img img-fluid">
 										</div>
 									</div>
 									<div class="col-md-6">
@@ -289,18 +289,11 @@
 										</div>
 									</div>
 								</div>
-
-
-
-
-
-
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
 </section>
