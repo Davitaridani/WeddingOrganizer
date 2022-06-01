@@ -1,5 +1,5 @@
 <!-- banner Check Out -->
-<section class="checkOut-sect-1 hero-image-banner-paralax" data-parallax="scroll" data-z-index="1" data-image-src="assets/img/tim.jpg">
+<section class="checkOut-sect-1 hero-image-banner-paralax" data-parallax="scroll" data-z-index="1" data-image-src="assets/img/img-banner-galeri.jpg">
 	<div class="container">
 		<div class="blocks-items ">
 			<div class="items text-center">

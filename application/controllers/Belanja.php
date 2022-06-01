@@ -22,8 +22,6 @@ class Belanja extends CI_Controller
 		];
 		$this->load->view('frontEnd/include/wrapper', $data, FALSE);
 	}
-
-
 	public function add()
 	{
 		$redirect_page = $this->input->post('redirect_page');
