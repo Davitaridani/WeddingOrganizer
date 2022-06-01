@@ -79,11 +79,11 @@
 				<div class="block-spek-produk">
 					<div class="row">
 						<div class="title">
-							<h3>Keterangan detail produk</h3>
+							<!-- <h3>Keterangan detail produk</h3> -->
 						</div>
 						<div class="text-detail-produk">
 
-							<div class="col-md-4">
+							<div class="col-md-6">
 								<div class="desc">
 									<p><?= $produk->spesifikasi_produk ?></p>
 								</div>
@@ -95,8 +95,7 @@
 			<div class="item-note">
 				<div class="text">
 					<p>Note :</p>
-					<p>Harga harga di atas belum termasuk biasa transport.<br>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, soluta.</p>
+					<p>Harga paket belum di atas belum termasuk biaya transport.</p>
 
 				</div>
 			</div>

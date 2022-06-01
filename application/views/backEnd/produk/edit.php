@@ -70,8 +70,8 @@
 			</div>
 
 			<div class="form-group">
-				<button type="submit" class="btn btn-success btn-sm">Simpan</button>
 				<a href="<?= base_url('produk') ?>" class="btn btn-danger btn-sm">Kembali</a>
+				<button type="submit" class="btn btn-success btn-sm">Simpan</button>
 			</div>
 
 			<?php echo form_close() ?>

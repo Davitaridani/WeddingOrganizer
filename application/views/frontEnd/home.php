@@ -21,8 +21,7 @@
 				<h1>Momen berkesan yang tidak terlupakan hanya untuk kamu</h1>
 			</div>
 			<div class="text-desc">
-				<p>Pelayanan yang baik dan memenuhi seluruh kebutuhan klien adalah prioritas kami
-					<!-- </p> -->
+				<!-- <p>Pelayanan yang baik dan memenuhi seluruh kebutuhan klien adalah prioritas kami</p> -->
 			</div>
 			<div class="btns-slide">
 				<a href="<?= base_url('about') ?>">Selengkapnya</a>

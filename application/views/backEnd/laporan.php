@@ -105,10 +105,8 @@
 						<button type="submit" class="btn btn-outline-primary btn-block btn-flat"> <i class="fa fa-print"></i> Cetak Laporan</button>
 					</div>
 				</div>
-
 			</div>
 			<?php echo form_close() ?>
-
 		</div>
 	</div>
 </div>

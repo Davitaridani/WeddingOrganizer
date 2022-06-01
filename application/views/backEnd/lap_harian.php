@@ -18,8 +18,8 @@
 							<th>#</th>
 							<th>No Order</th>
 							<th>Nama</th>
+							<th>Tgl Order</th>
 							<th>Harga</th>
-							<th>qty</th>
 							<th>Foto Produk</th>
 							<th>Total Harga</th>
 						</tr>
@@ -38,7 +38,7 @@
 								<td><?= $value->nama_produk ?></td>
 								<td><?= $value->tgl_order ?></td>
 								<td>Rp. <?= number_format($value->harga, 0) ?></td>
-								<td><?= $value->qty ?></td>
+								<!-- <td><?= $value->qty ?></td> -->
 								<td>
 									<img src="<?= base_url('assets/gambar/' . $value->gambar) ?>" alt="" class="img img-fluid" width="100px" height="60px">
 								</td>
