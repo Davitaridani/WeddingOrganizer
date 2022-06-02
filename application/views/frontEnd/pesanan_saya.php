@@ -20,7 +20,6 @@
 	</div>
 </section>
 
-
 <!-- Pesanan Saya sect 2 -->
 <section class="pesanan-sect-2">
 	<div class="container">
@@ -55,102 +54,91 @@
 						</div>
 
 						<div class="card-body">
-
 							<div class="tab-content" id="myTabContent">
-								<!-- Data Pesnana belum Bayar -->
-								<div class="block-belum-bayar">
-									<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-										<div class="items-table">
-											<table class="table">
-												<tr>
-													<th>No Order</th>
-													<th>Tgl Order</th>
-													<th>Tgl Acara</th>
-													<th>Total Bayar</th>
-													<th class="text-center">Action</th>
-												</tr>
-												<?php foreach ($belum_bayar as $key => $value) { ?>
-													<tr>
-														<td><?= $value->no_order ?></td>
-														<td><?= $value->tgl_order ?></td>
-														<td><?= $value->tgl_acara ?></td>
-														<td>
-															<div class="item-bg">
-																<p> Rp. <?= number_format($value->sub_total, 0) ?></p>
-																<?php if ($value->status_bayar == 0) { ?>
-																	<div class="bg-belum-bayar">
-																		<span class="">Belum Bayar</span>
-																	</div>
-																<?php } else { ?>
-																	<div class="bg-sudah-bayar">
-																		<span>Sudah Bayar</span>
-																	</div>
-																	<div class="bg-verifikasi">
-																		<span class="">Nunggu Verifikasi</span>
-																	</div>
-																<?php } ?>
-															</div>
-														</td>
-														<td>
-															<div class="item-btn-bayar ">
-																<?php if ($value->status_bayar == 0) { ?>
-																	<a href="<?= base_url('pesanan_saya/bayar/' . $value->id_transaksi) ?>" class="">Bayar</a>
-																<?php } ?>
-															</div>
-														</td>
-													</tr>
-												<?php } ?>
 
-											</table>
-										</div>
-									</div>
+								<!-- Data Pesnana belum Bayar -->
+								<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+									<table class="table">
+										<tr>
+											<th>No Order</th>
+											<th>Tgl Order</th>
+											<th>Tgl Acara</th>
+											<th>Total Bayar</th>
+											<th class="text-center">Action</th>
+										</tr>
+										<?php foreach ($belum_bayar as $key => $value) { ?>
+											<tr>
+												<td><?= $value->no_order ?></td>
+												<td><?= $value->tgl_order ?></td>
+												<td><?= $value->tgl_acara ?></td>
+												<td>
+													<div class="item-bg">
+														<p> Rp. <?= number_format($value->sub_total, 0) ?></p>
+														<?php if ($value->status_bayar == 0) { ?>
+															<div class="bg-belum-bayar">
+																<span class="">Belum Bayar</span>
+															</div>
+														<?php } else { ?>
+															<div class="bg-sudah-bayar">
+																<span>Sudah Bayar</span>
+															</div>
+															<div class="bg-verifikasi">
+																<span class="">Nunggu Verifikasi</span>
+															</div>
+														<?php } ?>
+													</div>
+												</td>
+												<td>
+													<div class="item-btn-bayar ">
+														<?php if ($value->status_bayar == 0) { ?>
+															<a href="<?= base_url('pesanan_saya/bayar/' . $value->id_transaksi) ?>" class="">Bayar</a>
+														<?php } ?>
+													</div>
+												</td>
+											</tr>
+										<?php } ?>
+									</table>
 								</div>
-								<!-- Data Pesnana belum Bayar -->
-
 
 								<!-- Block Data Pesanan DI Proses -->
 								<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-									<div class="item-diproses">
-										<table class="table">
+									<table class="table">
+										<tr>
+											<th>No Order</th>
+											<th>Tgl Order</th>
+											<th>Tgl Acara</th>
+											<th>Total Bayar</th>
+										</tr>
+										<?php foreach ($diproses as $key => $value) { ?>
 											<tr>
-												<th>No Order</th>
-												<th>Tgl Order</th>
-												<th>Tgl Acara</th>
-												<th>Total Bayar</th>
-												<!-- <th class="text-center">Action</th> -->
-											</tr>
-											<?php foreach ($diproses as $key => $value) { ?>
-												<tr>
-													<td><?= $value->no_order ?></td>
-													<td><?= $value->tgl_order ?></td>
-													<td><?= $value->tgl_acara ?></td>
-													<td>
-														<div class="item-bg">
-															<p> Rp. <?= number_format($value->sub_total, 0) ?></p>
+												<td><?= $value->no_order ?></td>
+												<td><?= $value->tgl_order ?></td>
+												<td><?= $value->tgl_acara ?></td>
+												<td>
+													<div class="item-bg">
+														<p> Rp. <?= number_format($value->sub_total, 0) ?></p>
 
-															<div class="bg-sudah-bayar">
-																<span>Terverifikasi</span>
-															</div>
-															<div class="bg-verifikasi">
-																<span class="">Diproses</span>
-															</div>
-
+														<div class="bg-sudah-bayar">
+															<span>Terverifikasi</span>
 														</div>
-													</td>
-													<!-- <td>
+														<div class="bg-verifikasi">
+															<span class="">Diproses</span>
+														</div>
+
+													</div>
+												</td>
+												<!-- <td>
 														<div class="item-btn-bayar ">
 															<?php if ($value->status_bayar == 0) { ?>
 																<a href="<?= base_url('pesanan_saya/bayar/' . $value->id_transaksi) ?>" class="">Bayar</a>
 															<?php } ?>
 														</div>
 													</td> -->
-												</tr>
-											<?php } ?>
+											</tr>
+										<?php } ?>
 
-										</table>
-									</div>
+									</table>
 								</div>
-								<!-- End  Data Pesanan DI Proses -->
 
 								<!-- Pesanan DI CAtat -->
 								<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
@@ -170,22 +158,19 @@
 												<td>
 													<div class="item-bg">
 														<p> Rp. <?= number_format($value->sub_total, 0) ?></p>
-
 														<div class="bg-verifikasi">
-															<span class="">DiCatat</span>
+															<span class="">Dicatat</span>
 														</div>
-
 													</div>
 												</td>
 												<td class="no_pesanan text-center">
 													<?= $value->no_pesanan ?>
 													<div class="btn-terima">
-														<button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#dicatat" id="diterima">Terima</button>
+														<button class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#dicatat" id="diterima">Terima</button>
 													</div>
 												</td>
 											</tr>
 										<?php } ?>
-
 									</table>
 								</div>
 
@@ -210,7 +195,6 @@
 														<div class="bg-verifikasi">
 															<span class="">Selesai</span>
 														</div>
-
 													</div>
 												</td>
 												<td class="no_pesanan text-center">
@@ -218,7 +202,6 @@
 												</td>
 											</tr>
 										<?php } ?>
-
 									</table>
 								</div>
 							</div>
@@ -231,6 +214,10 @@
 	</div>
 
 </section>
+
+
+
+
 
 
 

@@ -99,6 +99,15 @@
 				</li>
 
 				<li class="nav-item">
+					<a href="<?= base_url('jadwal') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'jadwal') {
+																								echo "active";
+																							} ?>">
+						<i class="nav-icon fas fa-calendar-alt"></i>
+						<p>Jadwal Job</p>
+					</a>
+				</li>
+
+				<li class="nav-item">
 					<a href="<?= base_url('laporan') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'laporan') {
 																								echo "active";
 																							} ?>">
