@@ -21,6 +21,29 @@
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
 
+	<!-- Library fullcalender CSS -->
+	<!-- <link rel="stylesheet" href="<?= base_url() ?>templates/fullcalendar/lib/main.css"> -->
+
+
+
+	<!-- <link rel="stylesheet" href="<?= base_url() ?>templates/fullcalendar/lib/fullcalendar.css"> -->
+
+	<!-- Library fullcalender JS -->
+	<!-- <script src="<?= base_url() ?>templates/fullcalendar/lib/main.js"></script> -->
+
+
+
+
+
+
+
+	<!-- <script src="<?= base_url() ?>templates/fullcalendar/lib/jquery.min.js"></script>
+	<script src="<?= base_url() ?>templates/fullcalendar/lib/jquery-ui.min.js"></script>
+	<script src="<?= base_url() ?>templates/fullcalendar/lib/moment.min.js"></script>
+	<script src="<?= base_url() ?>templates/fullcalendar/lib/fullcalendar.min.js"></script>
+ -->
+
+
 	<!-- jQuery -->
 	<script src="<?= base_url() ?>templates/plugins/jquery/jquery.min.js"></script>
 	<!-- Bootstrap 4 -->
@@ -34,6 +57,15 @@
 	<script src="<?= base_url() ?>templates/dist/js/adminlte.min.js"></script>
 	<!-- AdminLTE for demo purposes -->
 	<script src="<?= base_url() ?>templates/dist/js/demo.js"></script>
+
+
+
+
+
+
+
+
+
 
 
 

@@ -11,7 +11,7 @@
 </footer>
 </div>
 
-<!-- REQUIRED SCRIPTS -->
+<!-- Data Tables -->
 <script>
 	$(function() {
 		$("#data_tables").DataTable({
