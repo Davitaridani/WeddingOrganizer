@@ -34,7 +34,9 @@
 			<div class="items-produk">
 				<div class="row">
 					<?php foreach ($produk as $key => $value) { ?>
+
 						<div class="col-md-4">
+
 							<?php
 							echo form_open('belanja/add');
 							echo form_hidden('id', $value->id_produk);
@@ -43,6 +45,7 @@
 							echo form_hidden('name', $value->nama_produk);
 							echo form_hidden('redirect_page', str_replace('index.php/', '', current_url()));
 							?>
+
 							<div class="items-card border-0">
 								<img class="card-img" src="<?= base_url('assets/gambar/' . $value->gambar) ?>" alt="">
 								<div class="body-card">
@@ -71,7 +74,7 @@
 									</div>
 								</div>
 							</div>
-							<?php echo form_close() ?>
+							<?php echo form_close(); ?>
 						</div>
 					<?php } ?>
 				</div>

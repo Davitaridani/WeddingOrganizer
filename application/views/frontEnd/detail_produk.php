@@ -72,15 +72,12 @@
 									</h5>
 								</div>
 							</div>
-							<?php form_close(); ?>
+							<?php echo form_close(); ?>
 						</div>
 					</div>
 				</div>
 				<div class="block-spek-produk">
 					<div class="row">
-						<div class="title">
-							<!-- <h3>Keterangan detail produk</h3> -->
-						</div>
 						<div class="text-detail-produk">
 
 							<div class="col-md-6">

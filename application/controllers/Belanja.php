@@ -22,14 +22,16 @@ class Belanja extends CI_Controller
 		];
 		$this->load->view('frontEnd/include/wrapper', $data, FALSE);
 	}
+
+
 	public function add()
 	{
-		$redirect_page = $this->input->post('redirect_page');
+		$redirect_page =  $this->input->post('redirect_page');
 		$data = array(
 			'id'      => $this->input->post('id'),
 			'qty'     => $this->input->post('qty'),
 			'price'   => $this->input->post('price'),
-			'name'    => $this->input->post('name')
+			'name'    => $this->input->post('name'),
 		);
 		$this->cart->insert($data);
 		redirect($redirect_page, 'refresh');

@@ -140,15 +140,16 @@
 							<span class="iconify-inline" data-icon="bi:bag-heart" data-rotate="180deg" data-width="23" data-flip="vertical"></span>
 						</button>
 						<?php
+
 						$keranjang = $this->cart->contents();
+
 						$jml_item = 0;
 						foreach ($keranjang as $key => $value) {
 							$jml_item = $jml_item + $value['qty'];
 						}
 						?>
-						<!-- <a href=""> -->
 						<span class="label-qty nav-link text-center p-0"><?= $jml_item ?></span>
-						<!-- </a> -->
+
 						<div class="dropdown-content">
 							<div class="blocks-items">
 
