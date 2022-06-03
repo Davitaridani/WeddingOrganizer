@@ -4,9 +4,6 @@
 			<div class="col-12">
 				<h4>
 					<img src="<?= base_url('assets/img/logo-DL.png') ?>" alt="" class="img img-fluid pr-1 mb-2" width="60px">
-
-
-
 					<?= $title ?>
 					<small class="float-right mb-2">Bulan: <?= $bulan ?> Tahun:<?= $tahun ?></small>
 				</h4>
@@ -43,19 +40,14 @@
 								</td>
 							</tr>
 						<?php } ?>
-
-
 					</tbody>
 				</table>
 				<hr>
-
 				<div class="total my-4">
 					<h3>Grand Total : Rp. <?= number_format($grand_total, 0) ?> .-</h3>
 				</div>
 			</div>
 		</div>
-
-
 
 		<div class="row no-print">
 			<div class="col-12">

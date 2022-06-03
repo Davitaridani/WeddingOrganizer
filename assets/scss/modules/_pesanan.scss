@@ -126,3 +126,29 @@ $bold: 700;
 		}
 	}
 }
+
+.modal-pesanan-diterima{
+	.modal-content {
+		.modal-header{
+			h4 {
+				font-size: 20px !important;
+				color: #333 !important;
+			}
+		}
+		.modal-body{
+			h5 {
+				font-size: 20px !important;
+				color: #333;
+			}
+		}
+		.modal-footer {
+			button {
+				color: #fff !important;
+			}
+			a {
+				background-color: $biru-2 !important;
+				color: #fff !important;
+			}
+		}
+	}
+}
