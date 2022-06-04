@@ -21,6 +21,7 @@ class Paket extends CI_Controller
 			'produk' => $this->m_paket->get_all_data_produk($id_kategori),
 			'isi' => 'frontEnd/kategori_produk'
 		];
+		// $this->cart->destroy();
 		$this->load->view('frontEnd/include/wrapper', $data, FALSE);
 	}
 
