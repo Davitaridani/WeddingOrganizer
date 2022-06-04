@@ -138,9 +138,11 @@ p {
 
 // About sect 3, Home sect 7
 .block-counterUp {
+
     .container {
         max-width: 1400px !important;
-        position: relative;        
+        position: relative;
+        overflow-x: visible !important;   
         .blocks-items {
             padding-bottom: 100px;
             .block-counter {

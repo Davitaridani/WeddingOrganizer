@@ -57,12 +57,17 @@ h6 {
     font-weight: $semibold;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .container {
     max-width: 100% !important;
     padding: 0 15px !important;
     @media screen and (min-width: 1185px) {
         max-width: 1185px !important;
         padding: 0 0 !important;
+        overflow-x: hidden;
     }
 }
 

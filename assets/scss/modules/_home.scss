@@ -338,6 +338,9 @@ p {
 
 // Home setc 4 coba
 .home-sect-4{
+    .container {
+        overflow-x: visible !important;
+    }
     .blocks-items {
         padding-bottom: 120px;
         .item-text {
@@ -1025,6 +1028,9 @@ p {
 
 // Homs sect 12 
 .home-sect-12 {
+    .container {
+        overflow-x: visible !important;
+    }
     .blocks-items {
         padding-bottom: 120px;
         .block-contact{
@@ -1137,6 +1143,9 @@ p {
 
 // Home sect 13
 .home-sect-13 {
+    .container {
+        overflow-x: visible !important;
+    }
     .blocks-items {
         .text-title {
             margin-bottom: 20px;

@@ -25,6 +25,9 @@ $semibold:600;
 $bold: 700;
 $black: 900;
 .navbar {
+    .container {
+        overflow-x: visible !important;
+    }
     z-index: 999;
     // max-width: 120px;
     box-shadow: 0 -5px 15px #27292bad;
