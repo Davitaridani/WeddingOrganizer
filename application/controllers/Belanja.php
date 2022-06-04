@@ -33,6 +33,9 @@ class Belanja extends CI_Controller
 			'price'   => $this->input->post('price'),
 			'name'    => $this->input->post('name'),
 		);
+		print_r($data);
+		exit;
+
 		$this->cart->insert($data);
 		redirect($redirect_page, 'refresh');
 	}
@@ -93,7 +96,7 @@ class Belanja extends CI_Controller
 				'nama' => $this->input->post('nama'),
 				'email' => $this->input->post('email'),
 				'tgL_order' => date('Y-m-d'),
-				'tgL_acara' => date('Y-m-d'),
+				'tgl_acara' => date("Y-m-d", strtotime($this->input->post('tgl_acara'))),
 				'telepon' => $this->input->post('telepon'),
 				'kota' => $this->input->post('kota'),
 				'kecamatan' => $this->input->post('kecamatan'),
