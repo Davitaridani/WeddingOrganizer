@@ -31,7 +31,7 @@ class Belanja extends CI_Controller
 			$names = preg_replace('/[^A-Za-z0-9\-]/', ' ', $this->input->post('name'));
 
 			$data = [
-				'id'      => strval('sku_' . $this->input->post('id')),
+				'id'      => strval($this->input->post('id')),
 				'qty'     => $this->input->post('qty'),
 				'price'   => $this->input->post('price'),
 				'name'    => $names,
@@ -98,7 +98,8 @@ class Belanja extends CI_Controller
 				'nama' => $this->input->post('nama'),
 				'email' => $this->input->post('email'),
 				'tgL_order' => date('Y-m-d'),
-				'tgl_acara' => date("Y-m-d", strtotime($this->input->post('tgl_acara'))),
+				// 'tgl_acara' => date("Y-m-d", strtotime($this->input->post('tgl_acara'))),
+				'tgl_acara' => $this->input->post('tgl_acara'),
 				'telepon' => $this->input->post('telepon'),
 				'kota' => $this->input->post('kota'),
 				'kecamatan' => $this->input->post('kecamatan'),

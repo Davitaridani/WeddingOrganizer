@@ -40,8 +40,10 @@
 								</div>
 								<div class="item-input">
 									<label for="tgl_acara">Tgl Acara <span class="text-danger">*</span></label>
-									<input type="date" id="tgl_acara" class="form-control" name="tgl_acara" placeholder="Acara Pernikahan Anda">
+									<input type="datetime-local" id="tgl_acara" class="form-control" name="tgl_acara" placeholder="Acara Pernikahan Anda">
 								</div>
+
+
 								<div class="item-input">
 									<label for="telepon">Telepon <span class="text-danger">*</span></label>
 									<input type="number" id="telepon" class="form-control" name="telepon" placeholder="Telepon">
