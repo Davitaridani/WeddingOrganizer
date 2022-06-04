@@ -27,16 +27,18 @@ class Belanja extends CI_Controller
 	public function add()
 	{
 		$redirect_page =  $this->input->post('redirect_page');
-		$data = array(
-			'id'      => $this->input->post('id'),
-			'qty'     => $this->input->post('qty'),
-			'price'   => $this->input->post('price'),
-			'name'    => $this->input->post('name'),
-		);
-		print_r($data);
-		exit;
+		if (isset($_POST['id']) && !empty($_POST['id'])) {
+			$names = preg_replace('/[^A-Za-z0-9\-]/', ' ', $this->input->post('name'));
 
-		$this->cart->insert($data);
+			$data = [
+				'id'      => strval('sku_' . $this->input->post('id')),
+				'qty'     => $this->input->post('qty'),
+				'price'   => $this->input->post('price'),
+				'name'    => $names,
+			];
+			$this->cart->insert($data);
+		}
+
 		redirect($redirect_page, 'refresh');
 	}
 
