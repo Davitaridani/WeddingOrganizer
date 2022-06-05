@@ -44,13 +44,13 @@
 						<div class="pict-title">
 							<img src="<?= base_url() ?>assets/img/about-title.png" alt="" class=" img img-fluid">
 						</div>
-						<div class="title">
+						<div class="title" data-aos="fade-left" data-aos-offset="100" data-aos-delay="50" data-aos-duration="2500">
 							<h3>Perencana untuk Pernikahan Sempurna Anda</h3>
 						</div>
-						<div class="desc">
+						<div class="desc" data-aos="fade-left" data-aos-offset="150" data-aos-delay="250" data-aos-duration="2000">
 							<p>Dhewi Lestari adalah Wedding Planner atau Wedding Organizer yang berbasis di kota Jember Selatan. Kami memberikan pelayanan kepada pasangan atau calon mempelai yang akan menikah mengenai perencanaan pernikahan atau acara mereka. Tidak hanya berkaitan dengan wedding atau pernikahan saja, Dhewi Lestari juga siap dalam menghandle acara-acara atau event-event besar lainnya. </p>
 
-							<p>Dhewi Lestari memiliki visi untuk mewujudkan keinginan setiap orang untuk mendapatkan layanan terbaik dengan inovasi, kreativitas, dan dedikasi kami di setiap momen yang ada. Kami merancang acara pernikahan sesuai kebutuhan dari klien, mulai dari konsep acara (tradisional atau modern), akad nikah, konsep dekorasi, make up, gaun, fotografi dan videografi. Kami berkomitmen untuk selalu memberikan pelayanan yang terbaik kepada seluruh klien.</p>
+							<p data-aos="fade-left" data-aos-offset="150" data-aos-delay="300" data-aos-duration="2000">Dhewi Lestari memiliki visi untuk mewujudkan keinginan setiap orang untuk mendapatkan layanan terbaik dengan inovasi, kreativitas, dan dedikasi kami di setiap momen yang ada. Kami merancang acara pernikahan sesuai kebutuhan dari klien, mulai dari konsep acara (tradisional atau modern), akad nikah, konsep dekorasi, make up, gaun, fotografi dan videografi. Kami berkomitmen untuk selalu memberikan pelayanan yang terbaik kepada seluruh klien.</p>
 
 							<!-- <p>Dhewi Lestari Wedding Organizer Jember merupakan jasa wedding professional yang bergerak di bidang penyelenggara acara pernikahan secara menyeluruh. Kami merancang acara pernikahan sesuai kebutuhan dari klien, mulai dari konsep acara (tradisional atau modern), akad nikah, konsep dekorasi, make up, gaun, fotografi dan videografi. Kami berkomitmen untuk selalu memberikan pelayanan yang terbaik kepada seluruh klien.</p> -->
 							<!-- <ul>
@@ -297,7 +297,7 @@
 
 					<div class="item">
 						<div class="img-partner">
-							<img src="<?= base_url() ?>assets/img/partner (3).webp" alt="" class="img img-fluid">
+							<img src="<?= base_url() ?>assets/img/partner (3).png" alt="" class="img img-fluid">
 						</div>
 					</div>
 

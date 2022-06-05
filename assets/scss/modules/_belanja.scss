@@ -30,9 +30,9 @@ p {
 		padding: 100px 0 120px;
 		.card {
 			border: 0;
-			margin-bottom: 35px;
+			margin-bottom: 50px;
 			.card-body {
-				box-shadow: 0 1px 20px 0 rgb(0 0 0 / 8%);
+				box-shadow: 0 1px 10px 0 rgb(0 0 0 / 8%);
 				padding: 25px;
 				.table-belanja {
 					border-radius: 0;
@@ -101,7 +101,8 @@ p {
 		}
 		.card-total {
 			background-color: #fff;
-			box-shadow: 0 1px 20px 0 rgb(0 0 0 / 8%);
+			// box-shadow: 0 1px 20px 0 rgb(0 0 0 / 8%);
+			box-shadow: 0 1px 10px 0 rgb(0 0 0 / 8%);
 			padding: 25px 40px;
 			.card-body {
 				.title {

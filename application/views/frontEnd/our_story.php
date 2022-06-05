@@ -55,7 +55,7 @@
 							</div>
 						</div>
 						<div class="items-img">
-							<img src="<?= base_url() ?>assets/img/couple-image.jpg" alt="" class="img img-fluid">
+							<img src="<?= base_url() ?>assets/img/couple-image.jpg" alt="" class="img img-fluid" data-aos="zoom-in" data-aos-offset="600" data-aos-delay="50" data-aos-duration="900">
 							<div class="img-frame">
 								<img src="<?= base_url() ?>assets/img/fram-our-story.png" alt="" class="img img-fluid">
 							</div>
@@ -142,7 +142,7 @@
 									</div>
 									<div class="col-md-6 item-img-story">
 										<div class="item-img">
-											<img src="<?= base_url() ?>assets/img/story-1.jpg" alt="" class="img img-fluid">
+											<img src="<?= base_url() ?>assets/img/story-1.jpg" alt="" class="img img-fluid" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
 											<div class="img-flower-vextor">
 												<img src="<?= base_url() ?>assets/img/img-vextor-story.png" alt="">
 											</div>
@@ -154,7 +154,7 @@
 								<div class="row">
 									<div class="col-md-6">
 										<div class="item-img">
-											<img src="<?= base_url() ?>assets/img/story-2.jpg" alt="">
+											<img src="<?= base_url() ?>assets/img/story-2.jpg" alt="" class="img img-fluid" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
 										</div>
 									</div>
 									<div class="col-md-6">
@@ -192,7 +192,7 @@
 									</div>
 									<div class="col-md-6 item-img-story">
 										<div class="item-img">
-											<img src="<?= base_url() ?>assets/img/story-3.jpg" alt="" class="img img-fluid">
+											<img src="<?= base_url() ?>assets/img/story-3.jpg" alt="" class="img img-fluid" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
 											<div class="img-flower-vextor">
 												<img src="<?= base_url() ?>assets/img/img-vextor-story.png" alt="">
 											</div>
@@ -207,7 +207,7 @@
 								<div class="row">
 									<div class="col-md-6">
 										<div class="item-img">
-											<img src="<?= base_url() ?>assets/img/story-4.jpg" alt="">
+											<img src="<?= base_url() ?>assets/img/story-4.jpg" alt="" class="img img-fluid" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
 										</div>
 									</div>
 									<div class="col-md-6">
@@ -245,7 +245,7 @@
 									</div>
 									<div class="col-md-6 item-img-story">
 										<div class="item-img">
-											<img src="<?= base_url() ?>assets/img/story-5.jpg" alt="" class="img img-fluid">
+											<img src="<?= base_url() ?>assets/img/story-5.jpg" alt="" class="img img-fluid" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
 											<div class="img-flower-vextor">
 												<img src="<?= base_url() ?>assets/img/img-vextor-story.png" alt="">
 											</div>
@@ -260,7 +260,7 @@
 								<div class="row">
 									<div class="col-md-6">
 										<div class="item-img">
-											<img src="<?= base_url() ?>assets/img/story-5.jpg" alt="" class="img img-fluid">
+											<img src="<?= base_url() ?>assets/img/story-5.jpg" alt="" class="img img-fluid" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
 										</div>
 									</div>
 									<div class="col-md-6">
