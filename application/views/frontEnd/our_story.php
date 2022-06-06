@@ -33,7 +33,7 @@
 									<img src="<?= base_url() ?>assets/img/cople-man.jpg" alt="" class="img img-fluid">
 								</div>
 								<div class="title">
-									<h3>Title Img </h3>
+									<h3>Yogo</h3>
 								</div>
 								<div class="text">
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, placeat.</p>
@@ -41,13 +41,13 @@
 								<div class="icon-sosmed">
 									<ul>
 										<li>
-											<a href=""><span class="iconify" data-icon="bxl:instagram-alt"></span></a>
+											<a href="https://www.instagram.com/yogosiagian/"><span class="iconify" data-icon="bxl:instagram-alt"></span></a>
 										</li>
 										<li>
 											<a href=""><span class="iconify" data-icon="eva:facebook-fill"></span></a>
 										</li>
 										<li>
-											<a href=""><span class="iconify" data-icon="ic:outline-tiktok"></span>
+											<a href="#"><span class="iconify" data-icon="ic:outline-tiktok"></span>
 											</a>
 										</li>
 									</ul>
@@ -55,7 +55,7 @@
 							</div>
 						</div>
 						<div class="items-img">
-							<img src="<?= base_url() ?>assets/img/couple-image.jpg" alt="" class="img img-fluid" data-aos="zoom-in" data-aos-offset="600" data-aos-delay="50" data-aos-duration="900">
+							<img src="<?= base_url() ?>assets/img/1234.jpg" alt="" class="img img-fluid" data-aos="zoom-in" data-aos-offset="400" data-aos-delay="50" data-aos-duration="900">
 							<div class="img-frame">
 								<img src="<?= base_url() ?>assets/img/fram-our-story.png" alt="" class="img img-fluid">
 							</div>
@@ -63,10 +63,10 @@
 						<div class="item-story-girl">
 							<div class="item-text">
 								<div class="item-img">
-									<img src="<?= base_url() ?>assets/img/couple-woment.jpg" alt="" class="img img-fluid">
+									<img src="<?= base_url() ?>assets/img/cople-women.jpg" alt="" class="img img-fluid">
 								</div>
 								<div class="title">
-									<h3>Title img </h3>
+									<h3>Risa</h3>
 								</div>
 								<div class="text">
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, placeat.</p>
@@ -74,13 +74,13 @@
 								<div class="icon-sosmed">
 									<ul>
 										<li>
-											<a href=""><span class="iconify" data-icon="bxl:instagram-alt"></span></a>
+											<a href="https://www.instagram.com/_risaa10/"><span class="iconify" data-icon="bxl:instagram-alt"></span></a>
 										</li>
 										<li>
-											<a href=""><span class="iconify" data-icon="eva:facebook-fill"></span></a>
+											<a href="https://www.facebook.com/search/top?q=risaa10"><span class="iconify" data-icon="eva:facebook-fill"></span></a>
 										</li>
 										<li>
-											<a href=""><span class="iconify" data-icon="ic:outline-tiktok"></span>
+											<a href="#"><span class="iconify" data-icon="ic:outline-tiktok"></span>
 											</a>
 										</li>
 									</ul>
@@ -96,13 +96,23 @@
 
 <!-- Our Story Sect 3 -->
 <!-- Our Story Sect 1 -->
-<section class="section-hero-image-banner hero-image-banner-paralax mb-lg-5" data-parallax="scroll" data-z-index="1" data-image-src="<?= base_url() ?>assets/img/bg-checkOut.jpg">
+<!-- <section class="section-hero-image-banner hero-image-banner-paralax mb-lg-5" data-parallax="scroll" data-z-index="1" data-image-src="<?= base_url() ?>assets/img/bg-checkOut.jpg">
 	<div class="container-fluid p-0 ">
 		<div class="blocks-items">
 			<div class="text-title text-center w-75 mx-auto">
 				<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora! </h3>
 			</div>
 		</div>
+	</div>
+</section> -->
+
+<section class="vidio-you-tube">
+	<div class="container">
+		<div class="blocks-items">
+			<iframe src="https://www.youtube.com/embed/H2SbmgpFeu4?autoplay=1&mute=1&loop=1" title=" YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		</div>
+	</div>
 </section>
 
 
@@ -130,10 +140,10 @@
 									<div class="col-md-6 items-story-text">
 										<div class="text-story">
 											<div class="title">
-												<h3>title</h3>
+												<h3>01</h3>
 											</div>
 											<div class="date">
-												<p>Nov/12/2020</p>
+												<p>Wedding</p>
 											</div>
 											<div class="text">
 												<p>I must explain to you how all this mistaken idea of denouing pleasure and praising pain was born and I will give you com acount of system,the actual teach</p>
@@ -142,19 +152,18 @@
 									</div>
 									<div class="col-md-6 item-img-story">
 										<div class="item-img">
-											<img src="<?= base_url() ?>assets/img/story-1.jpg" alt="" class="img img-fluid" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+											<img src="<?= base_url() ?>assets/img/our-story-2.jpg" alt="" class="img img-fluid" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
 											<div class="img-flower-vextor">
 												<img src="<?= base_url() ?>assets/img/img-vextor-story.png" alt="">
 											</div>
 										</div>
-
 									</div>
 								</div>
 
 								<div class="row">
 									<div class="col-md-6">
 										<div class="item-img">
-											<img src="<?= base_url() ?>assets/img/story-2.jpg" alt="" class="img img-fluid" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+											<img src="<?= base_url() ?>assets/img/our-story.jpg" alt="" class="img img-fluid" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
 										</div>
 									</div>
 									<div class="col-md-6">
@@ -163,10 +172,10 @@
 										</div>
 										<div class="text-story">
 											<div class="title">
-												<h3>title text</h3>
+												<h3>02</h3>
 											</div>
 											<div class="date">
-												<p>Dec/25/2020</p>
+												<p>Prewedding</p>
 											</div>
 											<div class="text">
 												<p>I must explain to you how all this mistaken idea of denouing pleasure and praising pain was born and I will give you com acount of system,the actual teach</p>
@@ -180,10 +189,10 @@
 									<div class="col-md-6 items-story-text">
 										<div class="text-story">
 											<div class="title">
-												<h3>title</h3>
+												<h3>03</h3>
 											</div>
 											<div class="date">
-												<p>Nov/12/2020</p>
+												<p>Engagement</p>
 											</div>
 											<div class="text">
 												<p>I must explain to you how all this mistaken idea of denouing pleasure and praising pain was born and I will give you com acount of system,the actual teach</p>
@@ -192,7 +201,7 @@
 									</div>
 									<div class="col-md-6 item-img-story">
 										<div class="item-img">
-											<img src="<?= base_url() ?>assets/img/story-3.jpg" alt="" class="img img-fluid" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+											<img src="<?= base_url() ?>assets/img/our-story-3.jpg" alt="" class="img img-fluid" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
 											<div class="img-flower-vextor">
 												<img src="<?= base_url() ?>assets/img/img-vextor-story.png" alt="">
 											</div>
@@ -207,7 +216,7 @@
 								<div class="row">
 									<div class="col-md-6">
 										<div class="item-img">
-											<img src="<?= base_url() ?>assets/img/story-4.jpg" alt="" class="img img-fluid" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+											<img src="<?= base_url() ?>assets/img/our-story-4.jpg" alt="" class="img img-fluid" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
 										</div>
 									</div>
 									<div class="col-md-6">
@@ -216,10 +225,10 @@
 										</div>
 										<div class="text-story">
 											<div class="title">
-												<h3>title text</h3>
+												<h3>04</h3>
 											</div>
 											<div class="date">
-												<p>Dec/25/2020</p>
+												<p>Make Up</p>
 											</div>
 											<div class="text">
 												<p>I must explain to you how all this mistaken idea of denouing pleasure and praising pain was born and I will give you com acount of system,the actual teach</p>
@@ -227,16 +236,15 @@
 										</div>
 									</div>
 								</div>
-
 
 								<div class="row">
 									<div class="col-md-6 items-story-text">
 										<div class="text-story">
 											<div class="title">
-												<h3>title</h3>
+												<h3>05</h3>
 											</div>
 											<div class="date">
-												<p>Nov/12/2020</p>
+												<p>Gaun</p>
 											</div>
 											<div class="text">
 												<p>I must explain to you how all this mistaken idea of denouing pleasure and praising pain was born and I will give you com acount of system,the actual teach</p>
@@ -245,7 +253,7 @@
 									</div>
 									<div class="col-md-6 item-img-story">
 										<div class="item-img">
-											<img src="<?= base_url() ?>assets/img/story-5.jpg" alt="" class="img img-fluid" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+											<img src="<?= base_url() ?>assets/img/our-story-5.jpg" alt="" class="img img-fluid" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
 											<div class="img-flower-vextor">
 												<img src="<?= base_url() ?>assets/img/img-vextor-story.png" alt="">
 											</div>
@@ -253,14 +261,13 @@
 										<div class="icon">
 											<span class="iconify" data-icon="bx:calendar-heart"></span>
 										</div>
-
 									</div>
 								</div>
 
 								<div class="row">
 									<div class="col-md-6">
 										<div class="item-img">
-											<img src="<?= base_url() ?>assets/img/story-5.jpg" alt="" class="img img-fluid" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+											<img src="<?= base_url() ?>assets/img/our-story-6.jpg" alt="" class="img img-fluid" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
 										</div>
 									</div>
 									<div class="col-md-6">
@@ -269,19 +276,17 @@
 										</div>
 										<div class="text-story">
 											<div class="title">
-												<h3>title text</h3>
+												<h3>06</h3>
 											</div>
 											<div class="date">
-												<p>Dec/25/2020</p>
+												<p>Dekorasi</p>
 											</div>
 											<div class="text">
 												<p>I must explain to you how all this mistaken idea of denouing pleasure and praising pain was born and I will give you com acount of system,the actual teach</p>
 											</div>
 										</div>
-
 									</div>
 								</div>
-
 								<div class="row">
 									<div class="col-md-6 offset-lg-6">
 										<div class="icon">
