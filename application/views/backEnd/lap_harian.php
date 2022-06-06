@@ -18,10 +18,11 @@
 							<th>#</th>
 							<th>No Order</th>
 							<th>Nama</th>
+							<th>Nama Paket</th>
 							<th>Tgl Order</th>
-							<th>Harga</th>
+							<th>Tgl Acara</th>
+							<th>Total</th>
 							<th>Foto Produk</th>
-							<th>Total Harga</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -35,14 +36,15 @@
 							<tr>
 								<td><?= $no++ ?></td>
 								<td><?= $value->no_order ?></td>
+								<td><?= $value->nama ?></td>
 								<td><?= $value->nama_produk ?></td>
 								<td><?= $value->tgl_order ?></td>
+								<td><?= $value->tgl_acara ?></td>
 								<td>Rp. <?= number_format($value->harga, 0) ?></td>
-								<!-- <td><?= $value->qty ?></td> -->
 								<td>
 									<img src="<?= base_url('assets/gambar/' . $value->gambar) ?>" alt="" class="img img-fluid" width="100px" height="60px">
 								</td>
-								<td>Rp. <?= number_format($tot_harga, 0) ?></td>
+								<!-- <td>Rp. <?= number_format($tot_harga, 0) ?></td> -->
 							</tr>
 						<?php } ?>
 					</tbody>

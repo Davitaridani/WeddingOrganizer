@@ -17,9 +17,10 @@
 						<tr>
 							<th>#</th>
 							<th>No Order</th>
+							<th>No Nama</th>
 							<th>Tgl Order</th>
+							<th>Tgl Acara</th>
 							<th>Total</th>
-							<!-- <th>Foto Produk</th> -->
 						</tr>
 					</thead>
 					<tbody>
@@ -33,7 +34,9 @@
 							<tr>
 								<td><?= $no++ ?></td>
 								<td><?= $value->no_order ?></td>
+								<td><?= $value->nama ?></td>
 								<td><?= $value->tgl_order ?></td>
+								<td><?= $value->tgl_acara ?></td>
 								<td>Rp. <?= number_format($value->sub_total, 0) ?></td>
 								<!-- <td>
 									<img src="<?= base_url('assets/gambar/' . $value->gambar) ?>" alt="" class="img img-fluid" width="100px" height="60px">
