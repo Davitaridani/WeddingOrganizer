@@ -55,12 +55,12 @@
 
 						<div class="card-body">
 							<div class="tab-content" id="myTabContent">
-
 								<!-- Data Pesnana belum Bayar -->
 								<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 									<table class="table">
 										<tr>
 											<th>No Order</th>
+											<th>Nama</th>
 											<th>Tgl Order</th>
 											<th>Tgl Acara</th>
 											<th>Total Bayar</th>
@@ -69,6 +69,7 @@
 										<?php foreach ($belum_bayar as $key => $value) { ?>
 											<tr>
 												<td><?= $value->no_order ?></td>
+												<td><?= $value->nama ?></td>
 												<td><?= $value->tgl_order ?></td>
 												<td><?= $value->tgl_acara ?></td>
 												<td>
@@ -105,6 +106,7 @@
 									<table class="table">
 										<tr>
 											<th>No Order</th>
+											<th>Nama</th>
 											<th>Tgl Order</th>
 											<th>Tgl Acara</th>
 											<th>Total Bayar</th>
@@ -112,6 +114,7 @@
 										<?php foreach ($diproses as $key => $value) { ?>
 											<tr>
 												<td><?= $value->no_order ?></td>
+												<td><?= $value->nama ?></td>
 												<td><?= $value->tgl_order ?></td>
 												<td><?= $value->tgl_acara ?></td>
 												<td>
@@ -128,12 +131,12 @@
 													</div>
 												</td>
 												<!-- <td>
-														<div class="item-btn-bayar ">
-															<?php if ($value->status_bayar == 0) { ?>
-																<a href="<?= base_url('pesanan_saya/bayar/' . $value->id_transaksi) ?>" class="">Bayar</a>
-															<?php } ?>
-														</div>
-													</td> -->
+													<div class="item-btn-bayar ">
+														<?php if ($value->status_bayar == 0) { ?>
+															<a href="<?= base_url('pesanan_saya/bayar/' . $value->id_transaksi) ?>" class="">Bayar</a>
+														<?php } ?>
+													</div>
+												</td> -->
 											</tr>
 										<?php } ?>
 
@@ -145,6 +148,7 @@
 									<table class="table">
 										<tr>
 											<th>No Order</th>
+											<th>Nama</th>
 											<th>Tgl Order</th>
 											<th>Tgl Acara</th>
 											<th>Total Bayar</th>
@@ -153,6 +157,7 @@
 										<?php foreach ($dicatat as $key => $value) { ?>
 											<tr>
 												<td><?= $value->no_order ?></td>
+												<td><?= $value->nama ?></td>
 												<td><?= $value->tgl_order ?></td>
 												<td><?= $value->tgl_acara ?></td>
 												<td>
@@ -178,6 +183,7 @@
 									<table class="table">
 										<tr>
 											<th>No Order</th>
+											<th>Nama</th>
 											<th>Tgl Order</th>
 											<th>Tgl Acara</th>
 											<th>Total Bayar</th>
@@ -186,6 +192,7 @@
 										<?php foreach ($selesai as $key => $value) { ?>
 											<tr>
 												<td><?= $value->no_order ?></td>
+												<td><?= $value->nama ?></td>
 												<td><?= $value->tgl_order ?></td>
 												<td><?= $value->tgl_acara ?></td>
 												<td>
@@ -212,11 +219,7 @@
 			</div>
 		</div>
 	</div>
-
 </section>
-
-
-
 
 
 
@@ -227,7 +230,7 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h4 class="modal-title">No Order: <?= $value->no_order ?></h4>
+						<h4 class="modal-title">No Pesanan: <?= $value->no_pesanan ?></h4>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>

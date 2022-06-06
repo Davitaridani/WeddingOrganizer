@@ -21,13 +21,13 @@
 			<div class="table-checkOut">
 				<?php
 				echo form_open('belanja/checkout');
-				$no_order = date('Ymd') . strtoupper(random_string('alnum', 8));
+				$no_order =  date('Ymd') . strtoupper(random_string('alnum', 8));
 				?>
 				<div class="row">
 					<div class="col-md-7">
 						<div class="col-md-12">
 							<div class="title">
-								<h3>Detial Penagihan</h3>
+								<h3>Form Transaksi</h3>
 							</div>
 							<div class="items-form">
 								<div class="item-input">
@@ -42,7 +42,6 @@
 									<label for="tgl_acara">Tgl Acara <span class="text-danger">*</span></label>
 									<input type="datetime-local" id="tgl_acara" class="form-control" name="tgl_acara" placeholder="Acara Pernikahan Anda">
 								</div>
-
 
 								<div class="item-input">
 									<label for="telepon">Telepon <span class="text-danger">*</span></label>
@@ -100,7 +99,7 @@
 									<thead>
 										<tr>
 											<th class="nama-produk">Produk</th>
-											<th class="total-produk">Subtotal</th>
+											<th class="total-produk">Harga</th>
 										</tr>
 									</thead>
 									<tbody>

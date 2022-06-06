@@ -7,7 +7,7 @@
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item"><a href="<?= base_url() ?>">Home</a></li>
-						<li class="breadcrumb-item">COntact</li>
+						<li class="breadcrumb-item">Contact</li>
 					</ol>
 				</nav>
 			</div>

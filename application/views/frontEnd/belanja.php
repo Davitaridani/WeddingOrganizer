@@ -117,12 +117,12 @@
 							</div>
 							<table class="table">
 								<tbody>
-									<tr class="cart-subTotal">
+									<!-- <tr class="cart-subTotal">
 										<th class="text-subTotal">Sub Total</th>
 										<td class="sub-total">
 											<span>Rp. <?php echo number_format($items['subtotal'], 0) ?></span>
 										</td>
-									</tr>
+									</tr> -->
 
 									<tr class="cart-total">
 										<th class="text-total">Total</th>

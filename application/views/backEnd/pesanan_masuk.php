@@ -12,6 +12,12 @@
 			}
 			?>
 
+			<?php
+
+			$no_pensanan = 'DL_' . date('md') . strtoupper(random_string('alnum', 12));
+
+			?>
+
 			<div class="card card-purple card-outline card-tabs">
 				<div class="card-header p-0 pt-1 border-bottom-0">
 					<ul class="nav nav-tabs" id="custom-tabs-three-tab" role="tablist">
@@ -35,6 +41,7 @@
 							<table class="table">
 								<tr>
 									<th>No Order</th>
+									<th>Nama</th>
 									<th>Tgl Order</th>
 									<th>Tgl Acara</th>
 									<th>Total Bayar</th>
@@ -43,6 +50,7 @@
 								<?php foreach ($pesanan as $key => $value) { ?>
 									<tr>
 										<td><?= $value->no_order ?></td>
+										<td><?= $value->nama ?></td>
 										<td><?= $value->tgl_order ?></td>
 										<td><?= $value->tgl_acara ?></td>
 										<td>
@@ -71,6 +79,7 @@
 							<table class="table">
 								<tr>
 									<th>No Order</th>
+									<th>Nama</th>
 									<th>Tgl Order</th>
 									<th>Tgl Acara</th>
 									<th>Total Bayar</th>
@@ -79,6 +88,7 @@
 								<?php foreach ($pesanan_diproses as $key => $value) { ?>
 									<tr>
 										<td><?= $value->no_order ?></td>
+										<td><?= $value->nama ?></td>
 										<td><?= $value->tgl_order ?></td>
 										<td><?= $value->tgl_acara ?></td>
 										<td>
@@ -99,6 +109,7 @@
 							<table class="table">
 								<tr>
 									<th>No Order</th>
+									<th>Nama</th>
 									<th>Tgl Order</th>
 									<th>Tgl Acara</th>
 									<th>Total Bayar</th>
@@ -107,6 +118,7 @@
 								<?php foreach ($pesanan_dicatat as $key => $value) { ?>
 									<tr>
 										<td><?= $value->no_order ?></td>
+										<td><?= $value->nama ?></td>
 										<td><?= $value->tgl_order ?></td>
 										<td><?= $value->tgl_acara ?></td>
 										<td>
@@ -115,6 +127,7 @@
 										</td>
 										<td class="text-center">
 											<h5> <?= $value->no_pesanan ?></h5>
+											<!-- <input name=" no_pensanan" value="<?= $no_pensanan ?>"> -->
 										</td>
 									</tr>
 								<?php } ?>
@@ -125,6 +138,7 @@
 							<table class="table">
 								<tr>
 									<th>No Order</th>
+									<th>Nama</th>
 									<th>Tgl Order</th>
 									<th>Tgl Acara</th>
 									<th>Total Bayar</th>
@@ -133,6 +147,7 @@
 								<?php foreach ($pesanan_selesai as $key => $value) { ?>
 									<tr>
 										<td><?= $value->no_order ?></td>
+										<td><?= $value->nama ?></td>
 										<td><?= $value->tgl_order ?></td>
 										<td><?= $value->tgl_acara ?></td>
 										<td>
@@ -196,7 +211,7 @@
 					<img src="<?= base_url('assets/bukti_bayar/' . $value->bukti_bayar) ?>" alt="" class="img card-img" height="500px">
 				</div>
 				<div class="modal-footer justify-content-between">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>
@@ -210,7 +225,7 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title"><?= $value->no_order ?></h4>
+					<h4 class="modal-title">No Order : <?= $value->no_order ?></h4>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
@@ -239,7 +254,7 @@
 							<th>No Pesanan </th>
 							<th>:</th>
 							<th>
-								<input type="text" name="no_pesanan" class="form-control" placeholder="No Pesanan">
+								<input type="text" name="no_pesanan" value="<?= $no_pensanan ?>" class="form-control" readonly placeholder="No Pesanan">
 							</th>
 						</tr>
 
@@ -248,8 +263,8 @@
 					</table>
 				</div>
 				<div class="modal-footer justify-content-between">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					<button type="submit" class="btn btn-primary">Simpan</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					<button type="submit" class="btn btn-success">Simpan</button>
 				</div>
 				<?php echo form_close() ?>
 			</div>
