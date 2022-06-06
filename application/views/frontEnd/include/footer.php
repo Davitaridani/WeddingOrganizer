@@ -66,7 +66,7 @@
 									<a href="<?= base_url('about') ?>">About</a>
 								</li>
 								<li>
-									<a href="<?= base_url() ?>">Layanan</a>
+									<a href="<?= base_url() ?>">Paket Pernikahan</a>
 								</li>
 								<li>
 									<a href="<?= base_url() ?>">Galeri</a>
