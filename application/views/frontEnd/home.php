@@ -287,7 +287,7 @@
 							<img src="<?= base_url() ?>assets/img/img-team (1).jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Dhewi Lestari</a>
+							<a href="">Ratna Dewi</a>
 						</div>
 						<div class="text">
 							<p>Owner</p>
