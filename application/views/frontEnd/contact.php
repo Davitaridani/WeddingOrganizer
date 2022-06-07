@@ -54,7 +54,7 @@
 							<h3>Whatsapp</h3>
 						</div>
 						<div class="text">
-							<a href="https://api.whatsapp.com/send?phone=62 857-4907-1844&text=Selamat Siang%20Kakak,%20Saya%20Ingin%20Konsultasi%20Mengenai%20Wedding.">+62 821-3998-6759</a>
+							<a href="https://api.whatsapp.com/send?phone=62 821-3998-6759&text=Selamat Siang%20Kakak,%20Saya%20Ingin%20Konsultasi%20Mengenai%20Wedding.">+62 821-3998-6759</a>
 						</div>
 					</div>
 				</div>

@@ -44,7 +44,7 @@
 											<a href="https://www.instagram.com/yogosiagian/"><span class="iconify" data-icon="bxl:instagram-alt"></span></a>
 										</li>
 										<li>
-											<a href=""><span class="iconify" data-icon="eva:facebook-fill"></span></a>
+											<a href="https://www.facebook.com/yogo.siagian"><span class="iconify" data-icon="eva:facebook-fill"></span></a>
 										</li>
 										<li>
 											<a href="#"><span class="iconify" data-icon="ic:outline-tiktok"></span>
@@ -109,7 +109,7 @@
 <section class="vidio-you-tube">
 	<div class="container">
 		<div class="blocks-items">
-			<iframe src="https://www.youtube.com/embed/H2SbmgpFeu4?autoplay=1&mute=1&loop=1" title=" YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe src="https://www.youtube.com/embed/H2SbmgpFeu4?autoplay=1&mute=1&loop=1&modestbranding=1&autohide=1&showinfo=0&controls=1&rel=0&fs=0" title=" YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 		</div>
 	</div>

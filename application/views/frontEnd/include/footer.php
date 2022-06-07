@@ -94,7 +94,7 @@
 										</a>
 									</div>
 									<div class="icon">
-										<a href="https://api.whatsapp.com/send?phone=62 857-4907-1844&text=Selamat Siang%20Kakak,%20Saya%20Ingin%20Konsultasi%20Mengenai%20Wedding.">
+										<a href="https://api.whatsapp.com/send?phone=62 821-3998-6759&&text=Selamat Siang%20Kakak,%20Saya%20Ingin%20Konsultasi%20Mengenai%20Wedding.">
 											<span class="iconify" data-icon="fluent:call-48-filled"></span>
 											<span>+62 821-3998-6759</span>
 										</a>
