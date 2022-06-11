@@ -216,7 +216,7 @@ p {
 // about-sect-5
 .items-team {
     .blocks-items {
-        padding: 0 0 120px;
+        padding: 0 0 50px;
         .item-title {
             text-align: center;
                 margin-bottom: 70px;
@@ -262,8 +262,10 @@ p {
             }
         }
         .row {
+            justify-content: space-evenly;
             .card-team {
                 text-align: center;
+                margin-bottom: 50px;
                 .img-team {
                     margin: 0 auto;
                     position: relative;

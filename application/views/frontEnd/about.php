@@ -51,13 +51,6 @@
 							<p>Dhewi Lestari adalah Wedding Planner atau Wedding Organizer yang berbasis di kota Jember Selatan. Kami memberikan pelayanan kepada pasangan atau calon mempelai yang akan menikah mengenai perencanaan pernikahan atau acara mereka. Tidak hanya berkaitan dengan wedding atau pernikahan saja, Dhewi Lestari juga siap dalam menghandle acara-acara atau event-event besar lainnya. </p>
 
 							<p data-aos="fade-left" data-aos-offset="150" data-aos-delay="300" data-aos-duration="2000">Dhewi Lestari memiliki visi untuk mewujudkan keinginan setiap orang untuk mendapatkan layanan terbaik dengan inovasi, kreativitas, dan dedikasi kami di setiap momen yang ada. Kami merancang acara pernikahan sesuai kebutuhan dari klien, mulai dari konsep acara (tradisional atau modern), akad nikah, konsep dekorasi, make up, gaun, fotografi dan videografi. Kami berkomitmen untuk selalu memberikan pelayanan yang terbaik kepada seluruh klien.</p>
-
-							<!-- <p>Dhewi Lestari Wedding Organizer Jember merupakan jasa wedding professional yang bergerak di bidang penyelenggara acara pernikahan secara menyeluruh. Kami merancang acara pernikahan sesuai kebutuhan dari klien, mulai dari konsep acara (tradisional atau modern), akad nikah, konsep dekorasi, make up, gaun, fotografi dan videografi. Kami berkomitmen untuk selalu memberikan pelayanan yang terbaik kepada seluruh klien.</p> -->
-							<!-- <ul>
-								<li>Pergi melalui kutipan kata dalam klasik.</li>
-								<li>Ada banyak variasi bagian.</li>
-								<li>Membuatnya terlihat seperti bahasa Inggris yang dapat dibaca dan diucapkan.</li>
-							</ul> -->
 						</div>
 					</div>
 				</div>
@@ -75,7 +68,7 @@
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
 							<div class="title">
-								<h3 class="counter" id="num">1000<span class="iconify" data-icon="bi:plus"></span></h3>
+								<h3 class="counter" id="num">5000<span class="iconify" data-icon="bi:plus"></span></h3>
 							</div>
 							<div class="text">
 								<p>Wedding</p>
@@ -85,7 +78,7 @@
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
 							<div class="title ">
-								<h3 class="counter" id="num">490<span class="iconify" data-icon="bi:plus"></span></h3>
+								<h3 class="counter" id="num">1000<span class="iconify" data-icon="bi:plus"></span></h3>
 							</div>
 							<div class="text">
 								<p>Prewedding</p>
@@ -95,7 +88,7 @@
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
 							<div class="title ">
-								<h3 class="counter" id="num">890<span class="iconify" data-icon="bi:plus"></span></h3>
+								<h3 class="counter" id="num">4000<span class="iconify" data-icon="bi:plus"></span></h3>
 							</div>
 							<div class="text">
 								<p>Make Up</p>
@@ -105,7 +98,7 @@
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
 							<div class="title">
-								<h3 class="counter" id="num">690<span class="iconify" data-icon="bi:plus"></span></h3>
+								<h3 class="counter" id="num">3500<span class="iconify" data-icon="bi:plus"></span></h3>
 							</div>
 							<div class="text">
 								<p>Dekorasi</p>
@@ -173,10 +166,10 @@
 				<div class="col-md-3">
 					<div class="card-team">
 						<div class="img-team">
-							<img src="<?= base_url() ?>assets/img/card-carousel-3.jpg" alt="" class="img img-fluid">
+							<img src="<?= base_url() ?>assets/img/img-team (2).jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Risa Kurnia</a>
+							<a href="">Habibah</a>
 						</div>
 						<div class="text">
 							<p>Admin</p>
@@ -203,10 +196,10 @@
 				<div class="col-md-3">
 					<div class="card-team">
 						<div class="img-team">
-							<img src="<?= base_url() ?>assets/img/card-carousel-2.jpg" alt="" class="img img-fluid">
+							<img src="<?= base_url() ?>assets/img/img-team (3).jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Dinda</a>
+							<a href="">Nama</a>
 						</div>
 						<div class="text">
 							<p>Crew</p>
@@ -229,15 +222,81 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
+
 				<div class="col-md-3">
 					<div class="card-team">
 						<div class="img-team">
-							<img src="<?= base_url() ?>assets/img/card-carousel-4.jpg" alt="" class="img img-fluid">
+							<img src="<?= base_url() ?>assets/img/img-team (4).jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Silvi</a>
+							<a href="">Nama</a>
+						</div>
+						<div class="text">
+							<p>Crew</p>
+						</div>
+						<div class="icon-sosmed">
+							<div class="fb">
+								<a href="#">
+									<span class="iconify" data-icon="bxl:facebook"></span>
+								</a>
+							</div>
+							<div class="ig">
+								<a href="#">
+									<span class="iconify" data-icon="ant-design:instagram-filled"></span>
+								</a>
+							</div>
+							<div class="tik-tok">
+								<a href="#">
+									<span class="iconify" data-icon="ic:outline-tiktok"></span>
+								</a>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-md-3">
+					<div class="card-team">
+						<div class="img-team">
+							<img src="<?= base_url() ?>assets/img/img-team (5).jpg" alt="" class="img img-fluid">
+						</div>
+						<div class="title">
+							<a href="">Nama</a>
+						</div>
+						<div class="text">
+							<p>Crew</p>
+						</div>
+						<div class="icon-sosmed">
+							<div class="fb">
+								<a href="#">
+									<span class="iconify" data-icon="bxl:facebook"></span>
+								</a>
+							</div>
+							<div class="ig">
+								<a href="#">
+									<span class="iconify" data-icon="ant-design:instagram-filled"></span>
+								</a>
+							</div>
+							<div class="tik-tok">
+								<a href="#">
+									<span class="iconify" data-icon="ic:outline-tiktok"></span>
+								</a>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-md-3">
+					<div class="card-team">
+						<div class="img-team">
+							<img src="<?= base_url() ?>assets/img/img-team (6).jpg" alt="" class="img img-fluid">
+						</div>
+						<div class="title">
+							<a href="">Nama</a>
 						</div>
 						<div class="text">
 							<p>Crew</p>

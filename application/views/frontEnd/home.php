@@ -314,10 +314,10 @@
 				<div class="col-md-3">
 					<div class="card-team">
 						<div class="img-team">
-							<img src="<?= base_url() ?>assets/img/card-carousel-3.jpg" alt="" class="img img-fluid">
+							<img src="<?= base_url() ?>assets/img/img-team (2).jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Risa Kurnia</a>
+							<a href="">Habibah</a>
 						</div>
 						<div class="text">
 							<p>Admin</p>
@@ -346,10 +346,10 @@
 				<div class="col-md-3">
 					<div class="card-team">
 						<div class="img-team">
-							<img src="<?= base_url() ?>assets/img/card-carousel-2.jpg" alt="" class="img img-fluid">
+							<img src="<?= base_url() ?>assets/img/img-team (3).jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Dinda</a>
+							<a href="">Nama</a>
 						</div>
 						<div class="text">
 							<p>Crew</p>
@@ -378,10 +378,10 @@
 				<div class="col-md-3">
 					<div class="card-team">
 						<div class="img-team">
-							<img src="<?= base_url() ?>assets/img/card-carousel-4.jpg" alt="" class="img img-fluid">
+							<img src="<?= base_url() ?>assets/img/img-team (4).jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Silvi</a>
+							<a href="">Nama</a>
 						</div>
 						<div class="text">
 							<p>Crew</p>
@@ -546,7 +546,7 @@
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
 							<div class="title">
-								<h3 class="counter" id="num">1000<span class="iconify" data-icon="bi:plus"></span></h3>
+								<h3 class="counter" id="num">5000<span class="iconify" data-icon="bi:plus"></span></h3>
 							</div>
 							<div class="text">
 								<p>Wedding</p>
@@ -556,7 +556,7 @@
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
 							<div class="title ">
-								<h3 class="counter" id="num">490<span class="iconify" data-icon="bi:plus"></span></h3>
+								<h3 class="counter" id="num">1000<span class="iconify" data-icon="bi:plus"></span></h3>
 							</div>
 							<div class="text">
 								<p>Prewedding</p>
@@ -566,7 +566,7 @@
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
 							<div class="title ">
-								<h3 class="counter" id="num">890<span class="iconify" data-icon="bi:plus"></span></h3>
+								<h3 class="counter" id="num">4000<span class="iconify" data-icon="bi:plus"></span></h3>
 							</div>
 							<div class="text">
 								<p>Make Up</p>
@@ -576,7 +576,7 @@
 					<div class="col-sm-6 col-lg-3">
 						<div class="item-counter">
 							<div class="title">
-								<h3 class="counter" id="num">690<span class="iconify" data-icon="bi:plus"></span></h3>
+								<h3 class="counter" id="num">3500<span class="iconify" data-icon="bi:plus"></span></h3>
 							</div>
 							<div class="text">
 								<p>Dekorasi</p>
@@ -618,11 +618,12 @@
 						<div class="item-produk">
 
 							<div class="img-produk" data-aos="flip-left" data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">
-								<img src="<?= base_url() ?>assets/img/wedding (5).jpg" alt="" class="img img-fluid">
+								<img src="<?= base_url() ?>assets/img/wedding (3).jpg" alt="" class="img img-fluid">
+
 								<a href="">Lihat Detail</a>
 							</div>
 							<div class="title">
-								<a href="#">Wedding</a>
+								<p>Wedding</p>
 							</div>
 							<div class="price">
 								<p></p>
@@ -637,7 +638,7 @@
 								<a href="">Lihat Detail</a>
 							</div>
 							<div class="title">
-								<a href="#">Prewedding</a>
+								<p>Prewedding</p>
 							</div>
 							<div class="price">
 								<p></p>
@@ -648,11 +649,11 @@
 						<div class="item-produk">
 
 							<div class="img-produk" data-aos="flip-left" data-aos-offset="200" data-aos-delay="200" data-aos-duration="2000">
-								<img src="<?= base_url() ?>assets/img/home-2.jpg" alt="" class="img img-fluid">
+								<img src="<?= base_url() ?>assets/img/wedding (5).jpg" alt="" class="img img-fluid">
 								<a href="">Lihat Detail</a>
 							</div>
 							<div class="title">
-								<a href="#">Engagement</a>
+								<p>Engagement</p>
 							</div>
 							<div class="price">
 								<p></p>
@@ -667,7 +668,7 @@
 								<a href="">Lihat Detail</a>
 							</div>
 							<div class="title">
-								<a href="#">Dekorasi</a>
+								<p>Dekorasi</p>
 							</div>
 							<div class="price">
 								<p></p>
@@ -682,7 +683,7 @@
 								<a href="">Lihat Detail</a>
 							</div>
 							<div class="title">
-								<a href="#">Make Up</a>
+								<p>Make Up</p>
 							</div>
 							<div class="price">
 								<p></p>
@@ -697,7 +698,7 @@
 								<a href="">Lihat Detail</a>
 							</div>
 							<div class="title">
-								<a href="#">Gaun</a>
+								<p>Gaun</p>
 							</div>
 							<div class="price">
 								<p></p>

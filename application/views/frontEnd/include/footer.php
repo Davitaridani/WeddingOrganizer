@@ -88,7 +88,7 @@
 								</p>
 								<div class="items-icon">
 									<div class="icon">
-										<a href="">
+										<a href="mailto:Sitinurhabibah260999@gmail.com">
 											<span class="iconify" data-icon="ic:round-email"></span>
 											<span>dhewilestari@gmail.com</span>
 										</a>

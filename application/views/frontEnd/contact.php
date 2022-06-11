@@ -41,7 +41,7 @@
 							<h3>Email</h3>
 						</div>
 						<div class="text">
-							<a href="#">dhewilesatri@gmail.com</a>
+							<a href="mailto:Sitinurhabibah260999@gmail.com">dhewilesatri@gmail.com</a>
 						</div>
 					</div>
 				</div>
@@ -69,10 +69,10 @@
 	<div class="container">
 		<div class="block-items">
 			<div class="title">
-				<h3>Get In touch</h3>
+				<h3>Tinggalkan Pesan Anda</h3>
 			</div>
 			<div class="desc">
-				<p>Customer Success agents have the sole goal of Making You Successful! That is <br> why our dedicated support team works 24/7/365 to help you.</p>
+				<p>Dengan senang hati kami akan membantu anda dalam mengemas pernikahan anda. Silahkan kontak Dhewi Lestari untuk layanan paket pernikahan Anda dengan mengisi formulir atau menghubungi kami langsung melalui alamat dan nomor kontak yang kami sediakan.</p>
 			</div>
 
 			<div class="item-form">

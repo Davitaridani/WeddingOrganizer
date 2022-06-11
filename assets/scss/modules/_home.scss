@@ -794,16 +794,16 @@ p {
                     }
                     .title {
                             text-align: center;
-                        a {
+                        p {
                             font-size: 20px !important;
                             text-align: center;
                             color: $color-blue !important;
                             font-weight: $bold;
                             text-decoration: none;
                             transition: all 0.2s;
-                            &:hover {
-                                color: $biru-2 !important;
-                            }
+                            // &:hover {
+                            //     color: $biru-2 !important;
+                            // }
                         }
                     }
                 }
