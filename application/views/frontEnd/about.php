@@ -139,7 +139,7 @@
 							<img src="<?= base_url() ?>assets/img/img-team (1).jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Dhewi Lestari</a>
+							<a href="">Ratna Dewi</a>
 						</div>
 						<div class="text">
 							<p>Owner</p>
@@ -151,12 +151,12 @@
 								</a>
 							</div>
 							<div class="ig">
-								<a href="https://www.instagram.com/dewilestari_makeup_artist/">
+								<a href="https://www.instagram.com/dewilestari_owner/">
 									<span class="iconify" data-icon="ant-design:instagram-filled"></span>
 								</a>
 							</div>
 							<div class="tik-tok">
-								<a href="#">
+								<a href="https://www.tiktok.com/@dewilestari_makeupartist">
 									<span class="iconify" data-icon="ic:outline-tiktok"></span>
 								</a>
 							</div>

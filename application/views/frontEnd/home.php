@@ -304,7 +304,7 @@
 								</a>
 							</div>
 							<div class="tik-tok">
-								<a href="#">
+								<a href="https://www.tiktok.com/@dewilestari_makeupartist">
 									<span class="iconify" data-icon="ic:outline-tiktok"></span>
 								</a>
 							</div>

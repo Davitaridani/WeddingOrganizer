@@ -41,7 +41,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="">
+									<a href="https://www.tiktok.com/@dewilestari_makeupartist">
 										<span class="iconify" data-icon="ic:round-tiktok"></span>
 									</a>
 								</li>
