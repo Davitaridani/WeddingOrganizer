@@ -2,11 +2,6 @@
 	<div class="card card-purple">
 		<div class="card-header">
 			<h3 class="card-title">Jadwal</h3>
-			<!-- <div class="card-tools">
-				<button type="button" class="btn btn-purple text-white btn-sm" data-toggle="modal" data-target="#add">
-					<i class="fas fa-plus"></i> Add
-				</button>
-			</div> -->
 		</div>
 		<div class="card-body">
 			<?php

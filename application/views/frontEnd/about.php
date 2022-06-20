@@ -6,7 +6,6 @@
 				<div class="items text-center">
 					<div class="text-title">
 						<h3>About</h3>
-
 						<nav aria-label="breadcrumb">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="<?= base_url() ?>">Home</a></li>
@@ -199,7 +198,7 @@
 							<img src="<?= base_url() ?>assets/img/img-team (3).jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Nama</a>
+							<a href="">Halimah</a>
 						</div>
 						<div class="text">
 							<p>Crew</p>
@@ -230,7 +229,7 @@
 							<img src="<?= base_url() ?>assets/img/img-team (4).jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Nama</a>
+							<a href="">Elok</a>
 						</div>
 						<div class="text">
 							<p>Crew</p>
@@ -263,7 +262,7 @@
 							<img src="<?= base_url() ?>assets/img/img-team (5).jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Nama</a>
+							<a href="">Indri</a>
 						</div>
 						<div class="text">
 							<p>Crew</p>
@@ -296,7 +295,7 @@
 							<img src="<?= base_url() ?>assets/img/img-team (6).jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Nama</a>
+							<a href="">Putri</a>
 						</div>
 						<div class="text">
 							<p>Crew</p>

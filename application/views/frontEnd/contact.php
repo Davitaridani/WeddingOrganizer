@@ -68,7 +68,7 @@
 <section class="contact-sect-3">
 	<div class="container">
 		<div class="block-items">
-			<div class="title">
+			<div class="judul">
 				<h3>Tinggalkan Pesan Anda</h3>
 			</div>
 			<div class="desc">

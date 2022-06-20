@@ -53,7 +53,7 @@
 										<td><?= $value->nama ?></td>
 										<td><?= $value->tgl_order ?></td>
 										<td><?= $value->tgl_acara ?></td>
-										<td>
+										<td class="text-right">
 											<b> <span> Rp. <?= number_format($value->sub_total, 0) ?></span></b><br>
 											<?php if ($value->status_bayar == 0) { ?>
 												<span class="badge badge-danger">Belum Bayar</span>
@@ -82,7 +82,7 @@
 									<th>Nama</th>
 									<th>Tgl Order</th>
 									<th>Tgl Acara</th>
-									<th>Total Bayar</th>
+									<th class="te">Total Bayar</th>
 									<th class="text-center">Action</th>
 								</tr>
 								<?php foreach ($pesanan_diproses as $key => $value) { ?>
@@ -91,7 +91,7 @@
 										<td><?= $value->nama ?></td>
 										<td><?= $value->tgl_order ?></td>
 										<td><?= $value->tgl_acara ?></td>
-										<td>
+										<td class="text-right">
 											<b> <span> Rp. <?= number_format($value->sub_total, 0) ?></span></b><br>
 											<span class="badge badge-success">Diproses</span>
 										</td>
@@ -121,7 +121,7 @@
 										<td><?= $value->nama ?></td>
 										<td><?= $value->tgl_order ?></td>
 										<td><?= $value->tgl_acara ?></td>
-										<td>
+										<td class="text-right">
 											<b> <span> Rp. <?= number_format($value->sub_total, 0) ?></span></b><br>
 											<span class="badge badge-success">Catat</span>
 										</td>
@@ -141,7 +141,7 @@
 									<th>Nama</th>
 									<th>Tgl Order</th>
 									<th>Tgl Acara</th>
-									<th>Total Bayar</th>
+									<th class="text-right">Total Bayar</th>
 									<th class="text-center">No Pesanan</th>
 								</tr>
 								<?php foreach ($pesanan_selesai as $key => $value) { ?>
@@ -150,11 +150,11 @@
 										<td><?= $value->nama ?></td>
 										<td><?= $value->tgl_order ?></td>
 										<td><?= $value->tgl_acara ?></td>
-										<td>
+										<td class="text-right">
 											<b> <span> Rp. <?= number_format($value->sub_total, 0) ?></span></b><br>
 											<span class="badge badge-success">Diterima</span>
 										</td>
-										<td class="text-center">
+										<td class="text-center text-end">
 											<h5> <?= $value->no_pesanan ?></h5>
 										</td>
 									</tr>

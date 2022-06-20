@@ -9,7 +9,6 @@
 				</h4>
 			</div>
 		</div>
-
 		<div class="row">
 			<div class="col-12 table-responsive">
 				<table class="table table-striped">
@@ -21,7 +20,7 @@
 							<th>Nama Paket</th>
 							<th>Tgl Order</th>
 							<th>Tgl Acara</th>
-							<th>Total</th>
+							<th class="text-right">Total</th>
 							<th>Foto Produk</th>
 						</tr>
 					</thead>
@@ -40,11 +39,10 @@
 								<td><?= $value->nama_produk ?></td>
 								<td><?= $value->tgl_order ?></td>
 								<td><?= $value->tgl_acara ?></td>
-								<td>Rp. <?= number_format($value->harga, 0) ?></td>
+								<td class="text-right">Rp. <?= number_format($value->harga, 0) ?></td>
 								<td>
 									<img src="<?= base_url('assets/gambar/' . $value->gambar) ?>" alt="" class="img img-fluid" width="100px" height="60px">
 								</td>
-								<!-- <td>Rp. <?= number_format($tot_harga, 0) ?></td> -->
 							</tr>
 						<?php } ?>
 					</tbody>

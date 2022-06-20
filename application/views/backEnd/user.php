@@ -43,9 +43,9 @@
 							<td class="text-center">
 								<?php
 								if ($value->level_user == 1) {
-									echo '<span class="badge badge-success">Admin</span>';
+									echo '<span class="badge badge-success">Owner</span>';
 								} else {
-									echo '<span class="badge badge-info">User</span>';
+									echo '<span class="badge badge-info">Admin</span>';
 								}
 								?>
 							</td>

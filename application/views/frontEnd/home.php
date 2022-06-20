@@ -349,7 +349,7 @@
 							<img src="<?= base_url() ?>assets/img/img-team (3).jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Nama</a>
+							<a href="">Halimah</a>
 						</div>
 						<div class="text">
 							<p>Crew</p>
@@ -381,7 +381,7 @@
 							<img src="<?= base_url() ?>assets/img/img-team (4).jpg" alt="" class="img img-fluid">
 						</div>
 						<div class="title">
-							<a href="">Nama</a>
+							<a href="">Elok</a>
 						</div>
 						<div class="text">
 							<p>Crew</p>

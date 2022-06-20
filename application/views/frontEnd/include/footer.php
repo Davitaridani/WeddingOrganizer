@@ -26,7 +26,8 @@
 							<h3>Dhewi Lestari</h3>
 						</div>
 						<div class="text">
-							<p>Dhewi Lestari Wedding Oragaanizer memiliki pilihan paket pernikahan dengan kualitas professional .</p>
+							<!-- <p>Dhewi Lestari Wedding Oragaanizer memiliki pilihan paket pernikahan dengan kualitas professional .</p> -->
+							<p>Kami merupakan jasa Wedding Organizer sejak tahun 2007 kami melayani jasa penyewaan tenda, make-up, dekorasi, dokumentasi acara pernikahan. Kami membantu pernikahan anda dengan budget yang anda miliki</p>
 						</div>
 						<div class="icon-sosmed">
 							<ul>
@@ -65,9 +66,9 @@
 								<li>
 									<a href="<?= base_url('about') ?>">About</a>
 								</li>
-								<li>
+								<!-- <li>
 									<a href="<?= base_url() ?>">Paket Pernikahan</a>
-								</li>
+								</li> -->
 								<li>
 									<a href="<?= base_url() ?>">Galeri</a>
 								</li>

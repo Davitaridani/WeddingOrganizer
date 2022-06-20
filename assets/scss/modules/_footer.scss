@@ -89,6 +89,7 @@ $black: 900;
         }
         .blocks-items {
             .row {
+                // justify-content: center;
                 .img-footer {
 
                     h3 {
@@ -102,7 +103,7 @@ $black: 900;
                     p {
                         font-size: 16px;
                         color: #525252 !important;
-                        width: 300px;
+                        width: 350px;
                         line-height: 2;
                     }
                 }
@@ -137,6 +138,7 @@ $black: 900;
                     }
                 }
                 .items-infor {
+                    margin-left: 50px;
                     .title {
                         margin-bottom: 25px;
                         h3 {

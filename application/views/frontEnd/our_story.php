@@ -35,9 +35,9 @@
 								<div class="title">
 									<h3>Yogo</h3>
 								</div>
-								<div class="text">
+								<!-- <div class="text">
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, placeat.</p>
-								</div>
+								</div> -->
 								<div class="icon-sosmed">
 									<ul>
 										<li>
@@ -68,9 +68,9 @@
 								<div class="title">
 									<h3>Risa</h3>
 								</div>
-								<div class="text">
+								<!-- <div class="text">
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, placeat.</p>
-								</div>
+								</div> -->
 								<div class="icon-sosmed">
 									<ul>
 										<li>
@@ -146,7 +146,7 @@
 												<p>Wedding</p>
 											</div>
 											<div class="text">
-												<p>I must explain to you how all this mistaken idea of denouing pleasure and praising pain was born and I will give you com acount of system,the actual teach</p>
+												<p>Kami memiliki layanan untuk membantu mewujudkan pesta pernikahan sesuai dengan rencana kamu</p>
 											</div>
 										</div>
 									</div>
@@ -178,7 +178,7 @@
 												<p>Prewedding</p>
 											</div>
 											<div class="text">
-												<p>I must explain to you how all this mistaken idea of denouing pleasure and praising pain was born and I will give you com acount of system,the actual teach</p>
+												<p>Tim kami terdiri dari fotografer dan videographer professional yang telah berpengalaman mengabadikan banyak momen pernikahan. Maka dari itu segera abadikan momen pernikahan bahagia anda bersama kami.</p>
 											</div>
 										</div>
 
@@ -195,7 +195,7 @@
 												<p>Engagement</p>
 											</div>
 											<div class="text">
-												<p>I must explain to you how all this mistaken idea of denouing pleasure and praising pain was born and I will give you com acount of system,the actual teach</p>
+												<p>Kami memiliki layanan untuk membantu mewujudkan prosesi lamaran sesuai dengan rencana kamu</p>
 											</div>
 										</div>
 									</div>
@@ -231,7 +231,7 @@
 												<p>Make Up</p>
 											</div>
 											<div class="text">
-												<p>I must explain to you how all this mistaken idea of denouing pleasure and praising pain was born and I will give you com acount of system,the actual teach</p>
+												<p>Untuk masalah rias pengantin kami bekerjasama dengan salah satu tim rias yang berkualitas,berpengalaman dan telah bertaraf nasional yaitu tim dhewi lestari.</p>
 											</div>
 										</div>
 									</div>
@@ -247,7 +247,7 @@
 												<p>Gaun</p>
 											</div>
 											<div class="text">
-												<p>I must explain to you how all this mistaken idea of denouing pleasure and praising pain was born and I will give you com acount of system,the actual teach</p>
+												<p>Untuk masalah rias pengantin kami bekerjasama dengan salah satu tim rias yang berkualitas,berpengalaman dan telah bertaraf nasional yaitu tim dhewi lestari.</p>
 											</div>
 										</div>
 									</div>
@@ -282,7 +282,7 @@
 												<p>Dekorasi</p>
 											</div>
 											<div class="text">
-												<p>I must explain to you how all this mistaken idea of denouing pleasure and praising pain was born and I will give you com acount of system,the actual teach</p>
+												<p>Kami menawarkan jasa dekorasi pernikahan yang murah namun berkualitas. Pada dasarnya dekorasi pernikahan yang kami berikan dapat dikomunikasikan dan disesuaikan dengan selera anda</p>
 											</div>
 										</div>
 									</div>
