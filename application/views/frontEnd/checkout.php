@@ -133,21 +133,7 @@
 										</tr>
 									</tfoot>
 								</table>
-								<label>Pilih Bank Pembayaran</label>
-								<?php 
-								$l_bank = [
-											'bri',
-											'permata',
-											'bni',
-											'bca',
-											];
-								?>
-								<select class="form-select mb-5" aria-label="Default select example" required="required">
-									<option selected> -- Pilih Bank --</option>
-									<?php foreach ($l_bank as $key => $value): ?>
-										<option value="<?php echo $value ?>"><?php echo strtoupper($value) ?></option>
-									<?php endforeach ?>
-								</select>
+								<!--  -->
 
 
 								<div class="items-btn">

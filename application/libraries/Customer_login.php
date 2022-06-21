@@ -35,7 +35,7 @@ class Customer_login
 
 	public function proteksi_halaman()
 	{
-		if ($this->ci->session->userdata('nama_customer') == '') {
+		if ($this->ci->session->userdata('email') == '') {
 			$this->ci->session->set_flashdata('error', 'Anda Belum Login!!');
 			redirect('customer/login');
 		}

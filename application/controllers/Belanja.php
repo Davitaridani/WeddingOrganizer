@@ -73,7 +73,7 @@ class Belanja extends CI_Controller
 	public function checkout()
 	{
 		// Proteksi Halaman(Jka elum login Tidak bisa masuk)
-		// $this->customer_login->proteksi_halaman();
+		$this->customer_login->proteksi_halaman();
 
 		$this->form_validation->set_rules('nama', 'Nama', 'required', ['required' => '%s Harus Diisi !!']);
 		$this->form_validation->set_rules('email', 'Email', 'required', ['required' => '%s Harus Diisi !!']);
@@ -92,8 +92,12 @@ class Belanja extends CI_Controller
 			$this->load->view('frontEnd/include/wrapper', $data, FALSE);
 		} else {
 			// Data Akan Di Simpan Di Tabel Transaksi
+			// echo print_r($this->session->tempdata());
+			$n_email = $_SESSION['email'];
+			$data_cs = $this->db->query('select * from tb_customer where email = "' . $n_email . '"')->row();
+
 			$data = [
-				'id_customer' => $this->session->userdata('id_customer'),
+				'id_customer' => $data_cs->id_customer,
 				'no_order' => $this->input->post('no_order'),
 				'nama' => $this->input->post('nama'),
 				'email' => $this->input->post('email'),
@@ -129,9 +133,9 @@ class Belanja extends CI_Controller
 			$this->cart->destroy();
 
 			// payment success
-			$urls = base_url().'payment/checkout-process.php';
-			echo '<form method="POST" action="'.$urls.'" id="dataPOST">';
-			?>
+			$urls = base_url() . 'payment/checkout-process.php';
+			echo '<form method="POST" action="' . $urls . '" id="dataPOST">';
+?>
 			<input type="hidden" name="first_name" value="<?php echo $data['nama'] ?>">
 			<input type="hidden" name="last_name" value="<?php echo '-' ?>">
 			<input type="hidden" name="address" value="<?php echo $data['alamat'] ?>">
@@ -145,8 +149,8 @@ class Belanja extends CI_Controller
 			<input type="hidden" name="price" value="<?php echo $data['sub_total'] ?>">
 			<input type="hidden" name="quantity" value="<?php echo $data_detail['qty'] ?>">
 			<input type="hidden" name="prd_name" value="<?php echo 'nama paket' ?>">
-			<?php
-			echo '</form>'; 
+<?php
+			echo '</form>';
 			echo '<script type="text/javascript">
 			  document.getElementById("dataPOST").submit();
 			</script>';
