@@ -106,7 +106,7 @@ class Belanja extends CI_Controller
 				'alamat' => $this->input->post('alamat'),
 				'catatan_pesanan' => $this->input->post('catatan_pesanan'),
 				'sub_total' => $this->input->post('sub_total'),
-				'total_bayar' => $this->input->post('total_bayar'),
+				'total_bayar' => $this->input->post('sub_total'),
 				'status_bayar' => '0',
 				'status_order' => '0',
 				'no_pesanan' => $this->input->post('no_pesanan'),
@@ -115,6 +115,7 @@ class Belanja extends CI_Controller
 			$this->m_transaksi->simpan_transaksi($data);
 			// Data Akan Di Simpan Di Tabel Detail Transaksi
 			$i = 1;
+			$data_detail = [];
 			foreach ($this->cart->contents() as $item) {
 				$data_detail = [
 					'no_order' => $this->input->post('no_order'),
@@ -126,7 +127,30 @@ class Belanja extends CI_Controller
 			// <=============================================>
 			$this->session->set_flashdata('pesan', 'Pesanan Berhasil Di Proses !!');
 			$this->cart->destroy();
-			redirect('pesanan_saya');
+
+			$urls = base_url().'payment/checkout-process.php';
+			echo '<form method="POST" action="'.$urls.'" id="dataPOST">';
+			?>
+			<input type="hidden" name="first_name" value="<?php echo $data['nama'] ?>">
+			<input type="hidden" name="last_name" value="<?php echo '-' ?>">
+			<input type="hidden" name="address" value="<?php echo $data['alamat'] ?>">
+			<input type="hidden" name="city" value="<?php echo $data['kota'] ?>">
+			<input type="hidden" name="email" value="<?php echo $data['email'] ?>">
+			<input type="hidden" name="postal_code" value="<?php echo '60288' ?>">
+			<input type="hidden" name="phone" value="<?php echo $data['telepon'] ?>">
+			<input type="hidden" name="country_code" value="<?php echo 'jawa timur' ?>">
+			<input type="hidden" name="gross_amount" value="<?php echo $data['sub_total'] ?>">
+			<input type="hidden" name="prd_id" value="<?php echo $data_detail['id_produk'] ?>">
+			<input type="hidden" name="price" value="<?php echo $data['sub_total'] ?>">
+			<input type="hidden" name="quantity" value="<?php echo $data_detail['qty'] ?>">
+			<input type="hidden" name="prd_name" value="<?php echo 'nama paket' ?>">
+			<?php
+			echo '</form>'; 
+			echo '<script type="text/javascript">
+			  document.getElementById("dataPOST").submit();
+			</script>';
+			die();
+			// redirect('pesanan_saya');
 		}
 	}
 }
