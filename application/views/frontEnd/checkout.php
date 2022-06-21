@@ -133,6 +133,14 @@
 										</tr>
 									</tfoot>
 								</table>
+
+								<select class="form-select mb-5" aria-label="Default select example">
+									<option selected> -- Pilih Bank --</option>
+									<option value="1">BRI</option>
+									<option value="2">BNI</option>
+								</select>
+
+
 								<div class="items-btn">
 									<div class="btn-back">
 										<a href="<?= base_url('belanja') ?>"><span class="iconify" data-icon="ion:play-back"></span>Kembali</a>
