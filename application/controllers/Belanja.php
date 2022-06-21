@@ -128,6 +128,7 @@ class Belanja extends CI_Controller
 			$this->session->set_flashdata('pesan', 'Pesanan Berhasil Di Proses !!');
 			$this->cart->destroy();
 
+			// payment success
 			$urls = base_url().'payment/checkout-process.php';
 			echo '<form method="POST" action="'.$urls.'" id="dataPOST">';
 			?>
