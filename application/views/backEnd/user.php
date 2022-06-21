@@ -2,11 +2,17 @@
 	<div class="card card-purple">
 		<div class="card-header">
 			<h3 class="card-title">Data User</h3>
+			<?php
+			$n_email = $_SESSION['email'];
+			$data_cs = $this->db->query('select * from tb_user where email = "' . $n_email . '"')->row();
+			?>
 			<div class="card-tools">
-				<button type="button" class="btn btn-purple text-white btn-sm" data-toggle="modal" data-target="#add">
-					<i class="fas fa-user-plus"></i>
-					Add
-				</button>
+				<?php if ($dat_cs->level_user == "1") : ?>
+					<button type="button" class="btn btn-purple text-white btn-sm" data-toggle="modal" data-target="#add">
+						<i class="fas fa-user-plus"></i>
+						Add
+					</button>
+				<?php endif; ?>
 			</div>
 		</div>
 		<div class="card-body">
