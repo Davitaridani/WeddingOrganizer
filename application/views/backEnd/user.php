@@ -34,7 +34,7 @@
 						<th>Telepon</th>
 						<th>Password</th>
 						<th class="text-center">level</th>
-						<th>Action</th>
+						<th class="text-center" width="80px"> Action</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -55,7 +55,7 @@
 								}
 								?>
 							</td>
-							<td>
+							<td class="text-center">
 								<button data-toggle="modal" data-target="#edit<?= $value->id_user ?>" class="btn btn-info btn-sm">
 									<i class="fa fa-edit"></i>
 								</button>
