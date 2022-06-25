@@ -17,7 +17,7 @@
 				<thead>
 					<tr>
 						<th class="text-center" style="width: 20px;">No </th>
-						<th>No Pesanan</th>
+						<!-- <th>No Pesanan</th> -->
 						<th>Nama</th>
 						<th>Kec</th>
 						<th>Alamat</th>
@@ -32,7 +32,7 @@
 					foreach ($jadwal as $key => $value) { ?>
 						<tr>
 							<td class="text-center"><?= $no++; ?></td>
-							<td><?= $value->no_pesanan ?></td>
+							<!-- <td><?= $value->no_pesanan ?></td> -->
 							<td><?= $value->nama ?></td>
 							<td><?= $value->kecamatan ?></td>
 							<td><?= $value->alamat ?></td>
@@ -43,9 +43,15 @@
 								<!-- <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value->id_transaksi ?>">
 									<i class="fa fa-trash"></i>
 								</button> -->
-								<button class="btn btn-success btn-sm" data-toggle="modal" data-target="#delete<?= $value->id_transaksi ?>">
-									Selesai
-								</button>
+								<?php if ($value->status_order == "4") : ?>
+									<button class="btn btn-warning btn-sm" role="button" onclick="return false;">
+										Sudah Selesai
+									</button>
+								<?php else : ?>
+									<button class="btn btn-success btn-sm" data-toggle="modal" data-target="#delete<?= $value->id_transaksi ?>">
+										Selesaikan
+									</button>
+								<?php endif; ?>
 							</td>
 						</tr>
 					<?php  } ?>

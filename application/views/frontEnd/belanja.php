@@ -80,17 +80,6 @@
 									<?php $i++; ?>
 								<?php endforeach; ?>
 
-								<!-- <tr class="text-total-bayar text-right">
-									<td colspan="3"> </td>
-									<td class="right">
-										<h5>Total Pembayaran: </h5>
-									</td>
-
-									<td class="right">
-										<h5>Rp. <?php echo number_format($this->cart->total(), 0); ?></h5>
-									</td>
-								</tr> -->
-
 							</table>
 
 							<div class="items-btn">

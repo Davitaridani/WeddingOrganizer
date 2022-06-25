@@ -18,22 +18,22 @@ class Laporan extends CI_Controller
 		$this->load->view('backEnd/include/wrapper', $data, FALSE);
 	}
 
-	public function lap_harian()
-	{
-		$tanggal  = $this->input->post('tanggal');
-		$bulan  = $this->input->post('bulan');
-		$tahun  = $this->input->post('tahun');
+	// public function lap_harian()
+	// {
+	// 	$tanggal  = $this->input->post('tanggal');
+	// 	$bulan  = $this->input->post('bulan');
+	// 	$tahun  = $this->input->post('tahun');
 
-		$data = [
-			'title' => 'Laporan Harian',
-			'tanggal' => $tanggal,
-			'bulan' => $bulan,
-			'tahun' => $tahun,
-			'laporan' => $this->m_laporan->lap_harian($tanggal, $bulan, $tahun),
-			'isi' => 'backEnd/lap_harian'
-		];
-		$this->load->view('backEnd/include/wrapper', $data, FALSE);
-	}
+	// 	$data = [
+	// 		'title' => 'Laporan Harian',
+	// 		'tanggal' => $tanggal,
+	// 		'bulan' => $bulan,
+	// 		'tahun' => $tahun,
+	// 		'laporan' => $this->m_laporan->lap_harian($tanggal, $bulan, $tahun),
+	// 		'isi' => 'backEnd/lap_harian'
+	// 	];
+	// 	$this->load->view('backEnd/include/wrapper', $data, FALSE);
+	// }
 
 	public function lap_bulanan()
 	{

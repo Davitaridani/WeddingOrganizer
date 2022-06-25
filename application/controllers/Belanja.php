@@ -26,6 +26,11 @@ class Belanja extends CI_Controller
 
 	public function add()
 	{
+
+		// Proteksi Halaman(Jka elum login Tidak bisa masuk)
+		$this->customer_login->proteksi_halaman();
+
+
 		$redirect_page =  $this->input->post('redirect_page');
 		if (isset($_POST['id']) && !empty($_POST['id'])) {
 			$names = preg_replace('/[^A-Za-z0-9\-]/', ' ', $this->input->post('name'));
@@ -136,6 +141,7 @@ class Belanja extends CI_Controller
 			$urls = base_url() . 'payment/checkout-process.php';
 			echo '<form method="POST" action="' . $urls . '" id="dataPOST">';
 ?>
+			<input type="hidden" name="order_id" value="<?php echo $data['no_order'] ?>">
 			<input type="hidden" name="first_name" value="<?php echo $data['nama'] ?>">
 			<input type="hidden" name="last_name" value="<?php echo '-' ?>">
 			<input type="hidden" name="address" value="<?php echo $data['alamat'] ?>">
@@ -152,7 +158,7 @@ class Belanja extends CI_Controller
 <?php
 			echo '</form>';
 			echo '<script type="text/javascript">
-			  document.getElementById("dataPOST").submit();
+			document.getElementById("dataPOST").submit();
 			</script>';
 			die();
 			// redirect('pesanan_saya');

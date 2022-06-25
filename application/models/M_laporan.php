@@ -25,7 +25,7 @@ class M_laporan extends CI_Model
 		$this->db->join('tb_produk', 'tb_produk.id_produk = tb_detail_transaksi.id_produk', 'left');
 		$this->db->where('MONTH(tgl_order)', $bulan);
 		$this->db->where('YEAR(tgl_order)', $tahun);
-		$this->db->where('status_bayar=1');
+		$this->db->where('status_bayar', 3);
 		return $this->db->get()->result();
 	}
 
@@ -36,7 +36,7 @@ class M_laporan extends CI_Model
 		// $this->db->join('tb_transaksi', 'tb_transaksi.no_order = tb_detail_transaksi.no_order', 'left');
 		// $this->db->join('tb_produk', 'tb_produk.id_produk = tb_detail_transaksi.id_produk', 'left');
 		$this->db->where('YEAR(tgl_order)', $tahun);
-		$this->db->where('status_bayar=1');
+		$this->db->where('status_bayar', 3);
 		return $this->db->get()->result();
 	}
 }

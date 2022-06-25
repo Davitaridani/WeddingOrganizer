@@ -38,7 +38,7 @@
 					<div class="card ">
 						<div class="card-header">
 							<ul class="nav nav-tabs" id="myTab" role="tablist">
-								<li class="nav-item" role="presentation">
+								<!-- <li class="nav-item" role="presentation">
 									<a href="" class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Belum Bayar</a>
 								</li>
 								<li class="nav-item" role="presentation">
@@ -46,9 +46,9 @@
 								</li>
 								<li class="nav-item" role="presentation">
 									<a href="" class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Dicatat</a>
-								</li>
+								</li> -->
 								<li class="nav-item" role="presentation">
-									<a href="" class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#coba" type="button" role="tab" aria-controls="contact" aria-selected="false">Selesai</a>
+									<a href="" class="nav-link active" id="contact-tab" data-bs-toggle="tab" data-bs-target="#coba" type="button" role="tab" aria-controls="contact" aria-selected="false">Pesanan Saya</a>
 								</li>
 							</ul>
 						</div>
@@ -57,7 +57,7 @@
 							<div class="tab-content" id="myTabContent">
 								<!-- Data Pesnana belum Bayar -->
 								<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-									<table class="table">
+									<!-- <table class="table">
 										<tr>
 											<th>No Order</th>
 											<th>Nama</th>
@@ -98,12 +98,12 @@
 												</td>
 											</tr>
 										<?php } ?>
-									</table>
+									</table> -->
 								</div>
 
 								<!-- Block Data Pesanan DI Proses -->
 								<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-									<table class="table">
+									<!-- <table class="table">
 										<tr>
 											<th>No Order</th>
 											<th>Nama</th>
@@ -130,22 +130,15 @@
 
 													</div>
 												</td>
-												<!-- <td>
-													<div class="item-btn-bayar ">
-														<?php if ($value->status_bayar == 0) { ?>
-															<a href="<?= base_url('pesanan_saya/bayar/' . $value->id_transaksi) ?>" class="">Bayar</a>
-														<?php } ?>
-													</div>
-												</td> -->
 											</tr>
 										<?php } ?>
 
-									</table>
+									</table> -->
 								</div>
 
 								<!-- Pesanan DI CAtat -->
 								<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-									<table class="table">
+									<!-- <table class="table">
 										<tr>
 											<th>No Order</th>
 											<th>Nama</th>
@@ -176,10 +169,10 @@
 												</td>
 											</tr>
 										<?php } ?>
-									</table>
+									</table> -->
 								</div>
 
-								<div class="tab-pane fade" id="coba" role="tabpanel" aria-labelledby="contact-tab">
+								<div class="tab-pane fade show active" id="coba" role="tabpanel" aria-labelledby="contact-tab">
 									<table class="table">
 										<tr>
 											<th>No Order</th>
@@ -187,7 +180,6 @@
 											<th>Tgl Order</th>
 											<th>Tgl Acara</th>
 											<th>Total Bayar</th>
-											<th class="text-center">No Pesanan</th>
 										</tr>
 										<?php foreach ($selesai as $key => $value) { ?>
 											<tr>
@@ -200,12 +192,9 @@
 														<p> Rp. <?= number_format($value->sub_total, 0) ?></p>
 
 														<div class="bg-verifikasi">
-															<span class="">Selesai</span>
+															<span class="">Sudah Bayar</span>
 														</div>
 													</div>
-												</td>
-												<td class="no_pesanan text-center">
-													<?= $value->no_pesanan ?>
 												</td>
 											</tr>
 										<?php } ?>

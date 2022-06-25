@@ -25,7 +25,8 @@ class Jadwal extends CI_Controller
 	public function delete($id_transaksi = NULL)
 	{
 		$data = ['id_transaksi' => $id_transaksi];
-		$this->m_jadwal->delete($data);
+
+		$this->m_jadwal->changeSelesai($data);
 		$this->session->set_flashdata('pesan', 'Data Berhasil Di Hapus');
 		redirect('jadwal');
 	}

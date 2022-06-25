@@ -7,7 +7,7 @@
 			$data_cs = $this->db->query('select * from tb_user where email = "' . $n_email . '"')->row();
 			?>
 			<div class="card-tools">
-				<?php if ($dat_cs->level_user == "1") : ?>
+				<?php if ($data_cs->level_user == "1") : ?>
 					<button type="button" class="btn btn-purple text-white btn-sm" data-toggle="modal" data-target="#add">
 						<i class="fas fa-user-plus"></i>
 						Add
@@ -34,7 +34,9 @@
 						<th>Telepon</th>
 						<th>Password</th>
 						<th class="text-center">level</th>
-						<th class="text-center" width="80px"> Action</th>
+						<?php if ($data_cs->level_user == "1") : ?>
+							<th class="text-center" width="80px"> Action</th>
+						<?php endif; ?>
 					</tr>
 				</thead>
 				<tbody>
@@ -55,14 +57,16 @@
 								}
 								?>
 							</td>
-							<td class="text-center">
-								<button data-toggle="modal" data-target="#edit<?= $value->id_user ?>" class="btn btn-info btn-sm">
-									<i class="fa fa-edit"></i>
-								</button>
-								<button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value->id_user ?>">
-									<i class="fa fa-trash"></i>
-								</button>
-							</td>
+							<?php if ($data_cs->level_user == "1") : ?>
+								<td class="text-center">
+									<button data-toggle="modal" data-target="#edit<?= $value->id_user ?>" class="btn btn-info btn-sm">
+										<i class="fa fa-edit"></i>
+									</button>
+									<button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value->id_user ?>">
+										<i class="fa fa-trash"></i>
+									</button>
+								</td>
+							<?php endif; ?>
 						</tr>
 					<?php  } ?>
 				</tbody>

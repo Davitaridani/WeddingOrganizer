@@ -119,12 +119,12 @@
 										<?php } ?>
 									</tbody>
 									<tfoot>
-										<tr class="cart-subTotal">
+										<!-- <tr class="cart-subTotal">
 											<th>Subtotal</th>
 											<td>
 												<strong><span>Rp. <?= number_format($this->cart->total(), 0); ?></span></strong>
 											</td>
-										</tr>
+										</tr> -->
 										<tr class="order-total">
 											<th>Total Pembayaran</th>
 											<td>

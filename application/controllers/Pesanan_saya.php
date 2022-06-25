@@ -13,6 +13,17 @@ class Pesanan_saya extends CI_Controller
 
 	public function index()
 	{
+		// seatlement midtrans
+		if ((isset($_GET['order_id']) && isset($_GET['transaction_status'])) && $_GET['transaction_status'] == 'settlement') {
+			$data = array(
+				'status_bayar' => 3,
+				'status_order' => 3,
+			);
+			$this->db->set($data);
+			$this->db->where('no_order', $_GET['order_id']);
+			$this->db->update('tb_transaksi');
+		}
+
 		$data = [
 			'title' => 'Pesanan Saya',
 			'belum_bayar' => $this->m_transaksi->belum_bayar(),
@@ -21,6 +32,7 @@ class Pesanan_saya extends CI_Controller
 			'selesai' => $this->m_transaksi->selesai(),
 			'isi' => 'frontEnd/pesanan_saya'
 		];
+
 		$this->load->view('frontEnd/include/wrapper', $data, FALSE);
 	}
 

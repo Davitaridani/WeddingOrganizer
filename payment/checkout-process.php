@@ -25,7 +25,7 @@ printExampleWarningMessage();
 
 // Required
 $transaction_details = array(
-    'order_id' => rand(),
+    'order_id' => $data->order_id,
     'gross_amount' => $data->gross_amount, // no decimal allowed for creditcard
 );
 
@@ -39,7 +39,7 @@ $item1_details = array(
 
 
 // Optional
-$item_details = array ($item1_details);
+$item_details = array($item1_details);
 
 // Optional
 $billing_address = array(
@@ -83,16 +83,16 @@ $params = array(
 try {
     // Get Snap Payment Page URL
     $paymentUrl = Snap::createTransaction($params)->redirect_url;
-  
+
     // Redirect to Snap Payment Page
     header('Location: ' . $paymentUrl);
-}
-catch (\Exception $e) {
+} catch (\Exception $e) {
     echo $e->getMessage();
 }
 
-function printExampleWarningMessage() {
-    if (strpos(Config::$serverKey, 'your ') != false ) {
+function printExampleWarningMessage()
+{
+    if (strpos(Config::$serverKey, 'your ') != false) {
         echo "<code>";
         echo "<h4>Please set your server key from sandbox</h4>";
         echo "In file: " . __FILE__;
@@ -100,5 +100,5 @@ function printExampleWarningMessage() {
         echo "<br>";
         echo htmlspecialchars('Config::$serverKey = \'<your server key>\';');
         die();
-    } 
+    }
 }

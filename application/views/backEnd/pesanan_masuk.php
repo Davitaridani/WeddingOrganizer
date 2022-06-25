@@ -24,7 +24,7 @@
 						<li class="nav-item">
 							<a class="nav-link active" id="custom-tabs-three-home-tab" data-toggle="pill" href="#custom-tabs-three-home" role="tab" aria-controls="custom-tabs-three-home" aria-selected="true">Pesanan Masuk</a>
 						</li>
-						<li class="nav-item">
+						<!-- <li class="nav-item">
 							<a class="nav-link" id="custom-tabs-three-profile-tab" data-toggle="pill" href="#custom-tabs-three-profile" role="tab" aria-controls="custom-tabs-three-profile" aria-selected="false">Proses</a>
 						</li>
 						<li class="nav-item">
@@ -32,13 +32,13 @@
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" id="custom-tabs-three-settings-tab" data-toggle="pill" href="#custom-tabs-three-settings" role="tab" aria-controls="custom-tabs-three-settings" aria-selected="false">Selesai</a>
-						</li>
+						</li> -->
 					</ul>
 				</div>
 				<div class="card-body">
 					<div class="tab-content" id="custom-tabs-three-tabContent">
-						<div class="tab-pane fade show active" id="custom-tabs-three-home" role="tabpanel" aria-labelledby="custom-tabs-three-home-tab">
-							<table class="table">
+						<div class="tab-pane fade " id="custom-tabs-three-home" role="tabpanel" aria-labelledby="custom-tabs-three-home-tab">
+							<!-- <table class="table">
 								<tr>
 									<th>No Order</th>
 									<th>Nama</th>
@@ -72,11 +72,11 @@
 									</tr>
 								<?php } ?>
 
-							</table>
+							</table> -->
 						</div>
 
 						<div class="tab-pane fade" id="custom-tabs-three-profile" role="tabpanel" aria-labelledby="custom-tabs-three-profile-tab">
-							<table class="table">
+							<!-- <table class="table">
 								<tr>
 									<th>No Order</th>
 									<th>Nama</th>
@@ -103,10 +103,10 @@
 									</tr>
 								<?php } ?>
 
-							</table>
+							</table> -->
 						</div>
 						<div class="tab-pane fade" id="custom-tabs-three-messages" role="tabpanel" aria-labelledby="custom-tabs-three-messages-tab">
-							<table class="table">
+							<!-- <table class="table">
 								<tr>
 									<th>No Order</th>
 									<th>Nama</th>
@@ -127,14 +127,12 @@
 										</td>
 										<td class="text-center">
 											<h5> <?= $value->no_pesanan ?></h5>
-											<!-- <input name=" no_pensanan" value="<?= $no_pensanan ?>"> -->
 										</td>
 									</tr>
 								<?php } ?>
-
-							</table>
+							</table> -->
 						</div>
-						<div class="tab-pane fade" id="custom-tabs-three-settings" role="tabpanel" aria-labelledby="custom-tabs-three-settings-tab">
+						<div class="tab-pane fade  show active" id="custom-tabs-three-settings" role="tabpanel" aria-labelledby="custom-tabs-three-settings-tab">
 							<table class="table">
 								<tr>
 									<th>No Order</th>
@@ -142,7 +140,6 @@
 									<th>Tgl Order</th>
 									<th>Tgl Acara</th>
 									<th class="text-right">Total Bayar</th>
-									<th class="text-center">No Pesanan</th>
 								</tr>
 								<?php foreach ($pesanan_selesai as $key => $value) { ?>
 									<tr>
@@ -154,9 +151,6 @@
 											<b> <span> Rp. <?= number_format($value->sub_total, 0) ?></span></b><br>
 											<span class="badge badge-success">Diterima</span>
 										</td>
-										<td class="text-center text-end">
-											<h5> <?= $value->no_pesanan ?></h5>
-										</td>
 									</tr>
 								<?php } ?>
 
@@ -164,7 +158,6 @@
 						</div>
 					</div>
 				</div>
-				<!-- /.card -->
 			</div>
 		</div>
 	</div>

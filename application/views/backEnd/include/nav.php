@@ -5,7 +5,10 @@
 		<img src="<?= base_url() ?>templates/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
 		<span class="brand-text font-weight-light">Halaman Admin</span>
 	</a>
-
+	<?php
+	$n_email = $_SESSION['email'];
+	$data_cs = $this->db->query('select * from tb_user where email = "' . $n_email . '"')->row();
+	?>
 	<!-- Sidebar -->
 	<div class="sidebar">
 		<!-- Sidebar user panel (optional) -->
@@ -106,19 +109,18 @@
 						<p>Jadwal Job</p>
 					</a>
 				</li>
-
-				<li class="nav-item">
-					<a href="<?= base_url('laporan') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'laporan') {
-																								echo "active";
-																							} ?>">
-						<i class="nav-icon fas fa-file-pdf"></i>
-						<p>
-							Laporan
-						</p>
-					</a>
-				</li>
-
-
+				<?php if ($data_cs->level_user == "1") : ?>
+					<li class="nav-item">
+						<a href="<?= base_url('laporan') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'laporan') {
+																									echo "active";
+																								} ?>">
+							<i class="nav-icon fas fa-file-pdf"></i>
+							<p>
+								Laporan
+							</p>
+						</a>
+					</li>
+				<?php endif; ?>
 				<li class="nav-item has-treeview">
 					<!-- <a href="#" class="nav-link">
 						<i class="nav-icon fas fa-tachometer-alt"></i>
