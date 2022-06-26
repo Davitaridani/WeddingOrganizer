@@ -27,7 +27,7 @@ class Jadwal extends CI_Controller
 		$data = ['id_transaksi' => $id_transaksi];
 
 		$this->m_jadwal->changeSelesai($data);
-		$this->session->set_flashdata('pesan', 'Data Berhasil Di Hapus');
+		$this->session->set_flashdata('pesan', 'Data Berhasil Diselesaikan');
 		redirect('jadwal');
 	}
 }

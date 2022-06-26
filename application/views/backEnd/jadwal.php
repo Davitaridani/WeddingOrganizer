@@ -17,13 +17,12 @@
 				<thead>
 					<tr>
 						<th class="text-center" style="width: 20px;">No </th>
-						<!-- <th>No Pesanan</th> -->
 						<th>Nama</th>
 						<th>Kec</th>
 						<th>Alamat</th>
 						<th>Tgl Acara</th>
 						<th>No Telp</th>
-						<th>Bayar</th>
+						<th class="text-right">Bayar</th>
 						<th class="text-center" style="width: 60px;">Action</th>
 					</tr>
 				</thead>
@@ -32,23 +31,19 @@
 					foreach ($jadwal as $key => $value) { ?>
 						<tr>
 							<td class="text-center"><?= $no++; ?></td>
-							<!-- <td><?= $value->no_pesanan ?></td> -->
 							<td><?= $value->nama ?></td>
 							<td><?= $value->kecamatan ?></td>
 							<td><?= $value->alamat ?></td>
 							<td><?= $value->tgl_acara ?></td>
 							<td><?= $value->telepon ?></td>
-							<td>Rp. <?= number_format($value->sub_total, 0) ?></td>
+							<td class="text-right">Rp. <?= number_format($value->sub_total, 0) ?></td>
 							<td class="text-center">
-								<!-- <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value->id_transaksi ?>">
-									<i class="fa fa-trash"></i>
-								</button> -->
 								<?php if ($value->status_order == "4") : ?>
-									<button class="btn btn-warning btn-sm" role="button" onclick="return false;">
-										Sudah Selesai
+									<button class="btn btn-success btn-sm" role="button" onclick="return false;">
+										Sudah
 									</button>
 								<?php else : ?>
-									<button class="btn btn-success btn-sm" data-toggle="modal" data-target="#delete<?= $value->id_transaksi ?>">
+									<button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value->id_transaksi ?>">
 										Selesaikan
 									</button>
 								<?php endif; ?>
@@ -70,7 +65,7 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title">Data: <?= $value->no_pesanan ?></h4>
+					<h4 class="modal-title">Nama: <?= $value->nama ?></h4>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
