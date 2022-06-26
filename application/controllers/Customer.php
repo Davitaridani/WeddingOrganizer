@@ -23,6 +23,7 @@ class Customer extends CI_Controller
 				'valid_email' => 'Yang Anda Masukan Bukan Email !! '
 			]
 		);
+
 		$this->form_validation->set_rules(
 			'password',
 			'Password',
@@ -144,7 +145,6 @@ class Customer extends CI_Controller
 	public function logout()
 	{
 		$this->session->unset_userdata('email');
-		$this->session->unset_userdata('foto');
 
 		$this->session->set_flashdata('pesan', '<div class="alert alert-danger" role="alert">
 					Anda Berhasil Logout !!

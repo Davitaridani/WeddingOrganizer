@@ -88,10 +88,10 @@
 
 				<div class="col-sm-6">
 					<div class="form-group">
-						<label>tahun</label>
+						<label>Tahun</label>
 						<select name="tahun" class="form-control">
 							<?php
-							$mulai = date('Y') - 1;
+							$mulai = date('Y');
 							for ($i = $mulai; $i < $mulai + 50; $i++) {
 								echo '<option value="' . $i . '">' . $i . '</option>';
 							}
@@ -123,10 +123,10 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="form-group">
-						<label>tahun</label>
+						<label>Tahun</label>
 						<select name="tahun" class="form-control">
 							<?php
-							$mulai = date('Y') - 1;
+							$mulai = date('Y');
 							for ($i = $mulai; $i < $mulai + 50; $i++) {
 								echo '<option value="' . $i . '">' . $i . '</option>';
 							}

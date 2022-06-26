@@ -28,11 +28,11 @@
 			<table class="table table-bordered table-striped" id="data_tables">
 				<thead>
 					<tr>
-						<th class="text-center">No </th>
+						<th class="text-center" width="25px">No </th>
 						<th>Nama</th>
 						<th>Email</th>
 						<th>Telepon</th>
-						<th>Password</th>
+						<!-- <th>Password</th> -->
 						<th class="text-center">level</th>
 						<?php if ($data_cs->level_user == "1") : ?>
 							<th class="text-center" width="80px"> Action</th>
@@ -47,7 +47,7 @@
 							<td><?= $value->nama ?></td>
 							<td><?= $value->email ?></td>
 							<td><?= $value->telepon ?></td>
-							<td><?= $value->password ?></td>
+							<!-- <td><?= $value->password ?></td> -->
 							<td class="text-center">
 								<?php
 								if ($value->level_user == 1) {
