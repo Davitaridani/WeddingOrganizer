@@ -65,7 +65,7 @@
 <!-- End Contact Sect 2 -->
 
 <!-- Contact Sect 3 -->
-<section class="contact-sect-3">
+<!-- <section class="contact-sect-3">
 	<div class="container">
 		<div class="block-items">
 			<div class="judul">
@@ -103,8 +103,7 @@
 			</div>
 		</div>
 	</div>
-</section>
-<!-- End contact Sect 3 -->
+</section> -->
 
 <!-- Contact Sect 4 -->
 <section class="contact-sect-4">

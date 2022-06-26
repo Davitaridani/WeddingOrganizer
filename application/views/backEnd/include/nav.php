@@ -101,6 +101,16 @@
 					</a>
 				</li>
 
+				<!-- <li class="nav-item">
+					<a href="<?= base_url('konsultasi') ?>" class="nav-link <?php if ($this->uri->segment(2) == 'konsultasi' and $this->uri->segment(1) == 'admin') {
+																									echo "active";
+																								} ?>">
+						<i class="nav-icon fas fa-comment-dots"></i>
+						<p>Pesan Customer</p>
+					</a>
+				</li> -->
+
+
 				<li class="nav-item">
 					<a href="<?= base_url('jadwal') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'jadwal') {
 																								echo "active";
@@ -121,29 +131,7 @@
 						</a>
 					</li>
 				<?php endif; ?>
-				<li class="nav-item has-treeview">
-					<!-- <a href="#" class="nav-link">
-						<i class="nav-icon fas fa-tachometer-alt"></i>
-						<p>
-							Dashboard
-							<i class="right fas fa-angle-left"></i>
-						</p>
-					</a>
-					<ul class="nav nav-treeview">
-						<li class="nav-item">
-							<a href="#" class="nav-link">
-								<i class="far fa-circle nav-icon"></i>
-								<p>Active Page</p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link">
-								<i class="far fa-circle nav-icon"></i>
-								<p>Inactive Page</p>
-							</a>
-						</li>
-					</ul>
-				</li> -->
+
 				<li class="nav-item">
 					<a href="<?= base_url('user') ?>" class="nav-link <?php if ($this->uri->segment(1) == 'user') {
 																							echo "active";

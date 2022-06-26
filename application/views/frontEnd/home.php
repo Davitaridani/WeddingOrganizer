@@ -843,9 +843,8 @@
 	</div>
 </section>
 
-
 <!-- Home sect 12 -->
-<section class="home-sect-12">
+<!-- <section class="home-sect-12">
 	<div class="container">
 		<div class="blocks-items">
 			<div class="block-contact">
@@ -859,33 +858,23 @@
 						<div class="items-form">
 							<form action="" method="post">
 								<div class="item-form">
-									<input type="text" class="form-control" id="nama" placeholder="Nama">
+									<input type="text" name="nama" class="form-control" id="nama" placeholder="Nama">
 								</div>
 
 								<div class="item-form">
-									<input type="email" class="form-control" id="email" placeholder="Email">
+									<input type="email" name="email" class="form-control" id="email" placeholder="Email">
 								</div>
 
 								<div class="item-form">
-									<input type="text" class="form-control" id="alamat" placeholder="Alamat">
+									<input type="number" name="telepon" class="form-control" id="telepon" placeholder="Telepon">
 								</div>
 
 								<div class="item-form">
-									<input type="number" class="form-control" id="telepon" placeholder="Telepon">
+									<input type="text" name="alamat" class="form-control" id="alamat" placeholder="Alamat">
 								</div>
-								<!-- <div class="item-option">
-									<select class="form-control" name="" id="">
-										<span class="iconify" data-icon="dashicons:arrow-down-alt2"></span>
-										<option selected>Pilih Layanan</option>
-										<option value="wedding">Wedding</option>
-										<option value="">Prewedding</option>
-										<option value="">Engagement</option>
-										<option value="">Dekorasi</option>
-										<option value="">Make Up</option>
-										<option value="">Gaun</option>
-									</select>
-								</div> -->
-								<textarea name="pesan" class="form-control" id="" cols="3" rows="1" placeholder="Pesan"></textarea>
+
+								<textarea name="pesan" name="pesan" class="form-control" id="" cols="3" rows="1" placeholder="Pesan"></textarea>
+
 								<div class="btn-submit">
 									<button type="submit">Kirim Pertanyaan</button>
 								</div>
@@ -893,7 +882,6 @@
 						</div>
 					</div>
 				</div>
-				<!-- <div class="item-img-vector"> -->
 				<div class="img-vector-1">
 					<img src="<?= base_url() ?>assets/img/img-vector.png" alt="" data-aos="fade-down-right" data-aos-offset="500" data-aos-delay="100" data-aos-duration="2500">
 				</div>
@@ -901,12 +889,9 @@
 					<img src="<?= base_url() ?>assets/img/right-shape.png" alt="" data-aos="fade-down-left" data-aos-offset="100" data-aos-delay="50" data-aos-duration="2500">
 				</div>
 			</div>
-
 		</div>
-
-		<!-- </div> -->
 	</div>
-</section>
+</section> -->
 
 <!--  Home sect 13  -->
 <section class="home-sect-13">
