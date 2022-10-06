@@ -415,30 +415,26 @@ p {
 }
 
 @include responsive(mobile) {
-
-
-
 	// Section tentang Kami sect 2
-		.hero-image-banner-paralax {
-			height: 50vh;
-			// background-position: center;
-			// position: relative;
-			// background-size: cover;
-			// background-repeat: no-repeat;
-			// display: flex;
-			// align-items: center;
-	
-			.blocks-items {
-				.text-title {
-					padding-top: 0;
-					h3 {
-						font-size: 45px;
-						margin-bottom: 0;
-					}
+	.hero-image-banner-paralax {
+		height: 50vh;
+		// background-position: center;
+		// position: relative;
+		// background-size: cover;
+		// background-repeat: no-repeat;
+		// display: flex;
+		// align-items: center;
+
+		.blocks-items {
+			.text-title {
+				padding-top: 0;
+				h3 {
+					font-size: 45px;
+					margin-bottom: 0;
 				}
 			}
 		}
-
+	}
 
 	.breadcrumb {
 		margin-top: 15px !important;
@@ -471,7 +467,6 @@ p {
 			}
 		}
 	}
-
 
 	.about-sect-2 {
 		.blocks-items {

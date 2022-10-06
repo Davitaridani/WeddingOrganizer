@@ -23,7 +23,7 @@
 				<thead>
 					<tr>
 						<th class="text-center" width="5%">No </th>
-						<th>Nama Kategori Galeri</th>
+						<th>Kategori Galeri</th>
 						<th width="15%" class="text-center">Action</th>
 					</tr>
 				</thead>

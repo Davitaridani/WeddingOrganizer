@@ -159,7 +159,7 @@ $(window).scroll(function () {
 
 myButton.on("click", function (e) {
 	e.preventDefault();
-	$("html, body").animate({ scrollTop: 0 }, "900");
+	$("html, body").animate({ scrollTop: 0 }, "100");
 });
 // End Scroll Top
 

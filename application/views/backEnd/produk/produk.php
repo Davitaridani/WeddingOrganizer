@@ -41,7 +41,7 @@
 							<td><?= $value->nama_kategori ?></td>
 							<td><?= $value->deskripsi ?></td>
 							<td><?= $value->spesifikasi_produk ?></td>
-							<td>Rp. <?= number_format($value->harga, 0) ?></td>
+							<td class="text-right">Rp. <?= number_format($value->harga, 0) ?></td>
 							<td class="text-center">
 								<img src="<?= base_url('assets/gambar/' . $value->gambar) ?>" class="img img-thumbnail" width="200px" alt="">
 							</td>
